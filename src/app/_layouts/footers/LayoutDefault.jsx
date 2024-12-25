@@ -504,7 +504,7 @@ const DefaultFooter = () => {
                                 </div>
 
                                 {/* Dubai Section */}
-                                <div className="col-md-6 col-lg-6 col-xl-3" style={{marginTop:"-60px"}}>
+                                <div className="col-md-6 col-lg-6 col-xl-3">
                                     <span className="mil-suptitle mil-light mil-upper mil-up mil-mb-30">
                                         International Headquarter
                                     </span>
@@ -522,7 +522,7 @@ const DefaultFooter = () => {
                                 </div>
 
                                 {/* Karachi Section */}
-                                <div className="col-md-6 col-lg-6 col-xl-3" style={{marginTop:"-60px", right:"80px"}}>
+                                <div className="col-md-6 col-lg-6 col-xl-3" style={{ right:"80px"}}>
                                     <span className="mil-suptitle mil-light mil-upper mil-up mil-mb-30">
                                         Operation & Support Office
                                     </span>

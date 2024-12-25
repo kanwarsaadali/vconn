@@ -11,12 +11,12 @@ const PartnersSlider = ({ bgStyle }) => {
   return (
     <>
       {/* Partners Section */}
-      <div className={`mil-${bgStyle}-bg mil-partners mil-relative`} style={{ backgroundColor: "#F8F8F8"}}>
+      <div className={`mil-${bgStyle}-bg mil-partners mil-relative py-5`} style={{ backgroundColor: "#F8F8F8"}}>
         <div className="container mil-p-60">
           <div className="mil-background-grid mil-softened" />
           <div className="row">
             <div className="col-12">
-              <div className="mil-center mil-mb-60" style={{marginTop:"-40px"}}>
+              <div className="mil-center mil-mb-60">
                 <span
                   className="mil-suptitle mil-upper mil-up mil-mb-30"
                   dangerouslySetInnerHTML={{ __html: advantage.subtitle }}
@@ -87,7 +87,7 @@ const PartnersSlider = ({ bgStyle }) => {
       {/* Inline CSS */}
       <style jsx>{`
         .mil-partners {
-          padding: 60px 0;
+          // padding: 60px 0;
         }
 
         .mil-partner-frame {

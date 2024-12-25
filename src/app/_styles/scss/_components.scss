@@ -2939,4 +2939,10 @@ load more
 
     
 }
-
+.customSlider{
+    .swiper-container {
+        .swiper-slide{
+            width: 75px !important;
+        }
+    }
+}

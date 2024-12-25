@@ -51,9 +51,12 @@ async function Home1() {
       <Suspense fallback={<div>Loading...</div>}>
         <LatestProjectsSection projects={projects} />
       </Suspense>
+      <div style={{backgroundColor:"rgb(248, 248, 248)"}} className="py-5 customSlider">
       <DevopsSlider/>
       <DevopsecopsSlider/>
       <CybersecuritySlider/>
+      </div>
+
       {/* <PartnersSlider /> */}
 
       {/* <ServicesSection /> */}

@@ -104,6 +104,110 @@
         {
             "image": "/img/client/26.png",
             "alt": "logo"
+        },{
+            "image": "/img/client/1.png",
+            "alt": "logo"
+        },
+        {
+            "image": "/img/client/2.png",
+            "alt": "logo"
+        },
+        {
+            "image": "/img/client/3.png",
+            "alt": "logo"
+        },
+        {
+            "image": "/img/client/4.png",
+            "alt": "logo"
+        },
+        {
+            "image": "/img/client/5.png",
+            "alt": "logo"
+        },
+        {
+            "image": "/img/client/6.png",
+            "alt": "logo"
+        },
+        {
+            "image": "/img/client/7.png",
+            "alt": "logo"
+        },
+        {
+            "image": "/img/client/8.png",
+            "alt": "logo"
+        },
+        {
+            "image": "/img/client/9.png",
+            "alt": "logo"
+        },
+        {
+            "image": "/img/client/10.png",
+            "alt": "logo"
+        },
+        {
+            "image": "/img/client/11.png",
+            "alt": "logo"
+        },
+        {
+            "image": "/img/client/12.png",
+            "alt": "logo"
+        },
+        {
+            "image": "/img/client/13.png",
+            "alt": "logo"
+        },
+        {
+            "image": "/img/client/14.png",
+            "alt": "logo"
+        },
+        {
+            "image": "/img/client/15.png",
+            "alt": "logo"
+        },
+        {
+            "image": "/img/client/16.png",
+            "alt": "logo"
+        },
+        {
+            "image": "/img/client/17.png",
+            "alt": "logo"
+        },
+        {
+            "image": "/img/client/18.png",
+            "alt": "logo"
+        },
+        {
+            "image": "/img/client/19.png",
+            "alt": "logo"
+        },
+        {
+            "image": "/img/client/20.png",
+            "alt": "logo"
+        },
+        {
+            "image": "/img/client/21.png",
+            "alt": "logo"
+        },
+        {
+            "image": "/img/client/22.png",
+            "alt": "logo"
+        },
+        {
+            "image": "/img/client/23.png",
+            "alt": "logo"
+        }
+        ,
+        {
+            "image": "/img/client/24.png",
+            "alt": "logo"
+        },
+        {
+            "image": "/img/client/25.png",
+            "alt": "logo"
+        },
+        {
+            "image": "/img/client/26.png",
+            "alt": "logo"
         }
     ]
 }

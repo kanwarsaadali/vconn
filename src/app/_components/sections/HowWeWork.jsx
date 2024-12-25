@@ -18,9 +18,9 @@ const HowWeWorkSection = () => {
       {/* Projects Section */}
       <section className="projects-section">
         {/* <div className="mil-suptitle mil-upper mil-up mil-mb-30 mil-center" style={{textAlign:"center"}}>OUR PROJECTS</div> */}
-        <div className="mil-center mil-mb-60" style={{marginTop:"-50px", color:"#17283E"}}>
+        <div className="mil-center" style={{ color:"#17283E"}}>
                         <span
-                          className="mil-suptitle mil-upper mil-up mil-mb-30"
+                          className="mil-suptitle mil-upper mil-up mil-mb-60"
                           dangerouslySetInnerHTML={{ __html: advantage.subtitle }}
                         style={{color:"#17283E", fontSize:"15px",marginTop:"40px" }}/>
                         {/* <h2
@@ -135,7 +135,7 @@ const HowWeWorkSection = () => {
 
         /* Section Styling */
         .projects-section {
-          padding: 50px 20px;
+          padding: 0px 20px 50px 0;
           background-color: #ffffff;
         }
         . icon{
@@ -360,6 +360,7 @@ const HowWeWorkSection = () => {
             text-align: center;
             margin-bottom: 30px;
             padding-right: 0;
+            margin-top:0;
           }
 
              .headline h3 {

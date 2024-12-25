@@ -421,14 +421,14 @@ const CybersecuritySlider = ({ bgStyle }) => {
     <>
       {/* Partners Section */}
       <div
-        className={`mil-${bgStyle}-bg mil-partners mil-relative`}
-        style={{ marginTop: "-210px", backgroundColor: "#F8F8F8" }}
+        className={`mil-${bgStyle}-bg mil-partners mil-relative mt-3`}
+        style={{ backgroundColor: "#F8F8F8" }}
       >
         <div className="container mil-p-60">
           <div className="mil-background-grid mil-softened" />
           <div className="row">
             <div className="col-12">
-              <div className="mil-center mil-mb-60">
+              <div className="mil-center mil-mb-60s">
                 {/* <span
                   className="mil-suptitle mil-upper mil-up mil-mb-30"
                   dangerouslySetInnerHTML={{ __html: advantage.subtitle }}
@@ -442,7 +442,7 @@ const CybersecuritySlider = ({ bgStyle }) => {
           </div>
         </div>
 
-        <div className="container mil-p-60" style={{ marginTop: "-70px" }}>
+        <div className="container mil-p-60" >
           <Swiper
             modules={[Autoplay]}
             loop={true}
@@ -453,29 +453,29 @@ const CybersecuritySlider = ({ bgStyle }) => {
             }}
             speed={3000} // Speed of the scroll
             slidesPerView={4}
-            spaceBetween={30}
-            breakpoints={{
-              320: {
-                slidesPerView: 1,
-                spaceBetween: 10,
-              },
-              480: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-              },
-              768: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-              },
-              1024: {
-                slidesPerView: 4,
-                spaceBetween: 40,
-              },
-              1440: {
-                slidesPerView: 12,
-                spaceBetween: 50,
-              },
-            }}
+            spaceBetween={10}
+            // breakpoints={{
+            //   320: {
+            //     slidesPerView: 4,
+            //     spaceBetween: 40,
+            //   },
+            //   480: {
+            //     slidesPerView: 4,
+            //     spaceBetween: 40,
+            //   },
+            //   768: {
+            //     slidesPerView: 4,
+            //     spaceBetween: 40,
+            //   },
+            //   1024: {
+            //     slidesPerView: 4,
+            //     spaceBetween: 40,
+            //   },
+            //   1440: {
+            //     slidesPerView: 12,
+            //     spaceBetween: 50,
+            //   },
+            // }}
             className="swiper-container mil-infinite-show mil-up"
           >
             {Data.items.map((item, key) => (
@@ -508,7 +508,7 @@ const CybersecuritySlider = ({ bgStyle }) => {
         }
 
         .mil-partners {
-          padding: 60px 0;
+          // padding: 60px 0;
         }
 
         .mil-partner-frame {
@@ -526,7 +526,7 @@ const CybersecuritySlider = ({ bgStyle }) => {
 
         @media (max-width: 768px) {
           .mil-partners {
-            padding: 30px 0;
+            // padding: 30px 0;
           }
 
           .mil-partner-frame {
