@@ -2,7 +2,7 @@
 #preview
 title: INFORMATION SECURITY
 image: /img/covers/3.png
-image1: /img/covers/3.png
+image1: /img/covers/7.png
 describion: "Data Fortunes: Guarding the New Digital Gold."
 describtion1: Your data is priceless, and cybercriminals know it. They’re not just hackers—they’re miners, digging deep to find the riches that fuel your business. A single breach can shatter trust, destroy reputations, and bring the regulators knocking.
 category: Architecture

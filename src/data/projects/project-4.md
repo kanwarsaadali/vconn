@@ -2,7 +2,7 @@
 #preview
 title: MANAGED SERVICES
 image: /img/covers/4.png
-image1: /img/covers/4.png
+image1: /img/covers/8.png
 describion: "Taming the IT Beast: Mastering Complexity with Ease."
 describtion1: Growing businesses often face IT complexity that spirals out of control multiple platforms, endless updates, and constant firefighting. Complexity shouldn’t stifle innovation, but without expert management, it will.
 category: Decor

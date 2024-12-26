@@ -43,8 +43,8 @@ const LatestProjectsSection = ({ projects }) => {
                         {projects.map((item, item_key) => (
                             <div className="col-md-6 col-lg-3 px-4" key={`projects-row-${item_key}`}>
                                 <Link href={`/projects/${item.id}`} key={`projects-item-${item_key}`} className={item == null ? "mil-portfolio-item mil-square-item mil-up mil-mb-30" : "mil-portfolio-item mil-long-item mil-up mil-mb-30"}>
-                                    <h4 className="text-center withoutHover"  style={{color:"#17283E"}}>{item.title}</h4>
-                                    <h5 className="mil-mb-20 mil-mb-201" style={{color:"#17283E"}}>{item.describion}</h5>                                   
+                                    <h4 className="text-center withoutHover">{item.title}</h4>
+                                    <h5 className="mil-mb-20 mil-mb-201" style={{color:"black"}}>{item.describion}</h5>                                   
                                     {/* <h5 className="text-center">{item.title}</h5>  */}
                                     {/* <h5 className="text-center withoutHover">{item.describion}</h5>  */}
                                     {/* <h4 className="text-center title-text">{item.title}</h4> */}
@@ -64,7 +64,7 @@ const LatestProjectsSection = ({ projects }) => {
                                     <h5 className="mil-mb-20 mil-mb-201">{item.describion}</h5>                
                                     {/* <h5 style={{color:"black" , marginTop:"30px",fontSize:"8px" }}>{item.describtion1}</h5>                                    */}
 
-                                    <h4 style={{fontSize:"14px",color:"black", marginTop:"100px"}}>{item.describtion1}</h4>
+                                    <h4 style={{fontSize:"14px",color:"black", marginTop:"120px"}}>{item.describtion1}</h4>
 
 
                                         <span style={{width:"100%"}} className="w-100">
@@ -76,6 +76,7 @@ const LatestProjectsSection = ({ projects }) => {
                                        
                                     </div>
                                 </Link>
+                                
                             </div>
                         ))}
                     </div>
