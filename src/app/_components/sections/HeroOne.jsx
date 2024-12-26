@@ -53,7 +53,7 @@ const HeroOne = () => {
     return (
         <>
             <section className="mil-banner">
-                {Data.bg_image.endsWith(".webm") ? (
+                {Data.bg_image.endsWith(".mp4") ? (
                     <video
                         autoPlay
                         muted
@@ -61,7 +61,7 @@ const HeroOne = () => {
                         playsInline
                         className="mil-bg-video"
                     >
-                        <source src={Data.bg_image} type="video/webm" />
+                        <source src={Data.bg_image} type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                 ) : (
