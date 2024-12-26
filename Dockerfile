@@ -28,7 +28,9 @@ RUN npm install --only=production
 
 # Copy the build artifacts from the builder stage
 COPY --from=builder /app/.next /app/.next
-COPY --from=builder /app/public /app/public
+
+# Exclude copying the `public` folder
+# The `public` folder will be mounted as a volume during container runtime
 
 # Expose port 3001 for the app
 EXPOSE 3001
@@ -38,4 +40,3 @@ ENV PORT=3001
 
 # Command to run the app (use port 3001)
 CMD ["npm", "run", "start", "--", "-p", "3001"]
-
