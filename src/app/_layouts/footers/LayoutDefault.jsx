@@ -509,7 +509,7 @@ const DefaultFooter = () => {
                                         International Headquarter
                                     </span>
                                     <img
-                                        src="/img/maps/Dubai.png" // Replace with the actual path to your Dubai map image
+                                        src="/img/maps/Dubai.webp" // Replace with the actual path to your Dubai map image
                                         alt="Dubai Map"
                                         className="mil-map-image"
                                         style={{marginTop:"-25px"}} />
@@ -527,7 +527,7 @@ const DefaultFooter = () => {
                                         Operation & Support Office
                                     </span>
                                     <img
-                                        src="/img/maps/Pakistan.png" // Replace with the actual path to your Karachi map image
+                                        src="/img/maps/Pakistan.webp" // Replace with the actual path to your Karachi map image
                                         alt="Karachi Map"
                                         className="mil-map-image"
                                      />

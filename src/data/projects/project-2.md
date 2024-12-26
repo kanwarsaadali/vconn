@@ -3,7 +3,7 @@
 title: DEVSECOPS SOLUTIONS
 describion: "Speed vs. Security: The DevSecOps Tug of War."
 describtion1: In today’s fast-paced world, speed is king but security can’t be the price. Fast     development often skips critical security steps, leaving vulnerabilities open to  exploitation. If it’s not secure from the start, it’s a risk waiting to happen.
-image: /img/covers/2.png
+image: /img/covers/2.webp
 image1: /img/covers/6.png
 category: Architecture
 category_slug: architecture

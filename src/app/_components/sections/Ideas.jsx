@@ -98,7 +98,7 @@ const styles = {
   container: {
     textAlign: 'center',
     padding: '50px 20px',
-    background: 'url(/img/photo/bggraynet.png) no-repeat center center/cover',  // Updated to use the public directory
+    background: 'url(/img/photo/BGgrayNet.webp) no-repeat center center/cover',  // Updated to use the public directory
     position: 'relative',
   },
   title: {

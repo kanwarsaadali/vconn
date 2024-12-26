@@ -66,7 +66,7 @@ const AdvantagesSection = () => {
       backgroundColor: "#ffffff",
       padding: "60px 20px",
       textAlign: "center",
-      backgroundImage: "url('/img/photo/bggraynet.png')", // Set your background image URL here
+      backgroundImage: "url('/img/photo/BGgrayNet.webp')", // Set your background image URL here
       backgroundSize: "cover", // Ensure the background image covers the whole section
       backgroundPosition: "center", // Center the image
       backgroundAttachment: "fixed", // Optional: makes the background image fixed when scrolling
