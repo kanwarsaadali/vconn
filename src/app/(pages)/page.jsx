@@ -38,9 +38,12 @@ export const metadata = {
 async function Home1() {
   const posts = await getAllPosts();
   const projects = await getAllProjects();
+  
+  
 
   return (
     <>
+    
       <HeroOneSection />
       <ClientSlider/>
       {/* <ClientSlider/>
@@ -54,7 +57,7 @@ async function Home1() {
       <div style={{backgroundColor:"rgb(248, 248, 248)"}} className="py-5 customSlider">
       <DevopsSlider/>
       <DevopsecopsSlider/>
-      <CybersecuritySlider/>
+      {/* <CybersecuritySlider/> */}
       </div>
 
       {/* <PartnersSlider /> */}

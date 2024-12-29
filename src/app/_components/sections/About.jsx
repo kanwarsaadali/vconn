@@ -1,6 +1,10 @@
+"use client";
 import React from 'react';
+import useMediaQuery from '../../hooks/useMediaQuery';
 
 const AboutSection = () => {
+  const isScreenAbove1440 = useMediaQuery("(min-width: 1440px)");
+  const isScreenBelow769 = useMediaQuery("(max-width: 769px)");
   return (
     <div className="row justify-content-center">
       <div className="col-12 col-md-8 mt-5 pt-5 pb-5" style={styles.container}>

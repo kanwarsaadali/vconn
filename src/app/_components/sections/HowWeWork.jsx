@@ -18,17 +18,17 @@ const HowWeWorkSection = () => {
       {/* Projects Section */}
       <section className="projects-section">
         {/* <div className="mil-suptitle mil-upper mil-up mil-mb-30 mil-center" style={{textAlign:"center"}}>OUR PROJECTS</div> */}
-        <div className="mil-center" style={{ color:"#17283E"}}>
-                        <span
-                          className="mil-suptitle mil-upper mil-up mil-mb-60"
-                          dangerouslySetInnerHTML={{ __html: advantage.subtitle }}
-                        style={{color:"#17283E", fontSize:"15px",marginTop:"40px" }}/>
-                        {/* <h2
+        <div className="mil-center" style={{ color: "#17283E" }}>
+          <span
+            className="mil-suptitle mil-upper mil-up mil-mb-60"
+            dangerouslySetInnerHTML={{ __html: advantage.subtitle }}
+            style={{ color: "#17283E", fontSize: "15px", marginTop: "40px" }} />
+          {/* <h2
                           className="mil-upper mil-up mil-mb-30"
                           dangerouslySetInnerHTML={{ __html: advantage.title }}
                           style={{color:"#17283E"}}
                         /> */}
-                      </div>
+        </div>
         <div className="container projects-content">
           {/* Left Side: Headline */}
           <div className="headline-box">
@@ -42,79 +42,93 @@ const HowWeWorkSection = () => {
             <div className="project-item">
               {/* <div className="icon-box">📡</div> */}
               <div>
-              <img src="/img/icons/pr1.png" style={{height:"40px", width:"40px",backgroundColor:"rgb(188, 255, 0)",display:"flex",borderRadius:"10%"}}/>
+                <img src="/img/icons/pr1.png" style={{ height: "40px", width: "40px", backgroundColor: "rgb(188, 255, 0)", display: "flex", borderRadius: "10%" }} />
 
               </div>
               <div className="content">
-                <h4>Proactive Threat Intelligence and SOC Services</h4>
-                <p>
-                  Stay secure with 24/7 SOC services, real-time threat intelligence,
-                  and advanced monitoring to prevent cyber attacks.
-                </p>
+                <span>   <h4>Proactive Threat Intelligence and SOC Services</h4>
+                  <p>
+                    Stay secure with 24/7 SOC services, real-time threat intelligence,
+                    and advanced monitoring to prevent cyber attacks.
+                  </p></span>
+
               </div>
               <div className="expand">+</div>
             </div>
             <div className="project-item">
-            <img src="/img/icons/pr2.png" style={{height:"40px", width:"40px",backgroundColor:"rgb(188, 255, 0)",display:"flex",borderRadius:"10%"}}/>
+              <img src="/img/icons/pr2.png" style={{ height: "40px", width: "40px", backgroundColor: "rgb(188, 255, 0)", display: "flex", borderRadius: "10%" }} />
 
               <div className="content">
-                <h4>Next-Level Vulnerability Assessment & Penetration Testing</h4>
+                <span>   <h4>Next-Level Vulnerability Assessment & Penetration Testing</h4>
                 <p>
                   Identify and fix vulnerabilities before they’re exploited. Strengthen
                   your defenses with real-world testing and actionable insights.
-                </p>
+                </p></span>
+             
               </div>
               <div className="expand">+</div>
             </div>
 
             <div className="project-item">
-            <img src="/img/icons/pr3.png" style={{height:"40px", width:"40px",backgroundColor:"rgb(188, 255, 0)",display:"flex",borderRadius:"10%"}}/>
+              <img src="/img/icons/pr3.png" style={{ height: "40px", width: "40px", backgroundColor: "rgb(188, 255, 0)", display: "flex", borderRadius: "10%" }} />
 
               <div className="content">
+                <span>
                 <h4>Seamless Cloud Migration and Management</h4>
                 <p>
                   Streamline operations with seamless migration to AWS, Azure, or IBM
                   Cloud. Boost scalability, security, and performance.
                 </p>
+                </span>
+             
               </div>
               <div className="expand">+</div>
             </div>
 
             <div className="project-item">
-            <img src="/img/icons/pr4.png" style={{height:"40px", width:"40px",backgroundColor:"rgb(188, 255, 0)",display:"flex",borderRadius:"10%"}}/>
+              <img src="/img/icons/pr4.png" style={{ height: "40px", width: "40px", backgroundColor: "rgb(188, 255, 0)", display: "flex", borderRadius: "10%" }} />
 
               <div className="content">
+                <span>
                 <h4>Automated CI/CD Pipelines for Faster, Safer Deployments</h4>
                 <p>
                   Speed up software delivery with automated CI/CD pipelines, integrating
                   security tools to ensure faster, safer deployments.
                 </p>
+                </span>
+           
               </div>
               <div className="expand">+</div>
             </div>
 
             <div className="project-item">
-            <img src="/img/icons/pr5.png" style={{height:"40px", width:"40px",backgroundColor:"rgb(188, 255, 0)",display:"flex",borderRadius:"10%"}}/>
+              <img src="/img/icons/pr5.png" style={{ height: "40px", width: "40px", backgroundColor: "rgb(188, 255, 0)", display: "flex", borderRadius: "10%" }} />
 
               <div className="content">
+                <span>
                 <h4>Kubernetes-Powered Application Modernization</h4>
                 <p>
                   Scale effortlessly with Kubernetes-powered containerization, delivering
                   agility, efficiency, and innovation for your applications.
                 </p>
+                </span>
+             
               </div>
               <div className="expand">+</div>
             </div>
 
             <div className="project-item">
-            <img src="/img/icons/pr6.png" style={{height:"40px", width:"40px",backgroundColor:"rgb(188, 255, 0)",display:"flex",borderRadius:"10%"}}/>
+              <img src="/img/icons/pr6.png" style={{ height: "40px", width: "40px", backgroundColor: "rgb(188, 255, 0)", display: "flex", borderRadius: "10%" }} />
 
               <div className="content">
+                <span>
                 <h4>Effortless Virtualization with Proxmox</h4>
                 <p>
                   Simplify resource management with Proxmox, offering scalable,
                   cost-efficient virtual environments for modern businesses.
                 </p>
+                </span>
+           
               </div>
               <div className="expand">+</div>
             </div>
@@ -323,7 +337,9 @@ const HowWeWorkSection = () => {
           transition: opacity 0.3s ease; /* Add smooth transition */
         }
 
-        .project-item:hover p {
+       
+
+            .project-item .content span:hover p {
           display: block;
           opacity: 1; /* Show paragraph text on hover */
         }

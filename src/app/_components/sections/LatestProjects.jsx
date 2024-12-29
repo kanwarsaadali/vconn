@@ -59,9 +59,9 @@ const LatestProjectsSection = ({ projects }) => {
                                         {/* <div className="mil-divider-sm mil-mb-20">{item.title}</div> */}
                                         {/* <div className="mil-divider-sm mil-mb-20">{item.title}</div> */}
                                         <p>{item.short}</p>
-                                    <img className="img1" src={item.image1} alt={item.title} />
+                                    {/* <img className="img1" src={item.image1} alt={item.title} />
 
-                                    <h5 className="mil-mb-20 mil-mb-201">{item.describion}</h5>                
+                                    <h5 className="mil-mb-20 mil-mb-201">{item.describion}</h5>                 */}
                                     {/* <h5 style={{color:"black" , marginTop:"30px",fontSize:"8px" }}>{item.describtion1}</h5>                                    */}
 
                                     <h4 style={{fontSize:"14px",color:"black", marginTop:"120px"}}>{item.describtion1}</h4>

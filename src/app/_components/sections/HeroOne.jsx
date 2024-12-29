@@ -49,7 +49,24 @@ const HeroOne = () => {
 
     //     return () => clearInterval(typingInterval);
     // }, [descriptionText]);
+    const [videoLoaded, setVideoLoaded] = useState(false);
 
+    const handleVideoLoaded = () => {
+        setVideoLoaded(true);
+    };
+
+    useEffect(() => {
+        console.log("videoLoaded",videoLoaded)
+
+        // const timeout = setTimeout(() => {
+        //     if (!videoLoaded) {
+        //         console.warn("Fallback triggered, setting videoLoaded to true");
+        //         setVideoLoaded(true);
+        //     }
+        // }, 5000); // Adjust timeout duration as needed
+    
+        // return () => clearTimeout(timeout);
+    }, [videoLoaded]);
     return (
         <>
             <section className="mil-banner">
@@ -60,6 +77,12 @@ const HeroOne = () => {
                         loop
                         playsInline
                         className="mil-bg-video"
+                      
+                        onCanPlay={() => {
+                            console.log("onCanPlay triggered");
+                            handleVideoLoaded();
+                        }}
+                     
                     >
                         <source src={Data.bg_image} type="video/mp4" />
                         Your browser does not support the video tag.

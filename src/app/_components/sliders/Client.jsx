@@ -45,28 +45,28 @@ const ClientSlider = ({ bgStyle }) => {
               reverseDirection: true, // Reverse direction for autoplay
             }}
             speed={3000} // Adjust the speed of the scroll
-            slidesPerView={4}
-            spaceBetween={30}
+            slidesPerView={3}
+            spaceBetween={40}
             breakpoints={{
               320: {
-                slidesPerView: 1,
-                spaceBetween: 10,
+                slidesPerView: 3,
+                spaceBetween: 40,
               },
-              480: {
+              425: {
                 slidesPerView: 2,
-                spaceBetween: 20,
+                spaceBetween: 70,
               },
               768: {
-                slidesPerView: 3,
-                spaceBetween: 30,
+                slidesPerView: 5,
+                spaceBetween: 70,
               },
               1024: {
-                slidesPerView: 4,
-                spaceBetween: 40,
+                slidesPerView: 5,
+                spaceBetween: 75,
               },
               1440: {
                 slidesPerView: 5,
-                spaceBetween: 50,
+                spaceBetween: 75,
               },
             }}
             className="swiper-container mil-infinite-show mil-up"

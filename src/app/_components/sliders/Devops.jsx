@@ -6,8 +6,13 @@ import { Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/autoplay";
 import Data from "@data/sliders/devops";
+import useMediaQuery from "../../hooks/useMediaQuery";
 
 const DevopsSlider = ({ bgStyle }) => {
+  const isScreenBelow426 = useMediaQuery("(max-width: 426px)");
+  const isScreenBelow769 = useMediaQuery("(max-width: 769px)");
+
+
   return (
     <>
       {/* Partners Section */}
@@ -37,11 +42,11 @@ const DevopsSlider = ({ bgStyle }) => {
             autoplay={{
               delay: 1, // Very short delay for smooth continuous scrolling
               disableOnInteraction: false, // Continue autoplay after interaction
-              reverseDirection: true, // Reverse direction for autoplay
+              reverseDirection: false, // Reverse direction for autoplay
             }}
             speed={3000} // Adjust the speed of the scroll
-            slidesPerView={4}
-            spaceBetween={0}
+            slidesPerView={isScreenBelow426 ? 4 : isScreenBelow769 ? 8 : 12}
+            spaceBetween={10}
             // breakpoints={{
             //   320: {
             //     slidesPerView: 4,
