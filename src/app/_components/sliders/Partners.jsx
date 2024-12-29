@@ -44,11 +44,11 @@ const PartnersSlider = ({ bgStyle }) => {
             breakpoints={{
               320: {
                 slidesPerView: 3,
-                spaceBetween: 40,
+                spaceBetween: 60,
               },
               425: {
                 slidesPerView: 2,
-                spaceBetween: 70,
+                spaceBetween: 60,
               },
               768: {
                 slidesPerView: 5,
@@ -104,6 +104,7 @@ const PartnersSlider = ({ bgStyle }) => {
         }
 
         @media (max-width: 768px) {
+
           .mil-partners {
             padding: 30px 0;
           }
