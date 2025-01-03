@@ -27,7 +27,7 @@ const CybersecuritySlider = dynamic( () => import("@components/sliders/Cybersecu
 
 
 
-const ClientSlider = dynamic( () => import("@components/sliders/Client"), { ssr: false } );
+// const ClientSlider = dynamic( () => import("@components/sliders/Client"), { ssr: false } );
 
 
 export const metadata = {
