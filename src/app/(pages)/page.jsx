@@ -10,20 +10,20 @@ import Data from "@data/sections/hero-1.json";
 // import { getSortedProjectsData } from "@library/projects";
 
 import HeroOneSection from "@components/sections/HeroOne"
-import AboutSection from "@components/sections/About";
-import IdeasSection from "@components/sections/Ideas";
-import ServicesSection from "@components/sections/Services";
-import AdvantagesSection from "@components/sections/Advantages";
-import LatestProjectsSection from "@components/sections/LatestProjects";
-import HowWeWorkSection from "@components/sections/HowWeWork";
-import LatestPostsSection from "@components/sections/LatestPosts";
-import CoresSection from "@components/sections/Cores";
+// import AboutSection from "@components/sections/About";
+// import IdeasSection from "@components/sections/Ideas";
+// import ServicesSection from "@components/sections/Services";
+// import AdvantagesSection from "@components/sections/Advantages";
+// import LatestProjectsSection from "@components/sections/LatestProjects";
+// import HowWeWorkSection from "@components/sections/HowWeWork";
+// import LatestPostsSection from "@components/sections/LatestPosts";
+// import CoresSection from "@components/sections/Cores";
 // import ClientSlider from '@components/sliders/client';
 
-const PartnersSlider = dynamic( () => import("@components/sliders/Partners"), { ssr: false } );
-const DevopsSlider = dynamic( () => import("@components/sliders/Devops"), { ssr: false } );
-const DevopsecopsSlider = dynamic( () => import("@components/sliders/Devsecops"), { ssr: false } );
-const CybersecuritySlider = dynamic( () => import("@components/sliders/Cybersecurity"), { ssr: false } );
+// const PartnersSlider = dynamic( () => import("@components/sliders/Partners"), { ssr: false } );
+// const DevopsSlider = dynamic( () => import("@components/sliders/Devops"), { ssr: false } );
+// const DevopsecopsSlider = dynamic( () => import("@components/sliders/Devsecops"), { ssr: false } );
+// const CybersecuritySlider = dynamic( () => import("@components/sliders/Cybersecurity"), { ssr: false } );
 
 
 
