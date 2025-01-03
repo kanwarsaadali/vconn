@@ -30,13 +30,13 @@ import HeroOneSection from "@components/sections/HeroOne"
 // const ClientSlider = dynamic( () => import("@components/sliders/Client"), { ssr: false } );
 
 
-export const metadata = {
-  title: {
-		default: AppData.settings.siteName,
-		template: "%s | " + AppData.settings.siteName,
-	},
-  description: AppData.settings.siteDescription,
-}
+// export const metadata = {
+//   title: {
+// 		default: AppData.settings.siteName,
+// 		template: "%s | " + AppData.settings.siteName,
+// 	},
+//   description: AppData.settings.siteDescription,
+// }
 
 async function Home1() {
   const [videoLoaded, setVideoLoaded] = useState(false);
