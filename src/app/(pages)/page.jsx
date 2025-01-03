@@ -1,10 +1,13 @@
-import React, { Suspense } from "react";
+"use client";
+import React, { Suspense,useState } from "react";
 import dynamic from "next/dynamic";
 
 import AppData from "@data/app.json";
+import Data from "@data/sections/hero-1.json";
 
-import { getSortedPostsData } from "@library/posts";
-import { getSortedProjectsData } from "@library/projects";
+
+// import { getSortedPostsData } from "@library/posts";
+// import { getSortedProjectsData } from "@library/projects";
 
 import HeroOneSection from "@components/sections/HeroOne"
 import AboutSection from "@components/sections/About";
@@ -36,29 +39,33 @@ export const metadata = {
 }
 
 async function Home1() {
-  const posts = await getAllPosts();
-  const projects = await getAllProjects();
+  const [videoLoaded, setVideoLoaded] = useState(false);
+  // const posts = await getAllPosts();
+  // const projects = await getAllProjects();
   
   
 
   return (
     <>
-    
-      <HeroOneSection />
-      <ClientSlider/>
+    {!Data.bg_image.endsWith(".mp4") ? "loading" :  <>
+
+      <HeroOneSection videoLoaded={videoLoaded} setVideoLoaded={setVideoLoaded} />
+      {/* <ClientSlider/> */}
       {/* <ClientSlider/>
       // <PartnersSlider /> */}
       {/* <PartnersSlider /> */}
-      <AboutSection />
+      {/* <AboutSection />
       <AdvantagesSection />
       <Suspense fallback={<div>Loading...</div>}>
         <LatestProjectsSection projects={projects} />
-      </Suspense>
-      <div style={{backgroundColor:"rgb(248, 248, 248)"}} className="py-5 customSlider">
+      </Suspense> */}
+      {/* <div style={{backgroundColor:"rgb(248, 248, 248)"}} className="py-5 customSlider">
       <DevopsSlider/>
       <DevopsecopsSlider/>
-      {/* <CybersecuritySlider/> */}
-      </div>
+ 
+      </div> */}
+
+           {/* <CybersecuritySlider/> */}
 
       {/* <PartnersSlider /> */}
 
@@ -66,27 +73,35 @@ async function Home1() {
       {/* <AdvantagesSection /> */}
       {/* <ClientSlider/> */}
       {/* <PartnersSlider /> */}
-      <HowWeWorkSection />
-      <IdeasSection />
+
+      {/* <HowWeWorkSection wo />
+      <IdeasSection /> wo */}
 
       {/* <ClientSlider/> */}
       {/* <PartnersSlider /> */}
       {/* <Suspense fallback={<div>Loading...</div>}>
         <LatestPostsSection posts={posts} />
       </Suspense> */}
-      <PartnersSlider />
+
+
+      {/* <PartnersSlider />  wo */}
+
+
       {/* <CoresSection /> */}
+    </>   }
+    
+    
     </>
   );
 };
 export default Home1;
 
-async function getAllPosts() {
-  const allPosts = getSortedPostsData();
-  return allPosts;
-}
+// async function getAllPosts() {
+//   const allPosts = getSortedPostsData();
+//   return allPosts;
+// }
 
-async function getAllProjects() {
-  const allProjects = getSortedProjectsData();
-  return allProjects;
-}
+// async function getAllProjects() {
+//   const allProjects = getSortedProjectsData();
+//   return allProjects;
+// }

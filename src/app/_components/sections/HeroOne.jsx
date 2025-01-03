@@ -4,7 +4,7 @@ import Data from "@data/sections/hero-1.json";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-const HeroOne = () => {
+const HeroOne = ({videoLoaded ,setVideoLoaded}) => {
     useEffect(() => {
         // ScrollAnimation(); Uncomment if required
     }, []);
@@ -34,22 +34,21 @@ const HeroOne = () => {
         return () => clearInterval(typingInterval);
     }, [targetText]);
 
-    // useEffect(() => {
-    //     let index = 0;
-    //     setTypedDescription("");
+    useEffect(() => {
+        let index = 0;
+        setTypedDescription("");
 
-    //     const typingInterval = setInterval(() => {
-    //         if (index < descriptionText.length) {
-    //             setTypedDescription((prev) => descriptionText.substring(0, index + 1));
-    //             index++;
-    //         } else {
-    //             clearInterval(typingInterval);
-    //         }
-    //     }, 80);
+        const typingInterval = setInterval(() => {
+            if (index < descriptionText.length) {
+                setTypedDescription((prev) => descriptionText.substring(0, index + 1));
+                index++;
+            } else {
+                clearInterval(typingInterval);
+            }
+        }, 80);
 
-    //     return () => clearInterval(typingInterval);
-    // }, [descriptionText]);
-    const [videoLoaded, setVideoLoaded] = useState(false);
+        return () => clearInterval(typingInterval);
+    }, [descriptionText]);
 
     const handleVideoLoaded = () => {
         setVideoLoaded(true);
@@ -121,7 +120,7 @@ const HeroOne = () => {
                                         className="mil-description mil-light mil-mb-40"
                                         dangerouslySetInnerHTML={{ __html: typedDescription }}
                                     />
-                                    <Link
+                                    {/* <Link
                                         href={Data.button.link}
                                         className="mil-link mil-light mil-upper"
                                     >
@@ -129,7 +128,7 @@ const HeroOne = () => {
                                         <span className="mil-arrow">
                                             <img src="img/icons/1.svg" alt="arrow" />
                                         </span>
-                                    </Link>
+                                    </Link> */}
                                 </div>
                             </div>
                         </div>
@@ -143,7 +142,7 @@ const HeroOne = () => {
                     position: relative;
                     overflow: hidden;
                     width: 100%;
-                    height: 100vh;
+                    height: 82vh;
                     display: flex;
                     align-items: center;
                     justify-content: center;
