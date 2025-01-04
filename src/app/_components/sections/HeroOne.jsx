@@ -51,21 +51,9 @@ const HeroOne = ({videoLoaded ,setVideoLoaded}) => {
     }, [descriptionText]);
 
     const handleVideoLoaded = () => {
-        setVideoLoaded(true);
+        // setVideoLoaded(true);
     };
 
-    useEffect(() => {
-        console.log("videoLoaded",videoLoaded)
-
-        // const timeout = setTimeout(() => {
-        //     if (!videoLoaded) {
-        //         console.warn("Fallback triggered, setting videoLoaded to true");
-        //         setVideoLoaded(true);
-        //     }
-        // }, 5000); // Adjust timeout duration as needed
-    
-        // return () => clearTimeout(timeout);
-    }, [videoLoaded]);
     return (
         <>
             <section className="mil-banner">
@@ -75,11 +63,11 @@ const HeroOne = ({videoLoaded ,setVideoLoaded}) => {
                         muted
                         loop
                         playsInline
-                        className="mil-bg-video"
+                        className="mil-bg-video"    
                       
                         onCanPlay={() => {
                             console.log("onCanPlay triggered");
-                            handleVideoLoaded();
+                            // handleVideoLoaded();
                         }}
                      
                     >
@@ -251,7 +239,7 @@ const HeroOne = ({videoLoaded ,setVideoLoaded}) => {
                     }
 
                     .mil-description {
-                        font-size: 0.9rem;
+                        font-size: 0.6rem;
                     }
                 }
             `}</style>

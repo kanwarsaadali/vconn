@@ -42,7 +42,7 @@ body {
 
 .mil-relative {
     position: relative;
-    // background-color: rgb(248,248,248);
+    background-color: rgb(248,248,248);
 }
 
 .mil-o-hidden {
@@ -405,7 +405,7 @@ suptitle
         bottom: 0;
         left: 0;
         height: 5px;
-        width: 160px;
+        width: 200px;
         background-color: rgb(188, 255, 0);
         border: 3px solid $dt-10;
         border-image: repeating-linear-gradient( -45deg, transparent, transparent 1px, $dt-10 1px, $dt-10 3px) 3;

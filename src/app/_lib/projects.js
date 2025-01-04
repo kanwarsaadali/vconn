@@ -1,3 +1,4 @@
+
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
@@ -6,7 +7,7 @@ import html from 'remark-html'
 
 const projectsDirectory = path.join(process.cwd(), 'src/data/projects')
 
-export function getSortedProjectsData() {
+export function  getSortedProjectsData() {
   // Get file names under /posts
   const fileNames = fs.readdirSync(projectsDirectory)
   const allData = fileNames.map(fileName => {

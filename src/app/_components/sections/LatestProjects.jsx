@@ -33,14 +33,14 @@ const LatestProjectsSection = ({ projects }) => {
                 <div className="container-fluid py-5">
                     <div className="d-flex justify-content-center">
                     <div className="mil-center mil-mb-90">
-                            <span className="mil-suptitle mil-upper mil-up mil-mb-30" style={{ color: "black" }} >our Services</span>
+                            <span className="mil-suptitle mil-upper mil-up mil-mb-30" style={{ color: "black",fontSize:"25px" }} >our Services</span>
                             <h2 className="mil-upper mil-up mil-mb-30" style={{color: "black", fontSize:"40px"}}>innovate securely</h2>
                             {/* <p className="mil-up">asas</p> */}
                         </div>
                         {/* {console.log("projects", projects)} */}
                     </div>
                     <div className="row" style={{marginTop:"-50px"}}>
-                        {projects.map((item, item_key) => (
+                        {projects?.map((item, item_key) => (
                             <div className="col-md-6 col-lg-3 px-4" key={`projects-row-${item_key}`}>
                                 <Link href={`/projects/${item.id}`} key={`projects-item-${item_key}`} className={item == null ? "mil-portfolio-item mil-square-item mil-up mil-mb-30" : "mil-portfolio-item mil-long-item mil-up mil-mb-30"}>
                                     <h4 className="text-center withoutHover">{item.title}</h4>

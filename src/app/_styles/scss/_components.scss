@@ -1369,8 +1369,8 @@ footer {
     position: relative;
     display: flex;
     padding-bottom: 30px;
-    border-bottom: 5px solid $lt-10;
-    border-image: repeating-linear-gradient(-45deg, transparent, transparent 1px, $lt-10 1px, $lt-10 3px) 5;
+    // border-bottom: 5px solid $lt-10;
+    // border-image: repeating-linear-gradient(-45deg, transparent, transparent 1px, $lt-10 1px, $lt-10 3px) 5;
 
     & nav {
         & ul {
@@ -2946,3 +2946,7 @@ load more
 //         }
 //     }
 // }
+
+.vh-100{
+    height: 100vh !important;
+}

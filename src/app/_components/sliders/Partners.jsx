@@ -20,7 +20,8 @@ const PartnersSlider = ({ bgStyle }) => {
                 <span
                   className="mil-suptitle mil-upper mil-up mil-mb-30"
                   dangerouslySetInnerHTML={{ __html: advantage.subtitle }}
-                />
+  style={{fontSize:"25px"}}
+ />
                 {/* <h2
                   className="mil-upper mil-up mil-mb-30"
                   dangerouslySetInnerHTML={{ __html: advantage.title }}

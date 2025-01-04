@@ -6,13 +6,13 @@ const PagesLayouts = ({
 }) => {
   return (
     <>
-      <Header layout={"default"} />
+      {/* <Header layout={"default"} /> */}
 
       {/* content */}
       <div id="content">
         {children}
 
-        <Footer layout={"default"} />
+        {/* <Footer layout={"default"} /> */}
       </div>
       {/* content */}
     </>

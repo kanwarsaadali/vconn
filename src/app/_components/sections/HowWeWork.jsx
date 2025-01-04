@@ -22,7 +22,7 @@ const HowWeWorkSection = () => {
           <span
             className="mil-suptitle mil-upper mil-up mil-mb-60"
             dangerouslySetInnerHTML={{ __html: advantage.subtitle }}
-            style={{ color: "#17283E", fontSize: "15px", marginTop: "40px" }} />
+            style={{ color: "#17283E", fontSize: "25px", marginTop: "40px" }} />
           {/* <h2
                           className="mil-upper mil-up mil-mb-30"
                           dangerouslySetInnerHTML={{ __html: advantage.title }}

@@ -110,7 +110,7 @@ const DefaultHeader = () => {
   return (
     <>
       {/* top bar */}
-      <div className="mil-top-panel">
+      <div className="mil-top-panel mil-active">
         <div className="container-fluid">
           <div className="mil-top-panel-content">
             <Link href="/" className="mil-logo">
