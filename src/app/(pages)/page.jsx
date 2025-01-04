@@ -40,16 +40,16 @@ export const metadata = {
   description: AppData.settings.siteDescription,
 }
 
-export async function getStaticProps() {
-  // const projects = getSortedProjectsData();
-  const projects = [];
+// export async function getStaticProps() {
+//   // const projects = getSortedProjectsData();
+//   const projects = [];
 
-  return {
-    props: {
-      projects,
-    },
-  };
-}
+//   return {
+//     props: {
+//       projects,
+//     },
+//   };
+// }
  function Home1({projects}) {
   const [videoLoaded, setVideoLoaded] = useState(false);
   // const [projects, setprojects] = useState([]);
