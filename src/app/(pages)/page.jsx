@@ -32,13 +32,13 @@ const ClientSlider = dynamic( () => import("@components/sliders/Client"), { ssr:
 
 
 
-export const metadata = {
-  title: {
-		default: AppData.settings.siteName,
-		template: "%s | " + AppData.settings.siteName,
-	},
-  description: AppData.settings.siteDescription,
-}
+// export const metadata = {
+//   title: {
+// 		default: AppData.settings.siteName,
+// 		template: "%s | " + AppData.settings.siteName,
+// 	},
+//   description: AppData.settings.siteDescription,
+// }
 
 // export async function getStaticProps() {
 //   // const projects = getSortedProjectsData();
