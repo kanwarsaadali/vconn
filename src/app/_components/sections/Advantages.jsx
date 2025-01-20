@@ -204,7 +204,7 @@ const AdvantagesSection = () => {
     <div ref={sectionRef} style={styles.businessGrowth}>
       <div style={styles.growthHeading}>
         <h2 style={styles.growthHeadingTitle} className="mil-upper mil-up mil-mb-30">
-          Your Unstoppable Force for Driving Business Growth
+        Why Us
         </h2>
       </div>    
 

@@ -13,7 +13,7 @@ const ClientSlider = ({ bgStyle }) => {
       {/* Partners Section */}
       <div
         className={`mil-${bgStyle}-bg mil-partners mil-relative`}
-        style={{ marginTop: "-10px", backgroundColor: "#F8F8F8",  marginTop:"-40px"}}
+        style={{ marginTop: "-10px", backgroundColor: "#F8F8F8"}}
       >
         <div className="container mil-p-60">
           <div className="mil-background-grid mil-softened" />

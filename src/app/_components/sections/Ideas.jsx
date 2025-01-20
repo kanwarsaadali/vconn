@@ -200,19 +200,19 @@ const IdeasSection = () => {
 
   const testimonials = [
     {
-      text: "Consulting services for all things related to DevOps provided insight into automation and streamlining processes, improving our product development timelines significantly.",
+      text: "'Consulting services for all things related to DevOps provided insight into automation and streamlining processes, improving our product development timelines significantly.'",
       name: "Mark Wilson",
       title: "CEO, Shell",
       logos: ["/img/client/1.png"], // Reference logos from the public directory
     },
     {
-      text: "Great support and consultancy from the team helped us achieve our automation goals efficiently and on time.",
+      text: "'Great support and consultancy from the team helped us achieve our automation goals efficiently and on time.'",
       name: "Jane Smith",
       title: "CTO, Unilever",
       logos: ["/img/client/2.png"], // Reference logos from the public directory
     },
     {
-      text: "Their approach to improving our hospital operations was revolutionary and efficient.",
+      text: "'Their approach to improving our hospital operations was revolutionary and efficient.'",
       name: "Dr. Ahmed Khan",
       title: "Director, Indus Hospital",
       logos: ["/img/client/3.png"], // Reference logos from the public directory
@@ -242,7 +242,7 @@ const IdeasSection = () => {
 
         TESTIMONIALS
       </h2>
-      <h3 style={styles.subtitle}>What Our Clients Say</h3>
+      <h3 style={styles.subtitle}>What Our Customers Say</h3>
       <div style={styles.carousel}>
         {testimonials?.map((testimonial, index) => (
           <div

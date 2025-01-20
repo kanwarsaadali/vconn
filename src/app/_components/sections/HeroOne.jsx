@@ -16,7 +16,7 @@ const HeroOne = ({videoLoaded ,setVideoLoaded}) => {
     // Dynamic typing effect for description
     const [typedDescription, setTypedDescription] = useState("");
     const descriptionText =
-        "VConn provides top-tier hosting services, connecting businesses.";
+        "Our IT experts ensures compliant, smooth deployments, automate tedious tasks, covered under multi-layered cybersecurity.";
 
     useEffect(() => {
         let index = 0;
@@ -192,7 +192,7 @@ const HeroOne = ({videoLoaded ,setVideoLoaded}) => {
                 }
 
                 .mil-description {
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                     line-height: 1.5;
                     color: #d0d0d0;
                 }

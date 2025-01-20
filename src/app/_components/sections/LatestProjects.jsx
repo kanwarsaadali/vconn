@@ -34,7 +34,7 @@ const LatestProjectsSection = ({ projects }) => {
                     <div className="d-flex justify-content-center">
                     <div className="mil-center mil-mb-90">
                             <span className="mil-suptitle mil-upper mil-up mil-mb-30" style={{ color: "black",fontSize:"25px" }} >our Services</span>
-                            <h2 className="mil-upper mil-up mil-mb-30" style={{color: "black", fontSize:"40px"}}>innovate securely</h2>
+                            <h2 className="mil-upper mil-up mil-mb-30" style={{color: "black", fontSize:"40px"}}>What We Do</h2>
                             {/* <p className="mil-up">asas</p> */}
                         </div>
                         {/* {console.log("projects", projects)} */}
@@ -81,7 +81,33 @@ const LatestProjectsSection = ({ projects }) => {
                         ))}
                     </div>
                 </div>
+            
             </section>
+            <div
+  style={{
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    marginBottom:"25px"
+    // height: "100vh", // Full viewport height for vertical centering
+  }}
+>
+  <button
+    style={{
+      justifyContent: "center",
+      alignItems: "center",
+      display: "flex", // Ensure flex alignment applies within the button
+      padding: "10px 20px", // Optional: Adjust padding for better button size
+      color:"rgb(188, 255, 0)",
+      backgroundColor:"#1b2942",
+      borderRadius:"10px",
+      bottom:"20px"
+    }}
+  >
+    MORE SERVICES
+  </button>
+</div>
+            
             {/* blog end */}
         </>
     );

@@ -559,7 +559,7 @@ const DefaultFooter = () => {
                                         Operation & Support Office
                                     </span>
                                     <img
-                                        src="/img/maps/Pakistan.webp"
+                                        src="/img/maps/Pakistan.png"
                                         alt="Karachi Map"
                                         className="mil-map-image"
                                     />
@@ -578,9 +578,9 @@ const DefaultFooter = () => {
                                     <h6 className="mil-text-sm mil-up mil-light-soft mil-mb-30">Devsecops Solutions</h6>
                                     <h6 className="mil-text-sm mil-up mil-light-soft mil-mb-30">Information Security</h6>
                                     <h6 className="mil-text-sm mil-up mil-light-soft mil-mb-30">Managed Services</h6>
+                                    <h6 className="mil-text-sm mil-up mil-light-soft mil-mb-30">Avocado Hosting</h6>
                                     <h6 className="mil-text-sm mil-up mil-light-soft mil-mb-30">Cloud Hosting</h6>
                                     <h6 className="mil-text-sm mil-up mil-light-soft mil-mb-30">Licenses</h6>
-                                    <h6 className="mil-text-sm mil-up mil-light-soft mil-mb-30">Avocado Hosting</h6>
                                 </div>
 
                                 <div className="col-xl-3 col-md-6 col-12">

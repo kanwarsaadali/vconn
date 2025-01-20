@@ -28,7 +28,7 @@ const DevopsSlider = ({ bgStyle }) => {
                 <h2
                   className="mil-upper mil-up mil-mb-30"
                   dangerouslySetInnerHTML={{ __html: advantage.title }}
-                  style={{ color: "#17283E" }}
+                  style={{ color: "#17283E",marginTop:"20px" }}
                 />
               </div>
             </div>

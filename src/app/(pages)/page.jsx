@@ -64,7 +64,7 @@ const ClientSlider = dynamic( () => import("@components/sliders/Client"), { ssr:
                   console.warn("Fallback triggered, setting videoLoaded to true");
                   setVideoLoaded(true);
               }
-          }, 10000); // Adjust timeout duration as needed
+          }, 13000); // Adjust timeout duration as needed
       
           return () => clearTimeout(timeout);
       }, []);
@@ -107,12 +107,13 @@ const ClientSlider = dynamic( () => import("@components/sliders/Client"), { ssr:
       <Suspense fallback={<div>Loading...</div>}>
         <LatestProjectsSection projects={projects} />
       </Suspense>
-      <div style={{backgroundColor:"rgb(248, 248, 248)"}} className="py-5 customSlider">
-      <DevopsSlider/>
-      <DevopsecopsSlider/>
+      <IdeasSection /> 
+
+      {/* <div style={{backgroundColor:"rgb(248, 248, 248)"}} className="py-5 customSlider"> */}
+      
            {/* <CybersecuritySlider/> */}
- 
-      </div>
+{/*  
+      </div> */}
 
 
       {/* <PartnersSlider /> */}
@@ -123,7 +124,9 @@ const ClientSlider = dynamic( () => import("@components/sliders/Client"), { ssr:
       {/* <PartnersSlider /> */}
 
       <HowWeWorkSection  />
-      <IdeasSection /> 
+      <DevopsSlider/>
+      <DevopsecopsSlider/>
+      {/* <IdeasSection />  */}
 
       {/* <ClientSlider/> */}
       {/* <PartnersSlider /> */}
@@ -132,7 +135,7 @@ const ClientSlider = dynamic( () => import("@components/sliders/Client"), { ssr:
       </Suspense> */}
 
 
-      <PartnersSlider /> 
+      {/* <PartnersSlider />  */}
 
 
       {/* <CoresSection /> */}

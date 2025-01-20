@@ -29,10 +29,17 @@
                 ]
             },
             {
+                "label": "Projects",
+                "link": "/projects",
+                "children": 0
+            },
+            {
                 "label": "Contact Us",
                 "link": "/contact",
                 "children": 0
             },
+
+
             {
                 "label": "Other",
                 "link": "/team",

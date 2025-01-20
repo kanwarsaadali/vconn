@@ -33,7 +33,7 @@ const HowWeWorkSection = () => {
           {/* Left Side: Headline */}
           <div className="headline-box">
             <div className="headline">
-              <h3>TRANSFORMING AMBITIONS INTO ACHIEVEMENTS</h3>
+              <h3>Our Products</h3>
             </div>
           </div>
 
@@ -135,6 +135,30 @@ const HowWeWorkSection = () => {
           </div>
         </div>
       </section>
+      <div
+  style={{
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    marginBottom:"25px"
+    // height: "100vh", // Full viewport height for vertical centering
+  }}
+>
+  <button
+    style={{
+      justifyContent: "center",
+      alignItems: "center",
+      display: "flex", // Ensure flex alignment applies within the button
+      padding: "10px 20px", // Optional: Adjust padding for better button size
+      color:"rgb(188, 255, 0)",
+      backgroundColor:"#1b2942",
+      borderRadius:"10px",
+      bottom:"20px"
+    }}
+  >
+    MORE PROJECTS
+  </button>
+</div>
 
       {/* CSS */}
       <style jsx>{`
