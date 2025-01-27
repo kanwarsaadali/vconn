@@ -1,0 +1,39 @@
+{
+    "bg_image": "/img/photo/7dubai.mp4",
+    "title": "Improve, Streamline, Automate, and Secure your business operations, the affordable way",
+    "subtitle": "",
+    "button": {
+        "link": "/contact",
+        "label": "lets connect"
+    },
+    "numbers": [
+        {
+            "value": "5",
+            "afterValue": "+",
+            "label": "CONTINENTS <br/>Footprints"
+        },
+        {
+            "value": "24",
+            "afterValue": "+",
+            "label": "Working <br/>Hours"
+        },
+        {
+            "value": "25",
+            "afterValue": "+",
+            "label": "Years <br/>Experience"
+        },
+        {
+            "value": "2",
+            "afterValue": "+",
+            "label": "billion Cost <br/>Impact"
+        },{
+            "value": "5",
+            "afterValue": "+",
+            "label": "Continents <br/>Footprints"
+        },{
+            "value": "5",
+            "afterValue": "+",
+            "label": "Continents <br/>Footprints"
+        }
+    ]
+}
