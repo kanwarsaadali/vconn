@@ -6,14 +6,14 @@ import Image from "next/image";
 
 const Project2 = () => {
   const items = [
-    { icon: "/img/icons/service2_1.png", title: "CI/CD Pipeline Security", description: "Real-time threat identification and mitigation." },
-    { icon: "/img/icons/service2_2.png", title: "Security as Code", description: "Simulated attacks to find vulnerabilities." },
-    { icon: "/img/icons/service2_3.png", title: "Continuous Compliance Monitoring", description: "Protection against sophisticated malware." },
-    { icon: "/img/icons/service2_4.png", title: "Identity & Access Management (IAM)", description: "Encryption and secure data handling." },
-    { icon: "/img/icons/service2_5.png", title: "Runtime Application Self-Protection (RASP)", description: "Security monitoring and incident response." },
-    { icon: "/img/icons/service2_6.png", title: "Cloud Security & Data Protection", description: "Deploying security measures and tools." },
-    { icon: "/img/icons/service2_7.png", title: "Container Vulnerability Scanning", description: "Scanning for exposed data on the dark web." },
-    { icon: "/img/icons/service2_8.png", title: "DevSecOps Maturity Assessment", description: "Attack and defense simulation to test security." },
+    { icon: "/img/icons/Service2_1.png", title: "CI/CD Pipeline Security", description: "Real-time threat identification and mitigation." },
+    { icon: "/img/icons/Service2_2.png", title: "Security as Code", description: "Simulated attacks to find vulnerabilities." },
+    { icon: "/img/icons/Service2_3.png", title: "Continuous Compliance Monitoring", description: "Protection against sophisticated malware." },
+    { icon: "/img/icons/Service2_4.png", title: "Identity & Access Management (IAM)", description: "Encryption and secure data handling." },
+    { icon: "/img/icons/Service2_5.png", title: "Runtime Application Self-Protection (RASP)", description: "Security monitoring and incident response." },
+    { icon: "/img/icons/Service2_6.png", title: "Cloud Security & Data Protection", description: "Deploying security measures and tools." },
+    { icon: "/img/icons/Service2_7.png", title: "Container Vulnerability Scanning", description: "Scanning for exposed data on the dark web." },
+    { icon: "/img/icons/Service2_8.png", title: "DevSecOps Maturity Assessment", description: "Attack and defense simulation to test security." },
   ];
 
   const containerStyle = {

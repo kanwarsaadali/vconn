@@ -981,14 +981,14 @@ const services = [
     title: "MANAGED SERVICES",
     description:
       "Secure your business from potential threats, malware, and hackers via proven defensive and offensive strategies.",
-    image: "/img/covers/Manage.png", // Replace with the actual path
+    image: "/img/covers/Information.png", // Replace with the actual path
     path: "/services/managed-services", // Add the path for the detailed page
   },
   {
     title: "INFORMATION SECURITY",
     description:
       "Secure your business from potential threats, malware, and hackers via proven defensive and offensive strategies.",
-    image: "/img/covers/Information.png", // Replace with the actual path
+    image: "/img/covers/Manage.png", // Replace with the actual path
     path: "/services/information-security", // Add the path for the detailed page
   },
 ];

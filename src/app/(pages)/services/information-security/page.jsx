@@ -86,7 +86,7 @@ const InformationSecurity = () => {
         {/* Image Section */}
         <div style={imageWrapperStyle}>
           <Image
-            src="/img/Project/cybersecurity.png" // Update with the actual image path
+            src="/img/Project/information.png" // Update with the actual image path
             alt="Devsecops"
             width={500}
             height={500}

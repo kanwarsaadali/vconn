@@ -8,28 +8,28 @@ const services = [
     title: "Cloud Infrastructure Optimization for SaaS Provider",
     description:
       "Optimized cloud infrastructure for cost efficiency and improved performance by 30%..",
-    image: "/img/covers/Manage.png", // Replace with the actual path
+    image: "/img/covers/Information.png", // Replace with the actual path
     path: "/services/cybersecurity", // Add the path for the detailed page
   },
   {
     title: "Proactive Network Management",
     description:
       "Ensured 99.9% network uptime with proactive monitoring.",
-    image: "/img/covers/Manage.png", // Replace with the actual path
+    image: "/img/covers/Information.png", // Replace with the actual path
     path: "/services/devsecops", // Add the path for the detailed page
   },
   {
     title: "Application Performance Monitoring",
     description:
       "Improved transaction speed by 15% and reduced downtime by 20% with APM..",
-    image: "/img/covers/Manage.png", // Replace with the actual path
+    image: "/img/covers/Information.png", // Replace with the actual path
     path: "/services/managed-services", // Add the path for the detailed page
   },
   {
     title: "Backup and Disaster Recovery Strategy",
     description:
       "Developed a DR strategy that restored systems within 2 hours after a failure.",
-    image: "/img/covers/Manage.png", // Replace with the actual path
+    image: "/img/covers/Information.png", // Replace with the actual path
     path: "/services/information-security", // Add the path for the detailed page
   },
 ];

@@ -8,28 +8,28 @@ const services = [
     title: "Risk Assessment and Mitigation",
     description:
       "Conducted risk assessment and reduced threats to critical assets by 35%.",
-    image: "/img/covers/Information.png", // Replace with the actual path
+    image: "/img/covers/Manage.png", // Replace with the actual path
     path: "/services/cybersecurity", // Add the path for the detailed page
   },
   {
     title: "GRC Framework",
     description:
       "Established a GRC framework to ensure compliance and reduce operational risks..",
-    image: "/img/covers/Information.png", // Replace with the actual path
+    image: "/img/covers/Manage.png", // Replace with the actual path
     path: "/services/devsecops", // Add the path for the detailed page
   },
   {
     title: "Data Loss Prevention",
     description:
       "Implemented DLP solutions to protect sensitive client data from unauthorized access.",
-    image: "/img/covers/Information.png", // Replace with the actual path
+    image: "/img/covers/Manage.png", // Replace with the actual path
     path: "/services/managed-services", // Add the path for the detailed page
   },
   {
     title: "Employee Security Training Program",
     description:
       "Launched training that reduced phishing attacks by 40%.",
-    image: "/img/covers/Information.png", // Replace with the actual path
+    image: "/img/covers/Manage.png", // Replace with the actual path
     path: "/services/information-security", // Add the path for the detailed page
   },
 ];

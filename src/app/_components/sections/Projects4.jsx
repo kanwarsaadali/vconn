@@ -5,14 +5,14 @@ import Image from "next/image";
 
 const Projects4 = () => {
   const items = [
-    { icon: "/img/icons/SERVICE 1_1.png", title: "Risk Management", description: "Identifying and managing information risks." },
-    { icon: "/img/icons/SERVICE 1_2.png", title: "GRC (Governance, Risk, Compliance)", description: "Managing governance and compliance." },
-    { icon: "/img/icons/SERVICE 1_3.png", title: "Data Loss Prevention (DLP)", description: "Preventing unauthorized data access." },
-    { icon: "/img/icons/SERVICE 1_4.png", title: "Security Training", description: "Educating employees on security best practices." },
-    { icon: "/img/icons/SERVICE 1_5.png", title: "Security Architecture", description: "Designing secure systems." },
-    { icon: "/img/icons/SERVICE 1_6.png", title: "Business Continuity & Disaster Recovery", description: "Ensuring business continuity and recovery." },
-    { icon: "/img/icons/SERVICE 1_7.png", title: "Access Control", description: "Managing secure access to data." },
-    { icon: "/img/icons/SERVICE 1_8.png", title: "Privacy Protection", description: "Ensuring privacy compliance." },
+    { icon: "/img/icons/Service3_1.png", title: "Risk Management", description: "Identifying and managing information risks." },
+    { icon: "/img/icons/Service3_2.png", title: "GRC (Governance, Risk, Compliance)", description: "Managing governance and compliance." },
+    { icon: "/img/icons/Service3_3.png", title: "Data Loss Prevention (DLP)", description: "Preventing unauthorized data access." },
+    { icon: "/img/icons/Service3_4.png", title: "Security Training", description: "Educating employees on security best practices." },
+    { icon: "/img/icons/Service3_5.png", title: "Security Architecture", description: "Designing secure systems." },
+    { icon: "/img/icons/Service3_6.png", title: "Business Continuity & Disaster Recovery", description: "Ensuring business continuity and recovery." },
+    { icon: "/img/icons/Service3_7.png", title: "Access Control", description: "Managing secure access to data." },
+    { icon: "/img/icons/Service3_8.png", title: "Privacy Protection", description: "Ensuring privacy compliance." },
   ];
 
   const containerStyle = {

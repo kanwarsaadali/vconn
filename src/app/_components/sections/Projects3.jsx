@@ -5,14 +5,14 @@ import Image from "next/image";
 
 const Project3 = () => {
   const items = [
-    { icon: "/img/icons/SERVICE 1_1.png", title: "CI/CD Pipeline Security", description: "Managing cloud infrastructure." },
-    { icon: "/img/icons/SERVICE 1_2.png", title: "Security as Code", description: "Monitoring and maintaining network health." },
-    { icon: "/img/icons/SERVICE 1_3.png", title: "Continuous Compliance Monitoring", description: "Monitoring application performance." },
-    { icon: "/img/icons/SERVICE 1_4.png", title: "Identity & Access Management (IAM)", description: "Secure data backup and disaster recovery." },
-    { icon: "/img/icons/SERVICE 1_5.png", title: "Runtime Application Self-Protection (RASP)", description: "Remote endpoint security management." },
-    { icon: "/img/icons/SERVICE 1_6.png", title: "•	Cloud Security & Data Protection", description: "End-user support and troubleshooting." },
-    { icon: "/img/icons/SERVICE 1_7.png", title: "Patch Management", description: "Regular updates and patches." },
-    { icon: "/img/icons/SERVICE 1_8.png", title: "IT Asset Management", description: "Managing IT hardware and software." },
+    { icon: "/img/icons/Service4_1.png", title: "CI/CD Pipeline Security", description: "Managing cloud infrastructure." },
+    { icon: "/img/icons/Service4_2.png", title: "Security as Code", description: "Monitoring and maintaining network health." },
+    { icon: "/img/icons/Service4_3.png", title: "Continuous Compliance Monitoring", description: "Monitoring application performance." },
+    { icon: "/img/icons/Service4_4.png", title: "Identity & Access Management (IAM)", description: "Secure data backup and disaster recovery." },
+    { icon: "/img/icons/Service4_5.png", title: "Runtime Application Self-Protection (RASP)", description: "Remote endpoint security management." },
+    { icon: "/img/icons/Service4_6.png", title: "•	Cloud Security & Data Protection", description: "End-user support and troubleshooting." },
+    { icon: "/img/icons/Service4_7.png", title: "Patch Management", description: "Regular updates and patches." },
+    { icon: "/img/icons/Service4_8.png", title: "IT Asset Management", description: "Managing IT hardware and software." },
   ];
 
   const containerStyle = {
