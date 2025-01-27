@@ -1,4 +1,5 @@
 import Data from "@data/sections/about-2.json";
+
 import Link from "next/link";
 
 const AboutTwoSection = () => {

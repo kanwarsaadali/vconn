@@ -18,7 +18,7 @@ const ContactInfoSection = () => {
                         </div>
                         ))}
                         <div className="col-lg-3 mil-mb-30">
-                            <Link href={Data.button.link} className="mil-button mil-up mil-fw">{Data.button.label}</Link>
+                            {/* <Link href={Data.button.link} className="mil-button mil-up mil-fw">{Data.button.label}</Link> */}
                         </div>
                     </div>
                 </div>

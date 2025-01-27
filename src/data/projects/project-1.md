@@ -1,10 +1,10 @@
 ---
 #preview
-title: CYBERSECURITY SOLUTIONS
+title: CYBERSECURITY
 describion: "Cyber Shadows: The Hidden Threat to Your Business."
 describtion1: Cyber threats are no longer distant they’re in your network, evolving, adapting, and waiting. Ransomware, phishing, and data breaches are just the beginning. One vulnerability is all it takes to bring your operations to a halt.
 image: /img/covers/1.webp
-image1: /img/covers/5.png
+image1: /img/covers/bbg.png
 category: Architecture
 category_slug: architecture
 date: may 24 2023

@@ -1,91 +1,90 @@
-import React, { Suspense } from "react";
+import React from "react";
+import Image from "next/image";
+import Header from "@layouts/headers/Index";
+import Footer from "@layouts/footers/Index";
+import IdeasSection1 from "@components/sections/Ideas1";
+import ServicesSection1 from "@components/sections/Services1";
+import HowWeWork1 from "@components/sections/HowWeWork1";
 
-import AppData from "@data/app.json";
-
-import { getSortedServicesData } from "@library/services";
-
-import PageBanner from "@components/PageBanner";
-import VisionSection from "@components/sections/Vision";
-import FeaturesTwoSection from "@components/sections/FeaturesTwo";
-import AboutFourSection from "@components/sections/AboutFour";
-import CallToActionSection from "@components/sections/CallToAction";
-
-import Link from "next/link";
-
-export const metadata = {
-  title: {
-    default: "Services",
-  },
-  description: AppData.settings.siteDescription,
-}
-
-async function Services() {
-  const services = await getAllServices();
-  
+const ServicesPage = () => {
   return (
-    <>
-      <PageBanner pageTitle={"Our Services"} breadTitle={"Services"} bgImage={"/img/photo/1.jpg"} />
-         
-      {/* services */}
-      <section>
-          <div className="container mil-p-120-90">
-              <div className="mil-background-grid mil-softened" />
+    <div
+      style={{
+        position: "relative",
+        width: "100%",
+        minHeight: "100vh", // Ensure the page covers the full viewport height
+        overflowX: "hidden", // Prevent horizontal scrolling
+        display: "flex",
+        flexDirection: "column", // Stack content vertically
+      }}
+    >
+      {/* Header */}
+      <Header layout={"default"} />
 
-              <div className="row justify-content-center">
-                  <div className="col-lg-8">
+      {/* Hero Section with Background Image */}
+      <div
+        style={{
+          position: "relative",
+          width: "100%",
+          height: "70vh", // Adjusted height to occupy 80% of the viewport
+          backgroundImage: "url('/img/covers/image1.png')", // Replace with your image path
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          textAlign: "center",
+        }}
+      >
+        {/* Gray Overlay */}
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            backgroundColor: "rgba(0, 0, 0, 0.5)", // Semi-transparent gray
+            zIndex: 1,
+          }}
+        ></div>
 
-                      <div className="mil-center mil-mb-120">
-                          <span className="mil-suptitle mil-upper mil-up mil-mb-30">Core Solutions</span>
-                          <p className="mil-text-lg mil-up"> Our data center stands as a hub of technological excellence, providing robust, secure, and scalable solutions for businesses of all sizes. We specialize in a range of services designed to meet the unique needs of each client. From state-of-the-art colocation facilities and powerful cloud solutions to cutting-edge cybersecurity and disaster recovery, our offerings are crafted with precision and reliability. We are committed to delivering an optimal environment where your data, operations, and infrastructure can thrive.</p>
-                      </div>
+        {/* Overlay Content */}
+        <div style={{ position: "relative", zIndex: 2 }}>
+          <h1 style={{ fontSize: "2.5rem", fontWeight: "bold" }}>
+            <span style={{ color: "white" }}>Empowering</span>{" "}
+            <span style={{ color: "rgb(188, 255, 0)" }}>Solutions</span>
+            <span style={{ color: "white" }}>Elevating</span>
+          </h1>
+          <h1
+            style={{
+              fontSize: "2.5rem",
+              fontWeight: "bold",
+              color: "white",
+            }}
+          >
+           Experiences
+          </h1>
+        </div>
+      </div>
 
-                  </div>
-              </div>
+      {/* Main Content Sections */}
+      <div
+        style={{
+          flex: 1, // Ensure sections grow and fill the remaining space
+          width: "100%",
+        }}
+      >
+        <ServicesSection1 />
+        <IdeasSection1 />
+        <HowWeWork1 />
+      </div>
 
-              <div className="mil-center mil-mb-90">
-                  <span className="mil-suptitle mil-upper mil-up mil-mb-30">Areas of Excellence</span>
-                  <h2 className="mil-upper mil-up">Premier Services</h2>
-              </div>
-
-              <div className="row">
-                  {services.map((item, key) => (
-                  <div className="col-lg-4 mil-up" key={`services-item-${key}`}>
-
-                      <Link href={`/services/${item.id}`} className="mil-service-card mil-mb-30">
-                          <div className="mil-card-number">{key<10 ? "0" + (key+1) + "." : (key+1) + "."}</div>
-                          <div className="mil-center">
-                              <div className="mil-icon mil-icon-custom mil-mb-30">
-                                  <img src={item.icon} alt={item.title} />
-                              </div>
-                              <h4 className="mil-upper mil-mb-20">{item.title}</h4>
-                              <div className="mil-divider-sm mil-mb-20" />
-                              <p className="mil-service-text">{item.short}</p>
-                              <div className="mil-go-buton mil-icon mil-icon-lg mil-icon-accent-bg">
-                                  <img src="/img/icons/1.svg" alt="icon" />
-                              </div>
-                          </div>
-                      </Link>
-
-                  </div>
-                  ))}
-              </div>
-          </div>
-      </section>
-      {/* services end */}
-
-      <VisionSection />
-
-      <FeaturesTwoSection />
-
-      <AboutFourSection />
-
-      <CallToActionSection />
-    </>
+      {/* Footer */}
+      <Footer layout={"default"} />
+    </div>
   );
 };
-export default Services;
 
-async function getAllServices() {
-  const allServices = getSortedServicesData();
-  return allServices;
-}
+export default ServicesPage;

@@ -16,4 +16,10 @@ img.mfp-img {
 /* swiper container hidden */
 .mil-wrapper .swiper-container {
     overflow: visible;
+    /* background-color: black; */
+}
+
+.swiper-container1 {
+    overflow: visible;
+    background-color: rgb(12, 20, 31);
 }

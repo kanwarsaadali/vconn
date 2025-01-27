@@ -2,53 +2,10 @@
 
 import Data from "@data/sections/hero-1.json";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 
-const HeroOne = ({videoLoaded ,setVideoLoaded}) => {
-    useEffect(() => {
-        // ScrollAnimation(); Uncomment if required
-    }, []);
-
-    // Dynamic typing effect for title
-    const [typedText, setTypedText] = useState("");
+const HeroOne = ({ videoLoaded, setVideoLoaded }) => {
     const targetText = "WE CONNECT BUSINESSES";
-
-    // Dynamic typing effect for description
-    const [typedDescription, setTypedDescription] = useState("");
-    const descriptionText =
-        "Our IT experts ensures compliant, smooth deployments, automate tedious tasks, covered under multi-layered cybersecurity.";
-
-    useEffect(() => {
-        let index = 0;
-        setTypedText("");
-
-        const typingInterval = setInterval(() => {
-            if (index < targetText.length) {
-                setTypedText((prev) => targetText.substring(0, index + 1));
-                index++;
-            } else {
-                clearInterval(typingInterval);
-            }
-        }, 150);
-
-        return () => clearInterval(typingInterval);
-    }, [targetText]);
-
-    useEffect(() => {
-        let index = 0;
-        setTypedDescription("");
-
-        const typingInterval = setInterval(() => {
-            if (index < descriptionText.length) {
-                setTypedDescription((prev) => descriptionText.substring(0, index + 1));
-                index++;
-            } else {
-                clearInterval(typingInterval);
-            }
-        }, 80);
-
-        return () => clearInterval(typingInterval);
-    }, [descriptionText]);
+    const descriptionText = "Our IT experts ensures compliant, smooth deployments, automate tedious tasks, covered under multi-layered cybersecurity.";
 
     const handleVideoLoaded = () => {
         // setVideoLoaded(true);
@@ -63,13 +20,11 @@ const HeroOne = ({videoLoaded ,setVideoLoaded}) => {
                         muted
                         loop
                         playsInline
-                        className="mil-bg-video"    
-                      
+                        className="mil-bg-video"
                         onCanPlay={() => {
                             console.log("onCanPlay triggered");
                             // handleVideoLoaded();
                         }}
-                     
                     >
                         <source src={Data.bg_image} type="video/mp4" />
                         Your browser does not support the video tag.
@@ -92,7 +47,7 @@ const HeroOne = ({videoLoaded ,setVideoLoaded}) => {
                                         {Data.subtitle}
                                     </span>
                                     <h1 className="mil-upper mil-mb-20">
-                                        {typedText.split(" ").map((word, index) => (
+                                        {targetText.split(" ").map((word, index) => (
                                             <span
                                                 className={`${
                                                     index === 1 ? "bussinessText" : "mil-light"
@@ -106,7 +61,7 @@ const HeroOne = ({videoLoaded ,setVideoLoaded}) => {
                                     </h1>
                                     <h5
                                         className="mil-description mil-light mil-mb-40"
-                                        dangerouslySetInnerHTML={{ __html: typedDescription }}
+                                        dangerouslySetInnerHTML={{ __html: descriptionText }}
                                     />
                                     {/* <Link
                                         href={Data.button.link}

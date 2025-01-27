@@ -515,6 +515,212 @@
 
 
 
+// "use client";
+
+// import Link from "next/link";
+// import AppData from "@data/app.json";
+// import { usePathname } from "next/navigation";
+
+// const DefaultFooter = () => {
+//     const asPath = usePathname();
+
+//     return (
+//         <>
+//             {/* Footer */}
+//             <footer className="mil-footer ">
+//                 <div className="mil-overlay" />
+//                 <div className="container mil-p-120-90">
+//                     <div className="mil-background-grid" />
+
+//                     <div className="row align-items-start gy-4">
+//                         {/* Navigation Section */}
+//                         <div className="col-lg-8">
+//                             <div className="row gy-4">
+//                                 <div className="col-xl-3 col-md-6 col-12">
+//                                     <span className="mil-suptitle mil-light mil-upper mil-up mil-mb-30">
+//                                         International Headquarter
+//                                     </span>
+//                                     <img
+//                                         src="/img/maps/Dubai.webp"
+//                                         alt="Dubai Map"
+//                                         className="mil-map-image"
+//                                         style={{marginTop:"-25px"}}
+//                                     />
+//                                     <p className="mil-text-sm mil-up mil-light-soft mil-mb-30">
+//                                         United Arab Emirates<br />
+//                                         Office E, 23rd Floor,<br />
+//                                         Gold Tower, J.L.T,<br />
+//                                         Dubai
+//                                     </p>
+//                                 </div>
+
+//                                 <div className="col-xl-3 col-md-6 col-12">
+//                                     <span className="mil-suptitle mil-light mil-upper mil-up mil-mb-30">
+//                                         Operation & Support Office
+//                                     </span>
+//                                     <img
+//                                         src="/img/maps/Pakistan.png"
+//                                         alt="Karachi Map"
+//                                         className="mil-map-image"
+//                                     />
+//                                     <p className="mil-text-sm mil-up mil-light-soft mil-mb-30">
+//                                         Pakistan<br />
+//                                         Suite # 403, 4th Floor Beaumont Plaza,<br />
+//                                         Karachi
+//                                     </p>
+//                                 </div>
+
+//                                 <div className="col-xl-3 col-md-6 col-12">
+//                                     <span className="mil-suptitle mil-light mil-upper mil-up mil-mb-30">
+//                                         Services
+//                                     </span>
+//                                     <h6 className="mil-text-sm mil-up mil-light-soft mil-mb-30">Cybersecurity Solutions</h6>
+//                                     <h6 className="mil-text-sm mil-up mil-light-soft mil-mb-30">Devsecops Solutions</h6>
+//                                     <h6 className="mil-text-sm mil-up mil-light-soft mil-mb-30">Information Security</h6>
+//                                     <h6 className="mil-text-sm mil-up mil-light-soft mil-mb-30">Managed Services</h6>
+//                                     <h6 className="mil-text-sm mil-up mil-light-soft mil-mb-30">Avocado Hosting</h6>
+//                                     <h6 className="mil-text-sm mil-up mil-light-soft mil-mb-30">Cloud Hosting</h6>
+//                                     <h6 className="mil-text-sm mil-up mil-light-soft mil-mb-30">Licenses</h6>
+//                                 </div>
+
+//                                 <div className="col-xl-3 col-md-6 col-12">
+//                                     <span className="mil-suptitle mil-light mil-upper mil-up mil-mb-30">
+//                                         Quick Links
+//                                     </span>
+//                                     <h6 className="mil-text-sm mil-up mil-light-soft mil-mb-30">Product</h6>
+//                                     <h6 className="mil-text-sm mil-up mil-light-soft mil-mb-30">Who We Are</h6>
+//                                     <h6 className="mil-text-sm mil-up mil-light-soft mil-mb-30">Contact</h6>
+//                                     <h6 className="mil-text-sm mil-up mil-light-soft mil-mb-30">Careers</h6>
+//                                 </div>
+//                             </div>
+//                         </div>
+
+//                         {/* Footer Logo & Globe */}
+//                         <div className="col-lg-4 text-center">
+//                             <div className="mil-logo-globe-wrapper">
+//                                 <Link href="/" className="mil-footer-logo mil-up mil-mb-30">
+//                                     <img
+//                                         src={AppData.footer.logo.image}
+//                                         alt={AppData.footer.logo.alt}
+//                                         className="mil-logo-image"
+//                                     />
+//                                 </Link>
+//                                 <div className="mil-globe">
+//                                     <img
+//                                         src="/img/logo/globe.gif"
+//                                         alt="Rotating Globe"
+//                                         className="mil-globe-image"
+//                                     />
+//                                 </div>
+//                             </div>
+//                         </div>
+//                     </div>
+//                 </div>
+
+//                 {/* Footer Bottom Section */}
+//                 <div className="container-fluid">
+//                     <div className="mil-footer-bottom">
+//                         <p className="mil-light-soft mil-mb-15">{AppData.footer.copy}</p>
+//                         <ul className="mil-light-soft mil-mb-15">
+//                             {AppData.social.map((item, key) => (
+//                                 <li key={`footer-social-item-${key}`}>
+//                                     <a href={item.link} target="_blank" rel="noopener noreferrer">
+//                                         {item.title}
+//                                     </a>
+//                                 </li>
+//                             ))}
+//                         </ul>
+//                     </div>
+//                 </div>
+//             </footer>
+
+//             {/* Footer Styles */}
+//             <style jsx>{`
+//                 .mil-footer {
+//                     background-color: #17283E;
+//                     position: relative;
+//                     color: #ffffff;
+//                 }
+
+//                 .mil-overlay {
+//                     position: absolute;
+//                     top: 0;
+//                     left: 0;
+//                     right: 0;
+//                     bottom: 0;
+//                     z-index: 0;
+//                     background: rgba(0, 0, 0, 0.5);
+//                 }
+
+//                 .container {
+//                     position: relative;
+//                     z-index: 1;
+//                 }
+
+//                 .mil-map-image {
+//                     display: block;
+//                     max-width: 150px;
+//                 }
+
+//                 .mil-suptitle {
+//                     font-size: 14px;
+//                     font-weight: 700;
+//                     text-transform: uppercase;
+//                 }
+
+//                 .mil-text-sm {
+//                     font-size: 14px;
+//                     color: #ccc;
+//                     line-height: 1.6;
+//                 }
+
+//                 .mil-logo-globe-wrapper {
+//                     display: flex;
+//                     flex-direction: column;
+//                     align-items: center;
+//                     justify-content: center;
+//                     text-align: center;
+//                     gap: 20px; /* Space between the logo and the globe */
+//                 }
+
+//                 .mil-footer-logo {
+//                     margin-bottom: 10px;
+//                 }
+
+//                 .mil-logo-image {
+//                     width: 180px;
+//                 }
+
+//                 .mil-globe-image {
+//                     width: 250px;
+//                     height: auto;
+//                 }
+
+//                 .mil-footer-bottom {
+//                     text-align: center;
+//                     padding-top: 30px;
+//                     border-top: 1px solid rgba(255, 255, 255, 0.2);
+//                 }
+
+//                 /* Responsive Styles */
+//                 @media (max-width: 992px) {
+//                     .mil-logo-globe-wrapper {
+//                         margin-top: 20px;
+//                     }
+
+//                     .mil-globe-image {
+//                         width: 200px; /* Adjust size for smaller screens */
+//                     }
+//                 }
+//             `}</style>
+//         </>
+//     );
+// };
+
+// export default DefaultFooter;
+
+
+
 "use client";
 
 import Link from "next/link";
@@ -527,7 +733,10 @@ const DefaultFooter = () => {
     return (
         <>
             {/* Footer */}
-            <footer className="mil-footer ">
+            <footer className="mil-footer">
+                {/* White Line */}
+                <div className="mil-footer-top-line" />
+
                 <div className="mil-overlay" />
                 <div className="container mil-p-120-90">
                     <div className="mil-background-grid" />
@@ -544,7 +753,7 @@ const DefaultFooter = () => {
                                         src="/img/maps/Dubai.webp"
                                         alt="Dubai Map"
                                         className="mil-map-image"
-                                        style={{marginTop:"-25px"}}
+                                        style={{ marginTop: "-25px" }}
                                     />
                                     <p className="mil-text-sm mil-up mil-light-soft mil-mb-30">
                                         United Arab Emirates<br />
@@ -640,6 +849,12 @@ const DefaultFooter = () => {
                     background-color: #17283E;
                     position: relative;
                     color: #ffffff;
+                }
+
+                .mil-footer-top-line {
+                    width: 100%;
+                    height: 1px;
+                    background-color: #ffffff;
                 }
 
                 .mil-overlay {

@@ -653,12 +653,12 @@ const AboutSection = () => {
 };
 
 const gridData = [
-  { title: 'Complex IT Ecosystems', icon: '/img/icons/about1.png' },
-  { title: 'Rising Cybersecurity Threats', icon: '/img/icons/about2.png' },
-  { title: 'Disruptive Cloud Migrations', icon: '/img/icons/about3.png' },
-  { title: 'Ensuring continuous availability', icon: '/img/icons/about4.png' },
-  { title: 'Adhering regulatory demands', icon: '/img/icons/about5.png' },
-  { title: 'Lack of Real-Time Insights', icon: '/img/icons/about6.png' },
+  { title: 'Complex IT Ecosystems', icon: '/img/icons/about1 1.png' },
+  { title: 'Rising Cybersecurity Threats', icon: '/img/icons/about2 1.png' },
+  { title: 'Disruptive Cloud Migrations', icon: '/img/icons/about3 1.png' },
+  { title: 'Ensuring continuous availability', icon: '/img/icons/about4 1.png' },
+  { title: 'Adhering regulatory demands', icon: '/img/icons/about5 1.png' },
+  { title: 'Lack of Real-Time Insights', icon: '/img/icons/about6 1.png' },
 ];
 
 const styles = {
@@ -752,6 +752,9 @@ const styles = {
     backgroundColor: "rgb(188, 255, 0)",
     padding: '0.5rem',
     borderRadius: '5px',
+    height:"100px",
+    display:"flex",
+    alignItems:"center"
   },
   cta: {
     display: 'flex',

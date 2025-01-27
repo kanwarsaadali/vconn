@@ -1,5 +1,13 @@
 import React, { Suspense } from "react";
 import dynamic from "next/dynamic";
+import Header from "@layouts/headers/Index";
+import Footer from "@layouts/footers/Index";
+import IdeasSection1 from "@components/sections/Ideas1";
+import Project1 from "@components/sections/Projects1";
+const CybersecuritySlider = dynamic( () => import("@components/sliders/Cybersecurity"), { ssr: false } );
+const DevopsecopsSlider1 = dynamic( () => import("@components/sliders/Devsecops1"), { ssr: false } );
+
+import HowWeWork1 from "@components/sections/HowWeWork1";
 
 import AppData from "@data/app.json";
 
@@ -21,24 +29,86 @@ async function Projects() {
 
   return (
     <>
-      <PageBanner pageTitle={"Projects"} breadTitle={"Projects"} bgImage={"/img/photo/1.jpg"} />
+      {/* <Header layout={"default"} /> */}
+      <div
+      style={{
+        position: "relative",
+        width: "100%",
+        minHeight: "100vh", // Ensure the page covers the full viewport height
+        overflowX: "hidden", // Prevent horizontal scrolling
+        display: "flex",
+        flexDirection: "column", // Stack content vertically
+      }}
+    >
+      {/* Header */}
+      <Header layout={"default"} />
 
-      {/* portfolio */}
-      <section>
-        <div className="container mil-p-120-120">
-          <div className="mil-background-grid mil-softened" />
-          
-          <div className="mil-center">
-            <p className="mil-text-lg mil-up mil-mb-90">Our Projects harness design and technology to create places where <br/> people live, work, and heal.</p>
-          </div>
+      {/* Hero Section with Background Image */}
+      <div
+        style={{
+          position: "relative",
+          width: "100%",
+          height: "70vh", // Adjusted height to occupy 80% of the viewport
+          backgroundImage: "url('/img/covers/image1.png')", // Replace with your image path
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          textAlign: "center",
+        }}
+      >
+        {/* Gray Overlay */}
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            backgroundColor: "rgba(0, 0, 0, 0.5)", // Semi-transparent gray
+            zIndex: 1,
+          }}
+        ></div>
 
-          <Suspense fallback={<div>Loading...</div>}>
-            <ProjectsMasonry projects={projects} categories={AppData.projects.categories} />
-          </Suspense>
+        {/* Overlay Content */}
+        <div style={{ position: "relative", zIndex: 2 }}>
+          <h1 style={{ fontSize: "2.5rem", fontWeight: "bold" }}>
+            <span style={{ color: "white" }}>CRAFTING THE </span>{" "}
+            <span style={{ color: "rgb(188, 255, 0)" }}>FUTURE</span>{" "}
+            <span style={{ color: "white" }}>OF</span>
+          </h1>
+          <h1
+            style={{
+              fontSize: "2.5rem",
+              fontWeight: "bold",
+              color: "white",
+            }}
+          >
+           INNOVATION
+          </h1>
         </div>
-      </section>
-      {/* portfolio end */}
-      
+      </div>
+
+      {/* Main Content Sections */}
+      <div
+        style={{
+          flex: 1, // Ensure sections grow and fill the remaining space
+          width: "100%",
+        }}
+      >
+        {/* <ServicesSection1 /> */}
+        {/* <IdeasSection1 /> */}
+        <Project1/>
+        <HowWeWork1 />
+      <DevopsecopsSlider1/>
+
+      </div>
+
+      {/* Footer */}
+      <Footer layout={"default"} />
+    </div>      
     </>
   );
 };

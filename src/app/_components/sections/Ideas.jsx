@@ -203,19 +203,19 @@ const IdeasSection = () => {
       text: "'Consulting services for all things related to DevOps provided insight into automation and streamlining processes, improving our product development timelines significantly.'",
       name: "Mark Wilson",
       title: "CEO, Shell",
-      logos: ["/img/client/1.png"], // Reference logos from the public directory
+      logos: ["/img/ideas/3.png"], // Reference logos from the public directory
     },
     {
       text: "'Great support and consultancy from the team helped us achieve our automation goals efficiently and on time.'",
       name: "Jane Smith",
       title: "CTO, Unilever",
-      logos: ["/img/client/2.png"], // Reference logos from the public directory
+      logos: ["/img/ideas/1.png"], // Reference logos from the public directory
     },
     {
       text: "'Their approach to improving our hospital operations was revolutionary and efficient.'",
       name: "Dr. Ahmed Khan",
       title: "Director, Indus Hospital",
-      logos: ["/img/client/3.png"], // Reference logos from the public directory
+      logos: ["/img/ideas/2.png"], // Reference logos from the public directory
     },
   ];
 

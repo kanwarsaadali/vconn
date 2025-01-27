@@ -8,7 +8,8 @@ import Header from "@layouts/headers/Index";
 import Footer from "@layouts/footers/Index";
 
 // import { getSortedPostsData } from "@library/posts";
-// import { getSortedProjectsData } from "@library/projects";
+import { getSortedProjectsDataJson } from "@library/projectjson";
+// import ProjectData from "@data/projects/project-1.json";
 
 import HeroOneSection from "@components/sections/HeroOne"
 import AboutSection from "@components/sections/About";
@@ -52,7 +53,7 @@ const ClientSlider = dynamic( () => import("@components/sliders/Client"), { ssr:
 // }
  function Home1({projects}) {
   const [videoLoaded, setVideoLoaded] = useState(false);
-  // const [projects, setprojects] = useState([]);
+  const [projectslts, setprojectslts] = useState([]);
 
   // const posts = await getAllPosts();
   
@@ -71,15 +72,16 @@ const ClientSlider = dynamic( () => import("@components/sliders/Client"), { ssr:
 
 
       useEffect(() => {
-        // const fetchData = async () => {
-        //   let arr = await getSortedProjectsData();
-        //   setprojects(arr);
-        // };
-      
-        // fetchData();
+        const fetchData = async () => {
+          let arr = await getSortedProjectsDataJson();
+        // console.log("ProjectData",arr)
 
-        console.log("projects",projects)
-      }, [projects]);
+          setprojectslts(arr);
+        };
+      
+        fetchData();
+
+      }, []);
       
   
 
@@ -105,7 +107,7 @@ const ClientSlider = dynamic( () => import("@components/sliders/Client"), { ssr:
       <AboutSection />
       <AdvantagesSection />
       <Suspense fallback={<div>Loading...</div>}>
-        <LatestProjectsSection projects={projects} />
+        <LatestProjectsSection projects={projectslts} />
       </Suspense>
       <IdeasSection /> 
 

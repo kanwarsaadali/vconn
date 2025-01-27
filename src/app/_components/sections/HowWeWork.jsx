@@ -1,5 +1,7 @@
 'use client';  // Mark this file as a Client Component
 import advantage from "@data/sections/latest-projects.json";
+import { useRouter } from "next/navigation";
+
 
 import React from 'react';
 
@@ -13,6 +15,8 @@ const projects = [
 ];
 
 const HowWeWorkSection = () => {
+  const router = useRouter(); // Initialize the router
+
   return (
     <>
       {/* Projects Section */}
@@ -153,9 +157,11 @@ const HowWeWorkSection = () => {
       color:"rgb(188, 255, 0)",
       backgroundColor:"#1b2942",
       borderRadius:"10px",
-      bottom:"20px"
+      bottom:"20px",
+      cursor:"pointer"
     }}
-  >
+    onClick={()=>router.push("/projects")}
+ >
     MORE PROJECTS
   </button>
 </div>
