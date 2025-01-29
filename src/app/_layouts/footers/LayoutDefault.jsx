@@ -816,7 +816,7 @@ const DefaultFooter = () => {
                                 </Link>
                                 <div className="mil-globe">
                                     <img
-                                        src="/img/logo/globe.gif"
+                                        src="/img/logo/globe2.gif"
                                         alt="Rotating Globe"
                                         className="mil-globe-image"
                                     />
