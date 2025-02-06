@@ -4,8 +4,8 @@ import Data from "@data/sections/hero-1.json";
 import Link from "next/link";
 
 const HeroOne = ({ videoLoaded, setVideoLoaded }) => {
-    const targetText = "WE CONNECT BUSINESSES";
-    const descriptionText = "Our IT experts ensures compliant, smooth deployments, automate tedious tasks, covered under multi-layered cybersecurity.";
+    const targetText = "";
+    const descriptionText = "";
 
     const handleVideoLoaded = () => {
         // setVideoLoaded(true);
@@ -109,7 +109,7 @@ const HeroOne = ({ videoLoaded, setVideoLoaded }) => {
                     left: 0;
                     right: 0;
                     bottom: 0;
-                    background: rgba(0, 0, 0, 0.4);
+                    // background: rgba(0, 0, 0, 0.4);
                     z-index: 0;
                 }
 
@@ -203,3 +203,4 @@ const HeroOne = ({ videoLoaded, setVideoLoaded }) => {
 };
 
 export default HeroOne;
+
