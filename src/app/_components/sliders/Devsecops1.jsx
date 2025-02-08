@@ -797,7 +797,7 @@ const DevopsecopsSlider1 = ({ bgStyle }) => {
       {/* Partners Section */}
       <div
         className={`mil-${bgStyle}-bg mil-partners mil-relative`}
-        style={{ backgroundColor: "rgb(12, 20, 31)", marginTop:"-30px" }}
+        style={{ backgroundColor: "rgb(12, 20, 31)", marginBottom:"20px" }}
       >
         <div className="container mil-p-60">
           <div className="mil-background-grid mil-softened" />

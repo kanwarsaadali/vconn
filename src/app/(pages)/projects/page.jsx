@@ -38,6 +38,7 @@ async function Projects() {
         overflowX: "hidden", // Prevent horizontal scrolling
         display: "flex",
         flexDirection: "column", // Stack content vertically
+        backgroundColor:"rgb(12, 20, 31)"
       }}
     >
       {/* Header */}
@@ -74,14 +75,14 @@ async function Projects() {
 
         {/* Overlay Content */}
         <div style={{ position: "relative", zIndex: 2 }}>
-          <h1 style={{ fontSize: "2.5rem", fontWeight: "bold" }}>
+          <h1 style={{ fontSize: "3.5rem", fontWeight: "bold" }}>
             <span style={{ color: "white" }}>CRAFTING THE </span>{" "}
             <span style={{ color: "rgb(188, 255, 0)" }}>FUTURE</span>{" "}
             <span style={{ color: "white" }}>OF</span>
           </h1>
           <h1
             style={{
-              fontSize: "2.5rem",
+              fontSize: "3.5rem",
               fontWeight: "bold",
               color: "white",
             }}

@@ -350,7 +350,7 @@ const Cybersecurity = () => {
   };
 
   return (
-    <div>
+    <div style={{backgroundColor:"rgb(12, 20, 31)"}}>
       <Header layout={"default"} />
 
       <div style={containerStyle}>

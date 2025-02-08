@@ -52,14 +52,14 @@ const ServicesPage = () => {
 
         {/* Overlay Content */}
         <div style={{ position: "relative", zIndex: 2 }}>
-          <h1 style={{ fontSize: "2.5rem", fontWeight: "bold" }}>
+          <h1 style={{ fontSize: "3.5rem", fontWeight: "bold" }}>
             <span style={{ color: "white" }}>Empowering</span>{" "}
             <span style={{ color: "rgb(188, 255, 0)" }}>Solutions</span>
             <span style={{ color: "white" }}>Elevating</span>
           </h1>
           <h1
             style={{
-              fontSize: "2.5rem",
+              fontSize: "3.5rem",
               fontWeight: "bold",
               color: "white",
             }}

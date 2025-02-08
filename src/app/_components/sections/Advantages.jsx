@@ -76,7 +76,7 @@ const AdvantagesSection = () => {
       marginBottom: "30px",
     },
     growthHeadingTitle: {
-      fontSize: "46px",
+      fontSize: "55px",
       fontWeight: 700,
       color: "#17283E",
       lineHeight: 1.3,

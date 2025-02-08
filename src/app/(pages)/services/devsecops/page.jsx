@@ -63,7 +63,7 @@ const Devsecops = () => {
   };
 
   return (
-    <div>
+    <div style={{background:"rgb(12, 20, 31)"}}>
       <Header layout={"default"} />
 
       <div style={containerStyle}>
