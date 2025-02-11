@@ -772,8 +772,10 @@ const Card = ({ icon, title, description }) => {
     >
       <div style={hiddenContentStyle}>
         <Image src={icon} alt={title} width={100} height={100} />
-        <h3>{title}</h3>
+        {/* <h3>{title}</h3> */}
       </div>
+      <h3>{title}</h3>
+
       <div style={overlayStyle}>
         <p>{description}</p>
       </div>

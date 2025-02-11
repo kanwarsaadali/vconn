@@ -91,7 +91,9 @@ const LatestProjectsSection = ({ projects }) => {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    marginBottom:"25px"
+    marginBottom:"25px",
+    marginTop:"-45px"
+
     // height: "100vh", // Full viewport height for vertical centering
   }}
 >

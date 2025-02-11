@@ -11,7 +11,7 @@
     },
     "header": {
         "logo": {
-            "image": "/img/logo/logo-light.gif",
+            "image": "/img/logo/logo-light.png",
             "alt": "Logo"
         },
         "menu": [
@@ -73,7 +73,7 @@
             "image": "/img/logo/logo.gif",
             "alt": "Logo"
         },
-        "copy": "© 2024 Vconn. All rights reserved.",
+        "copy": "© 2025 Vconn. All rights reserved.",
         "menu": [
             
             {
@@ -93,8 +93,8 @@
     },
     "social": [
         {
-            "link": "https://facebook.com",
-            "title": "Facebook"
+            "link": "https://www.linkedin.com/company/vconn-private-limited/posts/?feedView=all",
+            "title": "Linkdin"
         },
         {
             "link": "https://twitter.com",

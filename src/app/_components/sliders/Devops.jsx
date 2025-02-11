@@ -25,11 +25,16 @@ const DevopsSlider = ({ bgStyle }) => {
           <div className="row">
             <div className="col-12">
               <div className="mil-center mil-mb-60s">
-                <h2
+                {/* <h2
                   className="mil-upper mil-up mil-mb-30"
                   dangerouslySetInnerHTML={{ __html: advantage.title }}
                   style={{ color: "#17283E",marginTop:"20px" }}
-                />
+                /> */}
+                <span
+                                  className="mil-suptitle mil-upper mil-up mil-mb-30"
+                                  dangerouslySetInnerHTML={{ __html: advantage.title }}
+                                  style={{ color: "#17283E", fontSize: "35px", marginTop:"30px" }}
+                                />
               </div>
             </div>
           </div>

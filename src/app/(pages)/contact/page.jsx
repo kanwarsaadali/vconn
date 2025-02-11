@@ -516,10 +516,12 @@ const Contact = () => {
           {/* Service of Interest & Country */}
           <div style={{ display: "flex", gap: "1.5rem", marginBottom: "1.5rem" }}>
             <select style={selectStyle}>
-              <option>Your interest of service</option>
+              <option>All Services</option>
               <option>Cybersecurity</option>
               <option>DevSecOps</option>
               <option>Managed Services</option>
+              <option>Information Security</option>
+
             </select>
             <select style={selectStyle}>
               <option>Your country</option>

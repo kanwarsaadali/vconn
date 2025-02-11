@@ -720,7 +720,7 @@ const styles = {
     position: "relative",
   },
   title: {
-    fontSize: "20px",
+    fontSize: "25px",
     fontWeight: "bold",
     marginBottom: "10px",
     color: "#17283E",
@@ -762,18 +762,18 @@ const styles = {
     textAlign: "center",
   },
   text: {
-    fontSize: "20px",
+    fontSize: "22px",
     color: "#555",
     marginBottom: "15px",
   },
   name: {
-    fontSize: "18px",
+    fontSize: "24px",
     fontWeight: "bold",
     marginTop: "10px",
     color: "#17283E",
   },
   position: {
-    fontSize: "16px",
+    fontSize: "21px",
     color: "#17283E",
     marginBottom: "28px",
     display: "block",

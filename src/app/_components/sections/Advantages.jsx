@@ -102,13 +102,13 @@ const AdvantagesSection = () => {
       marginBottom: "20px", // Add bottom margin for spacing between items in mobile view
     },
     statItemHeading: {
-      fontSize: "48px",
+      fontSize: "88px",
       fontWeight: "bold",
       color: "#7dc10d",
       marginBottom: "10px",
     },
     statItemParagraph: {
-      fontSize: "16px",
+      fontSize: "22px",
       lineHeight: 1.5,
       fontWeight: 500,
       color: "#f0f0f0",

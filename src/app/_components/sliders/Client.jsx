@@ -21,9 +21,9 @@ const ClientSlider = ({ bgStyle }) => {
             <div className="col-12">
               <div className="mil-center mil-mb-60" style={{ marginTop: "-10px", color: "#17283E"}}>
                 <span
-                  className="mil-suptitle mil-upper mil-up mil-mb-30"
+                  className="mil-suptitle-withourgreen mil-upper mil-up mil-mb-30"
                   dangerouslySetInnerHTML={{ __html: advantage.subtitle }}
-                  style={{ color: "#17283E", fontSize: "35px", marginTop:"20px" }}
+                  style={{ color: "#17283E", fontSize: "35px", marginTop:"30px" }}
                 />
                 {/* <h2
                   className="mil-upper mil-up mil-mb-30"

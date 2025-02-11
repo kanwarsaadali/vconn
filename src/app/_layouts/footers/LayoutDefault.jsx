@@ -798,7 +798,7 @@ const DefaultFooter = () => {
                                     </span>
                                     <h6 className="mil-text-sm mil-up mil-light-soft mil-mb-30">Product</h6>
                                     <h6 className="mil-text-sm mil-up mil-light-soft mil-mb-30">Who We Are</h6>
-                                    <h6 className="mil-text-sm mil-up mil-light-soft mil-mb-30">Contact</h6>
+                                    <h6 className="mil-text-sm mil-up mil-light-soft mil-mb-30" href="https://www.linkedin.com/company/vconn-private-limited/jobs/">Contact</h6>
                                     <h6 className="mil-text-sm mil-up mil-light-soft mil-mb-30">Careers</h6>
                                 </div>
                             </div>

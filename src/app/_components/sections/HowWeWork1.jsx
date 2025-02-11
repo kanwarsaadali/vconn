@@ -562,7 +562,7 @@ const HowWeWork1 = () => {
           marginBottom: "20px",
         }}
       >
-        How we work?
+        How we work
       </h2>
 
       {/* Background Image */}
