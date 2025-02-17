@@ -69,9 +69,9 @@ const Devsecops = () => {
       <div style={containerStyle}>
         {/* Text Section */}
         <div style={textStyle}>
-          <h1 style={{ fontSize: "48px", marginBottom: "20px", color:"white" }}>Managed Services</h1>
+          <h1 style={{ fontSize: "48px", marginBottom: "20px", color:"white" }}>Consider IT done, just the way you’ve always wanted</h1>
           <p style={{ fontSize: "18px", lineHeight: "1.6", marginBottom: "40px" }}>
-          Maximizing your operational efficiency with our end-to-end managed services, offering continuous monitoring, support, and optimization to keep your IT infrastructure running smoothly.
+          We handle your IT daily grind with 24/7 personalized services, latest tech stack, and resolve issues proactively.
           </p>
           <a
             href="#"

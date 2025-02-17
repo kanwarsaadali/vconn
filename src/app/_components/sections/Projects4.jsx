@@ -5,14 +5,14 @@ import Image from "next/image";
 
 const Projects4 = () => {
   const items = [
-    { icon: "/img/icons/Service3_1.png", title: "Risk Management", description: "Identifying and managing information risks." },
-    { icon: "/img/icons/Service3_2.png", title: "GRC (Governance, Risk, Compliance)", description: "Managing governance and compliance." },
-    { icon: "/img/icons/Service3_3.png", title: "Data Loss Prevention (DLP)", description: "Preventing unauthorized data access." },
-    { icon: "/img/icons/Service3_4.png", title: "Security Training", description: "Educating employees on security best practices." },
-    { icon: "/img/icons/Service3_5.png", title: "Security Architecture", description: "Designing secure systems." },
-    { icon: "/img/icons/Service3_6.png", title: "Business Continuity & Disaster Recovery", description: "Ensuring business continuity and recovery." },
-    { icon: "/img/icons/Service3_7.png", title: "Access Control", description: "Managing secure access to data." },
-    { icon: "/img/icons/Service3_8.png", title: "Privacy Protection", description: "Ensuring privacy compliance." },
+    { icon: "/img/icons/Service3_1.png", title: "Risk Management", description: "Well-informed decisions and reduce data breach risks." },
+    { icon: "/img/icons/Service3_2.png", title: "GRC (Governance, Risk, Compliance)", description: "Improved operational efficiency and regulatory compliance." },
+    { icon: "/img/icons/Service3_3.png", title: "Data Loss Prevention (DLP)", description: "Insider threats detection and mitigation." },
+    { icon: "/img/icons/Service3_4.png", title: "Security Training", description: "Staff empowerment to threat recognition & response." },
+    { icon: "/img/icons/Service3_5.png", title: "Security Architecture", description: "Comprehensive security models for cyber threats prevention." },
+    { icon: "/img/icons/Service3_6.png", title: "Business Continuity & Disaster Recovery", description: "Minimized downtime and financial losses." },
+    { icon: "/img/icons/Service3_7.png", title: "Access Control", description: "Unauthorized access prevention of sensitive data." },
+    { icon: "/img/icons/Service3_8.png", title: "Privacy Protection", description: "Unauthorized access prevention of sensitive data." },
   ];
 
   const containerStyle = {
@@ -110,8 +110,10 @@ const Card = ({ icon, title, description }) => {
     >
       <div style={hiddenContentStyle}>
         <Image src={icon} alt={title} width={100} height={100} />
-        <h3>{title}</h3>
+        {/* <h3>{title}</h3> */}
       </div>
+      <h3>{title}</h3>
+
       <div style={overlayStyle}>
         <p>{description}</p>
       </div>

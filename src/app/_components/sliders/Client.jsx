@@ -12,8 +12,8 @@ const ClientSlider = ({ bgStyle }) => {
     <>
       {/* Partners Section */}
       <div
-        className={`mil-${bgStyle}-bg mil-partners mil-relative`}
-        style={{ marginTop: "-10px", backgroundColor: "#F8F8F8"}}
+        className={`mil-${bgStyle}-bg mil-partners`}
+        style={{ marginTop: "-10px", backgroundColor: "rgb(12, 20, 31)"}}
       >
         <div className="container mil-p-60">
           <div className="mil-background-grid mil-softened" />
@@ -23,7 +23,7 @@ const ClientSlider = ({ bgStyle }) => {
                 <span
                   className="mil-suptitle-withourgreen mil-upper mil-up mil-mb-30"
                   dangerouslySetInnerHTML={{ __html: advantage.subtitle }}
-                  style={{ color: "#17283E", fontSize: "35px", marginTop:"30px" }}
+                  style={{ color: "white", fontSize: "35px", marginTop:"30px" }}
                 />
                 {/* <h2
                   className="mil-upper mil-up mil-mb-30"
@@ -114,8 +114,8 @@ const ClientSlider = ({ bgStyle }) => {
         }
 
         .mil-partner-img {
-          max-width: 150%;
-          max-height: 100%; /* Make image fill the container proportionally */
+          max-width: 250%;
+          max-height: 200%; /* Make image fill the container proportionally */
           object-fit: contain;
         }
 

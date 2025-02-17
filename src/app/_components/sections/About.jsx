@@ -609,7 +609,7 @@ const AboutSection = () => {
   const isScreenAbove1440 = useMediaQuery("(min-width: 1440px)");
   const isScreenBelow769 = useMediaQuery("(max-width: 769px)");
   return (
-    <div className="row justify-content-center">
+    <div className="row justify-content-center" style={{backgroundColor:"rgb(12, 20, 31)"}}>
       <div className="col-12 col-md-8 mt-5 pt-5 pb-5" style={styles.container}>
         <div className="d-flex flex-column flex-md-row" style={styles.flexContainer}>
           <div className="col-md-5 px-4" style={styles.leftColumnWrapper}>
@@ -642,8 +642,8 @@ const AboutSection = () => {
               ))}
             </div>
             <div style={styles.cta}>
-              <span style={{ color: "#17283E" }}>DISCOVER OUR SERVICES</span>
-              <span style={{ ...styles.arrow, ...styles.iconBox, backgroundColor: "#17283E", width: "30px" }}>→</span>
+              <span style={{ color: "white"  }} className=''>DISCOVER OUR SERVICES</span>
+              <span style={{ ...styles.arrow, ...styles.iconBox, backgroundColor: "", width: "60px" }}>→</span>
             </div>
           </div>
         </div>
@@ -663,7 +663,7 @@ const gridData = [
 
 const styles = {
   container: {
-    backgroundColor: "rgb(248, 248, 248)",
+    backgroundColor: "rgb(12, 20, 31)",
     padding: '2rem',
   },
   flexContainer: {
@@ -715,12 +715,13 @@ const styles = {
     fontSize: '2rem',
     fontWeight: 'bold',
     marginBottom: '1rem',
-    color: "#17283E",
+    color: "white",
   },
   paragraph: {
     fontSize: '1rem',
     lineHeight: '1.5',
     marginBottom: '1.5rem',
+    color:"white"
   },
   grid: {
     display: 'grid',

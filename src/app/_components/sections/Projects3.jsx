@@ -5,14 +5,14 @@ import Image from "next/image";
 
 const Project3 = () => {
   const items = [
-    { icon: "/img/icons/Service4_1.png", title: "CI/CD Pipeline Security", description: "Managing cloud infrastructure." },
-    { icon: "/img/icons/Service4_2.png", title: "Security as Code", description: "Monitoring and maintaining network health." },
-    { icon: "/img/icons/Service4_3.png", title: "Continuous Compliance Monitoring", description: "Monitoring application performance." },
-    { icon: "/img/icons/Service4_4.png", title: "Identity & Access Management (IAM)", description: "Secure data backup and disaster recovery." },
-    { icon: "/img/icons/Service4_5.png", title: "Runtime Application Self-Protection (RASP)", description: "Remote endpoint security management." },
-    { icon: "/img/icons/Service4_6.png", title: "•	Cloud Security & Data Protection", description: "End-user support and troubleshooting." },
-    { icon: "/img/icons/Service4_7.png", title: "Patch Management", description: "Regular updates and patches." },
-    { icon: "/img/icons/Service4_8.png", title: "IT Asset Management", description: "Managing IT hardware and software." },
+    { icon: "/img/icons/Service4_1.png", title: "CI/CD Pipeline Security", description: "Malicious code blockade, data loss prevention." },
+    { icon: "/img/icons/Service4_2.png", title: "Security as Code", description: "Better development & security teams collaboration." },
+    { icon: "/img/icons/Service4_3.png", title: "Continuous Compliance Monitoring", description: "No compliance-related fines." },
+    { icon: "/img/icons/Service4_4.png", title: "Identity & Access Management (IAM)", description: "Enhanced user access control, breaches prevention." },
+    { icon: "/img/icons/Service4_5.png", title: "Runtime Application Self-Protection (RASP)", description: "Zero-day attacks prevention, reduce false positives." },
+    { icon: "/img/icons/Service4_6.png", title: "Cloud Security & Data Protection", description: "Cloud data prevention from threats, corruption." },
+    { icon: "/img/icons/Service4_7.png", title: "Patch Management", description: "Improved performance via drivers, software, & firmware updates." },
+    { icon: "/img/icons/Service4_8.png", title: "IT Asset Management", description: "Improved operational efficiency, streamlined asset management." },
   ];
 
   const containerStyle = {
@@ -110,8 +110,10 @@ const Card = ({ icon, title, description }) => {
     >
       <div style={hiddenContentStyle}>
         <Image src={icon} alt={title} width={100} height={100} />
-        <h3>{title}</h3>
+        {/* <h3>{title}</h3> */}
       </div>
+      <h3>{title}</h3>
+
       <div style={overlayStyle}>
         <p>{description}</p>
       </div>
