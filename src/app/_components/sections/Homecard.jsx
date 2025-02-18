@@ -564,7 +564,7 @@ import React from "react";
 const cardData = [
   {
     id: 1,
-    image: "/img/covers/cybersecurity.png",
+    image: "/img/covers/Cybersecurity.png",
     title: "Private: Mount St",
     description:
       "A majestic beauty with an eruptive history, Mt. St. Helens is one of our region’s most breathtaking wonders.",
