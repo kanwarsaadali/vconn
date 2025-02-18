@@ -19,6 +19,7 @@ import AdvantagesSection from "@components/sections/Advantages";
 import LatestProjectsSection from "@components/sections/LatestProjects";
 import HowWeWorkSection from "@components/sections/HowWeWork";
 import LatestPostsSection from "@components/sections/LatestPosts";
+import Homecard from "@components/sections/Homecard"
 import CoresSection from "@components/sections/Cores";
 // import ClientSlider from '@components/sliders/client';
 
@@ -106,9 +107,11 @@ const ClientSlider = dynamic( () => import("@components/sliders/Client"), { ssr:
       {/* <PartnersSlider /> */}
       <AboutSection />
       <AdvantagesSection />
-      <Suspense fallback={<div>Loading...</div>}>
+      {/* <Suspense fallback={<div>Loading...</div>}>
         <LatestProjectsSection projects={projectslts} />
-      </Suspense>
+      </Suspense> */}
+      <Homecard /> 
+
       <IdeasSection /> 
 
       {/* <div style={{backgroundColor:"rgb(248, 248, 248)"}} className="py-5 customSlider"> */}
@@ -127,7 +130,7 @@ const ClientSlider = dynamic( () => import("@components/sliders/Client"), { ssr:
 
       <HowWeWorkSection  />
       <DevopsSlider/>
-      <DevopsecopsSlider/>
+      {/* <DevopsecopsSlider/> */}
       {/* <IdeasSection />  */}
 
       {/* <ClientSlider/> */}

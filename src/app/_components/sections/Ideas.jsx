@@ -724,7 +724,7 @@ const styles = {
     fontSize: "25px",
     fontWeight: "bold",
     marginBottom: "10px",
-    color: "white",
+    color: "rgb(188, 255, 0)",
   },
   subtitle: {
     fontSize: "28px",
