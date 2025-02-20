@@ -92,6 +92,7 @@ const HeroOne = ({ videoLoaded, setVideoLoaded }) => {
                 }
 
                 .mil-bg-video,
+                
                 .mil-bg-img {
                     position: absolute;
                     top: 50%;

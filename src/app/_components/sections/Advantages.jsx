@@ -352,45 +352,168 @@
 // export default AdvantagesSection;
 
 
+// import React from "react";
+
+// const AdvantagesSection = () => {
+//   return (
+//     <section
+//       style={{
+//         backgroundColor: "rgb(12, 20, 31)",
+//         color: "#fff",
+//         padding: "50px 20px",
+//         textAlign: "center",
+//         position: "relative",
+//         height: "100vh", // Full viewport height
+//       }}
+//     >
+//       {/* Title */}
+//       <h2
+//         style={{
+//           color: "rgb(188, 255, 0)",
+//           fontSize: "3rem", // Increased font size for better visibility
+//           fontWeight: "bold",
+//           marginBottom: "30px", // Increased spacing
+//         }}
+//       >
+//         WHY US
+//       </h2>
+
+//       {/* Background Image */}
+//       <div
+//         style={{
+//           width: "100%",
+//           height: "100%", // Increased height of the image section to take up more space
+//           backgroundImage: 'url("/img/covers/whyus.png")',
+//           backgroundSize: "cover", // Ensures the image covers the full section
+//           backgroundPosition: "center", // Centers the image
+//           backgroundRepeat: "no-repeat", // Prevents repeating the image
+//         }}
+//       ></div>
+//     </section>
+//   );
+// };
+
+// export default AdvantagesSection;
+
+
+// import React from "react";
+
+// const AdvantagesSection = () => {
+//   return (
+//     <section
+//       style={{
+//         backgroundColor: "rgb(12, 20, 31)",
+//         color: "#fff",
+//         padding: "50px 20px",
+//         textAlign: "center",
+//         position: "relative",
+//       }}
+//     >
+//       {/* Title */}
+//       <h2
+//         style={{
+//           color: "rgb(188, 255, 0)",
+//           fontSize: "3rem",
+//           fontWeight: "bold",
+//           marginBottom: "30px",
+//         }}
+//       >
+//         WHY US
+//       </h2>
+
+//       {/* Background Image */}
+//       <div
+//         style={{
+//           width: "100%",
+//           height: "900px", // Set a fixed height for visibility
+//           minHeight: "100px", // Ensures a minimum height
+//           backgroundImage: 'url("/img/covers/whyus.png")',
+//           backgroundSize: "cover",
+//           backgroundPosition: "center",
+//           backgroundRepeat: "no-repeat",
+//         }}
+//       ></div>
+//     </section>
+//   );
+// };
+
+// export default AdvantagesSection;
+
 import React from "react";
 
 const AdvantagesSection = () => {
   return (
-    <section
-      style={{
-        backgroundColor: "rgb(12, 20, 31)",
-        color: "#fff",
-        padding: "50px 20px",
-        textAlign: "center",
-        position: "relative",
-        height: "100vh", // Full viewport height
-      }}
-    >
+    <section style={styles.section}>
       {/* Title */}
-      <h2
-        style={{
-          color: "rgb(188, 255, 0)",
-          fontSize: "3rem", // Increased font size for better visibility
-          fontWeight: "bold",
-          marginBottom: "30px", // Increased spacing
-        }}
-      >
-        WHY US
-      </h2>
+      <h2 style={styles.title}>WHY US</h2>
 
       {/* Background Image */}
-      <div
-        style={{
-          width: "100%",
-          height: "100%", // Increased height of the image section to take up more space
-          backgroundImage: 'url("/img/covers/whyus.png")',
-          backgroundSize: "cover", // Ensures the image covers the full section
-          backgroundPosition: "center", // Centers the image
-          backgroundRepeat: "no-repeat", // Prevents repeating the image
-        }}
-      ></div>
+      <div className="background-image" style={styles.background}></div>
+
+      {/* Inline CSS for media queries */}
+      <style>
+        {`
+          .background-image {
+            background-size: contain !important; /* Prevents cropping */
+            background-position: top center !important;
+          }
+          
+          @media (max-width: 1200px) {
+            .background-image {
+              height: 75vh !important;
+            }
+          }
+
+          @media (max-width: 1024px) {
+            .background-image {
+              height: 60vh !important;
+              background-size: contain !important;
+            }
+          }
+
+          @media (max-width: 768px) {
+            .background-image {
+              height: 50vh !important;
+              background-size: contain !important;
+            }
+          }
+
+          @media (max-width: 480px) {
+            .background-image {
+              height: 40vh !important;
+              background-size: contain !important;
+            }
+          }
+        `}
+      </style>
     </section>
   );
+};
+
+// Styles Object
+const styles = {
+  section: {
+    backgroundColor: "rgb(12, 20, 31)",
+    color: "#fff",
+    padding: "50px 20px",
+    textAlign: "center",
+    position: "relative",
+  },
+  title: {
+    color: "rgb(188, 255, 0)",
+    fontSize: "3rem",
+    fontWeight: "bold",
+    marginBottom: "30px",
+  },
+  background: {
+    width: "100%",
+    height: "85vh", // Ensures visibility on full screen
+    minHeight: "300px", // Minimum visibility for small screens
+    backgroundImage: 'url("/img/covers/whyus.png")',
+    backgroundSize: "cover", // Prevents distortion
+    backgroundPosition: "center", // Centers the image
+    backgroundRepeat: "no-repeat",
+  },
 };
 
 export default AdvantagesSection;

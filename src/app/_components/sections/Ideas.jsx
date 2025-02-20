@@ -662,9 +662,9 @@ const IdeasSection = () => {
 
   return (
     <div style={styles.container}>
-      <h2 style={{ ...styles.title, fontSize: "25px" }} className="mil-suptitle-testimonals">
+      {/* <h2 style={{ ...styles.title, fontSize: "25px" }} className="mil-suptitle-testimonals">
         TESTIMONIALS
-      </h2>
+      </h2> */}
       <h3 style={styles.subtitle}>What Our Customers Say</h3>
       <div style={styles.carousel}>
         {testimonials?.map((testimonial, index) => (
@@ -763,7 +763,7 @@ const styles = {
     textAlign: "center",
   },
   text: {
-    fontSize: "20px",
+    fontSize: "25px",
     color: "white",
     marginBottom: "15px",
   },
@@ -793,9 +793,9 @@ const styles = {
   logo: {
     width: "170px",
     height: "auto",
-    border: "2px solid #000",
+    // border: "2px solid #000",
     borderRadius: "4px",
-    backgroundColor: "white",
+    // backgroundColor: "white",
   },
   controls: {
     display: "flex",

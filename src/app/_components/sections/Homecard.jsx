@@ -559,36 +559,344 @@
 // export default Homecard;
 
 
+// import React from "react";
+
+// const cardData = [
+//   {
+//     id: 1,
+//     image: "/img/covers/Cybersecurity.png",
+//     title: "CYBERSECURITY",
+//     description:
+//       "Secure your business from potential threats, malwares, and hackers via proven defensive and offensive strategy.",
+//   },
+//   {
+//     id: 2,
+//     image: "/img/covers/Devsecops.png",
+//     title: "DEVSECOPS",
+//     description:
+//       "Assess risks, monitor attacks, and implement Test-Driven Security (TDS) for quality software production.",
+//   },
+//   {
+//     id: 3,
+//     image: "/img/covers/Manage.png",
+//     title: "COMPLIANCE",
+//     description:
+//       "Protect your business top-secret information from unauthorized access, ensure business continuity with reduced financial losses.",
+//   },
+//   {
+//     id: 4,
+//     image: "/img/covers/Information.png",
+//     title: "MANAGED SERVICES",
+//     description:
+//       "Avoid downtime, communication challenges, reduced operational costs, with proactive support.",
+//   },
+// ];
+
+// const Homecard = () => {
+//   return (
+//     <section style={styles.cardSection}>
+//       <div style={styles.container}>
+//         {/* Add the "OUR SERVICES" heading here */}
+//         {/* <h2 style={styles.sectionHeading}>OUR SERVICES</h2> */}
+//         <h2 style={styles.sectionHeadingh1}>WHAT WE DO</h2>
+
+//         <div style={styles.cardGrid}>
+//           {cardData.map((card, index) => (
+//             <div key={card.id} style={styles.card}>
+//               <div style={styles.imageContainer}>
+//                 <img src={card.image} alt={card.title} style={styles.cardImage} />
+//               </div>
+//               <div style={styles.cardContent}>
+//                 <h3 style={styles.cardTitle}>
+//                    {card.title}
+//                 </h3>
+//                 <p style={styles.cardDescription}>{card.description}</p>
+//                 <a href="#" style={styles.cardLink}>
+//                   Learn More <span className="mil-arrow"><img src="img/icons/1.svg" className="img3" alt="arrow" /></span>
+//                 </a>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+        
+//       </div>
+//     </section>
+//   );
+// };
+
+// // Styles for responsiveness and slanted images
+// const styles = {
+//   cardSection: {
+//     backgroundColor: "rgb(12, 20, 31)",
+//     padding: "50px 20px",
+//   },
+//   container: {
+//     maxWidth: "1400px",
+//     margin: "0 auto",
+//   },
+//   sectionHeading: {
+//     color: "rgb(188, 255, 0)",
+//     fontSize: "2rem",
+//     fontWeight: "bold",
+//     textAlign: "center",
+//     marginBottom: "30px",
+//   },
+//   sectionHeadingh1: {
+//     color: "rgb(188, 255, 0)",
+//     fontSize: "3rem",
+//     fontWeight: "bold",
+//     textAlign: "center",
+//     marginBottom: "30px",
+//   },
+//   cardGrid: {
+//     display: "grid",
+//     gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+//     gap: "30px",
+//   },
+//   card: {
+//     position: "relative",
+//     borderRadius: "16px",
+//     overflow: "hidden",
+//     boxShadow: "0 8px 20px rgba(0, 0, 0, 0.2)",
+//     textAlign: "left",
+//   },
+//   imageContainer: {
+//     position: "relative",
+//     width: "100%",
+//     height: "300px", // Adjust image height
+//     overflow: "hidden",
+//   },
+//   cardImage: {
+//     width: "100%",
+//     height: "100%",
+//     objectFit: "cover",
+//     clipPath: "polygon(0 0, 100% 0, 100% 85%, 0 100%)", // Slanted bottom effect
+//   },
+//   cardContent: {
+//     padding: "20px",
+//   },
+//   cardTitle: {
+//     fontSize: "1.5rem",
+//     fontWeight: "bold",
+//     marginBottom: "12px",
+//     color: "white",
+//   },
+//   cardDescription: {
+//     fontSize: "1rem",
+//     color: "white",
+//     marginBottom: "15px",
+//   },
+//   cardLink: {
+//     color: "#007bff",
+//     textDecoration: "none",
+//     fontWeight: "bold",
+//     fontSize: "1.1rem",
+//   },
+//   // Responsive Styles
+//   "@media (max-width: 1024px)": {
+//     cardGrid: {
+//       gridTemplateColumns: "repeat(2, 1fr)",
+//     },
+//     imageContainer: {
+//       height: "250px",
+//     },
+//   },
+//   "@media (max-width: 768px)": {
+//     cardGrid: {
+//       gridTemplateColumns: "repeat(1, 1fr)",
+//     },
+//     imageContainer: {
+//       height: "200px",
+//     },
+//   },
+// };
+
+// export default Homecard;
+
+
+// import React from "react";
+
+// const cardData = [
+//   {
+//     id: 1,
+//     image: "/img/covers/Cybersecurity.png",
+//     title: "CYBERSECURITY",
+//     description:
+//       "Secure your business from potential threats, malwares, and hackers via proven defensive and offensive strategy.",
+//   },
+//   {
+//     id: 2,
+//     image: "/img/covers/Devsecops.png",
+//     title: "DEVSECOPS",
+//     description:
+//       "Assess risks, monitor attacks, and implement Test-Driven Security (TDS) for quality software production.",
+//   },
+//   {
+//     id: 3,
+//     image: "/img/covers/Manage.png",
+//     title: "COMPLIANCE",
+//     description:
+//       "Protect your business top-secret information from unauthorized access, ensure business continuity with reduced financial losses.",
+//   },
+//   {
+//     id: 4,
+//     image: "/img/covers/Information.png",
+//     title: "MANAGED SERVICES",
+//     description:
+//       "Avoid downtime, communication challenges, reduced operational costs, with proactive support.",
+//   },
+// ];
+
+// const Homecard = () => {
+//   return (
+//     <section style={styles.cardSection}>
+//       <div style={styles.container}>
+//         <h2 style={styles.sectionHeadingh1}>WHAT WE DO</h2>
+
+//         <div style={styles.cardGrid}>
+//           {cardData.map((card) => (
+//             <div key={card.id} style={styles.card}>
+//               <div style={styles.imageContainer}>
+//                 <img src={card.image} alt={card.title} style={styles.cardImage} />
+//               </div>
+//               <div style={styles.cardContent}>
+//                 <h3 style={styles.cardTitle}>{card.title}</h3>
+//                 <p style={styles.cardDescription}>{card.description}</p>
+//                 <a href="#" style={styles.cardLink}>
+//                   Learn More <span className="mil-arrow">
+//                     <img src="img/icons/1.svg" className="img3" alt="arrow" />
+//                   </span>
+//                 </a>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+
+//         {/* Centered Button */}
+//         <div style={styles.buttonContainer}>
+//           <button style={styles.button}>More Services</button>
+//         </div>
+        
+//       </div>
+//     </section>
+//   );
+// };
+
+// // Styles for responsiveness and slanted images
+// const styles = {
+//   cardSection: {
+//     backgroundColor: "rgb(12, 20, 31)",
+//     padding: "50px 20px",
+//   },
+//   container: {
+//     maxWidth: "1400px",
+//     margin: "0 auto",
+//   },
+//   sectionHeadingh1: {
+//     color: "rgb(188, 255, 0)",
+//     fontSize: "3rem",
+//     fontWeight: "bold",
+//     textAlign: "center",
+//     marginBottom: "30px",
+//   },
+//   cardGrid: {
+//     display: "grid",
+//     gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+//     gap: "30px",
+//   },
+//   card: {
+//     position: "relative",
+//     borderRadius: "16px",
+//     overflow: "hidden",
+//     boxShadow: "0 8px 20px rgba(0, 0, 0, 0.2)",
+//     textAlign: "left",
+//   },
+//   imageContainer: {
+//     position: "relative",
+//     width: "100%",
+//     height: "300px",
+//     overflow: "hidden",
+//   },
+//   cardImage: {
+//     width: "100%",
+//     height: "100%",
+//     objectFit: "cover",
+//     clipPath: "polygon(0 0, 100% 0, 100% 85%, 0 100%)",
+//   },
+//   cardContent: {
+//     padding: "20px",
+//   },
+//   cardTitle: {
+//     fontSize: "1.5rem",
+//     fontWeight: "bold",
+//     marginBottom: "12px",
+//     color: "white",
+//   },
+//   cardDescription: {
+//     fontSize: "1rem",
+//     color: "white",
+//     marginBottom: "15px",
+//   },
+//   cardLink: {
+//     color: "#007bff",
+//     textDecoration: "none",
+//     fontWeight: "bold",
+//     fontSize: "1.1rem",
+//   },
+//   buttonContainer: {
+//     display: "flex",
+//     justifyContent: "center",
+//     marginTop: "50px",
+//   },
+//   button: {
+//     backgroundColor: "rgb(188, 255, 0)",
+//     color: "black",
+//     fontSize: "1.2rem",
+//     fontWeight: "bold",
+//     padding: "12px 24px",
+//     border: "none",
+//     borderRadius: "8px",
+//     cursor: "pointer",
+//     transition: "background 0.3s ease",
+//   },
+//   buttonHover: {
+//     backgroundColor: "#aaff00",
+//   },
+// };
+
+// export default Homecard;
+
+
 import React from "react";
 
 const cardData = [
   {
     id: 1,
     image: "/img/covers/Cybersecurity.png",
-    title: "Private: Mount St",
+    title: "CYBERSECURITY",
     description:
-      "A majestic beauty with an eruptive history, Mt. St. Helens is one of our region’s most breathtaking wonders.",
+      "Secure your business from potential threats, malwares, and hackers via proven defensive and offensive strategy.",
   },
   {
     id: 2,
     image: "/img/covers/Devsecops.png",
-    title: "Wine Country",
+    title: "DEVSECOPS",
     description:
-      "Experience the full flavor of Oregon wine country. Take a tasting trip to world-renowned vineyards.",
+      "Assess risks, monitor attacks, and implement Test-Driven Security (TDS) for quality software production.",
   },
   {
     id: 3,
     image: "/img/covers/Manage.png",
-    title: "Explore the PNW",
+    title: "COMPLIANCE",
     description:
-      "Explore the majestic beauty of the Pacific Northwest from the air to world-renowned vineyards.",
+      "Protect your business top-secret information from unauthorized access, ensure business continuity with reduced financial losses.",
   },
   {
     id: 4,
     image: "/img/covers/Information.png",
-    title: "Custom Tours",
+    title: "MANAGED SERVICES",
     description:
-      "What does the perfect trip look like for you? Explore the Pacific Northwest on your terms.",
+      "Avoid downtime, communication challenges, reduced operational costs, with proactive support.",
   },
 ];
 
@@ -596,27 +904,29 @@ const Homecard = () => {
   return (
     <section style={styles.cardSection}>
       <div style={styles.container}>
-        {/* Add the "OUR SERVICES" heading here */}
-        <h2 style={styles.sectionHeading}>OUR SERVICES</h2>
         <h2 style={styles.sectionHeadingh1}>WHAT WE DO</h2>
 
         <div style={styles.cardGrid}>
-          {cardData.map((card, index) => (
+          {cardData.map((card) => (
             <div key={card.id} style={styles.card}>
               <div style={styles.imageContainer}>
                 <img src={card.image} alt={card.title} style={styles.cardImage} />
               </div>
               <div style={styles.cardContent}>
-                <h3 style={styles.cardTitle}>
-                  0{index + 1}. {card.title}
-                </h3>
+                <h3 style={styles.cardTitle}>{card.title}</h3>
                 <p style={styles.cardDescription}>{card.description}</p>
                 <a href="#" style={styles.cardLink}>
-                  Learn More →
+                  Learn More{" "}
+                  <span style={styles.greenArrow}>&gt;</span>
                 </a>
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Centered Button */}
+        <div style={styles.buttonContainer}>
+          <button style={styles.button}>More Services</button>
         </div>
       </div>
     </section>
@@ -632,13 +942,6 @@ const styles = {
   container: {
     maxWidth: "1400px",
     margin: "0 auto",
-  },
-  sectionHeading: {
-    color: "rgb(188, 255, 0)",
-    fontSize: "2rem",
-    fontWeight: "bold",
-    textAlign: "center",
-    marginBottom: "30px",
   },
   sectionHeadingh1: {
     color: "rgb(188, 255, 0)",
@@ -662,14 +965,14 @@ const styles = {
   imageContainer: {
     position: "relative",
     width: "100%",
-    height: "300px", // Adjust image height
+    height: "300px",
     overflow: "hidden",
   },
   cardImage: {
     width: "100%",
     height: "100%",
     objectFit: "cover",
-    clipPath: "polygon(0 0, 100% 0, 100% 85%, 0 100%)", // Slanted bottom effect
+    clipPath: "polygon(0 0, 100% 0, 100% 85%, 0 100%)",
   },
   cardContent: {
     padding: "20px",
@@ -686,27 +989,34 @@ const styles = {
     marginBottom: "15px",
   },
   cardLink: {
-    color: "#007bff",
+    color: "rgb(38, 144, 193)",
     textDecoration: "none",
     fontWeight: "bold",
     fontSize: "1.1rem",
   },
-  // Responsive Styles
-  "@media (max-width: 1024px)": {
-    cardGrid: {
-      gridTemplateColumns: "repeat(2, 1fr)",
-    },
-    imageContainer: {
-      height: "250px",
-    },
+  greenArrow: {
+    color: "rgb(188, 255, 0)", // Matches the button color
+    fontSize: "1.2rem",
+    fontWeight: "bold",
   },
-  "@media (max-width: 768px)": {
-    cardGrid: {
-      gridTemplateColumns: "repeat(1, 1fr)",
-    },
-    imageContainer: {
-      height: "200px",
-    },
+  buttonContainer: {
+    display: "flex",
+    justifyContent: "center",
+    marginTop: "50px",
+  },
+  button: {
+    backgroundColor: "rgb(188, 255, 0)",
+    color: "black",
+    fontSize: "1.2rem",
+    fontWeight: "bold",
+    padding: "12px 24px",
+    border: "none",
+    borderRadius: "8px",
+    cursor: "pointer",
+    transition: "background 0.3s ease",
+  },
+  buttonHover: {
+    backgroundColor: "#aaff00",
   },
 };
 
