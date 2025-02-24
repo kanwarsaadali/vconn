@@ -616,28 +616,832 @@
 // export default IdeasSection;
 
 
+// "use client";
+
+// import { useState, useEffect } from "react";
+
+// const IdeasSection = () => {
+//   const [currentSlide, setCurrentSlide] = useState(0);
+
+//   const testimonials = [
+//     {
+//       text: "'Consulting services for all things related to DevOps provided insight into automation and streamlining processes, improving our product development timelines significantly.'",
+//       name: "Mark Wilson",
+//       title: "CEO, Shell",
+//       logos: ["/img/ideas/3.png"],
+//     },
+//     {
+//       text: "'Great support and consultancy from the team helped us achieve our automation goals efficiently and on time.'",
+//       name: "Jane Smith",
+//       title: "CTO, Unilever",
+//       logos: ["/img/ideas/1.png"],
+//     },
+//     {
+//       text: "'Their approach to improving our hospital operations was revolutionary and efficient.'",
+//       name: "Dr. Ahmed Khan",
+//       title: "Director, Indus Hospital",
+//       logos: ["/img/ideas/2.png"],
+//     },
+//   ];
+
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+//     }, 5000);
+
+//     return () => clearInterval(interval);
+//   }, [testimonials.length]);
+
+//   const nextSlide = () => {
+//     setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+//   };
+
+//   const prevSlide = () => {
+//     setCurrentSlide((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+//   };
+
+//   return (
+//     <div style={styles.container}>
+//       {/* <h2 style={{ ...styles.title, fontSize: "25px" }} className="mil-suptitle-testimonals">
+//         TESTIMONIALS
+//       </h2> */}
+//       <h3 style={styles.subtitle}>What Our Customers Say</h3>
+//       <div style={styles.carousel}>
+//         {testimonials?.map((testimonial, index) => (
+//           <div
+//             key={index}
+//             style={{
+//               ...styles.slide,
+//               transform: `translateX(-${currentSlide * 100}%)`,
+//             }}
+//           >
+//             <div style={styles.testimonialBox}>
+//               <p style={styles.text}>{testimonial.text}</p>
+//               <h4 style={styles.name}>{testimonial.name}</h4>
+//               <span style={styles.position}>{testimonial.title}</span>
+//               <div style={styles.logos}>
+//                 {testimonial.logos.map((logo, i) => (
+//                   <img key={i} src={logo} alt="Logo" style={styles.logo} />
+//                 ))}
+//               </div>
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+//       <div style={styles.controls}>
+//         <button onClick={prevSlide} style={styles.arrow}>
+//           &#10094;
+//         </button>
+//         <button onClick={nextSlide} style={styles.arrow}>
+//           &#10095;
+//         </button>
+//       </div>
+//       <div style={styles.dots}>
+//         {testimonials.map((_, index) => (
+//           <span
+//             key={index}
+//             onClick={() => setCurrentSlide(index)}
+//             style={{
+//               ...styles.dot,
+//               backgroundColor: currentSlide === index ? "rgb(188, 255, 0)" : "#ccc",
+//             }}
+//           />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// const styles = {
+//   container: {
+//     textAlign: "center",
+//     padding: "50px 20px",
+//     // background: "url(/img/photo/BGgrayNet.webp) no-repeat center center/cover",
+//     position: "relative",
+//     backgroundColor:"rgb(12, 20, 31)"
+//   },
+//   title: {
+//     fontSize: "25px",
+//     fontWeight: "bold",
+//     marginBottom: "10px",
+//     color: "rgb(188, 255, 0)",
+//   },
+//   subtitle: {
+//     fontSize: "28px",
+//     fontWeight: "700",
+//     color: "white",
+//     marginBottom: "30px",
+//     textTransform: "uppercase",
+//   },
+//   carousel: {
+//     display: "flex",
+//     transition: "transform 0.6s ease-in-out",
+//     overflow: "hidden",
+//     position: "relative",
+//     width: "100%",
+//     paddingBottom: "50px",
+//   },
+//   slide: {
+//     flexShrink: 0,
+//     width: "100%",
+//     textAlign: "center",
+//     padding: "20px",
+//   },
+//   testimonialBox: {
+//     // border: "2px solid #000",
+//     borderRadius: "10px",
+//     padding: "40px 20px",
+//     backgroundColor: "rgb(12, 20, 31)",
+//     minHeight: "300px",
+//     maxWidth: "60%",
+//     margin: "0 auto",
+//     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+//     position: "relative",
+//     display: "flex",
+//     flexDirection: "column",
+//     justifyContent: "center",
+//     textAlign: "center",
+//   },
+//   text: {
+//     fontSize: "25px",
+//     color: "white",
+//     marginBottom: "15px",
+//   },
+//   name: {
+//     fontSize: "24px",
+//     fontWeight: "bold", 
+//     marginTop: "10px",
+//     color: "white",
+//   },
+//   position: {
+//     fontSize: "21px",
+//     color: "white",
+//     marginBottom: "28px",
+//     display: "block",
+//   },
+//   logos: {
+//     display: "flex",
+//     justifyContent: "center",
+//     gap: "15px",
+//     position: "absolute",
+//     bottom: "-42px",
+//     left: "0px",
+//     width: "100%",
+//     zIndex: "9999",
+//     padding: "4px",
+//   },
+//   logo: {
+//     width: "170px",
+//     height: "auto",
+//     // border: "2px solid #000",
+//     borderRadius: "4px",
+//     // backgroundColor: "white",
+//   },
+//   controls: {
+//     display: "flex",
+//     justifyContent: "space-between",
+//     position: "absolute",
+//     top: "50%",
+//     left: "10px",
+//     right: "10px",
+//     transform: "translateY(-50%)",
+//   },
+//   arrow: {
+//     background: "none",
+//     border: "none",
+//     fontSize: "60px",
+//     color: "white",
+//     cursor: "pointer",
+//     padding: "5px 10px",
+//   },
+//   dots: {
+//     display: "flex",
+//     justifyContent: "center",
+//     gap: "10px",
+//     marginTop: "58px",
+//   },
+//   dot: {
+//     width: "12px",
+//     height: "12px",
+//     borderRadius: "50%",
+//     backgroundColor: "#ccc",
+//     cursor: "pointer",
+//   },
+// };
+
+// export default IdeasSection;
+
+
+
+// "use client";
+
+// import { useState, useEffect } from "react";
+
+// const IdeasSection = () => {
+//   const [currentSlide, setCurrentSlide] = useState(0);
+
+//   const testimonials = [
+//     {
+//       text: "'Consulting services for all things related to DevOps provided insight into automation and streamlining processes, improving our product development timelines significantly.'",
+//       name: "Mark Wilson",
+//       title: "CEO, Shell",
+//       logos: ["/img/ideas/3.png"],
+//     },
+//     {
+//       text: "'Great support and consultancy from the team helped us achieve our automation goals efficiently and on time.'",
+//       name: "Jane Smith",
+//       title: "CTO, Unilever",
+//       logos: ["/img/ideas/1.png"],
+//     },
+//     {
+//       text: "'Their approach to improving our hospital operations was revolutionary and efficient.'",
+//       name: "Dr. Ahmed Khan",
+//       title: "Director, Indus Hospital",
+//       logos: ["/img/ideas/2.png"],
+//     },
+//   ];
+
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+//     }, 5000);
+
+//     return () => clearInterval(interval);
+//   }, [testimonials.length]);
+
+//   const nextSlide = () => {
+//     setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+//   };
+
+//   const prevSlide = () => {
+//     setCurrentSlide((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+//   };
+
+//   return (
+//     <div style={{ textAlign: "center", padding: "50px 20px", backgroundColor: "rgb(12, 20, 31)", position: "relative" }}>
+//       <h3 style={{ fontSize: "28px", fontWeight: "700", color: "white", marginBottom: "30px", textTransform: "uppercase" }}>What Our Customers Say</h3>
+//       <div style={{ display: "flex", transition: "transform 0.6s ease-in-out", overflow: "hidden", position: "relative", width: "100%", paddingBottom: "50px" }}>
+//         {testimonials?.map((testimonial, index) => (
+//           <div
+//             key={index}
+//             style={{ flexShrink: 0, width: "100%", textAlign: "center", padding: "20px", transform: `translateX(-${currentSlide * 100}%)` }}
+//           >
+//             <div style={{ borderRadius: "10px", padding: "40px 20px", backgroundColor: "rgb(12, 20, 31)", minHeight: "300px", maxWidth: "60%", margin: "0 auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", position: "relative", display: "flex", flexDirection: "column", justifyContent: "center", textAlign: "center" }}>
+//               <p style={{ fontSize: "30px", color: "white", marginBottom: "15px", whiteSpace: "normal", overflow: "visible", textOverflow: "clip" }}>{testimonial.text}</p>
+//               <h4 style={{ fontSize: "24px", fontWeight: "bold", marginTop: "10px", color: "white" }}>{testimonial.name}</h4>
+//               <span style={{ fontSize: "21px", color: "white", marginBottom: "28px", display: "block" }}>{testimonial.title}</span>
+//               <div style={{ display: "flex", justifyContent: "center", gap: "15px", position: "absolute", bottom: "-42px", left: "0px", width: "100%", zIndex: "9999", padding: "4px" }}>
+//                 {testimonial.logos.map((logo, i) => (
+//                   <img key={i} src={logo} alt="Logo" style={{ width: "170px", height: "auto", borderRadius: "4px" }} />
+//                 ))}
+//               </div>
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+//       <div style={{ display: "flex", justifyContent: "space-between", position: "absolute", top: "50%", left: "10px", right: "10px", transform: "translateY(-50%)" }}>
+//         <button onClick={prevSlide} style={{ background: "none", border: "none", fontSize: "60px", color: "white", cursor: "pointer", padding: "5px 10px" }}>&#10094;</button>
+//         <button onClick={nextSlide} style={{ background: "none", border: "none", fontSize: "60px", color: "white", cursor: "pointer", padding: "5px 10px" }}>&#10095;</button>
+//       </div>
+//       <div style={{ display: "flex", justifyContent: "center", gap: "10px", marginTop: "58px" }}>
+//         {testimonials.map((_, index) => (
+//           <span
+//             key={index}
+//             onClick={() => setCurrentSlide(index)}
+//             style={{ width: "12px", height: "12px", borderRadius: "50%", backgroundColor: currentSlide === index ? "rgb(188, 255, 0)" : "#ccc", cursor: "pointer" }}
+//           />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default IdeasSection;
+
+// "use client";
+
+// import { useState, useEffect } from "react";
+
+// const IdeasSection = () => {
+//   const [currentSlide, setCurrentSlide] = useState(0);
+//   const [fadeIn, setFadeIn] = useState(true);
+
+//   const testimonials = [
+//     {
+//       text: '"Consulting services for all things related to DevOps provided insight into automation and streamlining processes, improving our product development timelines significantly."',
+//       name: "Mark Wilson",
+//       title: "CEO, Shell",
+//       logos: ["/img/ideas/3.png"],
+//     },
+//     {
+//       text: '"Great support and consultancy from the team helped us achieve our automation goals efficiently and on time."',
+//       name: "Jane Smith",
+//       title: "CTO, Unilever",
+//       logos: ["/img/ideas/1.png"],
+//     },
+//     {
+//       text: '"Their approach to improving our hospital operations was revolutionary and efficient."',
+//       name: "Dr. Ahmed Khan",
+//       title: "Director, Indus Hospital",
+//       logos: ["/img/ideas/2.png"],
+//     },
+//   ];
+
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setFadeIn(false);
+//       setTimeout(() => {
+//         setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+//         setFadeIn(true);
+//       }, 500);
+//     }, 5000);
+
+//     return () => clearInterval(interval);
+//   }, [testimonials.length]);
+
+//   const nextSlide = () => {
+//     setFadeIn(false);
+//     setTimeout(() => {
+//       setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+//       setFadeIn(true);
+//     }, 500);
+//   };
+
+//   const prevSlide = () => {
+//     setFadeIn(false);
+//     setTimeout(() => {
+//       setCurrentSlide((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+//       setFadeIn(true);
+//     }, 500);
+//   };
+
+//   return (
+//     <div style={{ textAlign: "center", padding: "50px 20px", backgroundColor: "rgb(12, 20, 31)", position: "relative" }}>
+//       <h3 style={{ fontSize: "28px", fontWeight: "700", color: "white", marginBottom: "30px", textTransform: "uppercase" }}>What Our Customers Say</h3>
+//       <div style={{ position: "relative", width: "100%", paddingBottom: "50px" }}>
+//         {testimonials.map((testimonial, index) => (
+//           <div
+//             key={index}
+//             style={{
+//               opacity: index === currentSlide && fadeIn ? 1 : 0,
+//               transition: "opacity 0.5s ease-in-out",
+//               position: index === currentSlide ? "relative" : "absolute",
+//               width: "100%",
+//               textAlign: "center",
+//               padding: "20px",
+//             }}
+//           >
+//             <div style={{ borderRadius: "10px", padding: "40px 20px", backgroundColor: "rgb(12, 20, 31)", minHeight: "300px", maxWidth: "60%", margin: "0 auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", textAlign: "center" }}>
+//               <p style={{ fontSize: "40px",  color: "white", marginBottom: "15px" }}>{testimonial.text}</p>
+//               <h4 style={{ fontSize: "24px", fontWeight: "bold", marginTop: "10px", color: "white" }}>{testimonial.name}</h4>
+//               <span style={{ fontSize: "21px", color: "white", marginBottom: "28px", display: "block" }}>{testimonial.title}</span>
+//               <div style={{ display: "flex", justifyContent: "center", gap: "15px", padding: "4px" }}>
+//                 {testimonial.logos.map((logo, i) => (
+//                   <img key={i} src={logo} alt="Logo" style={{ width: "170px", height: "auto", borderRadius: "4px" }} />
+//                 ))}
+//               </div>
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+//       <div style={{ display: "flex", justifyContent: "space-between", position: "absolute", top: "50%", left: "10px", right: "10px", transform: "translateY(-50%)" }}>
+//         <button onClick={prevSlide} style={{ background: "none", border: "none", fontSize: "60px", color: "white", cursor: "pointer", padding: "5px 10px" }}>&#10094;</button>
+//         <button onClick={nextSlide} style={{ background: "none", border: "none", fontSize: "60px", color: "white", cursor: "pointer", padding: "5px 10px" }}>&#10095;</button>
+//       </div>
+//       <div style={{ display: "flex", justifyContent: "center", gap: "10px", marginTop: "58px" }}>
+//         {testimonials.map((_, index) => (
+//           <span
+//             key={index}
+//             onClick={() => setCurrentSlide(index)}
+//             style={{ width: "12px", height: "12px", borderRadius: "50%", backgroundColor: currentSlide === index ? "rgb(188, 255, 0)" : "#ccc", cursor: "pointer" }}
+//           />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default IdeasSection;
+
+// "use client";
+
+// import { useState, useEffect } from "react";
+
+// const IdeasSection = () => {
+//   const [currentSlide, setCurrentSlide] = useState(0);
+//   const [fadeIn, setFadeIn] = useState(true);
+
+//   const testimonials = [
+//     {
+//       text: '"Consulting services for all things related to DevOps provided insight into automation and streamlining processes, improving our product development timelines significantly."',
+//       name: "Mark Wilson",
+//       title: "CEO, Shell",
+//       logos: ["/img/ideas/3.png"],
+//     },
+//     {
+//       text: '"Great support and consultancy from the team helped us achieve our automation goals efficiently and on time."',
+//       name: "Jane Smith",
+//       title: "CTO, Unilever",
+//       logos: ["/img/ideas/1.png"],
+//     },
+//     {
+//       text: '"Their approach to improving our hospital operations was revolutionary and efficient."',
+//       name: "Dr. Ahmed Khan",
+//       title: "Director, Indus Hospital",
+//       logos: ["/img/ideas/2.png"],
+//     },
+//   ];
+
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setFadeIn(false);
+//       setTimeout(() => {
+//         setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+//         setFadeIn(true);
+//       }, 500);
+//     }, 5000);
+
+//     return () => clearInterval(interval);
+//   }, [testimonials.length]);
+
+//   const nextSlide = () => {
+//     setFadeIn(false);
+//     setTimeout(() => {
+//       setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+//       setFadeIn(true);
+//     }, 500);
+//   };
+
+//   const prevSlide = () => {
+//     setFadeIn(false);
+//     setTimeout(() => {
+//       setCurrentSlide((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+//       setFadeIn(true);
+//     }, 500);
+//   };
+
+//   return (
+//     <div style={{ textAlign: "center", padding: "50px 20px", backgroundColor: "rgb(12, 20, 31)", position: "relative" }}>
+//       <h3 style={{ fontSize: "28px", fontWeight: "700", color: "white", marginBottom: "30px", textTransform: "uppercase" }}>What Our Customers Say</h3>
+//       <div style={{ position: "relative", width: "100%", paddingBottom: "50px" }}>
+//         {testimonials.map((testimonial, index) => (
+//           <div
+//             key={index}
+//             style={{
+//               opacity: index === currentSlide && fadeIn ? 1 : 0,
+//               transition: "opacity 0.5s ease-in-out",
+//               position: index === currentSlide ? "relative" : "absolute",
+//               width: "100%",
+//               textAlign: "center",
+//               padding: "20px",
+//             }}
+//           >
+//             <div style={{ borderRadius: "10px", padding: "40px 20px", backgroundColor: "rgb(12, 20, 31)", minHeight: "300px", maxWidth: "60%", margin: "0 auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", textAlign: "center" }}>
+//               <p style={{ fontSize: "40px", color: "white", marginBottom: "15px", fontStyle:"italic", lineHeight: "1.2", padding: "10px" }}>{testimonial.text}</p>
+//               <h4 style={{ fontSize: "30px", fontWeight: "bold", marginTop: "10px", color: "white" }}>{testimonial.name}</h4>
+//               <span style={{ fontSize: "25px", color: "white", marginBottom: "28px", display: "block" }}>{testimonial.title}</span>
+//               <div style={{ display: "flex", justifyContent: "center", gap: "15px", padding: "4px" }}>
+//                 {testimonial.logos.map((logo, i) => (
+//                   <img key={i} src={logo} alt="Logo" style={{ width: "250px", height: "auto", borderRadius: "4px" }} />
+//                 ))}
+//               </div>
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+//       <div style={{ display: "flex", justifyContent: "space-between", position: "absolute", top: "50%", left: "10px", right: "10px", transform: "translateY(-50%)" }}>
+//         <button onClick={prevSlide} style={{ background: "none", border: "none", fontSize: "60px", color: "white", cursor: "pointer", padding: "5px 10px" }}>&#10094;</button>
+//         <button onClick={nextSlide} style={{ background: "none", border: "none", fontSize: "60px", color: "white", cursor: "pointer", padding: "5px 10px" }}>&#10095;</button>
+//       </div>
+//       <div style={{ display: "flex", justifyContent: "center", gap: "10px", marginTop: "58px" }}>
+//         {testimonials.map((_, index) => (
+//           <span
+//             key={index}
+//             onClick={() => setCurrentSlide(index)}
+//             style={{ width: "12px", height: "12px", borderRadius: "50%", backgroundColor: currentSlide === index ? "rgb(188, 255, 0)" : "#ccc", cursor: "pointer" }}
+//           />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default IdeasSection;
+
+// "use client";
+
+// import { useState, useEffect } from "react";
+
+// const IdeasSection = () => {
+//   const [currentSlide, setCurrentSlide] = useState(0);
+//   const [fadeIn, setFadeIn] = useState(true);
+
+//   const testimonials = [
+//     {
+//       text: '"Consulting services for all things related to DevOps provided insight into automation and streamlining processes, improving our product development timelines significantly."',
+//       name: "Mark Wilson",
+//       title: "CEO, Shell",
+//       logos: ["/img/ideas/3.png"],
+//     },
+//     {
+//       text: '"Great support and consultancy from the team helped us achieve our automation goals efficiently and on time."',
+//       name: "Jane Smith",
+//       title: "CTO, Unilever",
+//       logos: ["/img/ideas/1.png"],
+//     },
+//     {
+//       text: '"Their approach to improving our hospital operations was revolutionary and efficient."',
+//       name: "Dr. Ahmed Khan",
+//       title: "Director, Indus Hospital",
+//       logos: ["/img/ideas/2.png"],
+//     },
+//   ];
+
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setFadeIn(false);
+//       setTimeout(() => {
+//         setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+//         setFadeIn(true);
+//       }, 500);
+//     }, 5000);
+
+//     return () => clearInterval(interval);
+//   }, [testimonials.length]);
+
+//   const nextSlide = () => {
+//     setFadeIn(false);
+//     setTimeout(() => {
+//       setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+//       setFadeIn(true);
+//     }, 500);
+//   };
+
+//   const prevSlide = () => {
+//     setFadeIn(false);
+//     setTimeout(() => {
+//       setCurrentSlide((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+//       setFadeIn(true);
+//     }, 500);
+//   };
+
+//   return (
+//     <div style={{ textAlign: "center", padding: "50px 20px", backgroundColor: "rgb(12, 20, 31)", position: "relative" }}>
+//       <h3 style={{ fontSize: "28px", fontWeight: "700", color: "white", marginBottom: "30px", textTransform: "uppercase" }}>
+//         What Our Customers Say
+//       </h3>
+
+//       <div style={{ position: "relative", width: "100%", paddingBottom: "50px" }}>
+//         {testimonials.map((testimonial, index) => (
+//           <div
+//             key={index}
+//             style={{
+//               opacity: index === currentSlide && fadeIn ? 1 : 0,
+//               transition: "opacity 0.5s ease-in-out",
+//               position: index === currentSlide ? "relative" : "absolute",
+//               width: "100%",
+//               textAlign: "center",
+//               padding: "20px",
+//             }}
+//           >
+//             <div
+//               style={{
+//                 borderRadius: "10px",
+//                 padding: "40px 10px",
+//                 backgroundColor: "rgb(12, 20, 31)",
+//                 minHeight: "300px",
+//                 maxWidth: "80%",
+//                 margin: "0 auto",
+//                 boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+//                 textAlign: "justify",
+//                 lineHeight: "1.4",
+//               }}
+//             >
+//               <p style={{ fontSize: "40px", color: "white", marginBottom: "15px", fontStyle: "italic", padding: "10px" }}>
+//                 {testimonial.text}
+//               </p>
+              
+//               {/* Centering Name & Title */}
+//               <div style={{ textAlign: "center", marginTop: "20px" }}>
+//                 <h4 style={{ fontSize: "30px", fontWeight: "bold", color: "white", marginBottom: "5px" }}>
+//                   {testimonial.name}
+//                 </h4>
+//                 <span style={{ fontSize: "25px", color: "white", display: "block" }}>
+//                   {testimonial.title}
+//                 </span>
+//               </div>
+
+//               <div style={{ display: "flex", justifyContent: "center", gap: "15px", padding: "4px", marginTop: "20px" }}>
+//                 {testimonial.logos.map((logo, i) => (
+//                   <img key={i} src={logo} alt="Logo" style={{ width: "250px", height: "auto", borderRadius: "4px" }} />
+//                 ))}
+//               </div>
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+
+//       <div style={{ display: "flex", justifyContent: "space-between", position: "absolute", top: "50%", left: "10px", right: "10px", transform: "translateY(-50%)" }}>
+//         <button onClick={prevSlide} style={{ background: "none", border: "none", fontSize: "60px", color: "white", cursor: "pointer", padding: "5px 10px" }}>
+//           &#10094;
+//         </button>
+//         <button onClick={nextSlide} style={{ background: "none", border: "none", fontSize: "60px", color: "white", cursor: "pointer", padding: "5px 10px" }}>
+//           &#10095;
+//         </button>
+//       </div>
+
+//       <div style={{ display: "flex", justifyContent: "center", gap: "10px", marginTop: "58px" }}>
+//         {testimonials.map((_, index) => (
+//           <span
+//             key={index}
+//             onClick={() => setCurrentSlide(index)}
+//             style={{
+//               width: "12px",
+//               height: "12px",
+//               borderRadius: "50%",
+//               backgroundColor: currentSlide === index ? "rgb(188, 255, 0)" : "#ccc",
+//               cursor: "pointer",
+//             }}
+//           />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default IdeasSection;
+
+
+// "use client";
+
+// import { useState, useEffect } from "react";
+
+// const IdeasSection = () => {
+//   const [currentSlide, setCurrentSlide] = useState(0);
+//   const [fadeIn, setFadeIn] = useState(true);
+
+//   const testimonials = [
+//     {
+//       text: '"Consulting services for all things related to DevOps provided insight into automation and streamlining processes, improving our product development timelines significantly."',
+//       name: "Mark Wilson",
+//       title: "CEO, Shell",
+//       logos: ["/img/ideas/3.png"],
+//     },
+//     {
+//       text: '"Great support and consultancy from the team helped us achieve our automation goals efficiently and on time."',
+//       name: "Jane Smith",
+//       title: "CTO, Unilever",
+//       logos: ["/img/ideas/1.png"],
+//     },
+//     {
+//       text: '"Their approach to improving our hospital operations was revolutionary and efficient."',
+//       name: "Dr. Ahmed Khan",
+//       title: "Director, Indus Hospital",
+//       logos: ["/img/ideas/2.png"],
+//     },
+//   ];
+
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setFadeIn(false);
+//       setTimeout(() => {
+//         setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+//         setFadeIn(true);
+//       }, 500);
+//     }, 5000);
+
+//     return () => clearInterval(interval);
+//   }, [testimonials.length]);
+
+//   const nextSlide = () => {
+//     setFadeIn(false);
+//     setTimeout(() => {
+//       setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+//       setFadeIn(true);
+//     }, 500);
+//   };
+
+//   const prevSlide = () => {
+//     setFadeIn(false);
+//     setTimeout(() => {
+//       setCurrentSlide((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+//       setFadeIn(true);
+//     }, 500);
+//   };
+
+//   return (
+//     <div style={{ textAlign: "center", padding: "50px 20px", backgroundColor: "rgb(12, 20, 31)", position: "relative" }}>
+//       <h3 style={{ fontSize: "28px", fontWeight: "700", color: "white", marginBottom: "30px", textTransform: "uppercase" }}>
+//         What Our Customers Say
+//       </h3>
+
+//       <div style={{ position: "relative", width: "100%", paddingBottom: "50px" }}>
+//         {testimonials.map((testimonial, index) => (
+//           <div
+//             key={index}
+//             style={{
+//               opacity: index === currentSlide && fadeIn ? 1 : 0,
+//               transition: "opacity 0.5s ease-in-out",
+//               position: index === currentSlide ? "relative" : "absolute",
+//               width: "100%",
+//               textAlign: "center",
+//               padding: "20px",
+//             }}
+//           >
+//             <div
+//               style={{
+//                 borderRadius: "10px",
+//                 padding: "40px 10px",
+//                 backgroundColor: "rgb(12, 20, 31)",
+//                 minHeight: "320px", // 🔹 Ensuring Equal Heights
+//                 maxWidth: "80%",
+//                 margin: "0 auto",
+//                 boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+//                 display: "flex",
+//                 flexDirection: "column",
+//                 justifyContent: "space-between", // 🔹 Keeps content balanced
+//                 alignItems: "center",
+//                 textAlign: "justify",
+//                 lineHeight: "1.4",
+//               }}
+//             >
+//               <p style={{ fontSize: "40px", color: "white", flex: "1", display: "flex", alignItems: "center", textAlign: "center", marginBottom: "15px", fontStyle: "italic", padding: "10px", minHeight: "100px" }}>
+//                 {testimonial.text}
+//               </p>
+              
+//               {/* Centering Name & Title */}
+//               <div style={{ textAlign: "center", marginTop: "20px" }}>
+//                 <h4 style={{ fontSize: "30px", fontWeight: "bold", color: "white", marginBottom: "5px" }}>
+//                   {testimonial.name}
+//                 </h4>
+//                 <span style={{ fontSize: "25px", color: "white", display: "block" }}>
+//                   {testimonial.title}
+//                 </span>
+//               </div>
+
+//               <div style={{ display: "flex", justifyContent: "center", gap: "15px", padding: "4px", marginTop: "20px" }}>
+//                 {testimonial.logos.map((logo, i) => (
+//                   <img key={i} src={logo} alt="Logo" style={{ width: "250px", height: "auto", borderRadius: "4px" }} />
+//                 ))}
+//               </div>
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+
+//       <div style={{ display: "flex", justifyContent: "space-between", position: "absolute", top: "50%", left: "10px", right: "10px", transform: "translateY(-50%)" }}>
+//         <button onClick={prevSlide} style={{ background: "none", border: "none", fontSize: "60px", color: "white", cursor: "pointer", padding: "5px 10px" }}>
+//           &#10094;
+//         </button>
+//         <button onClick={nextSlide} style={{ background: "none", border: "none", fontSize: "60px", color: "white", cursor: "pointer", padding: "5px 10px" }}>
+//           &#10095;
+//         </button>
+//       </div>
+
+//       <div style={{ display: "flex", justifyContent: "center", gap: "10px", marginTop: "58px" }}>
+//         {testimonials.map((_, index) => (
+//           <span
+//             key={index}
+//             onClick={() => setCurrentSlide(index)}
+//             style={{
+//               width: "12px",
+//               height: "12px",
+//               borderRadius: "50%",
+//               backgroundColor: currentSlide === index ? "rgb(188, 255, 0)" : "#ccc",
+//               cursor: "pointer",
+//             }}
+//           />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default IdeasSection;
+
 "use client";
 
 import { useState, useEffect } from "react";
 
 const IdeasSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [fadeIn, setFadeIn] = useState(true);
 
   const testimonials = [
     {
-      text: "'Consulting services for all things related to DevOps provided insight into automation and streamlining processes, improving our product development timelines significantly.'",
+      text: '"Consulting services for all things related to DevOps provided insight into automation and streamlining processes, improving our product development timelines significantly."',
       name: "Mark Wilson",
       title: "CEO, Shell",
       logos: ["/img/ideas/3.png"],
     },
     {
-      text: "'Great support and consultancy from the team helped us achieve our automation goals efficiently and on time.'",
+      text: '"Great support and consultancy from the team helped us achieve our automation goals efficiently and on time."',
       name: "Jane Smith",
       title: "CTO, Unilever",
       logos: ["/img/ideas/1.png"],
     },
     {
-      text: "'Their approach to improving our hospital operations was revolutionary and efficient.'",
+      text: '"Their approach to improving our hospital operations was revolutionary and efficient."',
       name: "Dr. Ahmed Khan",
       title: "Director, Indus Hospital",
       logos: ["/img/ideas/2.png"],
@@ -646,187 +1450,122 @@ const IdeasSection = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+      setFadeIn(false);
+      setTimeout(() => {
+        setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+        setFadeIn(true);
+      }, 500);
     }, 5000);
 
     return () => clearInterval(interval);
   }, [testimonials.length]);
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+    setFadeIn(false);
+    setTimeout(() => {
+      setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+      setFadeIn(true);
+    }, 500);
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+    setFadeIn(false);
+    setTimeout(() => {
+      setCurrentSlide((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+      setFadeIn(true);
+    }, 500);
   };
 
   return (
-    <div style={styles.container}>
-      {/* <h2 style={{ ...styles.title, fontSize: "25px" }} className="mil-suptitle-testimonals">
-        TESTIMONIALS
-      </h2> */}
-      <h3 style={styles.subtitle}>What Our Customers Say</h3>
-      <div style={styles.carousel}>
-        {testimonials?.map((testimonial, index) => (
+    <div style={{ textAlign: "center", padding: "50px 20px", backgroundColor: "rgb(12, 20, 31)", position: "relative" }}>
+      <h3 style={{ fontSize: "28px", fontWeight: "700", color: "white", marginBottom: "30px", textTransform: "uppercase" }}>
+        What Our Customers Say
+      </h3>
+
+      <div style={{ position: "relative", width: "100%", paddingBottom: "50px", height: "450px" }}> {/* ✅ Set fixed height */}
+        {testimonials.map((testimonial, index) => (
           <div
             key={index}
             style={{
-              ...styles.slide,
-              transform: `translateX(-${currentSlide * 100}%)`,
+              opacity: index === currentSlide && fadeIn ? 1 : 0,
+              transition: "opacity 0.5s ease-in-out",
+              position: index === currentSlide ? "relative" : "absolute",
+              width: "100%",
+              textAlign: "center",
+              padding: "20px",
+              height: "100%", // ✅ Ensures Full Height Usage
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
             }}
           >
-            <div style={styles.testimonialBox}>
-              <p style={styles.text}>{testimonial.text}</p>
-              <h4 style={styles.name}>{testimonial.name}</h4>
-              <span style={styles.position}>{testimonial.title}</span>
-              <div style={styles.logos}>
+            <div
+              style={{
+                borderRadius: "10px",
+                padding: "40px 10px",
+                backgroundColor: "rgb(12, 20, 31)",
+                height: "100%", // ✅ Makes sure all slides are the same size
+                maxWidth: "80%",
+                margin: "0 auto",
+                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+                alignItems: "center",
+                textAlign: "justify",
+                lineHeight: "1.4",
+              }}
+            >
+              <p style={{ fontSize: "40px", color: "white", flex: "1", display: "flex", alignItems: "center", textAlign: "center", fontStyle: "italic", padding: "10px" }}>
+                {testimonial.text}
+              </p>
+              
+              {/* Centering Name & Title */}
+              <div style={{ textAlign: "center", marginTop: "20px" }}>
+                <h4 style={{ fontSize: "30px", fontWeight: "bold", color: "white", marginBottom: "5px" }}>
+                  {testimonial.name}
+                </h4>
+                <span style={{ fontSize: "25px", color: "white", display: "block" }}>
+                  {testimonial.title}
+                </span>
+              </div>
+
+              <div style={{ display: "flex", justifyContent: "center", gap: "15px", padding: "4px", marginTop: "20px" }}>
                 {testimonial.logos.map((logo, i) => (
-                  <img key={i} src={logo} alt="Logo" style={styles.logo} />
+                  <img key={i} src={logo} alt="Logo" style={{ width: "250px", height: "auto", borderRadius: "4px" }} />
                 ))}
               </div>
             </div>
           </div>
         ))}
       </div>
-      <div style={styles.controls}>
-        <button onClick={prevSlide} style={styles.arrow}>
+
+      <div style={{ display: "flex", justifyContent: "space-between", position: "absolute", top: "50%", left: "10px", right: "10px", transform: "translateY(-50%)" }}>
+        <button onClick={prevSlide} style={{ background: "none", border: "none", fontSize: "60px", color: "white", cursor: "pointer", padding: "5px 10px" }}>
           &#10094;
         </button>
-        <button onClick={nextSlide} style={styles.arrow}>
+        <button onClick={nextSlide} style={{ background: "none", border: "none", fontSize: "60px", color: "white", cursor: "pointer", padding: "5px 10px" }}>
           &#10095;
         </button>
       </div>
-      <div style={styles.dots}>
+
+      <div style={{ display: "flex", justifyContent: "center", gap: "10px", marginTop: "58px" }}>
         {testimonials.map((_, index) => (
           <span
             key={index}
             onClick={() => setCurrentSlide(index)}
             style={{
-              ...styles.dot,
+              width: "12px",
+              height: "12px",
+              borderRadius: "50%",
               backgroundColor: currentSlide === index ? "rgb(188, 255, 0)" : "#ccc",
+              cursor: "pointer",
             }}
           />
         ))}
       </div>
     </div>
   );
-};
-
-const styles = {
-  container: {
-    textAlign: "center",
-    padding: "50px 20px",
-    // background: "url(/img/photo/BGgrayNet.webp) no-repeat center center/cover",
-    position: "relative",
-    backgroundColor:"rgb(12, 20, 31)"
-  },
-  title: {
-    fontSize: "25px",
-    fontWeight: "bold",
-    marginBottom: "10px",
-    color: "rgb(188, 255, 0)",
-  },
-  subtitle: {
-    fontSize: "28px",
-    fontWeight: "700",
-    color: "white",
-    marginBottom: "30px",
-    textTransform: "uppercase",
-  },
-  carousel: {
-    display: "flex",
-    transition: "transform 0.6s ease-in-out",
-    overflow: "hidden",
-    position: "relative",
-    width: "100%",
-    paddingBottom: "50px",
-  },
-  slide: {
-    flexShrink: 0,
-    width: "100%",
-    textAlign: "center",
-    padding: "20px",
-  },
-  testimonialBox: {
-    // border: "2px solid #000",
-    borderRadius: "10px",
-    padding: "40px 20px",
-    backgroundColor: "rgb(12, 20, 31)",
-    minHeight: "300px",
-    maxWidth: "60%",
-    margin: "0 auto",
-    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-    position: "relative",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    textAlign: "center",
-  },
-  text: {
-    fontSize: "25px",
-    color: "white",
-    marginBottom: "15px",
-  },
-  name: {
-    fontSize: "24px",
-    fontWeight: "bold", 
-    marginTop: "10px",
-    color: "white",
-  },
-  position: {
-    fontSize: "21px",
-    color: "white",
-    marginBottom: "28px",
-    display: "block",
-  },
-  logos: {
-    display: "flex",
-    justifyContent: "center",
-    gap: "15px",
-    position: "absolute",
-    bottom: "-42px",
-    left: "0px",
-    width: "100%",
-    zIndex: "9999",
-    padding: "4px",
-  },
-  logo: {
-    width: "170px",
-    height: "auto",
-    // border: "2px solid #000",
-    borderRadius: "4px",
-    // backgroundColor: "white",
-  },
-  controls: {
-    display: "flex",
-    justifyContent: "space-between",
-    position: "absolute",
-    top: "50%",
-    left: "10px",
-    right: "10px",
-    transform: "translateY(-50%)",
-  },
-  arrow: {
-    background: "none",
-    border: "none",
-    fontSize: "60px",
-    color: "white",
-    cursor: "pointer",
-    padding: "5px 10px",
-  },
-  dots: {
-    display: "flex",
-    justifyContent: "center",
-    gap: "10px",
-    marginTop: "58px",
-  },
-  dot: {
-    width: "12px",
-    height: "12px",
-    borderRadius: "50%",
-    backgroundColor: "#ccc",
-    cursor: "pointer",
-  },
 };
 
 export default IdeasSection;

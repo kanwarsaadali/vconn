@@ -927,7 +927,7 @@ const DevopsSlider = () => {
             style={{
               ...styles.tab,
               borderBottom:
-                activeTab === service ? "4px solid rgb(188, 255, 0)" : "none",
+                activeTab === service ? "" : "none",
               color: activeTab === service ? "white" : "gray",
             }}
           >
@@ -995,6 +995,7 @@ const styles = {
     width: "70px",
     height: "70px",
     transition: "transform 0.3s ease-in-out",
+    backgroundColor: "white"
   },
   iconText: {
     fontSize: "16px",

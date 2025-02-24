@@ -24,8 +24,23 @@
             {
                 "label": "Services",
                 "link": "/services",
-                "children": [
-
+                 "children": [
+                    {
+                        "label": "Cybersecurity",
+                        "link": "/services/cybersecurity"
+                    },
+                    {
+                        "label": "DevSecops",
+                        "link": "/services/devsecops"
+                    },
+                    {
+                        "label": "Managed-Services",
+                        "link": "/services/managed-services"
+                    },
+                    {
+                        "label": "Information-Security",
+                        "link": "/services/information-security"
+                    }
                 ]
             },
             {

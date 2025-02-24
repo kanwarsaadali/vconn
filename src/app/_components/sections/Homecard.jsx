@@ -896,7 +896,7 @@ const cardData = [
     image: "/img/covers/Information.png",
     title: "MANAGED SERVICES",
     description:
-      "Avoid downtime, communication challenges, reduced operational costs, with proactive support.",
+      "Experience uninterrupted IT operations without downtime, reduced operational costs, with proactive support.",
   },
 ];
 
@@ -926,7 +926,7 @@ const Homecard = () => {
 
         {/* Centered Button */}
         <div style={styles.buttonContainer}>
-          <button style={styles.button}>More Services</button>
+          <button style={styles.button}>MORE SERVICES</button>
         </div>
       </div>
     </section>

@@ -439,81 +439,390 @@
 
 // export default AdvantagesSection;
 
-import React from "react";
+// import React from "react";
+
+// const AdvantagesSection = () => {
+//   return (
+//     <section style={styles.section}>
+//       {/* Title */}
+//       <h2 style={styles.title}>WHY US</h2>
+
+//       {/* Background Image */}
+//       <div className="background-image" style={styles.background}></div>
+
+//       {/* Inline CSS for media queries */}
+//       <style>
+//         {`
+//           .background-image {
+//             background-size: contain !important; /* Prevents cropping */
+//             background-position: top center !important;
+//           }
+          
+//           @media (max-width: 1200px) {
+//             .background-image {
+//               height: 75vh !important;
+//             }
+//           }
+
+//           @media (max-width: 1024px) {
+//             .background-image {
+//               height: 60vh !important;
+//               background-size: contain !important;
+//             }
+//           }
+
+//           @media (max-width: 768px) {
+//             .background-image {
+//               height: 50vh !important;
+//               background-size: contain !important;
+//             }
+//           }
+
+//           @media (max-width: 480px) {
+//             .background-image {
+//               height: 40vh !important;
+//               background-size: contain !important;
+//             }
+//           }
+//         `}
+//       </style>
+//     </section>
+//   );
+// };
+
+// // Styles Object
+// const styles = {
+//   section: {
+//     backgroundColor: "rgb(12, 20, 31)",
+//     color: "#fff",
+//     padding: "50px 20px",
+//     textAlign: "center",
+//     position: "relative",
+//   },
+//   title: {
+//     color: "rgb(188, 255, 0)",
+//     fontSize: "3rem",
+//     fontWeight: "bold",
+//     marginBottom: "30px",
+//   },
+//   background: {
+//     width: "100%",
+//     height: "85vh", // Ensures visibility on full screen
+//     minHeight: "300px", // Minimum visibility for small screens
+//     backgroundImage: 'url("/img/covers/whyus.png")',
+//     backgroundSize: "cover", // Prevents distortion
+//     backgroundPosition: "center", // Centers the image
+//     backgroundRepeat: "no-repeat",
+//   },
+// };
+
+// export default AdvantagesSection;
+
+
+// import React from "react";
+
+// const AdvantagesSection = () => {
+//   return (
+//     <section style={styles.section}>
+//       <div style={styles.container}>
+//         {/* Single Statistic */}
+//         <div style={styles.statBox}>
+//           <img src=""/>
+//           <h2 style={styles.number}>5</h2>
+//           <p style={styles.label}>Continents Footprint</p>
+//         </div>
+
+//         <div style={styles.statBox}>
+//           <h2 style={styles.number}>10+</h2>
+//           <p style={styles.label}>Years Experience</p>
+//         </div>
+
+//         <div style={styles.statBox}>
+//           <h2 style={styles.number}>24/7</h2>
+//           <p style={styles.label}>Working Hours</p>
+//         </div>
+
+//         {/* New Statistic Box */}
+//         <div style={styles.statBox}>
+//           <h2 style={styles.number}>99+</h2>
+//           <p style={styles.label}>Billion Cost Impact</p>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// // Styles
+// const styles = {
+//   section: {
+//     backgroundColor: "rgb(12, 20, 31)", // White background
+//     padding: "50px 20px",
+//     textAlign: "center",
+//   },
+//   container: {
+//     display: "flex",
+//     justifyContent: "space-between",
+//     alignItems: "center",
+//     maxWidth: "1200px",
+//     margin: "0 auto",
+//     flexWrap: "wrap",
+//     gap: "20px",
+//   },
+//   statBox: {
+//     flex: "1",
+//     minWidth: "200px",
+//     textAlign: "center",
+//     padding: "20px",
+//     borderRight: "2px solid #ddd",
+//   },
+//   number: {
+//     fontSize: "4rem",
+//     fontWeight: "bold",
+//     color: "rgb(188, 255, 0)",
+//     marginBottom: "5px",
+//   },
+//   label: {
+//     fontSize: "1rem",
+//     color: "white",
+//   },
+// };
+
+// // Remove last border on small screens
+// const mediaQuery = `
+//   @media (max-width: 768px) {
+//     .statBox {
+//       border-right: none !important;
+//       border-bottom: 2px solid #ddd;
+//     }
+//     .statBox:last-child {
+//       border-bottom: none;
+//     }
+//   }
+// `;
+
+// export default () => (
+//   <>
+//     <style>{mediaQuery}</style>
+//     <AdvantagesSection />
+//   </>
+// );
+
+
+// import React from "react";
+
+// const AdvantagesSection = () => {
+//   return (
+//     <section style={styles.section}>
+//       <div style={styles.container}>
+//         {/* Single Statistic */}
+//         <div style={styles.statBox}>
+//           <img src="/img/icons/map.png" alt="Continents" style={{width:"100px", height:"50px" ,marginBottom:"10px"}} />
+//           <h2 style={styles.number}>5</h2>
+//           <p style={styles.label}>Continents Footprint</p>
+//         </div>
+
+//         <div style={styles.statBox}>
+//           <img src="/img/icons/user.png" alt="Experience" style={styles.icon} />
+//           <h2 style={styles.number}>10+</h2>
+//           <p style={styles.label}>Years Experience</p>
+//         </div>
+
+//         <div style={styles.statBox}>
+//           <img src="/img/icons/clock.png" alt="Working Hours" style={styles.icon} />
+//           <h2 style={styles.number}>24/7</h2>
+//           <p style={styles.label}>Working Hours</p>
+//         </div>
+
+//         {/* New Statistic Box */}
+//         <div style={styles.statBox}>
+//           <img src="/img/icons/dollar.png" alt="Cost Impact" style={styles.icon} />
+//           <h2 style={styles.number}>99+</h2>
+//           <p style={styles.label}>Billion Cost Impact</p>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// // Styles
+// const styles = {
+//   section: {
+//     backgroundColor: "rgb(12, 20, 31)", // Dark background
+//     padding: "50px 20px",
+//     textAlign: "center",
+//   },
+//   container: {
+//     display: "flex",
+//     justifyContent: "space-between",
+//     alignItems: "center",
+//     maxWidth: "1200px",
+//     margin: "0 auto",
+//     flexWrap: "wrap",
+//     gap: "20px",
+//   },
+//   statBox: {
+//     flex: "1",
+//     minWidth: "200px",
+//     textAlign: "center",
+//     padding: "20px",
+//     // borderRight: "2px solid #ddd",
+//   },
+//   icon: {
+//     width: "50px", // Adjust icon size
+//     height: "50px",
+//     marginBottom: "10px",
+//   },
+//   number: {
+//     fontSize: "4rem",
+//     fontWeight: "bold",
+//     color: "rgb(188, 255, 0)",
+//     marginBottom: "5px",
+//   },
+//   label: {
+//     fontSize: "1rem",
+//     color: "white",
+//   },
+// };
+
+// // Remove last border on small screens
+// const mediaQuery = `
+//   @media (max-width: 768px) {
+//     .statBox {
+//       border-right: none !important;
+//       border-bottom: 2px solid #ddd;
+//     }
+//     .statBox:last-child {
+//       border-bottom: none;
+//     }
+//   }
+// `;
+
+// export default () => (
+//   <>
+//     <style>{mediaQuery}</style>
+//     <AdvantagesSection />
+//   </>
+// );
+
+import React, { useEffect, useRef } from "react";
 
 const AdvantagesSection = () => {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("fade-in-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    const sectionElement = sectionRef.current;
+    if (sectionElement) {
+      observer.observe(sectionElement);
+    }
+
+    return () => {
+      if (sectionElement) {
+        observer.unobserve(sectionElement);
+      }
+    };
+  }, []);
+
   return (
-    <section style={styles.section}>
-      {/* Title */}
-      <h2 style={styles.title}>WHY US</h2>
+    <section ref={sectionRef} style={styles.section} className="fade-in">
+      <div style={styles.container}>
+        <div style={styles.statBox}>
+          <img src="/img/icons/map.png" alt="Continents" style={{ width: "100px", height: "50px", marginBottom: "10px" }} />
+          <h2 style={styles.number}>5</h2>
+          <p style={styles.label}>Continents Footprint</p>
+        </div>
 
-      {/* Background Image */}
-      <div className="background-image" style={styles.background}></div>
+        <div style={styles.statBox}>
+          <img src="/img/icons/user.png" alt="Experience" style={styles.icon} />
+          <h2 style={styles.number}>10+</h2>
+          <p style={styles.label}>Years Experience</p>
+        </div>
 
-      {/* Inline CSS for media queries */}
-      <style>
-        {`
-          .background-image {
-            background-size: contain !important; /* Prevents cropping */
-            background-position: top center !important;
-          }
-          
-          @media (max-width: 1200px) {
-            .background-image {
-              height: 75vh !important;
-            }
-          }
+        <div style={styles.statBox}>
+          <img src="/img/icons/clock.png" alt="Working Hours" style={styles.icon} />
+          <h2 style={styles.number}>24/7</h2>
+          <p style={styles.label}>Working Hours</p>
+        </div>
 
-          @media (max-width: 1024px) {
-            .background-image {
-              height: 60vh !important;
-              background-size: contain !important;
-            }
-          }
-
-          @media (max-width: 768px) {
-            .background-image {
-              height: 50vh !important;
-              background-size: contain !important;
-            }
-          }
-
-          @media (max-width: 480px) {
-            .background-image {
-              height: 40vh !important;
-              background-size: contain !important;
-            }
-          }
-        `}
-      </style>
+        <div style={styles.statBox}>
+          <img src="/img/icons/dollar.png" alt="Cost Impact" style={styles.icon} />
+          <h2 style={styles.number}>99+</h2>
+          <p style={styles.label}>Billion Cost Impact</p>
+        </div>
+      </div>
+      <style>{fadeInStyles}</style>
     </section>
   );
 };
 
-// Styles Object
 const styles = {
   section: {
     backgroundColor: "rgb(12, 20, 31)",
-    color: "#fff",
     padding: "50px 20px",
     textAlign: "center",
-    position: "relative",
   },
-  title: {
-    color: "rgb(188, 255, 0)",
-    fontSize: "3rem",
+  container: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    maxWidth: "1200px",
+    margin: "0 auto",
+    flexWrap: "wrap",
+    gap: "20px",
+  },
+  statBox: {
+    flex: "1",
+    minWidth: "200px",
+    textAlign: "center",
+    padding: "20px",
+  },
+  icon: {
+    width: "50px",
+    height: "50px",
+    marginBottom: "10px",
+  },
+  number: {
+    fontSize: "4rem",
     fontWeight: "bold",
-    marginBottom: "30px",
+    color: "rgb(188, 255, 0)",
+    marginBottom: "5px",
   },
-  background: {
-    width: "100%",
-    height: "85vh", // Ensures visibility on full screen
-    minHeight: "300px", // Minimum visibility for small screens
-    backgroundImage: 'url("/img/covers/whyus.png")',
-    backgroundSize: "cover", // Prevents distortion
-    backgroundPosition: "center", // Centers the image
-    backgroundRepeat: "no-repeat",
+  label: {
+    fontSize: "1rem",
+    color: "white",
   },
 };
+
+const fadeInStyles = `
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  .fade-in-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  @media (max-width: 768px) {
+    .statBox {
+      border-right: none !important;
+      border-bottom: 2px solid #ddd;
+    }
+    .statBox:last-child {
+      border-bottom: none;
+    }
+  }
+`;
 
 export default AdvantagesSection;
