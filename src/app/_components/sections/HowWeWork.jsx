@@ -576,18 +576,141 @@
 
 // export default HowWeWorkSection;
 
+<<<<<<< HEAD
+=======
+// 'use client';
+// import advantage from "@data/sections/latest-projects.json";
+// import { useRouter } from "next/navigation";
+// import React from 'react';
+
+// const projects = [
+//   { icon: "/img/icons/about1.png", title: "Proactive Threat Intelligence and SOC Services", description: "Stay secure with 24/7 SOC services, real-time threat intelligence, and advanced monitoring to prevent cyber attacks.", extra: "Our SOC team proactively identifies and mitigates threats, ensuring seamless protection for your business." },
+//   { icon: "/img/icons/about2.png", title: "Next-Level Vulnerability Assessment & Penetration Testing", description: "Identify and fix vulnerabilities before they’re exploited. Strengthen your defenses with real-world testing and actionable insights.", extra: "Our experts simulate real-world attacks to expose weak points and enhance your security posture." },
+//   { icon: "/img/icons/about3.png", title: "Seamless Cloud Migration and Management", description: "Streamline operations with seamless migration to AWS, Azure, or IBM Cloud. Boost scalability, security, and performance.", extra: "We ensure minimal downtime and optimized configurations, making your cloud transition smooth and efficient." },
+//   { icon: "/img/icons/about4.png", title: "Automated CI/CD Pipelines for Faster, Safer Deployments", description: "Speed up software delivery with automated CI/CD pipelines, integrating security tools to ensure faster, safer deployments.", extra: "By automating testing and deployment, we help you release features faster with improved reliability." },
+//   { icon: "/img/icons/about5.png", title: "Kubernetes-Powered Application Modernization", description: "Scale effortlessly with Kubernetes-powered containerization, delivering agility, efficiency, and innovation for your applications.", extra: "Our container-based approach ensures high availability, portability, and resilience for modern applications." },
+//   { icon: "/img/icons/about6.png", title: "Effortless Virtualization with Proxmox", description: "Simplify resource management with Proxmox, offering scalable, cost-efficient virtual environments for modern businesses.", extra: "Our Proxmox solutions optimize server utilization, reducing overhead while increasing performance." }
+// ];
+
+// const HowWeWorkSection = () => {
+//   const router = useRouter();
+
+//   return (
+//     <section className="projects-section">
+//       <div className="mil-center" style={{ color: "#17283E" }}>
+//         <span className="mil-suptitle-withourgreen mil-upper mil-up mil-mb-30" dangerouslySetInnerHTML={{ __html: advantage.subtitle }} style={{ color: "white", fontSize: "25px", marginTop: "40px" }} />
+//       </div>
+//       <div className="container">
+//         <div className="projects-grid">
+//           {projects.map((project, index) => (
+//             <div className="project-item" key={index}>
+//               <img src={project.icon} alt={project.title} className="project-icon" />
+//               <div className="content">
+//                 <h4>{project.title}</h4>
+//                 <p>{project.description}</p>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//       <div className="button-container">
+//         <button className="button" onClick={() => router.push("/projects")}>MORE PROJECTS</button>
+//       </div>
+//       <style jsx>{`
+//         .projects-section {
+//           padding: 50px 20px;
+//           background-color: rgb(12, 20, 31);
+//         }
+//         .button-container {
+//           display: flex;
+//           justify-content: center;
+//           margin-top: 50px;
+//         }
+//         .button {
+//           background-color: rgb(188, 255, 0);
+//           color: black;
+//           font-size: 1.2rem;
+//           font-weight: bold;
+//           padding: 12px 24px;
+//           border: none;
+//           border-radius: 8px;
+//           cursor: pointer;
+//           transition: background 0.3s ease;
+//         }
+//         .button:hover {
+//           background-color: #aaff00;
+//         }
+//         .container {
+//           max-width: 1200px;
+//           margin: 0 auto;
+//         }
+//         .projects-grid {
+//           display: grid;
+//           grid-template-columns: repeat(3, 1fr);
+//           gap: 30px;
+//           justify-content: center;
+//           align-items: start;
+//         }
+//         .project-item {
+//           padding: 20px;
+//           border-radius: 8px;
+//           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+//           text-align: center;
+//         }
+//         .project-icon {
+//           height: 100px;
+//           width: 100px;
+//           margin-bottom: 10px;
+//         }
+//         .content h4 {
+//           font-size: 18px;
+//           color: white;
+//           margin-bottom: 10px;
+//         }
+//         .content p {
+//           font-size: 14px;
+//           color: white;
+//         }
+//         @media (max-width: 1024px) {
+//           .projects-grid {
+//             grid-template-columns: repeat(2, 1fr);
+//           }
+//         }
+//         @media (max-width: 768px) {
+//           .projects-grid {
+//             grid-template-columns: repeat(1, 1fr);
+//           }
+//         }
+//       `}</style>
+//     </section>
+//   );
+// };
+
+// export default HowWeWorkSection;
+
+
+>>>>>>> 2d17da2 (update code)
 'use client';
 import advantage from "@data/sections/latest-projects.json";
 import { useRouter } from "next/navigation";
 import React from 'react';
 
 const projects = [
+<<<<<<< HEAD
   { icon: "/img/icons/about1.png", title: "Proactive Threat Intelligence and SOC Services", description: "Stay secure with 24/7 SOC services, real-time threat intelligence, and advanced monitoring to prevent cyber attacks.", extra: "Our SOC team proactively identifies and mitigates threats, ensuring seamless protection for your business." },
   { icon: "/img/icons/about2.png", title: "Next-Level Vulnerability Assessment & Penetration Testing", description: "Identify and fix vulnerabilities before they’re exploited. Strengthen your defenses with real-world testing and actionable insights.", extra: "Our experts simulate real-world attacks to expose weak points and enhance your security posture." },
   { icon: "/img/icons/about3.png", title: "Seamless Cloud Migration and Management", description: "Streamline operations with seamless migration to AWS, Azure, or IBM Cloud. Boost scalability, security, and performance.", extra: "We ensure minimal downtime and optimized configurations, making your cloud transition smooth and efficient." },
   { icon: "/img/icons/about4.png", title: "Automated CI/CD Pipelines for Faster, Safer Deployments", description: "Speed up software delivery with automated CI/CD pipelines, integrating security tools to ensure faster, safer deployments.", extra: "By automating testing and deployment, we help you release features faster with improved reliability." },
   { icon: "/img/icons/about5.png", title: "Kubernetes-Powered Application Modernization", description: "Scale effortlessly with Kubernetes-powered containerization, delivering agility, efficiency, and innovation for your applications.", extra: "Our container-based approach ensures high availability, portability, and resilience for modern applications." },
   { icon: "/img/icons/about6.png", title: "Effortless Virtualization with Proxmox", description: "Simplify resource management with Proxmox, offering scalable, cost-efficient virtual environments for modern businesses.", extra: "Our Proxmox solutions optimize server utilization, reducing overhead while increasing performance." }
+=======
+  { icon: "/img/icons/project1.png", title: "Proactive Threat Intelligence and SOC Services", description: "Stay secure with 24/7 SOC services, real-time threat intelligence, and advanced monitoring to prevent cyber attacks.", extra: "Our SOC team proactively identifies and mitigates threats, ensuring seamless protection for your business." },
+  { icon: "/img/icons/project2.png", title: "Next-Level Vulnerability Assessment & Penetration Testing", description: "Identify and fix vulnerabilities before they’re exploited. Strengthen your defenses with real-world testing and actionable insights.", extra: "Our experts simulate real-world attacks to expose weak points and enhance your security posture." },
+  { icon: "/img/icons/project3.png", title: "Seamless Cloud Migration and Management", description: "Streamline operations with seamless migration to AWS, Azure, or IBM Cloud. Boost scalability, security, and performance.", extra: "We ensure minimal downtime and optimized configurations, making your cloud transition smooth and efficient." },
+  { icon: "/img/icons/project4.png", title: "Automated CI/CD Pipelines for Faster, Safer Deployments", description: "Speed up software delivery with automated CI/CD pipelines, integrating security tools to ensure faster, safer deployments.", extra: "By automating testing and deployment, we help you release features faster with improved reliability." },
+  { icon: "/img/icons/project5.png", title: "Kubernetes-Powered Application Modernization", description: "Scale effortlessly with Kubernetes-powered containerization, delivering agility, efficiency, and innovation for your applications.", extra: "Our container-based approach ensures high availability, portability, and resilience for modern applications." },
+  { icon: "/img/icons/project6.png", title: "Effortless Virtualization with Proxmox", description: "Simplify resource management with Proxmox, offering scalable, cost-efficient virtual environments for modern businesses.", extra: "Our Proxmox solutions optimize server utilization, reducing overhead while increasing performance." }
+>>>>>>> 2d17da2 (update code)
 ];
 
 const HowWeWorkSection = () => {
@@ -596,7 +719,11 @@ const HowWeWorkSection = () => {
   return (
     <section className="projects-section">
       <div className="mil-center" style={{ color: "#17283E" }}>
+<<<<<<< HEAD
         <span className="mil-suptitle-withourgreen mil-upper mil-up mil-mb-30" dangerouslySetInnerHTML={{ __html: advantage.subtitle }} style={{ color: "white", fontSize: "25px", marginTop: "40px" }} />
+=======
+        <span className="mil-suptitle-withourgreen mil-upper mil-up mil-mb-30" dangerouslySetInnerHTML={{ __html: advantage.subtitle }} style={{ color: "rgb(188, 255, 0)", fontSize: "40px", marginTop: "40px", fontWeight:"400" }} />
+>>>>>>> 2d17da2 (update code)
       </div>
       <div className="container">
         <div className="projects-grid">
@@ -615,9 +742,18 @@ const HowWeWorkSection = () => {
         <button className="button" onClick={() => router.push("/projects")}>MORE PROJECTS</button>
       </div>
       <style jsx>{`
+<<<<<<< HEAD
         .projects-section {
           padding: 50px 20px;
           background-color: rgb(12, 20, 31);
+=======
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+        
+        .projects-section {
+          padding: 50px 20px;
+          background-color: rgb(12, 20, 31);
+          font-family: 'Lato', sans-serif;
+>>>>>>> 2d17da2 (update code)
         }
         .button-container {
           display: flex;
@@ -634,6 +770,10 @@ const HowWeWorkSection = () => {
           border-radius: 8px;
           cursor: pointer;
           transition: background 0.3s ease;
+<<<<<<< HEAD
+=======
+          font-family: 'Lato', sans-serif;
+>>>>>>> 2d17da2 (update code)
         }
         .button:hover {
           background-color: #aaff00;
@@ -664,10 +804,18 @@ const HowWeWorkSection = () => {
           font-size: 18px;
           color: white;
           margin-bottom: 10px;
+<<<<<<< HEAD
+=======
+          font-family: 'Lato', sans-serif;
+>>>>>>> 2d17da2 (update code)
         }
         .content p {
           font-size: 14px;
           color: white;
+<<<<<<< HEAD
+=======
+          font-family: 'Lato', sans-serif;
+>>>>>>> 2d17da2 (update code)
         }
         @media (max-width: 1024px) {
           .projects-grid {

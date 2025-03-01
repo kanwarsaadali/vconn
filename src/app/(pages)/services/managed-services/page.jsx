@@ -4,13 +4,13 @@ import React from "react";
 import Image from "next/image";
 import Header from "@layouts/headers/Index";
 import Project3 from "@components/sections/Projects3";
-import Project1 from "@components/sections/Projects1";
 import dynamic from "next/dynamic";
 import HowWeWork1 from "@components/sections/HowWeWork1";
-const ClientSlider1 = dynamic( () => import("@/src/app/_components/sliders/Client1"), { ssr: false } );
-const DevopsecopsSlider = dynamic( () => import("@components/sliders/Devsecops1"), { ssr: false } );
-import Casestudies2 from "@components/sections/Casestudies2";
+import Footer from "@layouts/footers/Index";
 
+const ClientSlider = dynamic(() => import("@/src/app/_components/sliders/Client"), { ssr: false });
+const DevopsSlider = dynamic(() => import("@components/sliders/Devops"), { ssr: false });
+import Casestudies2 from "@components/sections/Casestudies2";
 
 const Devsecops = () => {
   const containerStyle = {
@@ -23,17 +23,19 @@ const Devsecops = () => {
     color: "white", // Text color
     boxSizing: "border-box",
     flexWrap: "wrap", // Allows content to wrap for smaller screens
+    fontFamily: "'Lato', sans-serif", // Apply Lato globally
   };
 
   const textStyle = {
-    flex: "1 1 50%", // Takes up 50% of the width
-    minWidth: "300px", // Ensures text always has enough space
+    flex: "1 1 50%",
+    minWidth: "300px",
     padding: "20px",
+    fontFamily: "'Lato', sans-serif",
   };
 
   const buttonStyle = {
-    backgroundColor: "#BCFF00", // Bright green color
-    color: "rgb(12, 20, 31)", // Dark text color
+    backgroundColor: "#BCFF00",
+    color: "rgb(12, 20, 31)",
     padding: "15px 30px",
     fontSize: "16px",
     fontWeight: "bold",
@@ -42,36 +44,51 @@ const Devsecops = () => {
     cursor: "pointer",
     textDecoration: "none",
     transition: "transform 0.3s ease",
+    fontFamily: "'Lato', sans-serif",
   };
 
   const imageWrapperStyle = {
-    flex: "1 1 40%", // Takes up 40% of the width
-    minWidth: "300px", // Ensures the image always has enough space
-    textAlign: "center", // Centers the image
+    flex: "1 1 40%",
+    minWidth: "300px",
+    textAlign: "center",
+    fontFamily: "'Lato', sans-serif",
   };
 
   const imageStyle = {
-    width: "100%", // Ensures the image takes the full width of its container
-    height: "auto", // Maintains aspect ratio
+    width: "100%",
+    height: "auto",
   };
 
   const headingStyle = {
-    textAlign: "center", // Centers the heading text
-    fontSize: "50px", // Adjusts the font size as needed
-    margin: "20px 0", // Adds some margin above and below the heading
-    color:"rgb(12, 20, 31)"
+    textAlign: "center",
+    fontSize: "50px",
+    margin: "20px 0",
+    color: "rgb(12, 20, 31)",
+    fontFamily: "'Lato', sans-serif",
   };
 
   return (
+<<<<<<< HEAD
     <div style={{backgroundColor:"rgb(12, 20, 31)"}}>
+=======
+    <div style={{ backgroundColor: "rgb(12, 20, 31)", fontFamily: "'Lato', sans-serif" }}>
+>>>>>>> 2d17da2 (update code)
       <Header layout={"default"} />
 
       <div style={containerStyle}>
         {/* Text Section */}
         <div style={textStyle}>
+<<<<<<< HEAD
           <h1 style={{ fontSize: "48px", marginBottom: "20px", color:"white" }}>Consider IT done, just the way you’ve always wanted</h1>
           <p style={{ fontSize: "18px", lineHeight: "1.6", marginBottom: "40px" }}>
           We handle your IT daily grind with 24/7 personalized services, latest tech stack, and resolve issues proactively.
+=======
+          <h1 style={{ fontSize: "48px", marginBottom: "20px", color: "white", fontFamily: "'Lato', sans-serif" }}>
+            Consider IT done, just the way you’ve always wanted
+          </h1>
+          <p style={{ fontSize: "18px", lineHeight: "1.6", marginBottom: "40px", fontFamily: "'Lato', sans-serif" }}>
+            We handle your IT daily grind with 24/7 personalized services, latest tech stack, and resolve issues proactively.
+>>>>>>> 2d17da2 (update code)
           </p>
           <a
             href="#"
@@ -86,22 +103,24 @@ const Devsecops = () => {
         {/* Image Section */}
         <div style={imageWrapperStyle}>
           <Image
-            src="/img/Project/manage.png" // Update with the actual image path
+            src="/img/Project/manage.png"
             alt="Devsecops"
-            width={500}
+            width={400}
             height={500}
             style={imageStyle}
           />
         </div>
       </div>
-      <Project3 />
-      {/* <h1 style={headingStyle}>Why Us?</h1> */}
-      <img src="/img/Project/whyusdevops.png" alt="" style={imageStyle} />
-      <ClientSlider1/>
-      <HowWeWork1 />
-      <DevopsecopsSlider/>
-      <Casestudies2 />
 
+      <Project3 />
+
+      <img src="/img/Project/whyusdevops.png" alt="Why Us?" style={imageStyle} />
+
+      <ClientSlider />
+      <HowWeWork1 />
+      <DevopsSlider />
+      <Casestudies2 />
+    <Footer layout={"default"} />
 
     </div>
   );

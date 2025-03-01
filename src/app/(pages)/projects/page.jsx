@@ -3,9 +3,9 @@ import dynamic from "next/dynamic";
 import Header from "@layouts/headers/Index";
 import Footer from "@layouts/footers/Index";
 import IdeasSection1 from "@components/sections/Ideas1";
-import Project1 from "@components/sections/Projects1";
+import Projects1 from "@components/sections/Projects1";
 const CybersecuritySlider = dynamic( () => import("@components/sliders/Cybersecurity"), { ssr: false } );
-const DevopsecopsSlider1 = dynamic( () => import("@components/sliders/Devsecops1"), { ssr: false } );
+const DevopsSlider = dynamic( () => import("@components/sliders/Devops"), { ssr: false } );
 
 import HowWeWork1 from "@components/sections/HowWeWork1";
 
@@ -75,7 +75,11 @@ async function Projects() {
 
         {/* Overlay Content */}
         <div style={{ position: "relative", zIndex: 2 }}>
+<<<<<<< HEAD
           <h1 style={{ fontSize: "3.5rem", fontWeight: "bold" }}>
+=======
+          <h1 style={{ fontSize: "3.5rem", fontWeight: "400" }}>
+>>>>>>> 2d17da2 (update code)
             <span style={{ color: "white" }}>CRAFTING THE </span>{" "}
             <span style={{ color: "rgb(188, 255, 0)" }}>FUTURE</span>{" "}
             <span style={{ color: "white" }}>OF</span>
@@ -83,7 +87,11 @@ async function Projects() {
           <h1
             style={{
               fontSize: "3.5rem",
+<<<<<<< HEAD
               fontWeight: "bold",
+=======
+              fontWeight: "400",
+>>>>>>> 2d17da2 (update code)
               color: "white",
             }}
           >
@@ -101,9 +109,9 @@ async function Projects() {
       >
         {/* <ServicesSection1 /> */}
         {/* <IdeasSection1 /> */}
-        <Project1/>
+        <Projects1/>
         <HowWeWork1 />
-      <DevopsecopsSlider1/>
+      <DevopsSlider/>
 
       </div>
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import React from "react";
 // import Image from "next/image";
 // import Header from "@layouts/headers/Index";
@@ -423,6 +424,10 @@
 
 "use client";  // Ensure this is at the top!
 
+=======
+"use client";  // Ensure this is at the top!
+
+>>>>>>> 2d17da2 (update code)
 import React, { useState } from "react";
 import Header from "@layouts/headers/Index";
 import Footer from "@layouts/footers/Index";
@@ -475,11 +480,19 @@ const Contact = () => {
         ></div>
 
         {/* Hero Content */}
+<<<<<<< HEAD
         <div style={{ position: "relative", color: "white", fontSize: "2.5rem", fontWeight: "bold" }}>
           <h1>
             <span style={{ color: "white" }}>Empowering</span> <span style={{ color: "rgb(188, 255, 0)" }}>Solutions</span> <span style={{ color: "white" }}>Elevating</span>
           </h1>
           <h1 style={{ color: "white" }}>Experiences</h1>
+=======
+        <div style={{ position: "relative", color: "white", fontSize: "2.5rem", fontWeight: "400" }}>
+          <h1>
+            <span style={{ color: "white", fontSize:"2.5rem", fontWeight:"400" }}>EMPOWERING</span> <span style={{ color: "rgb(188, 255, 0)",fontSize:"2.5rem", fontWeight:"400" }}>SOLUTIONS</span> <span style={{ color: "white",fontSize:"2.5rem", fontWeight:"400" }}>ELEVATING</span>
+          </h1>
+          <h1 style={{ color: "white", fontSize:"2.5rem", fontWeight:"400"}}>EXPERIENCES</h1>
+>>>>>>> 2d17da2 (update code)
         </div>
       </div>
 

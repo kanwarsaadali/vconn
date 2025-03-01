@@ -935,13 +935,136 @@
 // export default DefaultFooter;
 
 
+<<<<<<< HEAD
+=======
+// "use client";
+
+// import Link from "next/link";
+
+// const Footer = () => {
+//     return (
+//         <footer style={{ backgroundColor: "rgb(12, 20, 31)", color: "#fff", padding: "40px 0", textAlign: "center" }}>
+//             <div style={{ width: "90%", maxWidth: "1200px", margin: "0 auto" }}>
+//                 <div 
+//                     style={{ 
+//                         display: "grid", 
+//                         gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", 
+//                         gap: "30px",
+//                         textAlign: "left"
+//                     }}
+//                 >
+                    
+//                     {/* About Section */}
+//                     <div>
+//                         <h4 style={{ fontSize: "1.1rem", fontWeight: "bold", marginBottom: "15px", color: "white" }}>About</h4>
+//                         <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+//                             <li><Link href="#" style={{ color: "#ddd", textDecoration: "none", display: "block", padding: "5px 0" }}>Our company</Link></li>
+//                             <li><Link href="#" style={{ color: "#ddd", textDecoration: "none", display: "block", padding: "5px 0" }}>Core Team</Link></li>
+//                             {/* <li>
+//                                 <Link href="#" 
+//                                     style={{ 
+//                                         display: "inline-block", 
+//                                         backgroundColor: "#ff7f50", 
+//                                         color: "#000", 
+//                                         padding: "5px 12px", 
+//                                         fontSize: "0.9rem", 
+//                                         borderRadius: "5px", 
+//                                         fontWeight: "bold",
+//                                         textDecoration: "none"
+//                                     }}
+//                                 >
+//                                     CLICK HERE
+//                                 </Link>
+//                             </li> */}
+//                             <li><Link href="#" style={{ color: "#ddd", textDecoration: "none", display: "block", padding: "5px 0" }}>CSR</Link></li>
+//                             <li><Link href="#" style={{ color: "#ddd", textDecoration: "none", display: "block", padding: "5px 0" }}>How We Work</Link></li>
+//                         </ul>
+//                     </div>
+
+//                     {/* Services Section */}
+//                     <div>
+//                         <h4 style={{ fontSize: "1.1rem", fontWeight: "bold", marginBottom: "15px", color: "white" }}>Services</h4>
+//                         <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+//                             {["iOS App Development", "Android App Development", "Software Development", "Ideation & Design", "Mobile App Dev", "Research & Innovation", "Digital Transformation", "more..."].map((service, index) => (
+//                                 <li key={index}>
+//                                     <Link href="#" style={{ color: "#ddd", textDecoration: "none", display: "block", padding: "5px 0" }}>{service}</Link>
+//                                 </li>
+//                             ))}
+//                         </ul>
+//                     </div>
+
+//                     {/* Technologies Section */}
+//                     <div>
+//                         <h4 style={{ fontSize: "1.1rem", fontWeight: "bold", marginBottom: "15px", color: "white" }}>Technologies</h4>
+//                         <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+//                             {["Blockchain", "Artificial Intelligence", "AR and VR", "Cloud Computing", "Internet of Things", "Metaverse Development", "NFT Development", "more..."].map((tech, index) => (
+//                                 <li key={index}>
+//                                     <Link href="#" style={{ color: "#ddd", textDecoration: "none", display: "block", padding: "5px 0" }}>{tech}</Link>
+//                                 </li>
+//                             ))}
+//                         </ul>
+//                     </div>
+
+//                     {/* Industries Section */}
+//                     <div>
+//                         <h4 style={{ fontSize: "1.1rem", fontWeight: "bold", marginBottom: "15px", color: "white" }}>Industries</h4>
+//                         <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+//                             {["Healthcare", "Education", "SaaS", "Finance", "On-Demand", "eCommerce", "Logistics", "more..."].map((industry, index) => (
+//                                 <li key={index}>
+//                                     <Link href="#" style={{ color: "#ddd", textDecoration: "none", display: "block", padding: "5px 0" }}>{industry}</Link>
+//                                 </li>
+//                             ))}
+//                         </ul>
+//                     </div>
+
+//                     {/* Portfolio Section */}
+//                     <div>
+//                         <h4 style={{ fontSize: "1.1rem", fontWeight: "bold", marginBottom: "15px", color: "white" }}>Portfolio</h4>
+//                         <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+//                             {["KFC", "Adidas", "IKEA", "Hukoomi", "Domino's", "Pizza Hut", "YouCOMM", "more..."].map((portfolio, index) => (
+//                                 <li key={index}>
+//                                     <Link href="#" style={{ color: "#ddd", textDecoration: "none", display: "block", padding: "5px 0" }}>{portfolio}</Link>
+//                                 </li>
+//                             ))}
+//                         </ul>
+//                     </div>
+
+//                     {/* Resources Section */}
+//                     <div>
+//                         <h4 style={{ fontSize: "1.1rem", fontWeight: "bold", marginBottom: "15px", color: "white" }}>Resources</h4>
+//                         <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+//                             {["Blog", "Press Release", "Guides", "Ebooks"].map((resource, index) => (
+//                                 <li key={index}>
+//                                     <Link href="#" style={{ color: "#ddd", textDecoration: "none", display: "block", padding: "5px 0" }}>{resource}</Link>
+//                                 </li>
+//                             ))}
+//                         </ul>
+//                     </div>
+//                 </div>
+//             </div>
+//         </footer>
+//     );
+// };
+
+// export default Footer;
+>>>>>>> 2d17da2 (update code)
 "use client";
 
 import Link from "next/link";
 
 const Footer = () => {
     return (
+<<<<<<< HEAD
         <footer style={{ backgroundColor: "rgb(12, 20, 31)", color: "#fff", padding: "40px 0", textAlign: "center" }}>
+=======
+        <footer style={{ 
+            backgroundColor: "rgb(12, 20, 31)", 
+            color: "#fff", 
+            padding: "40px 0", 
+            textAlign: "center", 
+            fontFamily: "'Lato', sans-serif" // Apply Lato font here
+        }}>
+>>>>>>> 2d17da2 (update code)
             <div style={{ width: "90%", maxWidth: "1200px", margin: "0 auto" }}>
                 <div 
                     style={{ 
@@ -951,13 +1074,17 @@ const Footer = () => {
                         textAlign: "left"
                     }}
                 >
+<<<<<<< HEAD
                     
+=======
+>>>>>>> 2d17da2 (update code)
                     {/* About Section */}
                     <div>
                         <h4 style={{ fontSize: "1.1rem", fontWeight: "bold", marginBottom: "15px", color: "white" }}>About</h4>
                         <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
                             <li><Link href="#" style={{ color: "#ddd", textDecoration: "none", display: "block", padding: "5px 0" }}>Our company</Link></li>
                             <li><Link href="#" style={{ color: "#ddd", textDecoration: "none", display: "block", padding: "5px 0" }}>Core Team</Link></li>
+<<<<<<< HEAD
                             {/* <li>
                                 <Link href="#" 
                                     style={{ 
@@ -974,6 +1101,8 @@ const Footer = () => {
                                     CLICK HERE
                                 </Link>
                             </li> */}
+=======
+>>>>>>> 2d17da2 (update code)
                             <li><Link href="#" style={{ color: "#ddd", textDecoration: "none", display: "block", padding: "5px 0" }}>CSR</Link></li>
                             <li><Link href="#" style={{ color: "#ddd", textDecoration: "none", display: "block", padding: "5px 0" }}>How We Work</Link></li>
                         </ul>

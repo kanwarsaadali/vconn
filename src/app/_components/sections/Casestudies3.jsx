@@ -52,11 +52,12 @@ const Casestudies3 = () => {
         backgroundColor: "rgb(12, 20, 31)",
         padding: "50px 20px",
         textAlign: "center",
+        fontFamily: "'Lato', sans-serif", // Apply Lato font globally
       }}
     >
       {/* Section Title */}
-      <h2 style={{ color: "rgb(188, 255, 0)", fontSize: "36px", marginBottom: "40px" }}>
-        Case Studies
+      <h2 style={{ color: "rgb(188, 255, 0)", fontSize: "40px", marginBottom: "40px", fontFamily:"'Lato', sans-serif", fontWeight:"400"}}>
+        CASE STUDIES
       </h2>
 
       {/* Cards Grid */}
@@ -74,7 +75,6 @@ const Casestudies3 = () => {
             key={index}
             style={{
               backgroundImage: `url(${service.image})`,
-              // `url(${service.image})`
               backgroundSize: "cover",
               backgroundPosition: "center",
               borderRadius: "10px",
@@ -103,6 +103,7 @@ const Casestudies3 = () => {
                 textAlign: "left",
                 background: "rgba(0, 0, 0, 0.6)",
                 borderRadius: "0 0 10px 10px",
+                fontFamily: "'Lato', sans-serif", // Apply Lato font to text inside the card
               }}
             >
               <h3 style={{ fontSize: "1.25rem", marginBottom: "10px", color: "white" }}>
@@ -129,6 +130,7 @@ const Casestudies3 = () => {
                   border: "none",
                   color: "rgb(23, 40, 62)",
                   cursor: "pointer",
+                  fontFamily: "'Lato', sans-serif", // Apply Lato font to button text
                 }}
               >
                 EXPLORE MORE

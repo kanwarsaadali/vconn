@@ -7,7 +7,7 @@ const services = [
   {
     title: "Cloud Infrastructure Optimization for SaaS Provider",
     description:
-      "Optimized cloud infrastructure for cost efficiency and improved performance by 30%..",
+      "Optimized cloud infrastructure for cost efficiency and improved performance by 30%.",
     image: "/img/covers/Information.png", // Replace with the actual path
     path: "/services/cybersecurity", // Add the path for the detailed page
   },
@@ -21,7 +21,7 @@ const services = [
   {
     title: "Application Performance Monitoring",
     description:
-      "Improved transaction speed by 15% and reduced downtime by 20% with APM..",
+      "Improved transaction speed by 15% and reduced downtime by 20% with APM.",
     image: "/img/covers/Information.png", // Replace with the actual path
     path: "/services/managed-services", // Add the path for the detailed page
   },
@@ -52,11 +52,20 @@ const Casestudies2 = () => {
         backgroundColor: "rgb(12, 20, 31)",
         padding: "50px 20px",
         textAlign: "center",
+        fontFamily: "'Lato', sans-serif", // Apply Lato font globally
       }}
     >
       {/* Section Title */}
-      <h2 style={{ color: "rgb(188, 255, 0)", fontSize: "36px", marginBottom: "40px" }}>
-        Case Studies
+      <h2
+        style={{
+          color: "rgb(188, 255, 0)",
+          fontSize: "40px",
+          fontWeight:"400",
+          marginBottom: "40px",
+          fontFamily: "'Lato', sans-serif", // Ensure Lato font is applied here
+        }}
+      >
+        CASE STUDIES
       </h2>
 
       {/* Cards Grid */}
@@ -74,7 +83,6 @@ const Casestudies2 = () => {
             key={index}
             style={{
               backgroundImage: `url(${service.image})`,
-              // `url(${service.image})`
               backgroundSize: "cover",
               backgroundPosition: "center",
               borderRadius: "10px",
@@ -86,6 +94,7 @@ const Casestudies2 = () => {
               justifyContent: "flex-end",
               transition: "transform 0.3s ease, box-shadow 0.3s ease",
               color: "#fff",
+              fontFamily: "'Lato', sans-serif", // Ensure Lato font is applied in the card
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = "scale(1.05)";
@@ -103,9 +112,17 @@ const Casestudies2 = () => {
                 textAlign: "left",
                 background: "rgba(0, 0, 0, 0.6)",
                 borderRadius: "0 0 10px 10px",
+                fontFamily: "'Lato', sans-serif", // Lato applied in the card content
               }}
             >
-              <h3 style={{ fontSize: "1.25rem", marginBottom: "10px", color: "white" }}>
+              <h3
+                style={{
+                  fontSize: "1.25rem",
+                  marginBottom: "10px",
+                  color: "white",
+                  fontFamily: "'Lato', sans-serif", // Lato applied to title
+                }}
+              >
                 {service.title}
               </h3>
               <p
@@ -114,6 +131,7 @@ const Casestudies2 = () => {
                   marginBottom: "20px",
                   overflow: "hidden",
                   textOverflow: "ellipsis",
+                  fontFamily: "'Lato', sans-serif", // Lato applied to paragraph text
                 }}
               >
                 {service.description}
@@ -129,6 +147,7 @@ const Casestudies2 = () => {
                   border: "none",
                   color: "rgb(23, 40, 62)",
                   cursor: "pointer",
+                  fontFamily: "'Lato', sans-serif", // Lato applied to the button text
                 }}
               >
                 EXPLORE MORE

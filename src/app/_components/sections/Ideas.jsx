@@ -1419,6 +1419,161 @@
 
 // export default IdeasSection;
 
+<<<<<<< HEAD
+=======
+// "use client";
+
+// import { useState, useEffect } from "react";
+
+// const IdeasSection = () => {
+//   const [currentSlide, setCurrentSlide] = useState(0);
+//   const [fadeIn, setFadeIn] = useState(true);
+
+//   const testimonials = [
+//     {
+//       text: '"Consulting services for all things related to DevOps provided insight into automation and streamlining processes, improving our product development timelines significantly."',
+//       name: "Mark Wilson",
+//       title: "CEO, Shell",
+//       logos: ["/img/ideas/3.png"],
+//     },
+//     {
+//       text: '"Great support and consultancy from the team helped us achieve our automation goals efficiently and on time."',
+//       name: "Jane Smith",
+//       title: "CTO, Unilever",
+//       logos: ["/img/ideas/1.png"],
+//     },
+//     {
+//       text: '"Their approach to improving our hospital operations was revolutionary and efficient."',
+//       name: "Dr. Ahmed Khan",
+//       title: "Director, Indus Hospital",
+//       logos: ["/img/ideas/2.png"],
+//     },
+//   ];
+
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setFadeIn(false);
+//       setTimeout(() => {
+//         setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+//         setFadeIn(true);
+//       }, 500);
+//     }, 5000);
+
+//     return () => clearInterval(interval);
+//   }, [testimonials.length]);
+
+//   const nextSlide = () => {
+//     setFadeIn(false);
+//     setTimeout(() => {
+//       setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+//       setFadeIn(true);
+//     }, 500);
+//   };
+
+//   const prevSlide = () => {
+//     setFadeIn(false);
+//     setTimeout(() => {
+//       setCurrentSlide((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+//       setFadeIn(true);
+//     }, 500);
+//   };
+
+//   return (
+//     <div style={{ textAlign: "center", padding: "50px 20px", backgroundColor: "rgb(12, 20, 31)", position: "relative" }}>
+//       <h3 style={{ fontSize: "28px", fontWeight: "700", color: "white", marginBottom: "30px", textTransform: "uppercase" }}>
+//         What Our Customers Say
+//       </h3>
+
+//       <div style={{ position: "relative", width: "100%", paddingBottom: "50px", height: "450px" }}> {/* ✅ Set fixed height */}
+//         {testimonials.map((testimonial, index) => (
+//           <div
+//             key={index}
+//             style={{
+//               opacity: index === currentSlide && fadeIn ? 1 : 0,
+//               transition: "opacity 0.5s ease-in-out",
+//               position: index === currentSlide ? "relative" : "absolute",
+//               width: "100%",
+//               textAlign: "center",
+//               padding: "20px",
+//               height: "100%", // ✅ Ensures Full Height Usage
+//               display: "flex",
+//               alignItems: "center",
+//               justifyContent: "center",
+//             }}
+//           >
+//             <div
+//               style={{
+//                 borderRadius: "10px",
+//                 padding: "40px 10px",
+//                 backgroundColor: "rgb(12, 20, 31)",
+//                 height: "100%", // ✅ Makes sure all slides are the same size
+//                 maxWidth: "80%",
+//                 margin: "0 auto",
+//                 boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+//                 display: "flex",
+//                 flexDirection: "column",
+//                 justifyContent: "space-between",
+//                 alignItems: "center",
+//                 textAlign: "justify",
+//                 lineHeight: "1.4",
+//               }}
+//             >
+//               <p style={{ fontSize: "40px", color: "white", flex: "1", display: "flex", alignItems: "center", textAlign: "center", fontStyle: "italic", padding: "10px" }}>
+//                 {testimonial.text}
+//               </p>
+              
+//               {/* Centering Name & Title */}
+//               <div style={{ textAlign: "center", marginTop: "20px" }}>
+//                 <h4 style={{ fontSize: "30px", fontWeight: "bold", color: "white", marginBottom: "5px" }}>
+//                   {testimonial.name}
+//                 </h4>
+//                 <span style={{ fontSize: "25px", color: "white", display: "block" }}>
+//                   {testimonial.title}
+//                 </span>
+//               </div>
+
+//               <div style={{ display: "flex", justifyContent: "center", gap: "15px", padding: "4px", marginTop: "20px" }}>
+//                 {testimonial.logos.map((logo, i) => (
+//                   <img key={i} src={logo} alt="Logo" style={{ width: "250px", height: "auto", borderRadius: "4px" }} />
+//                 ))}
+//               </div>
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+
+//       <div style={{ display: "flex", justifyContent: "space-between", position: "absolute", top: "50%", left: "10px", right: "10px", transform: "translateY(-50%)" }}>
+//         <button onClick={prevSlide} style={{ background: "none", border: "none", fontSize: "60px", color: "white", cursor: "pointer", padding: "5px 10px" }}>
+//           &#10094;
+//         </button>
+//         <button onClick={nextSlide} style={{ background: "none", border: "none", fontSize: "60px", color: "white", cursor: "pointer", padding: "5px 10px" }}>
+//           &#10095;
+//         </button>
+//       </div>
+
+//       <div style={{ display: "flex", justifyContent: "center", gap: "10px", marginTop: "58px" }}>
+//         {testimonials.map((_, index) => (
+//           <span
+//             key={index}
+//             onClick={() => setCurrentSlide(index)}
+//             style={{
+//               width: "12px",
+//               height: "12px",
+//               borderRadius: "50%",
+//               backgroundColor: currentSlide === index ? "rgb(188, 255, 0)" : "#ccc",
+//               cursor: "pointer",
+//             }}
+//           />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default IdeasSection;
+
+
+>>>>>>> 2d17da2 (update code)
 "use client";
 
 import { useState, useEffect } from "react";
@@ -1477,12 +1632,21 @@ const IdeasSection = () => {
   };
 
   return (
+<<<<<<< HEAD
     <div style={{ textAlign: "center", padding: "50px 20px", backgroundColor: "rgb(12, 20, 31)", position: "relative" }}>
       <h3 style={{ fontSize: "28px", fontWeight: "700", color: "white", marginBottom: "30px", textTransform: "uppercase" }}>
         What Our Customers Say
       </h3>
 
       <div style={{ position: "relative", width: "100%", paddingBottom: "50px", height: "450px" }}> {/* ✅ Set fixed height */}
+=======
+    <div style={{ textAlign: "center", padding: "50px 20px", backgroundColor: "rgb(12, 20, 31)", position: "relative", fontFamily: "Lato, sans-serif" }}>
+      <h3 style={{ fontSize: "40px", fontWeight: "400", color: "rgb(188, 255, 0)", marginBottom: "30px", textTransform: "uppercase", fontFamily: "Lato, sans-serif" }}>
+        What Our Customers Say
+      </h3>
+
+      <div style={{ position: "relative", width: "100%", paddingBottom: "50px", height: "450px" }}> 
+>>>>>>> 2d17da2 (update code)
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
@@ -1493,10 +1657,18 @@ const IdeasSection = () => {
               width: "100%",
               textAlign: "center",
               padding: "20px",
+<<<<<<< HEAD
               height: "100%", // ✅ Ensures Full Height Usage
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
+=======
+              height: "100%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontFamily: "Lato, sans-serif"
+>>>>>>> 2d17da2 (update code)
             }}
           >
             <div
@@ -1504,7 +1676,11 @@ const IdeasSection = () => {
                 borderRadius: "10px",
                 padding: "40px 10px",
                 backgroundColor: "rgb(12, 20, 31)",
+<<<<<<< HEAD
                 height: "100%", // ✅ Makes sure all slides are the same size
+=======
+                height: "100%",
+>>>>>>> 2d17da2 (update code)
                 maxWidth: "80%",
                 margin: "0 auto",
                 boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
@@ -1514,6 +1690,7 @@ const IdeasSection = () => {
                 alignItems: "center",
                 textAlign: "justify",
                 lineHeight: "1.4",
+<<<<<<< HEAD
               }}
             >
               <p style={{ fontSize: "40px", color: "white", flex: "1", display: "flex", alignItems: "center", textAlign: "center", fontStyle: "italic", padding: "10px" }}>
@@ -1526,6 +1703,20 @@ const IdeasSection = () => {
                   {testimonial.name}
                 </h4>
                 <span style={{ fontSize: "25px", color: "white", display: "block" }}>
+=======
+                fontFamily: "Lato, sans-serif"
+              }}
+            >
+              <p style={{ fontSize: "40px", color: "white", flex: "1", display: "flex", alignItems: "center", textAlign: "center", fontStyle: "italic", padding: "10px", fontFamily: "Lato, sans-serif" }}>
+                {testimonial.text}
+              </p>
+              
+              <div style={{ textAlign: "center", marginTop: "20px" }}>
+                <h4 style={{ fontSize: "30px", fontWeight: "bold", color: "white", marginBottom: "5px", fontFamily: "Lato, sans-serif" }}>
+                  {testimonial.name}
+                </h4>
+                <span style={{ fontSize: "25px", color: "white", display: "block", fontFamily: "Lato, sans-serif" }}>
+>>>>>>> 2d17da2 (update code)
                   {testimonial.title}
                 </span>
               </div>
@@ -1539,6 +1730,7 @@ const IdeasSection = () => {
           </div>
         ))}
       </div>
+<<<<<<< HEAD
 
       <div style={{ display: "flex", justifyContent: "space-between", position: "absolute", top: "50%", left: "10px", right: "10px", transform: "translateY(-50%)" }}>
         <button onClick={prevSlide} style={{ background: "none", border: "none", fontSize: "60px", color: "white", cursor: "pointer", padding: "5px 10px" }}>
@@ -1564,6 +1756,8 @@ const IdeasSection = () => {
           />
         ))}
       </div>
+=======
+>>>>>>> 2d17da2 (update code)
     </div>
   );
 };

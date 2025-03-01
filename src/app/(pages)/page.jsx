@@ -1,4 +1,4 @@
-"use client";
+  "use client";
 import React, { Suspense,useState,useEffect } from "react";
 import dynamic from "next/dynamic";
 
@@ -59,17 +59,17 @@ const ClientSlider = dynamic( () => import("@components/sliders/Client"), { ssr:
   // const posts = await getAllPosts();
   
 
-      useEffect(() => {
+      // useEffect(() => {
   
-          const timeout = setTimeout(() => {
-              if (!videoLoaded) {
-                  console.warn("Fallback triggered, setting videoLoaded to true");
-                  setVideoLoaded(true);
-              }
-          }, 13000); // Adjust timeout duration as needed
+      //     const timeout = setTimeout(() => {
+      //         if (!videoLoaded) {
+      //             console.warn("Fallback triggered, setting videoLoaded to true");
+      //             setVideoLoaded(true);
+      //         }
+      //     }, 13000); // Adjust timeout duration as needed
       
-          return () => clearTimeout(timeout);
-      }, []);
+      //     return () => clearTimeout(timeout);
+      // }, []);
 
 
       useEffect(() => {
@@ -88,19 +88,19 @@ const ClientSlider = dynamic( () => import("@components/sliders/Client"), { ssr:
 
   return (
     <>
-    {!videoLoaded ? <div className="d-flex justify-content-center align-items-center vh-100">
+    {/* {!videoLoaded ? <div className="d-flex justify-content-center align-items-center vh-100">
 
       <img src="/img/covers/loader.gif"  alt="image" />
 
       
 
 
-    </div> :  <>
+    </div> :  <> */}
 
       <Header layout={"default"} />
 
 
-      <HeroOneSection videoLoaded={videoLoaded} setVideoLoaded={setVideoLoaded} />
+      <HeroOneSection  />
       <ClientSlider/>
       {/* <ClientSlider/>
       // <PartnersSlider /> */}
@@ -146,10 +146,10 @@ const ClientSlider = dynamic( () => import("@components/sliders/Client"), { ssr:
       {/* <CoresSection /> */}
     <Footer layout={"default"} />
 
-    </>   }
+    </>   
     
     
-    </>
+  
   );
 };
 export default Home1;

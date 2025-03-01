@@ -25,14 +25,16 @@ const Projects4 = () => {
     overflow: "hidden",
     boxSizing: "border-box",
     height: "100%", // Adjust for all devices
+    fontFamily: "'Lato', sans-serif", // Apply Lato font globally
   };
 
   const headerStyle = {
     marginBottom: "40px",
-    fontSize: "36px",
-    fontWeight: "bold",
+    fontSize: "40px",
+    fontWeight: "400",
     color: "#BCFF00",
     textAlign: "center",
+    fontFamily: "'Lato', sans-serif", // Apply Lato font to header
   };
 
   const gridStyle = {
@@ -75,6 +77,7 @@ const Card = ({ icon, title, description }) => {
     boxSizing: "border-box",
     width: "100%", // Ensures proper resizing on smaller screens
     height: "250px", // Fixed height for uniformity
+    fontFamily: "'Lato', sans-serif", // Apply Lato font to the card
   };
 
   const cardHoverStyle = {
@@ -97,6 +100,7 @@ const Card = ({ icon, title, description }) => {
     color: "#000",
     fontSize: "18px",
     fontWeight: "bold",
+    fontFamily: "'Lato', sans-serif", // Apply Lato font to overlay text
   };
 
   return (
@@ -110,9 +114,14 @@ const Card = ({ icon, title, description }) => {
     >
       <div style={hiddenContentStyle}>
         <Image src={icon} alt={title} width={100} height={100} />
+<<<<<<< HEAD
         {/* <h3>{title}</h3> */}
       </div>
       <h3>{title}</h3>
+=======
+      </div>
+      <h3 style={{ fontFamily: "'Lato', sans-serif" }}>{title}</h3> {/* Apply Lato font to title */}
+>>>>>>> 2d17da2 (update code)
 
       <div style={overlayStyle}>
         <p>{description}</p>

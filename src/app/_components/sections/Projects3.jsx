@@ -24,20 +24,22 @@ const Project3 = () => {
     padding: "20px",
     overflow: "hidden",
     boxSizing: "border-box",
-    height: "100%", // Adjust for all devices
+    height: "100%",
+    fontFamily: "'Lato', sans-serif",
   };
 
   const headerStyle = {
     marginBottom: "40px",
-    fontSize: "36px",
-    fontWeight: "bold",
+    fontSize: "40px",
+    fontWeight: "400",
     color: "#BCFF00",
     textAlign: "center",
+    fontFamily: "'Lato', sans-serif",
   };
 
   const gridStyle = {
     display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", // Adjust columns for responsiveness
+    gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
     gap: "24px",
     width: "100%",
     maxWidth: "1200px",
@@ -64,7 +66,7 @@ const Card = ({ icon, title, description }) => {
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#BCFF00", // Non-hover color
+    backgroundColor: "#BCFF00",
     color: "#000",
     padding: "20px",
     borderRadius: "12px",
@@ -73,30 +75,31 @@ const Card = ({ icon, title, description }) => {
     transition: "transform 0.3s ease, box-shadow 0.3s ease",
     cursor: "pointer",
     boxSizing: "border-box",
-    width: "100%", // Ensures proper resizing on smaller screens
-    height: "250px", // Fixed height for uniformity
+    width: "100%",
+    height: "250px",
+    fontFamily: "'Lato', sans-serif",
   };
 
   const cardHoverStyle = {
     transform: "scale(1.05)",
     boxShadow: "0 12px 24px rgba(0, 0, 0, 0.3)",
-    backgroundColor: "#BCFF00", // Same color as non-hover to ensure consistency
   };
 
   const hiddenContentStyle = {
-    display: hover ? "none" : "flex", // Hide original content on hover
+    display: hover ? "none" : "flex",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
   };
 
   const overlayStyle = {
-    display: hover ? "flex" : "none", // Show overlay content on hover
+    display: hover ? "flex" : "none",
     justifyContent: "center",
     alignItems: "center",
     color: "#000",
     fontSize: "18px",
     fontWeight: "bold",
+    fontFamily: "'Lato', sans-serif",
   };
 
   return (
@@ -110,7 +113,10 @@ const Card = ({ icon, title, description }) => {
     >
       <div style={hiddenContentStyle}>
         <Image src={icon} alt={title} width={100} height={100} />
+<<<<<<< HEAD
         {/* <h3>{title}</h3> */}
+=======
+>>>>>>> 2d17da2 (update code)
       </div>
       <h3>{title}</h3>
 
