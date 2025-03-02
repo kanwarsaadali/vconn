@@ -114,14 +114,8 @@ const Card = ({ icon, title, description }) => {
     >
       <div style={hiddenContentStyle}>
         <Image src={icon} alt={title} width={100} height={100} />
-<<<<<<< HEAD
-        {/* <h3>{title}</h3> */}
-      </div>
-      <h3>{title}</h3>
-=======
       </div>
       <h3 style={{ fontFamily: "'Lato', sans-serif" }}>{title}</h3> {/* Apply Lato font to title */}
->>>>>>> 2d17da2 (update code)
 
       <div style={overlayStyle}>
         <p>{description}</p>

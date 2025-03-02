@@ -174,15 +174,11 @@ const ClientSlider = ({ bgStyle }) => {
       {/* Partners Section */}
       <div
         className={`mil-${bgStyle}-bg mil-partners`}
-<<<<<<< HEAD
-        style={{ marginTop: "-10px", backgroundColor: "rgb(12, 20, 31)"}}
-=======
         style={{
           marginTop: "-10px",
           backgroundColor: "rgb(12, 20, 31)",
           fontFamily: "'Lato', sans-serif", // Apply Lato font here,
         }}
->>>>>>> 2d17da2 (update code)
       >
         <div className="container mil-p-60">
           <div className="mil-background-grid mil-softened" />
@@ -199,9 +195,6 @@ const ClientSlider = ({ bgStyle }) => {
                 <span
                   className="mil-suptitle-withourgreen mil-upper mil-up mil-mb-30"
                   dangerouslySetInnerHTML={{ __html: advantage.subtitle }}
-<<<<<<< HEAD
-                  style={{ color: "rgb(188, 255, 0)", fontSize: "35px", marginTop:"30px" }}
-=======
                   style={{
                     color: "rgb(188, 255, 0)",
                     fontSize: "40px",
@@ -210,7 +203,6 @@ const ClientSlider = ({ bgStyle }) => {
           fontWeight:"400"
 
                   }}
->>>>>>> 2d17da2 (update code)
                 />
                 {/* <h2
                   className="mil-upper mil-up mil-mb-30"

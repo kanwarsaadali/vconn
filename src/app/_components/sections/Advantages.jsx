@@ -704,8 +704,6 @@
 //   </>
 // );
 
-<<<<<<< HEAD
-=======
 // import React, { useEffect, useRef } from "react";
 
 // const AdvantagesSection = () => {
@@ -960,7 +958,6 @@
 // export default AdvantagesSection;
 
 
->>>>>>> 2d17da2 (update code)
 import React, { useEffect, useRef } from "react";
 
 const AdvantagesSection = () => {
@@ -993,17 +990,11 @@ const AdvantagesSection = () => {
 
   return (
     <section ref={sectionRef} style={styles.section} className="fade-in">
-<<<<<<< HEAD
-      <div style={styles.container}>
-        <div style={styles.statBox}>
-          <img src="/img/icons/map.png" alt="Continents" style={{ width: "100px", height: "50px", marginBottom: "10px" }} />
-=======
       <h2 style={styles.heading}>WHY US</h2> {/* Added heading */}
       <div style={styles.line}></div> {/* Optional underline effect */}
       <div style={styles.container}>
         <div style={styles.statBox}>
           <img src="/img/icons/map.png" alt="Continents" style={styles.icon} />
->>>>>>> 2d17da2 (update code)
           <h2 style={styles.number}>5</h2>
           <p style={styles.label}>Continents Footprint</p>
         </div>
@@ -1036,8 +1027,6 @@ const styles = {
     backgroundColor: "rgb(12, 20, 31)",
     padding: "50px 20px",
     textAlign: "center",
-<<<<<<< HEAD
-=======
     fontFamily: "Lato, sans-serif",
   },
   heading: {
@@ -1052,7 +1041,6 @@ const styles = {
     height: "3px",
     // backgroundColor: "rgb(188, 255, 0)",
     margin: "10px auto 30px auto",
->>>>>>> 2d17da2 (update code)
   },
   container: {
     display: "flex",
@@ -1079,35 +1067,23 @@ const styles = {
     fontWeight: "bold",
     color: "rgb(188, 255, 0)",
     marginBottom: "5px",
-<<<<<<< HEAD
-=======
     fontFamily: "Lato, sans-serif",
->>>>>>> 2d17da2 (update code)
   },
   label: {
     fontSize: "1rem",
     color: "white",
-<<<<<<< HEAD
-=======
     fontFamily: "Lato, sans-serif",
->>>>>>> 2d17da2 (update code)
   },
 };
 
 const fadeInStyles = `
-<<<<<<< HEAD
-=======
   @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
   
->>>>>>> 2d17da2 (update code)
   .fade-in {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 1s ease-out, transform 1s ease-out;
-<<<<<<< HEAD
-=======
     font-family: 'Lato', sans-serif;
->>>>>>> 2d17da2 (update code)
   }
   .fade-in-visible {
     opacity: 1;

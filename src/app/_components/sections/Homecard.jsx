@@ -867,8 +867,6 @@
 // export default Homecard;
 
 
-<<<<<<< HEAD
-=======
 // import React from "react";
 
 // const cardData = [
@@ -1024,7 +1022,6 @@
 
 // export default Homecard;
 import { color } from "framer-motion";
->>>>>>> 2d17da2 (update code)
 import React from "react";
 
 const cardData = [
@@ -1033,45 +1030,29 @@ const cardData = [
     image: "/img/covers/Cybersecurity.png",
     title: "CYBERSECURITY",
     description:
-<<<<<<< HEAD
-      "Secure your business from potential threats, malwares, and hackers via proven defensive and offensive strategy.",
-=======
       "Secure your business from potential threats, malwares, and hackers...",
->>>>>>> 2d17da2 (update code)
   },
   {
     id: 2,
     image: "/img/covers/Devsecops.png",
     title: "DEVSECOPS",
     description:
-<<<<<<< HEAD
-      "Assess risks, monitor attacks, and implement Test-Driven Security (TDS) for quality software production.",
-=======
       // "Assess risks, monitor attacks, and implement Test-Driven Security (TDS) for quality software production.",
       "Assess risks, monitor attacks, and implement Test-Driven Security..."
->>>>>>> 2d17da2 (update code)
   },
   {
     id: 3,
     image: "/img/covers/Manage.png",
     title: "COMPLIANCE",
     description:
-<<<<<<< HEAD
-      "Protect your business top-secret information from unauthorized access, ensure business continuity with reduced financial losses.",
-=======
       "Protect your business top-secret information from unauthorized access...",
->>>>>>> 2d17da2 (update code)
   },
   {
     id: 4,
     image: "/img/covers/Information.png",
     title: "MANAGED SERVICES",
     description:
-<<<<<<< HEAD
-      "Experience uninterrupted IT operations without downtime, reduced operational costs, with proactive support.",
-=======
       "Experience uninterrupted IT operations without downtime, reduced ...",
->>>>>>> 2d17da2 (update code)
   },
 ];
 
@@ -1104,10 +1085,7 @@ const Homecard = () => {
           <button style={styles.button}>MORE SERVICES</button>
         </div>
       </div>
-<<<<<<< HEAD
-=======
       <style>{fontStyles}</style>
->>>>>>> 2d17da2 (update code)
     </section>
   );
 };
@@ -1116,25 +1094,12 @@ const Homecard = () => {
 const styles = {
   cardSection: {
     backgroundColor: "rgb(12, 20, 31)",
-<<<<<<< HEAD
-    padding: "50px 20px",
-=======
     padding: "64px 24px",
     fontFamily: "Lato, sans-serif",
->>>>>>> 2d17da2 (update code)
   },
   container: {
     maxWidth: "1400px",
     margin: "0 auto",
-<<<<<<< HEAD
-  },
-  sectionHeadingh1: {
-    color: "rgb(188, 255, 0)",
-    fontSize: "3rem",
-    fontWeight: "bold",
-    textAlign: "center",
-    marginBottom: "30px",
-=======
     fontFamily: "Lato, sans-serif",
   },
   sectionHeadingh1: {
@@ -1144,27 +1109,17 @@ const styles = {
     textAlign: "center",
     marginBottom: "30px",
     fontFamily: "Lato, sans-serif",
->>>>>>> 2d17da2 (update code)
   },
   cardGrid: {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-<<<<<<< HEAD
-    gap: "30px",
-=======
     gap: "32px",
     fontFamily: "Lato, sans-serif",
->>>>>>> 2d17da2 (update code)
   },
   card: {
     position: "relative",
     borderRadius: "16px",
     overflow: "hidden",
-<<<<<<< HEAD
-    boxShadow: "0 8px 20px rgba(0, 0, 0, 0.2)",
-    textAlign: "left",
-  },
-=======
     // background: "rgb(25, 40, 55)",
     background: "rgb(16, 30, 42)",
     // Alternative: background: "rgba(255, 255, 255, 0.05)", for subtle transparency
@@ -1173,7 +1128,6 @@ const styles = {
     // padding: "20px", // Optional: Adjust padding for better spacing
 }
 ,
->>>>>>> 2d17da2 (update code)
   imageContainer: {
     position: "relative",
     width: "100%",
@@ -1188,14 +1142,6 @@ const styles = {
   },
   cardContent: {
     padding: "20px",
-<<<<<<< HEAD
-  },
-  cardTitle: {
-    fontSize: "1.5rem",
-    fontWeight: "bold",
-    marginBottom: "12px",
-    color: "white",
-=======
     fontFamily: "Lato, sans-serif",
     display: "-webkit-box",
     WebkitBoxOrient: "vertical",
@@ -1208,26 +1154,19 @@ const styles = {
     marginBottom: "6px",
     color: "white",
     fontFamily: "Lato, sans-serif",
->>>>>>> 2d17da2 (update code)
   },
   cardDescription: {
     fontSize: "1rem",
     color: "white",
     marginBottom: "15px",
-<<<<<<< HEAD
-=======
     fontFamily: "Lato, sans-serif",
->>>>>>> 2d17da2 (update code)
   },
   cardLink: {
     color: "rgb(38, 144, 193)",
     textDecoration: "none",
     fontWeight: "bold",
     fontSize: "1.1rem",
-<<<<<<< HEAD
-=======
     fontFamily: "Lato, sans-serif",
->>>>>>> 2d17da2 (update code)
   },
   greenArrow: {
     color: "rgb(188, 255, 0)", // Matches the button color
@@ -1249,14 +1188,6 @@ const styles = {
     borderRadius: "8px",
     cursor: "pointer",
     transition: "background 0.3s ease",
-<<<<<<< HEAD
-  },
-  buttonHover: {
-    backgroundColor: "#aaff00",
-  },
-};
-
-=======
     fontFamily: "Lato, sans-serif",
   },
 };
@@ -1265,5 +1196,4 @@ const fontStyles = `
   @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 `;
 
->>>>>>> 2d17da2 (update code)
 export default Homecard;

@@ -68,27 +68,17 @@ const InformationSecurity = () => {
   };
 
   return (
-<<<<<<< HEAD
-    <div style={{backgroundColor:"rgb(12, 20, 31)"}}>
-=======
     <div style={{ backgroundColor: "rgb(12, 20, 31)", fontFamily: "'Lato', sans-serif" }}>
->>>>>>> 2d17da2 (update code)
       <Header layout={"default"} />
 
       <div style={containerStyle}>
         {/* Text Section */}
         <div style={textStyle}>
-<<<<<<< HEAD
-          <h1 style={{ fontSize: "48px", marginBottom: "20px", color:"white" }}>Outsmart Hackers 24/7 through Adaptive Security Measures Before, During, and After Incidents</h1>
-          <p style={{ fontSize: "18px", lineHeight: "1.6", marginBottom: "40px" }}>
-          We proactively monitor your systems, encrypt sensitive data, and ensure its integrity against threats round the clock.
-=======
           <h1 style={{ fontSize: "48px", marginBottom: "20px", color: "white", fontFamily: "'Lato', sans-serif" }}>
             Outsmart Hackers 24/7 through Adaptive Security Measures Before, During, and After Incidents
           </h1>
           <p style={{ fontSize: "18px", lineHeight: "1.6", marginBottom: "40px", fontFamily: "'Lato', sans-serif" }}>
             We proactively monitor your systems, encrypt sensitive data, and ensure its integrity against threats round the clock.
->>>>>>> 2d17da2 (update code)
           </p>
           <a
             href="#"

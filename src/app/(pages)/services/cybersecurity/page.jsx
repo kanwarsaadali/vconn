@@ -171,11 +171,7 @@ const Cybersecurity = () => {
   };
 
   return (
-<<<<<<< HEAD
-    <div style={{backgroundColor:"rgb(12, 20, 31)"}}>
-=======
     <div style={{ backgroundColor: "rgb(12, 20, 31)", fontFamily: "'Lato', sans-serif" }}>
->>>>>>> 2d17da2 (update code)
       <Header layout={"default"} />
 
       <div style={containerStyle}>

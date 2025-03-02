@@ -68,27 +68,17 @@ const Devsecops = () => {
   };
 
   return (
-<<<<<<< HEAD
-    <div style={{backgroundColor:"rgb(12, 20, 31)"}}>
-=======
     <div style={{ backgroundColor: "rgb(12, 20, 31)", fontFamily: "'Lato', sans-serif" }}>
->>>>>>> 2d17da2 (update code)
       <Header layout={"default"} />
 
       <div style={containerStyle}>
         {/* Text Section */}
         <div style={textStyle}>
-<<<<<<< HEAD
-          <h1 style={{ fontSize: "48px", marginBottom: "20px", color:"white" }}>Consider IT done, just the way you’ve always wanted</h1>
-          <p style={{ fontSize: "18px", lineHeight: "1.6", marginBottom: "40px" }}>
-          We handle your IT daily grind with 24/7 personalized services, latest tech stack, and resolve issues proactively.
-=======
           <h1 style={{ fontSize: "48px", marginBottom: "20px", color: "white", fontFamily: "'Lato', sans-serif" }}>
             Consider IT done, just the way you’ve always wanted
           </h1>
           <p style={{ fontSize: "18px", lineHeight: "1.6", marginBottom: "40px", fontFamily: "'Lato', sans-serif" }}>
             We handle your IT daily grind with 24/7 personalized services, latest tech stack, and resolve issues proactively.
->>>>>>> 2d17da2 (update code)
           </p>
           <a
             href="#"

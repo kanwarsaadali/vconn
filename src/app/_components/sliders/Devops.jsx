@@ -861,8 +861,6 @@
 // export default DevopsSlider;
 
 
-<<<<<<< HEAD
-=======
 // "use client"; // Add this line at the very top to mark this as a client component
 
 // import React, { useState } from "react";
@@ -1010,30 +1008,12 @@
 // export default DevopsSlider;
 
 
->>>>>>> 2d17da2 (update code)
 "use client"; // Add this line at the very top to mark this as a client component
 
 import React, { useState } from "react";
 
 const services = {
   Devops: [
-<<<<<<< HEAD
-    { name: "Jenkins", icon: "/img/devops/1.png" },
-    { name: "Gitlab", icon: "/img/devops/2.png" },
-    { name: "CircleCI", icon: "/img/devops/3.png" },
-    { name: "HTML5", icon: "/img/devops/4.png" },
-    { name: "AzureDevops", icon: "/img/devops/5.png" },
-    { name: "Ansible", icon: "/img/devops/6.png" },
-    { name: "Puppet", icon: "/img/devops/7.png" },
-    { name: "Chef", icon: "/img/devops/8.png" },
-    { name: "Saltstack", icon: "/img/devops/9.png" },
-    { name: "Terraform", icon: "/img/devops/10.png" },
-    { name: "Codecommit", icon: "/img/devops/11.png" },
-    { name: "Pulumi", icon: "/img/devops/12.png" },
-    { name: "Docker", icon: "/img/devops/13.png" },
-    { name: "Kubernetes", icon: "/img/devops/14.png" },
-    { name: "Openshift", icon: "/img/devops/15.png" },
-=======
     { name: "Azure", icon: "/img/devops/1.png" },
     { name: "Puppet", icon: "/img/devops/2.png" },
     { name: "Gitlab", icon: "/img/devops/3.png" },
@@ -1049,7 +1029,6 @@ const services = {
     { name: "Google", icon: "/img/devops/13.png" },
     { name: "ELK", icon: "/img/devops/14.png" },
     { name: "Slack", icon: "/img/devops/15.png" },
->>>>>>> 2d17da2 (update code)
   ],
   Cybersecurity: [
     { name: "Wireshark", icon: "/img/cybersecurity/1.png" },
@@ -1122,18 +1101,11 @@ const styles = {
     textAlign: "center",
     padding: "60px 10%",
     backgroundColor: "rgb(12, 20, 31)",
-<<<<<<< HEAD
-  },
-  heading: {
-    fontSize: "32px",
-    fontWeight: "bold",
-=======
     fontFamily: "'Lato', sans-serif", // Apply Lato font here
   },
   heading: {
     fontSize: "40px",
     fontWeight: "400",
->>>>>>> 2d17da2 (update code)
     color: "rgb(188, 255, 0)",
     marginBottom: "20px",
     textAlign: "center",
@@ -1171,11 +1143,7 @@ const styles = {
     width: "70px",
     height: "70px",
     transition: "transform 0.3s ease-in-out",
-<<<<<<< HEAD
-    backgroundColor: "white"
-=======
     // backgroundColor: "white"
->>>>>>> 2d17da2 (update code)
   },
   iconText: {
     fontSize: "16px",

@@ -11,7 +11,7 @@ import Footer from "@layouts/footers/Index";
 import { getSortedProjectsDataJson } from "@library/projectjson";
 // import ProjectData from "@data/projects/project-1.json";
 
-import HeroOneSection from "@components/sections/HeroOne"
+// import HeroOneSection from "@components/sections/HeroOne"
 import AboutSection from "@components/sections/About";
 import IdeasSection from "@components/sections/Ideas";
 import ServicesSection from "@components/sections/Services";
@@ -24,6 +24,8 @@ import CoresSection from "@components/sections/Cores";
 // import ClientSlider from '@components/sliders/client';
 
 const PartnersSlider = dynamic( () => import("@components/sliders/Partners"), { ssr: false } );
+const HeroOneSection = dynamic( () => import("@components/sections/HeroOne"), { ssr: false } );
+
 const DevopsSlider = dynamic( () => import("@components/sliders/Devops"), { ssr: false } );
 const DevopsecopsSlider = dynamic( () => import("@components/sliders/Devsecops"), { ssr: false } );
 const CybersecuritySlider = dynamic( () => import("@components/sliders/Cybersecurity"), { ssr: false } );

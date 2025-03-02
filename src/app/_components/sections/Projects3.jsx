@@ -113,10 +113,6 @@ const Card = ({ icon, title, description }) => {
     >
       <div style={hiddenContentStyle}>
         <Image src={icon} alt={title} width={100} height={100} />
-<<<<<<< HEAD
-        {/* <h3>{title}</h3> */}
-=======
->>>>>>> 2d17da2 (update code)
       </div>
       <h3>{title}</h3>
 

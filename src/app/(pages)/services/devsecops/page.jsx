@@ -180,11 +180,7 @@ const Devsecops = () => {
   };
 
   return (
-<<<<<<< HEAD
-    <div style={{background:"rgb(12, 20, 31)"}}>
-=======
     <div style={{ background: "rgb(12, 20, 31)", fontFamily: "'Lato', sans-serif" }}>
->>>>>>> 2d17da2 (update code)
       <Header layout={"default"} />
 
       <div style={containerStyle}>

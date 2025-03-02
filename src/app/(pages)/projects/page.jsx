@@ -75,11 +75,7 @@ async function Projects() {
 
         {/* Overlay Content */}
         <div style={{ position: "relative", zIndex: 2 }}>
-<<<<<<< HEAD
-          <h1 style={{ fontSize: "3.5rem", fontWeight: "bold" }}>
-=======
           <h1 style={{ fontSize: "3.5rem", fontWeight: "400" }}>
->>>>>>> 2d17da2 (update code)
             <span style={{ color: "white" }}>CRAFTING THE </span>{" "}
             <span style={{ color: "rgb(188, 255, 0)" }}>FUTURE</span>{" "}
             <span style={{ color: "white" }}>OF</span>
@@ -87,11 +83,7 @@ async function Projects() {
           <h1
             style={{
               fontSize: "3.5rem",
-<<<<<<< HEAD
-              fontWeight: "bold",
-=======
               fontWeight: "400",
->>>>>>> 2d17da2 (update code)
               color: "white",
             }}
           >

@@ -161,11 +161,7 @@ const HowWeWork1 = () => {
           fontFamily: "'Lato', sans-serif",
         }}
       >
-<<<<<<< HEAD
-        How we work
-=======
         HOW WE WORK
->>>>>>> 2d17da2 (update code)
       </h2>
 
       {/* Background Image */}
