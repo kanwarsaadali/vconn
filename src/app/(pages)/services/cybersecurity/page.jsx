@@ -207,17 +207,7 @@ const Cybersecurity = () => {
 
       <Project1 />
       <div>
-      <h1 style={{
-    marginBottom: "20px",  // Reduced space below the heading
-    fontSize: "40px",
-    fontWeight: "400",
-    color: "#BCFF00",
-    textAlign: "center",
-    fontFamily: "'Lato', sans-serif",
-    marginTop: "60px"  // Reduced space above the heading
-}}>
-    WHY US
-</h1>
+  
 <img src="/img/Project/whyuscyber.png" alt="" style={imageStyle} />
 
       </div>

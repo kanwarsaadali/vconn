@@ -104,7 +104,7 @@ const Devsecops = () => {
 
       <Project3 />
 
-      <img src="/img/Project/whyusdevops.png" alt="Why Us?" style={imageStyle} />
+      <img src="/img/Project/whyusmanage.png" alt="Why Us?" style={imageStyle} />
 
       <ClientSlider />
       <HowWeWork1 />
