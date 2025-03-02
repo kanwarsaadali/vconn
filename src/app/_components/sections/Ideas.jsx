@@ -1699,6 +1699,186 @@
 // export default IdeasSection;
 
 
+// "use client";
+
+// import { useState, useEffect } from "react";
+
+// const IdeasSection = () => {
+//   const [currentSlide, setCurrentSlide] = useState(0);
+//   const [fadeIn, setFadeIn] = useState(true);
+
+//   const testimonials = [
+//     {
+//       text: '"Consulting services for all things related to DevOps provided insight into automation and streamlining processes, improving our product development timelines significantly."',
+//       name: "Mark Wilson",
+//       title: "CEO, Shell",
+//       logos: ["/img/ideas/3.png"],
+//     },
+//     {
+//       text: '"Great support and consultancy from the team helped us achieve our automation goals efficiently and on time."',
+//       name: "Jane Smith",
+//       title: "CTO, Unilever",
+//       logos: ["/img/ideas/1.png"],
+//     },
+//     {
+//       text: '"Their approach to improving our hospital operations was revolutionary and efficient."',
+//       name: "Dr. Ahmed Khan",
+//       title: "Director, Indus Hospital",
+//       logos: ["/img/ideas/2.png"],
+//     },
+//   ];
+
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setFadeIn(false);
+//       setTimeout(() => {
+//         setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+//         setFadeIn(true);
+//       }, 500);
+//     }, 5000);
+
+//     return () => clearInterval(interval);
+//   }, [testimonials.length]);
+
+//   return (
+//     <div 
+//       style={{ 
+//         textAlign: "center", 
+//         padding: "50px 20px", 
+//         backgroundColor: "rgb(12, 20, 31)", 
+//         position: "relative", 
+//         fontFamily: "Lato, sans-serif" 
+//       }}
+//     >
+//       <h3 
+//         style={{ 
+//           fontSize: "40px", 
+//           fontWeight: "400", 
+//           color: "rgb(188, 255, 0)", 
+//           marginBottom: "30px", 
+//           textTransform: "uppercase", 
+//           fontFamily: "Lato, sans-serif" 
+//         }}
+//       >
+//         What Our Customers Say
+//       </h3>
+
+//       <div 
+//         style={{ 
+//           position: "relative", 
+//           width: "100%", 
+//           paddingBottom: "50px", 
+//           height: "450px" 
+//         }}
+//       > 
+//         {testimonials.map((testimonial, index) => (
+//           <div
+//             key={index}
+//             style={{
+//               opacity: index === currentSlide && fadeIn ? 1 : 0,
+//               transition: "opacity 0.5s ease-in-out",
+//               position: index === currentSlide ? "relative" : "absolute",
+//               width: "100%",
+//               textAlign: "center",
+//               padding: "20px",
+//               height: "100%",
+//               display: "flex",
+//               alignItems: "center",
+//               justifyContent: "center",
+//               fontFamily: "Lato, sans-serif",
+//             }}
+//           >
+//             <div
+//               style={{
+//                 borderRadius: "10px",
+//                 padding: "40px 10px",
+//                 backgroundColor: "rgb(12, 20, 31)",
+//                 height: "100%",
+//                 maxWidth: "80%",
+//                 margin: "0 auto",
+//                 boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+//                 display: "flex",
+//                 flexDirection: "column",
+//                 justifyContent: "space-between",
+//                 alignItems: "center",
+//                 textAlign: "justify",
+//                 lineHeight: "1.4",
+//                 fontFamily: "Lato, sans-serif",
+//               }}
+//             >
+//               <p 
+//                 style={{ 
+//                   fontSize: "40px", 
+//                   color: "white", 
+//                   flex: "1", 
+//                   display: "flex", 
+//                   alignItems: "center", 
+//                   textAlign: "center", 
+//                   fontStyle: "italic", 
+//                   padding: "10px", 
+//                   fontFamily: "Lato, sans-serif" 
+//                 }}
+//               >
+//                 {testimonial.text}
+//               </p>
+              
+//               <div style={{ textAlign: "center", marginTop: "20px" }}>
+//                 <h4 
+//                   style={{ 
+//                     fontSize: "30px", 
+//                     fontWeight: "bold", 
+//                     color: "white", 
+//                     marginBottom: "5px", 
+//                     fontFamily: "Lato, sans-serif" 
+//                   }}
+//                 >
+//                   {testimonial.name}
+//                 </h4>
+//                 <span 
+//                   style={{ 
+//                     fontSize: "25px", 
+//                     color: "white", 
+//                     display: "block", 
+//                     fontFamily: "Lato, sans-serif" 
+//                   }}
+//                 >
+//                   {testimonial.title}
+//                 </span>
+//               </div>
+
+//               <div 
+//                 style={{ 
+//                   display: "flex", 
+//                   justifyContent: "center", 
+//                   gap: "15px", 
+//                   padding: "4px", 
+//                   marginTop: "20px" 
+//                 }}
+//               >
+//                 {testimonial.logos.map((logo, i) => (
+//                   <img 
+//                     key={i} 
+//                     src={logo} 
+//                     alt="Logo" 
+//                     style={{ 
+//                       width: "250px", 
+//                       height: "auto", 
+//                       borderRadius: "4px" 
+//                     }} 
+//                   />
+//                 ))}
+//               </div>
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default IdeasSection;
+
+
 "use client";
 
 import { useState, useEffect } from "react";
@@ -1741,137 +1921,144 @@ const IdeasSection = () => {
   }, [testimonials.length]);
 
   return (
-    <div 
-      style={{ 
-        textAlign: "center", 
-        padding: "50px 20px", 
-        backgroundColor: "rgb(12, 20, 31)", 
-        position: "relative", 
-        fontFamily: "Lato, sans-serif" 
-      }}
-    >
-      <h3 
-        style={{ 
-          fontSize: "40px", 
-          fontWeight: "400", 
-          color: "rgb(188, 255, 0)", 
-          marginBottom: "30px", 
-          textTransform: "uppercase", 
-          fontFamily: "Lato, sans-serif" 
-        }}
-      >
-        What Our Customers Say
-      </h3>
+    <div className="ideas-section">
+      <h3 className="section-title">What Our Customers Say</h3>
 
-      <div 
-        style={{ 
-          position: "relative", 
-          width: "100%", 
-          paddingBottom: "50px", 
-          height: "450px" 
-        }}
-      > 
+      <div className="testimonial-container">
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            style={{
-              opacity: index === currentSlide && fadeIn ? 1 : 0,
-              transition: "opacity 0.5s ease-in-out",
-              position: index === currentSlide ? "relative" : "absolute",
-              width: "100%",
-              textAlign: "center",
-              padding: "20px",
-              height: "100%",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontFamily: "Lato, sans-serif",
-            }}
+            className={`testimonial-slide ${index === currentSlide ? "active" : ""}`}
           >
-            <div
-              style={{
-                borderRadius: "10px",
-                padding: "40px 10px",
-                backgroundColor: "rgb(12, 20, 31)",
-                height: "100%",
-                maxWidth: "80%",
-                margin: "0 auto",
-                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "space-between",
-                alignItems: "center",
-                textAlign: "justify",
-                lineHeight: "1.4",
-                fontFamily: "Lato, sans-serif",
-              }}
-            >
-              <p 
-                style={{ 
-                  fontSize: "40px", 
-                  color: "white", 
-                  flex: "1", 
-                  display: "flex", 
-                  alignItems: "center", 
-                  textAlign: "center", 
-                  fontStyle: "italic", 
-                  padding: "10px", 
-                  fontFamily: "Lato, sans-serif" 
-                }}
-              >
-                {testimonial.text}
-              </p>
-              
-              <div style={{ textAlign: "center", marginTop: "20px" }}>
-                <h4 
-                  style={{ 
-                    fontSize: "30px", 
-                    fontWeight: "bold", 
-                    color: "white", 
-                    marginBottom: "5px", 
-                    fontFamily: "Lato, sans-serif" 
-                  }}
-                >
-                  {testimonial.name}
-                </h4>
-                <span 
-                  style={{ 
-                    fontSize: "25px", 
-                    color: "white", 
-                    display: "block", 
-                    fontFamily: "Lato, sans-serif" 
-                  }}
-                >
-                  {testimonial.title}
-                </span>
-              </div>
+            <p className="testimonial-text">{testimonial.text}</p>
 
-              <div 
-                style={{ 
-                  display: "flex", 
-                  justifyContent: "center", 
-                  gap: "15px", 
-                  padding: "4px", 
-                  marginTop: "20px" 
-                }}
-              >
-                {testimonial.logos.map((logo, i) => (
-                  <img 
-                    key={i} 
-                    src={logo} 
-                    alt="Logo" 
-                    style={{ 
-                      width: "250px", 
-                      height: "auto", 
-                      borderRadius: "4px" 
-                    }} 
-                  />
-                ))}
-              </div>
+            <div className="testimonial-info">
+              <h4 className="testimonial-name">{testimonial.name}</h4>
+              <span className="testimonial-title">{testimonial.title}</span>
+            </div>
+
+            <div className="testimonial-logos">
+              {testimonial.logos.map((logo, i) => (
+                <img key={i} src={logo} alt="Logo" className="testimonial-logo" />
+              ))}
             </div>
           </div>
         ))}
       </div>
+
+      {/* Responsive Styles */}
+      <style>
+        {`
+          .ideas-section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: rgb(12, 20, 31);
+            position: relative;
+            font-family: "Lato", sans-serif;
+          }
+
+          .section-title {
+            font-size: 40px;
+            font-weight: 400;
+            color: rgb(188, 255, 0);
+            margin-bottom: 30px;
+            text-transform: uppercase;
+          }
+
+          .testimonial-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 50px;
+            height: auto;
+          }
+
+          .testimonial-slide {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            visibility: hidden;
+          }
+
+          .testimonial-slide.active {
+            opacity: 1;
+            position: relative;
+            visibility: visible;
+          }
+
+          .testimonial-text {
+            font-size: 1.8rem;
+            color: white;
+            text-align: center;
+            font-style: italic;
+            padding: 10px;
+          }
+
+          .testimonial-info {
+            text-align: center;
+            margin-top: 20px;
+          }
+
+          .testimonial-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 5px;
+          }
+
+          .testimonial-title {
+            font-size: 1.2rem;
+            color: white;
+            display: block;
+          }
+
+          .testimonial-logos {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 4px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+          }
+
+          .testimonial-logo {
+            width: 200px;
+            height: auto;
+            border-radius: 4px;
+          }
+
+          /* Responsive Design */
+          @media (max-width: 768px) {
+            .section-title {
+              font-size: 30px;
+            }
+
+            .testimonial-text {
+              font-size: 16px;
+              padding: 10px;
+            }
+
+            .testimonial-name {
+              font-size: 18px;
+            }
+
+            .testimonial-title {
+              font-size: 14px;
+            }
+
+            .testimonial-logo {
+              width: 150px;
+            }
+          }
+        `}
+      </style>
     </div>
   );
 };
