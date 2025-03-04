@@ -31,7 +31,7 @@ const Project3 = () => {
   const headerStyle = {
     marginBottom: "40px",
     fontSize: "40px",
-    fontWeight: "400",
+    fontWeight: "700",
     color: "#BCFF00",
     textAlign: "center",
     fontFamily: "'Lato', sans-serif",

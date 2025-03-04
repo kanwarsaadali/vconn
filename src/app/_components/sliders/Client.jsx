@@ -200,7 +200,7 @@ const ClientSlider = ({ bgStyle }) => {
                     fontSize: "40px",
                     marginTop: "30px",
                     fontFamily: "'Lato', sans-serif", // Apply Lato font here
-          fontWeight:"400"
+          fontWeight:"700"
 
                   }}
                 />
@@ -331,7 +331,7 @@ const ClientSlider = ({ bgStyle }) => {
         }
 
         .mil-mb-60 {
-          margin-bottom: 60px;
+          margin-bottom: 80px;
         }
       `}</style>
     </>

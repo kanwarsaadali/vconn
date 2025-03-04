@@ -60,7 +60,7 @@ const Casestudies2 = () => {
         style={{
           color: "rgb(188, 255, 0)",
           fontSize: "40px",
-          fontWeight:"400",
+          fontWeight:"700",
           marginBottom: "40px",
           fontFamily: "'Lato', sans-serif", // Ensure Lato font is applied here
         }}
@@ -73,7 +73,7 @@ const Casestudies2 = () => {
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(2, 1fr)", // Two cards per row
-          gap: "20px",
+          gap: "48px",
           maxWidth: "1000px",
           margin: "0 auto",
         }}
@@ -136,22 +136,7 @@ const Casestudies2 = () => {
               >
                 {service.description}
               </p>
-              <button
-                onClick={() => handleButtonClick(service.path)} // Navigate on button click
-                style={{
-                  backgroundColor: "rgb(188, 255, 0)",
-                  padding: "10px 15px",
-                  textDecoration: "none",
-                  fontWeight: "bold",
-                  borderRadius: "5px",
-                  border: "none",
-                  color: "rgb(23, 40, 62)",
-                  cursor: "pointer",
-                  fontFamily: "'Lato', sans-serif", // Lato applied to the button text
-                }}
-              >
-                EXPLORE MORE
-              </button>
+             
             </div>
           </div>
         ))}

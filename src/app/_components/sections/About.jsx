@@ -275,7 +275,7 @@ const AboutCompany = () => {
         </h2>
         <div style={styles.line}></div>
         <p style={styles.description}>
-     Because we believe the more you need technology to fuel your business, the requirement for potential expertise in the respective domain arises. We have led the effort to enhance the way managed services are provided. VConn has adapted innovative technologies and implemented digital transformation when required to enhance and boost business of our respective clients. This has lead our clients to achieve success and immense customer pleasure.
+        We believe the more technology you need to fuel your business, the more expertise you require. We continuously enhance the way how managed services are provided. With innovative technologies, VConn adapted and implemented digital transformation to boost our client’s businesses and drive them success.
         </p>
         {/* <button style={styles.button}>Learn More ↗</button> */}
       </div>
@@ -297,7 +297,7 @@ const styles = {
   },
   heading: {
     fontSize: "40px", // Increased from 35px
-    fontWeight: "400",
+    fontWeight: "700",
     color: "rgb(188, 255, 0)",
     fontFamily: "'Lato', sans-serif",
   },

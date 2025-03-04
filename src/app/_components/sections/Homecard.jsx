@@ -1021,7 +1021,189 @@
 // };
 
 // export default Homecard;
-import { color } from "framer-motion";
+// import { color } from "framer-motion";
+// import { useRouter } from "next/navigation";
+
+// import React from "react";
+
+// const cardData = [
+//   {
+//     id: 1,
+//     image: "/img/covers/Cybersecurity.png",
+//     title: "CYBERSECURITY",
+//     description:
+//       "Secure your business from threats, malwares, and hackers",
+//   },
+//   {
+//     id: 2,
+//     image: "/img/covers/Devsecops.png",
+//     title: "DEVSECOPS",
+//     description:
+//       // "Assess risks, monitor attacks, and implement Test-Driven Security (TDS) for quality software production.",
+//       "Assess risks, monitor attacks, and implement Test-Driven Security. "
+//   },
+//   {
+//     id: 3,
+//     image: "/img/covers/Manage.png",
+//     title: "COMPLIANCE",
+//     description:
+//       "Protect your business information from unauthorized access.",
+//   },
+//   {
+//     id: 4,
+//     image: "/img/covers/Information.png",
+//     title: "MANAGED SERVICES",
+//     description:
+//       "Experience uninterrupted IT operations without downtime.",
+//   },
+// ];
+
+// const Homecard = () => {
+//     const router = useRouter();
+  
+//   return (
+//     <section style={styles.cardSection}>
+//       <div style={styles.container}>
+//         <h2 style={styles.sectionHeadingh1}>WHAT WE DO</h2>
+
+//         <div style={styles.cardGrid}>
+//           {cardData.map((card) => (
+//             <div key={card.id} style={styles.card}>
+//               <div style={styles.imageContainer}>
+//                 <img src={card.image} alt={card.title} style={styles.cardImage} />
+//               </div>
+//               <div style={styles.cardContent}>
+//                 <h3 style={styles.cardTitle}>{card.title}</h3>
+//                 <p style={styles.cardDescription}>{card.description}</p>
+//                 <a href="#" style={styles.cardLink}>
+//                   Learn More{" "}
+//                   <span style={styles.greenArrow}>&gt;</span>
+//                 </a>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+
+//         {/* Centered Button */}
+//         <div style={styles.buttonContainer}>
+//           <button style={styles.button} onClick={() => router.push("/services")}p>MORE SERVICES</button>
+//         </div>
+//       </div>
+//       <style>{fontStyles}</style>
+//     </section>
+//   );
+// };
+
+// // Styles for responsiveness and slanted images
+// const styles = {
+//   cardSection: {
+//     backgroundColor: "rgb(12, 20, 31)",
+//     padding: "64px 24px",
+//     fontFamily: "Lato, sans-serif",
+//   },
+//   container: {
+//     maxWidth: "1400px",
+//     margin: "0 auto",
+//     fontFamily: "Lato, sans-serif",
+//   },
+//   sectionHeadingh1: {
+//     color: "rgb(188, 255, 0)",
+//     fontSize: "40px",
+//     fontWeight: "700",
+//     textAlign: "center",
+//     marginBottom: "30px",
+//     fontFamily: "Lato, sans-serif",
+//   },
+//   cardGrid: {
+//     display: "grid",
+//     gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+//     gap: "32px",
+//     fontFamily: "Lato, sans-serif",
+//   },
+//   card: {
+//     position: "relative",
+//     borderRadius: "16px",
+//     overflow: "hidden",
+//     // background: "rgb(25, 40, 55)",
+//     background: "rgb(16, 30, 42)",
+//     // Alternative: background: "rgba(255, 255, 255, 0.05)", for subtle transparency
+//     textAlign: "left",
+//     fontFamily: "Lato, sans-serif",
+//     // padding: "20px", // Optional: Adjust padding for better spacing
+// }
+// ,
+//   imageContainer: {
+//     position: "relative",
+//     width: "100%",
+//     height: "300px",
+//     overflow: "hidden",
+//   },
+//   cardImage: {
+//     width: "100%",
+//     height: "100%",
+//     objectFit: "cover",
+//     clipPath: "polygon(0 0, 100% 0, 100% 85%, 0 100%)",
+//   },
+//   cardContent: {
+//     padding: "20px",
+//     fontFamily: "Lato, sans-serif",
+//     display: "-webkit-box",
+//     WebkitBoxOrient: "vertical",
+//     overflow: "hidden",
+//     textOverflow: "ellipsis",
+// },
+//   cardTitle: {
+//     fontSize: "1.5rem",
+//     fontWeight: "bold",
+//     marginBottom: "6px",
+//     color: "white",
+//     fontFamily: "Lato, sans-serif",
+//   },
+//   cardDescription: {
+//     fontSize: "1rem",
+//     color: "white",
+//     marginBottom: "15px",
+//     fontFamily: "Lato, sans-serif",
+//   },
+//   cardLink: {
+//     color: "rgb(38, 144, 193)",
+//     textDecoration: "none",
+//     fontWeight: "bold",
+//     fontSize: "1.1rem",
+//     fontFamily: "Lato, sans-serif",
+//   },
+//   greenArrow: {
+//     color: "rgb(188, 255, 0)", // Matches the button color
+//     fontSize: "1.2rem",
+//     fontWeight: "bold",
+//   },
+//   buttonContainer: {
+//     display: "flex",
+//     justifyContent: "center",
+//     marginTop: "50px",
+//   },
+//   button: {
+//     backgroundColor: "rgb(188, 255, 0)",
+//     color: "black",
+//     fontSize: "1.2rem",
+//     fontWeight: "bold",
+//     padding: "12px 24px",
+//     border: "none",
+//     borderRadius: "8px",
+//     cursor: "pointer",
+//     transition: "background 0.3s ease",
+//     fontFamily: "Lato, sans-serif",
+//   },
+// };
+
+// const fontStyles = `
+//   @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+// `;
+
+// export default Homecard;
+
+
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const cardData = [
@@ -1029,34 +1211,35 @@ const cardData = [
     id: 1,
     image: "/img/covers/Cybersecurity.png",
     title: "CYBERSECURITY",
-    description:
-      "Secure your business from potential threats, malwares, and hackers...",
+    description: "Secure your business from threats, malwares, and hackers.",
+    route: "/services/cybersecurity",
   },
   {
     id: 2,
     image: "/img/covers/Devsecops.png",
     title: "DEVSECOPS",
-    description:
-      // "Assess risks, monitor attacks, and implement Test-Driven Security (TDS) for quality software production.",
-      "Assess risks, monitor attacks, and implement Test-Driven Security..."
+    description: "Assess risks, monitor attacks, and implement Test-Driven Security.",
+    route: "/services/devsecops",
   },
   {
     id: 3,
     image: "/img/covers/Manage.png",
     title: "COMPLIANCE",
-    description:
-      "Protect your business top-secret information from unauthorized access...",
+    description: "Protect your business information from unauthorized access.",
+    route: "/services/information-security",
   },
   {
     id: 4,
     image: "/img/covers/Information.png",
     title: "MANAGED SERVICES",
-    description:
-      "Experience uninterrupted IT operations without downtime, reduced ...",
+    description: "Experience uninterrupted IT operations without downtime.",
+    route: "/services/managed-services",
   },
 ];
 
 const Homecard = () => {
+  const router = useRouter();
+
   return (
     <section style={styles.cardSection}>
       <div style={styles.container}>
@@ -1071,10 +1254,12 @@ const Homecard = () => {
               <div style={styles.cardContent}>
                 <h3 style={styles.cardTitle}>{card.title}</h3>
                 <p style={styles.cardDescription}>{card.description}</p>
-                <a href="#" style={styles.cardLink}>
-                  Learn More{" "}
-                  <span style={styles.greenArrow}>&gt;</span>
-                </a>
+                <button
+                  onClick={() => router.push(card.route)}
+                  style={styles.cardLink}
+                >
+                  Learn More <span style={styles.greenArrow}>&gt;</span>
+                </button>
               </div>
             </div>
           ))}
@@ -1082,7 +1267,9 @@ const Homecard = () => {
 
         {/* Centered Button */}
         <div style={styles.buttonContainer}>
-          <button style={styles.button}>MORE SERVICES</button>
+          <button style={styles.button} onClick={() => router.push("/services")}>
+            MORE SERVICES
+          </button>
         </div>
       </div>
       <style>{fontStyles}</style>
@@ -1090,7 +1277,7 @@ const Homecard = () => {
   );
 };
 
-// Styles for responsiveness and slanted images
+// Styles
 const styles = {
   cardSection: {
     backgroundColor: "rgb(12, 20, 31)",
@@ -1105,29 +1292,22 @@ const styles = {
   sectionHeadingh1: {
     color: "rgb(188, 255, 0)",
     fontSize: "40px",
-    fontWeight: "400",
+    fontWeight: "700",
     textAlign: "center",
     marginBottom: "30px",
-    fontFamily: "Lato, sans-serif",
   },
   cardGrid: {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
     gap: "32px",
-    fontFamily: "Lato, sans-serif",
   },
   card: {
     position: "relative",
     borderRadius: "16px",
     overflow: "hidden",
-    // background: "rgb(25, 40, 55)",
     background: "rgb(16, 30, 42)",
-    // Alternative: background: "rgba(255, 255, 255, 0.05)", for subtle transparency
     textAlign: "left",
-    fontFamily: "Lato, sans-serif",
-    // padding: "20px", // Optional: Adjust padding for better spacing
-}
-,
+  },
   imageContainer: {
     position: "relative",
     width: "100%",
@@ -1142,34 +1322,30 @@ const styles = {
   },
   cardContent: {
     padding: "20px",
-    fontFamily: "Lato, sans-serif",
-    display: "-webkit-box",
-    WebkitBoxOrient: "vertical",
-    overflow: "hidden",
-    textOverflow: "ellipsis",
-},
+  },
   cardTitle: {
     fontSize: "1.5rem",
     fontWeight: "bold",
     marginBottom: "6px",
     color: "white",
-    fontFamily: "Lato, sans-serif",
   },
   cardDescription: {
     fontSize: "1rem",
     color: "white",
     marginBottom: "15px",
-    fontFamily: "Lato, sans-serif",
   },
   cardLink: {
     color: "rgb(38, 144, 193)",
     textDecoration: "none",
     fontWeight: "bold",
     fontSize: "1.1rem",
-    fontFamily: "Lato, sans-serif",
+    background: "none",
+    border: "none",
+    cursor: "pointer",
+    padding: "0",
   },
   greenArrow: {
-    color: "rgb(188, 255, 0)", // Matches the button color
+    color: "rgb(188, 255, 0)",
     fontSize: "1.2rem",
     fontWeight: "bold",
   },
@@ -1188,7 +1364,6 @@ const styles = {
     borderRadius: "8px",
     cursor: "pointer",
     transition: "background 0.3s ease",
-    fontFamily: "Lato, sans-serif",
   },
 };
 

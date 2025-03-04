@@ -1147,6 +1147,297 @@
 // export default Footer;
 
 
+// "use client";
+
+// import Link from "next/link";
+
+// const LayoutDefault = () => {
+//   return (
+//     <footer
+//       style={{
+//         backgroundColor: "rgb(12, 20, 31)",
+//         color: "#fff",
+//         padding: "40px 0",
+//         textAlign: "center",
+//         fontFamily: "'Lato', sans-serif", // Apply Lato font here
+//       }}
+//     >
+//       <div style={{ width: "90%", maxWidth: "1200px", margin: "0 auto" }}>
+//         <div
+//           style={{
+//             display: "grid",
+//             gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
+//             gap: "30px",
+//             textAlign: "left",
+//           }}
+//         >
+//           {/* About Section */}
+//           <div>
+//             <h4
+//               style={{
+//                 fontSize: "1.1rem",
+//                 fontWeight: "bold",
+//                 marginBottom: "15px",
+//                 color: "white",
+//               }}
+//             >
+//               About
+//             </h4>
+//             <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+//               <li>
+//                 <Link
+//                   href="#"
+//                   style={{
+//                     color: "#ddd",
+//                     textDecoration: "none",
+//                     display: "block",
+//                     padding: "5px 0",
+//                   }}
+//                 >
+//                   Our company
+//                 </Link>
+//               </li>
+//               <li>
+//                 <Link
+//                   href="#"
+//                   style={{
+//                     color: "#ddd",
+//                     textDecoration: "none",
+//                     display: "block",
+//                     padding: "5px 0",
+//                   }}
+//                 >
+//                   Core Team
+//                 </Link>
+//               </li>
+//               <li>
+//                 <Link
+//                   href="#"
+//                   style={{
+//                     color: "#ddd",
+//                     textDecoration: "none",
+//                     display: "block",
+//                     padding: "5px 0",
+//                   }}
+//                 >
+//                   CSR
+//                 </Link>
+//               </li>
+//               <li>
+//                 <Link
+//                   href="#"
+//                   style={{
+//                     color: "#ddd",
+//                     textDecoration: "none",
+//                     display: "block",
+//                     padding: "5px 0",
+//                   }}
+//                 >
+//                   How We Work
+//                 </Link>
+//               </li>
+//             </ul>
+//           </div>
+
+//           {/* Services Section */}
+//           <div>
+//             <h4
+//               style={{
+//                 fontSize: "1.1rem",
+//                 fontWeight: "bold",
+//                 marginBottom: "15px",
+//                 color: "white",
+//               }}
+//             >
+//               Services
+//             </h4>
+//             <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+//               {[
+//                 "iOS App Development",
+//                 "Android App Development",
+//                 "Software Development",
+//                 "Ideation & Design",
+//                 "Mobile App Dev",
+//                 "Research & Innovation",
+//                 "Digital Transformation",
+//                 "more...",
+//               ].map((service, index) => (
+//                 <li key={index}>
+//                   <Link
+//                     href="#"
+//                     style={{
+//                       color: "#ddd",
+//                       textDecoration: "none",
+//                       display: "block",
+//                       padding: "5px 0",
+//                     }}
+//                   >
+//                     {service}
+//                   </Link>
+//                 </li>
+//               ))}
+//             </ul>
+//           </div>
+
+//           {/* Technologies Section */}
+//           <div>
+//             <h4
+//               style={{
+//                 fontSize: "1.1rem",
+//                 fontWeight: "bold",
+//                 marginBottom: "15px",
+//                 color: "white",
+//               }}
+//             >
+//               Technologies
+//             </h4>
+//             <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+//               {[
+//                 "Blockchain",
+//                 "Artificial Intelligence",
+//                 "AR and VR",
+//                 "Cloud Computing",
+//                 "Internet of Things",
+//                 "Metaverse Development",
+//                 "NFT Development",
+//                 "more...",
+//               ].map((tech, index) => (
+//                 <li key={index}>
+//                   <Link
+//                     href="#"
+//                     style={{
+//                       color: "#ddd",
+//                       textDecoration: "none",
+//                       display: "block",
+//                       padding: "5px 0",
+//                     }}
+//                   >
+//                     {tech}
+//                   </Link>
+//                 </li>
+//               ))}
+//             </ul>
+//           </div>
+
+//           {/* Industries Section */}
+//           <div>
+//             <h4
+//               style={{
+//                 fontSize: "1.1rem",
+//                 fontWeight: "bold",
+//                 marginBottom: "15px",
+//                 color: "white",
+//               }}
+//             >
+//               Industries
+//             </h4>
+//             <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+//               {[
+//                 "Healthcare",
+//                 "Education",
+//                 "SaaS",
+//                 "Finance",
+//                 "On-Demand",
+//                 "eCommerce",
+//                 "Logistics",
+//                 "more...",
+//               ].map((industry, index) => (
+//                 <li key={index}>
+//                   <Link
+//                     href="#"
+//                     style={{
+//                       color: "#ddd",
+//                       textDecoration: "none",
+//                       display: "block",
+//                       padding: "5px 0",
+//                     }}
+//                   >
+//                     {industry}
+//                   </Link>
+//                 </li>
+//               ))}
+//             </ul>
+//           </div>
+
+//           {/* Portfolio Section */}
+//           <div>
+//             <h4
+//               style={{
+//                 fontSize: "1.1rem",
+//                 fontWeight: "bold",
+//                 marginBottom: "15px",
+//                 color: "white",
+//               }}
+//             >
+//               Portfolio
+//             </h4>
+//             <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+//               {[
+//                 "KFC",
+//                 "Adidas",
+//                 "IKEA",
+//                 "Hukoomi",
+//                 "Domino's",
+//                 "Pizza Hut",
+//                 "YouCOMM",
+//                 "more...",
+//               ].map((portfolio, index) => (
+//                 <li key={index}>
+//                   <Link
+//                     href="#"
+//                     style={{
+//                       color: "#ddd",
+//                       textDecoration: "none",
+//                       display: "block",
+//                       padding: "5px 0",
+//                     }}
+//                   >
+//                     {portfolio}
+//                   </Link>
+//                 </li>
+//               ))}
+//             </ul>
+//           </div>
+
+//           {/* Resources Section */}
+//           <div>
+//             <h4
+//               style={{
+//                 fontSize: "1.1rem",
+//                 fontWeight: "bold",
+//                 marginBottom: "15px",
+//                 color: "white",
+//               }}
+//             >
+//               Resources
+//             </h4>
+//             <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+//               {["Blog", "Press Release", "Guides", "Ebooks"].map((resource, index) => (
+//                 <li key={index}>
+//                   <Link
+//                     href="#"
+//                     style={{
+//                       color: "#ddd",
+//                       textDecoration: "none",
+//                       display: "block",
+//                       padding: "5px 0",
+//                     }}
+//                   >
+//                     {resource}
+//                   </Link>
+//                 </li>
+//               ))}
+//             </ul>
+//           </div>
+//         </div>
+//       </div>
+//     </footer>
+//   );
+// };
+
+// export default LayoutDefault;
+
+
 "use client";
 
 import Link from "next/link";
@@ -1159,7 +1450,7 @@ const LayoutDefault = () => {
         color: "#fff",
         padding: "40px 0",
         textAlign: "center",
-        fontFamily: "'Lato', sans-serif", // Apply Lato font here
+        fontFamily: "'Lato', sans-serif",
       }}
     >
       <div style={{ width: "90%", maxWidth: "1200px", margin: "0 auto" }}>
@@ -1171,265 +1462,71 @@ const LayoutDefault = () => {
             textAlign: "left",
           }}
         >
-          {/* About Section */}
-          <div>
-            <h4
-              style={{
-                fontSize: "1.1rem",
-                fontWeight: "bold",
-                marginBottom: "15px",
-                color: "white",
-              }}
-            >
-              About
-            </h4>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-              <li>
-                <Link
-                  href="#"
-                  style={{
-                    color: "#ddd",
-                    textDecoration: "none",
-                    display: "block",
-                    padding: "5px 0",
-                  }}
-                >
-                  Our company
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  style={{
-                    color: "#ddd",
-                    textDecoration: "none",
-                    display: "block",
-                    padding: "5px 0",
-                  }}
-                >
-                  Core Team
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  style={{
-                    color: "#ddd",
-                    textDecoration: "none",
-                    display: "block",
-                    padding: "5px 0",
-                  }}
-                >
-                  CSR
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  style={{
-                    color: "#ddd",
-                    textDecoration: "none",
-                    display: "block",
-                    padding: "5px 0",
-                  }}
-                >
-                  How We Work
-                </Link>
-              </li>
-            </ul>
-          </div>
+          {/* Footer Sections */}
+          {[
+            { title: "Contact With Us", links: ["+92 33 427 22796", "sales@vconn.biz", "Suite# 403, Beaumont Plaza, Beaumont Road, Near PIDC/PC Hotel, Karachi-75530"] },
 
-          {/* Services Section */}
-          <div>
-            <h4
-              style={{
-                fontSize: "1.1rem",
-                fontWeight: "bold",
-                marginBottom: "15px",
-                color: "white",
-              }}
-            >
-              Services
-            </h4>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-              {[
-                "iOS App Development",
-                "Android App Development",
-                "Software Development",
-                "Ideation & Design",
+            { title: "About", links: ["Our company", "Our Team", "Locations", "Privacy Policy", "Security Policy", "Contact Us"] },
+            {
+              title: "Services",
+              links: [
+                "Managed Services",
+                "DevOps",
+                "Cybersecurity",
+                "Information Security",
                 "Mobile App Dev",
                 "Research & Innovation",
                 "Digital Transformation",
-                "more...",
-              ].map((service, index) => (
-                <li key={index}>
-                  <Link
-                    href="#"
-                    style={{
-                      color: "#ddd",
-                      textDecoration: "none",
-                      display: "block",
-                      padding: "5px 0",
-                    }}
-                  >
-                    {service}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Technologies Section */}
-          <div>
-            <h4
-              style={{
-                fontSize: "1.1rem",
-                fontWeight: "bold",
-                marginBottom: "15px",
-                color: "white",
-              }}
-            >
-              Technologies
-            </h4>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-              {[
-                "Blockchain",
-                "Artificial Intelligence",
-                "AR and VR",
-                "Cloud Computing",
-                "Internet of Things",
-                "Metaverse Development",
-                "NFT Development",
-                "more...",
-              ].map((tech, index) => (
-                <li key={index}>
-                  <Link
-                    href="#"
-                    style={{
-                      color: "#ddd",
-                      textDecoration: "none",
-                      display: "block",
-                      padding: "5px 0",
-                    }}
-                  >
-                    {tech}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Industries Section */}
-          <div>
-            <h4
-              style={{
-                fontSize: "1.1rem",
-                fontWeight: "bold",
-                marginBottom: "15px",
-                color: "white",
-              }}
-            >
-              Industries
-            </h4>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-              {[
-                "Healthcare",
-                "Education",
+              ],
+            },
+            {
+              title: "Industries",
+              links: [
+                "Ecommerce",
                 "SaaS",
-                "Finance",
-                "On-Demand",
-                "eCommerce",
-                "Logistics",
-                "more...",
-              ].map((industry, index) => (
-                <li key={index}>
-                  <Link
-                    href="#"
-                    style={{
-                      color: "#ddd",
-                      textDecoration: "none",
-                      display: "block",
-                      padding: "5px 0",
-                    }}
-                  >
-                    {industry}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Portfolio Section */}
-          <div>
-            <h4
-              style={{
-                fontSize: "1.1rem",
-                fontWeight: "bold",
-                marginBottom: "15px",
-                color: "white",
-              }}
-            >
-              Portfolio
-            </h4>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-              {[
-                "KFC",
-                "Adidas",
-                "IKEA",
-                "Hukoomi",
-                "Domino's",
-                "Pizza Hut",
-                "YouCOMM",
-                "more...",
-              ].map((portfolio, index) => (
-                <li key={index}>
-                  <Link
-                    href="#"
-                    style={{
-                      color: "#ddd",
-                      textDecoration: "none",
-                      display: "block",
-                      padding: "5px 0",
-                    }}
-                  >
-                    {portfolio}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Resources Section */}
-          <div>
-            <h4
-              style={{
-                fontSize: "1.1rem",
-                fontWeight: "bold",
-                marginBottom: "15px",
-                color: "white",
-              }}
-            >
-              Resources
-            </h4>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-              {["Blog", "Press Release", "Guides", "Ebooks"].map((resource, index) => (
-                <li key={index}>
-                  <Link
-                    href="#"
-                    style={{
-                      color: "#ddd",
-                      textDecoration: "none",
-                      display: "block",
-                      padding: "5px 0",
-                    }}
-                  >
-                    {resource}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+                "Fintech",
+                "Healthcare",
+                "Media & Entertainment",
+                "Education",
+              ],
+            },
+            
+            { title: "Resources", links: ["Blog", "Case Studies", "Guides", "Ebooks"] },
+          ].map((section, index) => (
+            <div key={index}>
+              <h4
+                style={{ fontSize: "1.1rem", fontWeight: "bold", marginBottom: "15px", color: "white" }}
+              >
+                {section.title}
+              </h4>
+              <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                {section.links.map((link, idx) => (
+                  <li key={idx}>
+                    <Link
+                      href="#"
+                      style={{ color: "#ddd", textDecoration: "none", display: "block", padding: "5px 0" }}
+                    >
+                      {link}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
+      </div>
+      {/* Copyright Section */}
+      <div
+        style={{
+          marginTop: "40px",
+          paddingTop: "20px",
+          borderTop: "1px solid rgba(255, 255, 255, 0.2)",
+          textAlign: "center",
+        }}
+      >
+        <p style={{ color: "#ddd", fontSize: "0.9rem" }}>
+          Copyright &copy; 2025<span style={{ color: "#3ea6ff" }}> Vconn</span>. All rights reserved.
+        </p>
       </div>
     </footer>
   );

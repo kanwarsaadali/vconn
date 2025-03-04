@@ -1028,14 +1028,14 @@ const HeroOne = () => {
                 width: "85%",
                 maxWidth: "1200px",
             }}>
-                <span style={{ color: "white" }}>IMPROVE, STREAMLINE, & AUTOMATE</span> CONNECT{" "}
-                <span style={{ color: "white" }}>BUSINESS OPERATION THE AFFORDABLE WAY</span>
+                <span style={{ color: "white" }}>Improve & Automate Your Business</span> Operations,{" "}
+                <span style={{ color: "white" }}>The Affordable Way</span>
             </div>
 
             {/* Subtext (Now Below the Main Heading) */}
             <div style={{
                 position: "absolute",
-                top: "calc(60% + 3rem)",  // Moves it below the hero text
+                top: "calc(52% + 3rem)",  // Moves it below the hero text
                 left: "8%",
                 // color: "rgb(255, 255, 255, 0.85)",
                 color:"white",

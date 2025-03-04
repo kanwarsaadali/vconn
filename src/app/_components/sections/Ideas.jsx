@@ -1889,7 +1889,7 @@ const IdeasSection = () => {
 
   const testimonials = [
     {
-      text: '"Consulting services for all things related to DevOps provided insight into automation and streamlining processes, improving our product development timelines significantly."',
+      text: '"Consulting services for all things related to DevOps provided insight into automation and streamlining processes."',
       name: "Mark Wilson",
       title: "CEO, Shell",
       logos: ["/img/ideas/3.png"],
@@ -1959,7 +1959,7 @@ const IdeasSection = () => {
 
           .section-title {
             font-size: 40px;
-            font-weight: 400;
+            font-weight: 700;
             color: rgb(188, 255, 0);
             margin-bottom: 30px;
             text-transform: uppercase;

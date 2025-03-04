@@ -810,16 +810,16 @@ import React from 'react';
 const advantage = require("@data/sections/latest-projects.json"); // ✅ Use require() instead of import
 
 const projects = [
-  { icon: "/img/icons/project1.png", title: "Proactive Threat Intelligence and SOC Services", description: "Stay secure with 24/7 SOC services, real-time threat intelligence, and advanced monitoring to prevent cyber attacks.", extra: "Our SOC team proactively identifies and mitigates threats, ensuring seamless protection for your business." },
-  { icon: "/img/icons/project2.png", title: "Next-Level Vulnerability Assessment & Penetration Testing", description: "Identify and fix vulnerabilities before they’re exploited. Strengthen your defenses with real-world testing and actionable insights.", extra: "Our experts simulate real-world attacks to expose weak points and enhance your security posture." },
-  { icon: "/img/icons/project3.png", title: "Seamless Cloud Migration and Management", description: "Streamline operations with seamless migration to AWS, Azure, or IBM Cloud. Boost scalability, security, and performance.", extra: "We ensure minimal downtime and optimized configurations, making your cloud transition smooth and efficient." },
-  { icon: "/img/icons/project4.png", title: "Automated CI/CD Pipelines for Faster, Safer Deployments", description: "Speed up software delivery with automated CI/CD pipelines, integrating security tools to ensure faster, safer deployments.", extra: "By automating testing and deployment, we help you release features faster with improved reliability." },
-  { icon: "/img/icons/project5.png", title: "Kubernetes-Powered Application Modernization", description: "Scale effortlessly with Kubernetes-powered containerization, delivering agility, efficiency, and innovation for your applications.", extra: "Our container-based approach ensures high availability, portability, and resilience for modern applications." },
-  { icon: "/img/icons/project6.png", title: "Effortless Virtualization with Proxmox", description: "Simplify resource management with Proxmox, offering scalable, cost-efficient virtual environments for modern businesses.", extra: "Our Proxmox solutions optimize server utilization, reducing overhead while increasing performance." }
+  { icon: "/img/icons/project1.png", title: "Proactive Threat Intelligence and SOC Services", description: "Stay secure with 24/7 SOC services and real-time threat intelligence to prevent cyber attacks." },
+  { icon: "/img/icons/project2.png", title: "Next-Level Vulnerability Assessment & Penetration Testing", description: "Fix vulnerabilities & strengthen your defenses with actionable insights.", extra: "Our experts simulate real-world attacks to expose weak points and enhance your security posture." },
+  { icon: "/img/icons/project3.png", title: "Seamless Cloud Migration and Management", description: "Streamline operations with seamless migration to AWS, Azure etc & boost scalability.", extra: "We ensure minimal downtime and optimized configurations, making your cloud transition smooth and efficient." },
+  { icon: "/img/icons/project4.png", title: "Automated CI/CD Pipelines for Faster, Safer Deployments", description: "Speed up secured software delivery with automated CI/CD pipelines for smooth deployments.", extra: "By automating testing and deployment, we help you release features faster with improved reliability." },
+  { icon: "/img/icons/project5.png", title: "Kubernetes-Powered Application Modernization", description: "Scale with Kubernetes-powered containerization delivering agility for your applications.", extra: "Our container-based approach ensures high availability, portability, and resilience for modern applications." },
+  { icon: "/img/icons/project6.png", title: "Effortless Virtualization with <br/> Proxmox", description: "Simplify resource management with Proxmox, offering scalable, virtual environments.", extra: "Our Proxmox solutions optimize server utilization, reducing overhead while increasing performance." }
 ];
 
 const HowWeWorkSection = () => {
-  const router = useRouter();
+  const router = useRouter(); 
 
   return (
     <section className="projects-section">
@@ -832,7 +832,7 @@ const HowWeWorkSection = () => {
               color: "rgb(188, 255, 0)",
               fontSize: "40px",
               marginTop: "40px",
-              fontWeight: "400",
+              fontWeight: "700",
             }}
           />
         )}

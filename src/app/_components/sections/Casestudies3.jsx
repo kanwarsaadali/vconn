@@ -56,7 +56,7 @@ const Casestudies3 = () => {
       }}
     >
       {/* Section Title */}
-      <h2 style={{ color: "rgb(188, 255, 0)", fontSize: "40px", marginBottom: "40px", fontFamily:"'Lato', sans-serif", fontWeight:"400"}}>
+      <h2 style={{ color: "rgb(188, 255, 0)", fontSize: "40px", marginBottom: "40px", fontFamily:"'Lato', sans-serif", fontWeight:"700"}}>
         CASE STUDIES
       </h2>
 
@@ -65,7 +65,7 @@ const Casestudies3 = () => {
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(2, 1fr)", // Two cards per row
-          gap: "20px",
+          gap: "48px",
           maxWidth: "1000px",
           margin: "0 auto",
         }}
@@ -119,7 +119,7 @@ const Casestudies3 = () => {
               >
                 {service.description}
               </p>
-              <button
+              {/* <button
                 onClick={() => handleButtonClick(service.path)} // Navigate on button click
                 style={{
                   backgroundColor: "rgb(188, 255, 0)",
@@ -134,7 +134,7 @@ const Casestudies3 = () => {
                 }}
               >
                 EXPLORE MORE
-              </button>
+              </button> */}
             </div>
           </div>
         ))}

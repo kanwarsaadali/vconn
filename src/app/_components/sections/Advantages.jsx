@@ -1031,7 +1031,7 @@ const styles = {
   },
   heading: {
     fontSize: "40px",
-    fontWeight: "400",
+    fontWeight: "700",
     color: "rgb(188, 255, 0)",
     fontFamily: "'Lato', sans-serif",
     marginBottom: "10px",

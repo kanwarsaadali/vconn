@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Header from "@layouts/headers/Index";
 import Footer from "@layouts/footers/Index";
-import IdeasSection1 from "@components/sections/Ideas1";
+import IdeasSection from "@components/sections/Ideas";
 import ServicesSection1 from "@components/sections/Services1";
 import HowWeWork1 from "@components/sections/HowWeWork1";
 
@@ -77,7 +77,7 @@ const ServicesPage = () => {
         }}
       >
         <ServicesSection1 />
-        <IdeasSection1 />
+        <IdeasSection />
         <HowWeWork1 />
       </div>
 

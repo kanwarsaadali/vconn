@@ -223,6 +223,8 @@
 import React, { useState } from "react";
 import Header from "@layouts/headers/Index";
 import Footer from "@layouts/footers/Index";
+import Image from "next/image";
+
 
 const Contact = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -233,6 +235,60 @@ const Contact = () => {
   };
 
   const closePopup = () => setShowPopup(false);
+
+  const containerStyle = {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "50px",
+    backgroundColor: "rgb(12, 20, 31)", // Dark background
+    color: "white", // Text color
+    boxSizing: "border-box",
+    flexWrap: "wrap", // Allows content to wrap for smaller screens
+    fontFamily: "'Lato', sans-serif", // Apply Lato font globally
+  };
+
+  const textStyle = {
+    flex: "1 1 50%", // Takes up 50% of the width
+    minWidth: "300px", // Ensures text always has enough space
+    padding: "20px",
+    fontFamily: "'Lato', sans-serif",
+  };
+
+  const buttonStyle = {
+    backgroundColor: "#BCFF00", // Bright green color
+    color: "rgb(12, 20, 31)", // Dark text color
+    padding: "15px 30px",
+    fontSize: "16px",
+    fontWeight: "bold",
+    borderRadius: "8px",
+    border: "none",
+    cursor: "pointer",
+    textDecoration: "none",
+    transition: "transform 0.3s ease",
+    fontFamily: "'Lato', sans-serif",
+  };
+
+  const imageWrapperStyle = {
+    flex: "1 1 40%", // Takes up 40% of the width
+    minWidth: "300px", // Ensures the image always has enough space
+    textAlign: "center", // Centers the image
+  };
+
+  const imageStyle = {
+    width: "100%", 
+    height: "auto", // Maintains aspect ratio
+    marginTop:"50px"
+  };
+
+  const headingStyle = {
+    textAlign: "center", // Centers the heading text
+    fontSize: "50px", // Adjusts the font size as needed
+    margin: "20px 0", // Adds some margin above and below the heading
+    color: "rgb(12, 20, 31)",
+    fontFamily: "'Lato', sans-serif",
+  };
 
   return (
     <div
@@ -249,57 +305,25 @@ const Contact = () => {
       <Header layout="default" />
 
       {/* Hero Section */}
-      <div
-        style={{
-          width: "100%",
-          height: "70vh",
-          background: "url('/img/covers/image1.png') center/cover no-repeat",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          position: "relative",
-          textAlign: "center",
-        }}
-      >
-        {/* Overlay */}
-        <div
-          style={{
-            position: "absolute",
-            width: "100%",
-            height: "100%",
-            backgroundColor: "rgba(0, 0, 0, 0.5)",
-          }}
-        ></div>
+      <div style={containerStyle}>
+        {/* Text Section */}
+        <div style={textStyle}>
+          <h1 style={{ fontSize: "48px", marginBottom: "20px", color: "white", fontFamily: "'Lato', sans-serif" }}>
+          CRAFTING THE FUTURE OF
+          INNOVATION
+          </h1>
+       
+        </div>
 
-        {/* Hero Content */}
-        <div
-          style={{
-            position: "relative",
-            color: "white",
-            fontSize: "2.5rem",
-            fontWeight: "400",
-          }}
-        >
-          <h1>
-            <span style={{ color: "white", fontSize: "40px", fontWeight: "400" }}>
-              EMPOWERING
-            </span>{" "}
-            <span
-              style={{
-                color: "rgb(188, 255, 0)",
-                fontSize: "40px",
-                fontWeight: "400",
-              }}
-            >
-              SOLUTIONS
-            </span>{" "}
-            <span style={{ color: "white", fontSize: "40px", fontWeight: "400" }}>
-              ELEVATING
-            </span>
-          </h1>
-          <h1 style={{ color: "white", fontSize: "40px", fontWeight: "400" }}>
-            EXPERIENCES
-          </h1>
+        {/* Image Section */}
+        <div style={imageWrapperStyle}>
+          <Image
+            src="/img/Project/contact.svg" he actual image path
+            alt="Devsecops"
+            width={0}
+            height={500}
+            style={imageStyle}
+          />
         </div>
       </div>
 
@@ -440,10 +464,12 @@ const Contact = () => {
 const inputStyle = {
   width: "100%",
   padding: "16px",
-  border: "1px solid rgb(188, 255, 0)",
+  // border: "1px solid rgb(188, 255, 0)",
+  border: "1px solid rgba(188, 255, 0, 0.5)",
+
   background: "transparent",
   color: "white",
-  borderRadius: "8px",
+  borderRadius: "12px",
   outline: "none",
   fontSize: "1rem",
   transition: "all 0.3s ease-in-out",
@@ -464,7 +490,7 @@ const buttonStyle = {
   color: "black",
   fontWeight: "bold",
   border: "none",
-  borderRadius: "8px",
+  borderRadius: "80px",
   cursor: "pointer",
   fontSize: "1.1rem",
   transition: "background 0.3s ease-in-out",

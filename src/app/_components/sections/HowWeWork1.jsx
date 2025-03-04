@@ -156,7 +156,7 @@ const HowWeWork1 = () => {
         style={{
           color: "rgb(188, 255, 0)",
           fontSize: "40px",
-          fontWeight: "400",
+          fontWeight: "700",
           marginBottom: "20px",
           fontFamily: "'Lato', sans-serif",
         }}

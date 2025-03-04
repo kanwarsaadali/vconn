@@ -207,7 +207,7 @@ const Casestudies = () => {
         style={{
           color: "rgb(188, 255, 0)",
           fontSize: "40px",
-          fontWeight:"400",
+          fontWeight:"700",
           marginBottom: "40px",
           fontFamily: "'Lato', sans-serif",
         }}
@@ -220,7 +220,7 @@ const Casestudies = () => {
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(2, 1fr)",
-          gap: "20px",
+          gap: "48px",
           maxWidth: "1000px",
           margin: "0 auto",
         }}
@@ -283,22 +283,6 @@ const Casestudies = () => {
               >
                 {service.description}
               </p>
-              <button
-                onClick={() => handleButtonClick(service.path)}
-                style={{
-                  backgroundColor: "rgb(188, 255, 0)",
-                  padding: "10px 15px",
-                  textDecoration: "none",
-                  fontWeight: "bold",
-                  borderRadius: "5px",
-                  border: "none",
-                  color: "rgb(23, 40, 62)",
-                  cursor: "pointer",
-                  fontFamily: "'Lato', sans-serif",
-                }}
-              >
-                EXPLORE MORE
-              </button>
             </div>
           </div>
         ))}

@@ -1014,46 +1014,46 @@ import React, { useState } from "react";
 
 const services = {
   Devops: [
-    { name: "Azure", icon: "/img/devops/1.png" },
-    { name: "Puppet", icon: "/img/devops/2.png" },
-    { name: "Gitlab", icon: "/img/devops/3.png" },
-    { name: "Saltstck", icon: "/img/devops/4.png" },
-    { name: "AzureDevops", icon: "/img/devops/5.png" },
-    { name: "Jenkins", icon: "/img/devops/6.png" },
-    { name: "Terraform", icon: "/img/devops/7.png" },
-    { name: "AzureDevops", icon: "/img/devops/8.png" },
-    { name: "Saltstack", icon: "/img/devops/9.png" },
-    { name: "Grafana", icon: "/img/devops/10.png" },
-    { name: "Jfrog", icon: "/img/devops/11.png" },
-    { name: "Docker", icon: "/img/devops/12.png" },
-    { name: "Google", icon: "/img/devops/13.png" },
-    { name: "ELK", icon: "/img/devops/14.png" },
-    { name: "Slack", icon: "/img/devops/15.png" },
+    { name: "Ansible", icon: "/img/devops/ansible.svg" },
+    { name: "Argo CD", icon: "/img/devops/argocd.svg" },
+    { name: "Docker", icon: "/img/devops/docker.svg" },
+    { name: "Kibana", icon: "/img/devops/elk.svg" },
+    { name: "Fortify SCA", icon: "/img/devops/fortify.svg" },
+    { name: "Github", icon: "/img/devops/github.svg" },
+    { name: "GitLab", icon: "/img/devops/gitlab.svg" },
+    { name: "Grafana", icon: "/img/devops/grafana.svg" },
+    { name: "Grafana Loki", icon: "/img/devops/grafanaloki.svg" },
+    { name: "HashiCorp vault", icon: "/img/devops/hashicorp.svg" },
+    { name: "Jenkins", icon: "/img/devops/jenkins.svg" },
+    { name: "Kubernetes", icon: "/img/devops/kubernetes.svg" },
+    { name: "Prometheus", icon: "/img/devops/promentheus.svg" },
+    { name: "Terraform", icon: "/img/devops/terraform.svg" },
+    { name: "Trivy", icon: "/img/devops/trivy.svg" },
+
+
+
   ],
   Cybersecurity: [
-    { name: "Wireshark", icon: "/img/cybersecurity/1.png" },
-    { name: "Zeek", icon: "/img/cybersecurity/2.png" },
-    { name: "Nmap", icon: "/img/cybersecurity/3.png" },
-    { name: "Crowdstrike", icon: "/img/cybersecurity/4.png" },
-    { name: "Symantec", icon: "/img/cybersecurity/5.png" },
-    { name: "MicrosoftDefender", icon: "/img/cybersecurity/6.png" },
-    { name: "Okta", icon: "/img/cybersecurity/7.png" },
-    { name: "PingIdentity", icon: "/img/cybersecurity/8.png" },
-    { name: "AWSsecurity hub", icon: "/img/cybersecurity/12.png" },
-    { name: "Passbolt", icon: "/img/cybersecurity/15.png" },
+    { name: "Misp", icon: "/img/cybersecurity/misp.png" },
+    { name: "Wazuh", icon: "/img/cybersecurity/wazuh.png" },
+    { name: "SecurityOnion", icon: "/img/cybersecurity/securityonion.png" },
+    { name: "Suricata", icon: "/img/cybersecurity/suricata.png" }
   ],
   Database: [
-    { name: "MySQL", icon: "/img/database/mysql.png" },
-    { name: "PostgreSQL", icon: "/img/database/postgresql.png" },
-    { name: "MongoDB", icon: "/img/database/mongodb.png" },
-    { name: "Firebase", icon: "/img/database/firebase.png" },
+    { name: "Mariadb", icon: "/img/database/mariadb.png" },
+    { name: "Mysql", icon: "/img/database/mysql.png" },
+    { name: "Oracle", icon: "/img/database/oracle.png" },
+    { name: "PostgreSQL", icon: "/img/database/postgre.png" },
+    { name: "SQLite", icon: "/img/database/sqllite.png" },
+
   ],
-  DevSecOps: [
-    { name: "Wireshark", icon: "/img/cybersecurity/1.png" },
-    { name: "Zeek", icon: "/img/cybersecurity/2.png" },
-    { name: "Nmap", icon: "/img/cybersecurity/3.png" },
-    { name: "AWS", icon: "/img/cybersecurity/1.png" },
-    { name: "Azure", icon: "/img/cybersecurity/1.png" },
+  "Cloud Computing": [
+    { name: "Aws", icon: "/img/cloud/aws.png" },
+    { name: "Azure", icon: "/img/cloud/azure.png" },
+    { name: "Google", icon: "/img/cloud/google.png" },
+    { name: "Hetzner", icon: "/img/cloud/hetzner.png" },
+    { name: "Contabo", icon: "/img/cloud/contabo.png" },
+    { name: "Digital Ocean", icon: "/img/cloud/Digitalocean.png" }
   ],
 };
 
@@ -1105,7 +1105,7 @@ const styles = {
   },
   heading: {
     fontSize: "40px",
-    fontWeight: "400",
+    fontWeight: "700",
     color: "rgb(188, 255, 0)",
     marginBottom: "20px",
     textAlign: "center",
