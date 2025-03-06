@@ -815,7 +815,9 @@ const projects = [
   { icon: "/img/icons/project3.png", title: "Seamless Cloud Migration and Management", description: "Streamline operations with seamless migration to AWS, Azure etc & boost scalability.", extra: "We ensure minimal downtime and optimized configurations, making your cloud transition smooth and efficient." },
   { icon: "/img/icons/project4.png", title: "Automated CI/CD Pipelines for Faster, Safer Deployments", description: "Speed up secured software delivery with automated CI/CD pipelines for smooth deployments.", extra: "By automating testing and deployment, we help you release features faster with improved reliability." },
   { icon: "/img/icons/project5.png", title: "Kubernetes-Powered Application Modernization", description: "Scale with Kubernetes-powered containerization delivering agility for your applications.", extra: "Our container-based approach ensures high availability, portability, and resilience for modern applications." },
-  { icon: "/img/icons/project6.png", title: "Effortless Virtualization with <br/> Proxmox", description: "Simplify resource management with Proxmox, offering scalable, virtual environments.", extra: "Our Proxmox solutions optimize server utilization, reducing overhead while increasing performance." }
+  // { icon: "/img/icons/project6.png", title: "Effortless Virtualization with <br/> Proxmox", description: "Simplify resource management with Proxmox, offering scalable, virtual environments.", extra: "Our Proxmox solutions optimize server utilization, reducing overhead while increasing performance." }
+    { icon: "/img/icons/project6.png", title: <>Effortless Virtualization with <br/> Proxmox</>, description: "Simplify resource management with Proxmox, offering scalable, virtual environments.", extra: "Our Proxmox solutions optimize server utilization, reducing overhead while increasing performance." }
+  
 ];
 
 const HowWeWorkSection = () => {

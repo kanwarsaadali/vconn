@@ -5,14 +5,14 @@ import Image from "next/image";
 
 const Project3 = () => {
   const items = [
-    { icon: "/img/icons/Service4_1.png", title: "CI/CD Pipeline Security", description: "Malicious code blockade, data loss prevention." },
-    { icon: "/img/icons/Service4_2.png", title: "Security as Code", description: "Better development & security teams collaboration." },
-    { icon: "/img/icons/Service4_3.png", title: "Continuous Compliance Monitoring", description: "No compliance-related fines." },
-    { icon: "/img/icons/Service4_4.png", title: "Identity & Access Management (IAM)", description: "Enhanced user access control, breaches prevention." },
-    { icon: "/img/icons/Service4_5.png", title: "Runtime Application Self-Protection (RASP)", description: "Zero-day attacks prevention, reduce false positives." },
-    { icon: "/img/icons/Service4_6.png", title: "Cloud Security & Data Protection", description: "Cloud data prevention from threats, corruption." },
-    { icon: "/img/icons/Service4_7.png", title: "Patch Management", description: "Improved performance via drivers, software, & firmware updates." },
-    { icon: "/img/icons/Service4_8.png", title: "IT Asset Management", description: "Improved operational efficiency, streamlined asset management." },
+    { icon: "/img/icons/M1.svg", title: "Cloud Management", description: "Embedding security in development." },
+    { icon: "/img/icons/M2.svg", title: "Network Management", description: "Managing governance and compliance." },
+    { icon: "/img/icons/M3.svg", title: "Help Desk & Support", description: "Preventing unauthorized data access." },
+    { icon: "/img/icons/M4.svg", title: "Patch Management", description: "Educating employees on security best practices." },
+    { icon: "/img/icons/M5.svg", title: "IT Asset Management", description: "Designing secure system." },
+    { icon: "/img/icons/M6.svg", title: "Backup & Disaster Recovery", description: "Ensuring business continuity and recovery." },
+    { icon: "/img/icons/M7.svg", title: "Managed Endpoint Security", description: "Managing secure access to data." },
+    { icon: "/img/icons/M8.svg", title: "Application Performance Monitoring (APM)", description: "Ensuring privacy compliance." },
   ];
 
   const containerStyle = {

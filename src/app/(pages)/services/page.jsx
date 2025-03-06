@@ -7,6 +7,60 @@ import ServicesSection1 from "@components/sections/Services1";
 import HowWeWork1 from "@components/sections/HowWeWork1";
 
 const ServicesPage = () => {
+
+  const containerStyle = {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "50px",
+    backgroundColor: "rgb(12, 20, 31)", // Dark background
+    color: "white", // Text color
+    boxSizing: "border-box",
+    flexWrap: "wrap", // Allows content to wrap for smaller screens
+    fontFamily: "'Lato', sans-serif", // Apply Lato font globally
+  };
+
+  const textStyle = {
+    flex: "1 1 50%", // Takes up 50% of the width
+    minWidth: "300px", // Ensures text always has enough space
+    padding: "20px",
+    fontFamily: "'Lato', sans-serif",
+  };
+
+  const buttonStyle = {
+    backgroundColor: "#BCFF00", // Bright green color
+    color: "rgb(12, 20, 31)", // Dark text color
+    padding: "15px 30px",
+    fontSize: "16px",
+    fontWeight: "bold",
+    borderRadius: "8px",
+    border: "none",
+    cursor: "pointer",
+    textDecoration: "none",
+    transition: "transform 0.3s ease",
+    fontFamily: "'Lato', sans-serif",
+  };
+
+  const imageWrapperStyle = {
+    flex: "1 1 40%", // Takes up 40% of the width
+    minWidth: "300px", // Ensures the image always has enough space
+    textAlign: "center", // Centers the image
+  };
+
+  const imageStyle = {
+    width: "90%", // Ensures the image takes the full width of its container
+    height: "auto", // Maintains aspect ratio
+    marginTop:"50px"
+  };
+
+  const headingStyle = {
+    textAlign: "center", // Centers the heading text
+    fontSize: "50px", // Adjusts the font size as needed
+    margin: "20px 0", // Adds some margin above and below the heading
+    color: "rgb(12, 20, 31)",
+    fontFamily: "'Lato', sans-serif",
+  };
   return (
     <div
       style={{
@@ -22,50 +76,27 @@ const ServicesPage = () => {
       <Header layout={"default"} />
 
       {/* Hero Section with Background Image */}
-      <div
-        style={{
-          position: "relative",
-          width: "100%",
-          height: "70vh", // Adjusted height to occupy 80% of the viewport
-          backgroundImage: "url('/img/covers/image1.png')", // Replace with your image path
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          textAlign: "center",
-        }}
-      >
-        {/* Gray Overlay */}
-        <div
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            backgroundColor: "rgba(0, 0, 0, 0.5)", // Semi-transparent gray
-            zIndex: 1,
-          }}
-        ></div>
+      
 
-        {/* Overlay Content */}
-        <div style={{ position: "relative", zIndex: 2 }}>
-          <h1 style={{ fontSize: "3.5rem", fontWeight: "bold" }}>
-            <span style={{ color: "white" }}>Empowering</span>{" "}
-            <span style={{ color: "rgb(188, 255, 0)" }}>Solutions</span>
-            <span style={{ color: "white" }}>Elevating</span>
+      <div style={containerStyle}>
+        {/* Text Section */}
+        <div style={textStyle}>
+          <h1 style={{ fontSize: "48px", marginBottom: "20px", color: "white", fontFamily: "'Lato', sans-serif" }}>
+          CRAFTING THE FUTURE OF
+          INNOVATION
           </h1>
-          <h1
-            style={{
-              fontSize: "3.5rem",
-              fontWeight: "bold",
-              color: "white",
-            }}
-          >
-           Experiences
-          </h1>
+       
+        </div>
+
+        {/* Image Section */}
+        <div style={imageWrapperStyle}>
+          <Image
+            src="/img/Project/service.svg" // Update with the actual image path
+            alt="Devsecops"
+            width={0}
+            height={500}
+            style={imageStyle}
+          />
         </div>
       </div>
 

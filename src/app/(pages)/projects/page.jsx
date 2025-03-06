@@ -69,7 +69,7 @@ async function Projects() {
   };
 
   const imageStyle = {
-    width: "50%", // Ensures the image takes the full width of its container
+    width: "70%", // Ensures the image takes the full width of its container
     height: "auto", // Maintains aspect ratio
     marginTop:"50px"
   };

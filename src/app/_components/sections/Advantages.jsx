@@ -958,69 +958,227 @@
 // export default AdvantagesSection;
 
 
-import React, { useEffect, useRef } from "react";
+// import React, { useEffect, useRef } from "react";
+
+// const AdvantagesSection = () => {
+//   const sectionRef = useRef(null);
+
+//   useEffect(() => {
+//     const observer = new IntersectionObserver(
+//       (entries, observer) => {
+//         entries.forEach((entry) => {
+//           if (entry.isIntersecting) {
+//             entry.target.classList.add("fade-in-visible");
+//             observer.unobserve(entry.target);
+//           }
+//         });
+//       },
+//       { threshold: 0.3 }
+//     );
+
+//     const sectionElement = sectionRef.current;
+//     if (sectionElement) {
+//       observer.observe(sectionElement);
+//     }
+
+//     return () => {
+//       if (sectionElement) {
+//         observer.unobserve(sectionElement);
+//       }
+//     };
+//   }, []);
+
+//   return (
+//     <section ref={sectionRef} style={styles.section} className="fade-in">
+//       <h2 style={styles.heading}>WHY US</h2> {/* Added heading */}
+//       <div style={styles.line}></div> {/* Optional underline effect */}
+//       <div style={styles.container}>
+//         <div style={styles.statBox}>
+//           <img src="/img/icons/map.png" alt="Continents" style={styles.icon} />
+//           <h2 style={styles.number}>5</h2>
+//           <p style={styles.label}>Continents Footprint</p>
+//         </div>
+
+//         <div style={styles.statBox}>
+//           <img src="/img/icons/user.png" alt="Experience" style={styles.icon} />
+//           <h2 style={styles.number}>10+</h2>
+//           <p style={styles.label}>Years Experience</p>
+//         </div>
+
+//         <div style={styles.statBox}>
+//           <img src="/img/icons/clock.png" alt="Working Hours" style={styles.icon} />
+//           <h2 style={styles.number}>24/7</h2>
+//           <p style={styles.label}>Working Hours</p>
+//         </div>
+
+//         <div style={styles.statBox}>
+//           <img src="/img/icons/dollar.png" alt="Cost Impact" style={styles.icon} />
+//           <h2 style={styles.number}>99+</h2>
+//           <p style={styles.label}>Billion Cost Impact</p>
+//         </div>
+//       </div>
+//       <style>{fadeInStyles}</style>
+//     </section>
+//   );
+// };
+
+// const styles = {
+//   section: {
+//     backgroundColor: "rgb(12, 20, 31)",
+//     padding: "50px 20px",
+//     textAlign: "center",
+//     fontFamily: "Lato, sans-serif",
+//   },
+//   heading: {
+//     fontSize: "40px",
+//     fontWeight: "700",
+//     color: "rgb(188, 255, 0)",
+//     fontFamily: "'Lato', sans-serif",
+//     marginBottom: "10px",
+//   },
+//   line: {
+//     width: "80px",
+//     height: "3px",
+//     // backgroundColor: "rgb(188, 255, 0)",
+//     margin: "10px auto 30px auto",
+//   },
+//   container: {
+//     display: "flex",
+//     justifyContent: "space-between",
+//     alignItems: "center",
+//     maxWidth: "1200px",
+//     margin: "0 auto",
+//     flexWrap: "wrap",
+//     gap: "20px",
+//   },
+//   statBox: {
+//     flex: "1",
+//     minWidth: "200px",
+//     textAlign: "center",
+//     padding: "20px",
+//   },
+//   icon: {
+//     width: "50px",
+//     height: "50px",
+//     marginBottom: "10px",
+//   },
+//   number: {
+//     fontSize: "4rem",
+//     fontWeight: "bold",
+//     color: "rgb(188, 255, 0)",
+//     marginBottom: "5px",
+//     fontFamily: "Lato, sans-serif",
+//   },
+//   label: {
+//     fontSize: "1rem",
+//     color: "white",
+//     fontFamily: "Lato, sans-serif",
+//   },
+// };
+
+// const fadeInStyles = `
+//   @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+  
+//   .fade-in {
+//     opacity: 0;
+//     transform: translateY(30px);
+//     transition: opacity 1s ease-out, transform 1s ease-out;
+//     font-family: 'Lato', sans-serif;
+//   }
+//   .fade-in-visible {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+//   @media (max-width: 768px) {
+//     .statBox {
+//       border-right: none !important;
+//       border-bottom: 2px solid #ddd;
+//     }
+//     .statBox:last-child {
+//       border-bottom: none;
+//     }
+//   }
+// `;
+
+// export default AdvantagesSection;
+
+
+import React, { useEffect, useRef, useState } from "react";
 
 const AdvantagesSection = () => {
   const sectionRef = useRef(null);
+  const [startAnimation, setStartAnimation] = useState(false);
+  const [footprint, setFootprint] = useState(0);
+  const [experience, setExperience] = useState(0);
+  const [costImpact, setCostImpact] = useState(0);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      (entries, observer) => {
+      (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("fade-in-visible");
+            setStartAnimation(true); // Start counting when section is visible
             observer.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.5 } // 50% of the section must be visible
     );
 
-    const sectionElement = sectionRef.current;
-    if (sectionElement) {
-      observer.observe(sectionElement);
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
     }
 
     return () => {
-      if (sectionElement) {
-        observer.unobserve(sectionElement);
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
       }
     };
   }, []);
 
+  useEffect(() => {
+    if (startAnimation) {
+      animateValue(setFootprint, 5, 500);
+      animateValue(setExperience, 10, 400);
+      animateValue(setCostImpact, 99, 100);
+    }
+  }, [startAnimation]);
+
+  const animateValue = (setState, finalValue, speed) => {
+    let start = 0;
+    const step = Math.max(1, Math.floor(finalValue / 90)); // Ensure smooth increment
+    const interval = setInterval(() => {
+      start += step;
+      if (start >= finalValue) {
+        setState(finalValue);
+        clearInterval(interval);
+      } else {
+        setState(start);
+      }
+    }, speed);
+  };
+
   return (
-    <section ref={sectionRef} style={styles.section} className="fade-in">
-      <h2 style={styles.heading}>WHY US</h2> {/* Added heading */}
-      <div style={styles.line}></div> {/* Optional underline effect */}
+    <section ref={sectionRef} style={styles.section}>
+      <h2 style={styles.heading}>WHY US</h2>
+      <div style={styles.line}></div>
       <div style={styles.container}>
-        <div style={styles.statBox}>
-          <img src="/img/icons/map.png" alt="Continents" style={styles.icon} />
-          <h2 style={styles.number}>5</h2>
-          <p style={styles.label}>Continents Footprint</p>
-        </div>
-
-        <div style={styles.statBox}>
-          <img src="/img/icons/user.png" alt="Experience" style={styles.icon} />
-          <h2 style={styles.number}>10+</h2>
-          <p style={styles.label}>Years Experience</p>
-        </div>
-
-        <div style={styles.statBox}>
-          <img src="/img/icons/clock.png" alt="Working Hours" style={styles.icon} />
-          <h2 style={styles.number}>24/7</h2>
-          <p style={styles.label}>Working Hours</p>
-        </div>
-
-        <div style={styles.statBox}>
-          <img src="/img/icons/dollar.png" alt="Cost Impact" style={styles.icon} />
-          <h2 style={styles.number}>99+</h2>
-          <p style={styles.label}>Billion Cost Impact</p>
-        </div>
+        <StatBox icon="/img/icons/map.png" number={footprint} label="Continents Footprint" />
+        <StatBox icon="/img/icons/user.png" number={experience} label="Years Experience" />
+        <StatBox icon="/img/icons/clock.png" number="24/7" label="Working Hours" /> {/* Static "24/7" format */}
+        <StatBox icon="/img/icons/dollar.png" number={costImpact} label="Billion Cost Impact" />
       </div>
-      <style>{fadeInStyles}</style>
     </section>
   );
 };
+
+const StatBox = ({ icon, number, label }) => (
+  <div style={styles.statBox}>
+    <img src={icon} alt={label} style={styles.icon} />
+    <h2 style={styles.number}>{number}</h2>
+    <p style={styles.label}>{label}</p>
+  </div>
+);
 
 const styles = {
   section: {
@@ -1039,7 +1197,6 @@ const styles = {
   line: {
     width: "80px",
     height: "3px",
-    // backgroundColor: "rgb(188, 255, 0)",
     margin: "10px auto 30px auto",
   },
   container: {
@@ -1075,29 +1232,5 @@ const styles = {
     fontFamily: "Lato, sans-serif",
   },
 };
-
-const fadeInStyles = `
-  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
-  
-  .fade-in {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-    font-family: 'Lato', sans-serif;
-  }
-  .fade-in-visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  @media (max-width: 768px) {
-    .statBox {
-      border-right: none !important;
-      border-bottom: 2px solid #ddd;
-    }
-    .statBox:last-child {
-      border-bottom: none;
-    }
-  }
-`;
 
 export default AdvantagesSection;

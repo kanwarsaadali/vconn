@@ -7,7 +7,7 @@ const Projects4 = () => {
   const items = [
     { icon: "/img/icons/Service3_1.png", title: "Risk Management", description: "Well-informed decisions and reduce data breach risks." },
     { icon: "/img/icons/Service3_2.png", title: "GRC (Governance, Risk, Compliance)", description: "Improved operational efficiency and regulatory compliance." },
-    { icon: "/img/icons/Service3_3.png", title: "Data Loss Prevention (DLP)", description: "Insider threats detection and mitigation." },
+    { icon: "/img/icons/Service4_3.png", title: "Data Loss Prevention (DLP)", description: "Insider threats detection and mitigation." },
     { icon: "/img/icons/Service3_4.png", title: "Security Training", description: "Staff empowerment to threat recognition & response." },
     { icon: "/img/icons/Service3_5.png", title: "Security Architecture", description: "Comprehensive security models for cyber threats prevention." },
     { icon: "/img/icons/Service3_6.png", title: "Business Continuity & Disaster Recovery", description: "Minimized downtime and financial losses." },
