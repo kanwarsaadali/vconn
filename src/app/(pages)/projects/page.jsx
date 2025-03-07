@@ -113,7 +113,7 @@ async function Projects() {
         {/* Image Section */}
         <div style={imageWrapperStyle}>
           <Image
-            src="/img/Project/project.svg" // Update with the actual image path
+            src="/img/Project/Project.svg" // Update with the actual image path
             alt="Devsecops"
             width={0}
             height={500}
