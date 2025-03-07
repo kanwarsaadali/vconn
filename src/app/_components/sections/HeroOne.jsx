@@ -1412,13 +1412,29 @@ const HeroOne = () => {
     // }, []);
 
 
+    // useEffect(() => {
+    //     let index = 0;
+    //     setTypedText(""); // Clear text initially
+    
+    //     const interval = setInterval(() => {
+    //         if (index < fullText.length) {
+    //             setTypedText((prev) => prev + fullText.charAt(index));
+    //             index++;
+    //         } else {
+    //             clearInterval(interval);
+    //         }
+    //     }, 50);
+    
+    //     return () => clearInterval(interval);
+    // }, []);
+
     useEffect(() => {
         let index = 0;
         setTypedText(""); // Clear text initially
     
         const interval = setInterval(() => {
             if (index < fullText.length) {
-                setTypedText((prev) => prev + fullText.charAt(index));
+                setTypedText(fullText.substring(0, index + 1)); // Ensure text builds correctly
                 index++;
             } else {
                 clearInterval(interval);
@@ -1427,6 +1443,7 @@ const HeroOne = () => {
     
         return () => clearInterval(interval);
     }, []);
+    
     
 
     useEffect(() => {

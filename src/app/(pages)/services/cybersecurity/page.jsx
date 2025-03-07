@@ -117,14 +117,19 @@ import Header from "@layouts/headers/Index";
 import Project1 from "@components/sections/Projects1";
 import dynamic from "next/dynamic";
 import HowWeWork1 from "@components/sections/HowWeWork1";
+import BookConsulation from "@components/sections/BookConsulation";
+
 const ClientSlider = dynamic(() => import("@/src/app/_components/sliders/Client"), { ssr: false });
 // const DevopsecopsSlider = dynamic(() => import("@components/sliders/Devsecops1"), { ssr: false });
 const DevopsSlider = dynamic( () => import("@components/sliders/Devops"), { ssr: false } );
 import Casestudies from "@components/sections/Casestudies";
 import Footer from "@layouts/footers/Index";
+import { useRouter } from "next/navigation";
 
 
 const Cybersecurity = () => {
+    const router = useRouter();
+  
   const containerStyle = {
     display: "flex",
     flexDirection: "row",
@@ -188,6 +193,7 @@ const Cybersecurity = () => {
             style={buttonStyle}
             onMouseEnter={(e) => (e.target.style.transform = "scale(1.05)")}
             onMouseLeave={(e) => (e.target.style.transform = "scale(1)")}
+            onClick={() => router.push("/contact")}
           >
             Book a Free Consultation
           </a>
@@ -213,6 +219,7 @@ const Cybersecurity = () => {
       </div>
       <ClientSlider />
       <HowWeWork1 />
+      <BookConsulation/>
       <DevopsSlider />
       <Casestudies />
     <Footer layout={"default"} />

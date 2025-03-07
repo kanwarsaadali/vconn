@@ -108,8 +108,8 @@ const ServicesPage = () => {
         }}
       >
         <ServicesSection1 />
-        <IdeasSection />
-        <HowWeWork1 />
+        {/* <IdeasSection /> */}
+        {/* <HowWeWork1 /> */}
       </div>
 
       {/* Footer */}

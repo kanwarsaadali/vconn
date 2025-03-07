@@ -19,6 +19,7 @@ import AdvantagesSection from "@components/sections/Advantages";
 import LatestProjectsSection from "@components/sections/LatestProjects";
 import HowWeWorkSection from "@components/sections/HowWeWork";
 import LatestPostsSection from "@components/sections/LatestPosts";
+import BookConsulation  from "@components/sections/BookConsulation";
 import Homecard from "@components/sections/Homecard"
 import CoresSection from "@components/sections/Cores";
 // import ClientSlider from '@components/sliders/client';
@@ -131,6 +132,7 @@ const ClientSlider = dynamic( () => import("@components/sliders/Client"), { ssr:
       {/* <PartnersSlider /> */}
 
       <HowWeWorkSection  />
+      <BookConsulation/>
       <DevopsSlider/>
       {/* <DevopsecopsSlider/> */}
       {/* <IdeasSection />  */}

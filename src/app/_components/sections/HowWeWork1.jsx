@@ -177,7 +177,7 @@ const HowWeWork1 = () => {
       ></div>
 
       {/* Button - moved lower with marginTop */}
-      <button
+      {/* <button
         style={{
           backgroundColor: "#BCFF00",
           color: "rgb(12, 20, 31)",
@@ -197,7 +197,7 @@ const HowWeWork1 = () => {
         onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
       >
         Book a Free Consultation
-      </button>
+      </button> */}
     </section>
   );
 };

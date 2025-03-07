@@ -11,9 +11,14 @@ const ClientSlider = dynamic(() => import("@/src/app/_components/sliders/Client"
 const DevopsSlider = dynamic(() => import("@components/sliders/Devops"), { ssr: false });
 import Casestudies3 from "@components/sections/Casestudies3";
 import Footer from "@layouts/footers/Index";
+import { useRouter } from "next/navigation";
+import BookConsulation from "@components/sections/BookConsulation";
+
 
 
 const InformationSecurity = () => {
+        const router = useRouter();
+  
   const containerStyle = {
     display: "flex",
     flexDirection: "row",
@@ -85,6 +90,8 @@ const InformationSecurity = () => {
             style={buttonStyle}
             onMouseEnter={(e) => (e.target.style.transform = "scale(1.05)")}
             onMouseLeave={(e) => (e.target.style.transform = "scale(1)")}
+            onClick={() => router.push("/contact")}
+
           >
             Book a Free Consultation
           </a>
@@ -107,12 +114,13 @@ const InformationSecurity = () => {
       <img src="/img/Project/whyusinform.png" alt="" style={imageStyle} />
       <ClientSlider />
       <HowWeWork1 />
+      <BookConsulation/>
       <DevopsSlider />
       <Casestudies3 />
     <Footer layout={"default"} />
 
     </div>
-  );
+  ); 
 };
 
 export default InformationSecurity;

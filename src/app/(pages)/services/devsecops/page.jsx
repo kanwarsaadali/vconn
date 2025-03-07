@@ -119,13 +119,18 @@ import Project3 from "@components/sections/Projects3";
 import Projects2 from "@components/sections/Projects2";
 import dynamic from "next/dynamic";
 import HowWeWork1 from "@components/sections/HowWeWork1";
+import BookConsulation from "@components/sections/BookConsulation";
+
 import Footer from "@layouts/footers/Index";
 
 const ClientSlider = dynamic(() => import("@/src/app/_components/sliders/Client"), { ssr: false });
 const DevopsSlider = dynamic(() => import("@components/sliders/Devops"), { ssr: false });
 import Casestudies1 from "@components/sections/Casestudies1";
+import { useRouter } from "next/navigation";
 
 const Devsecops = () => {
+    const router = useRouter();
+
   const containerStyle = {
     display: "flex",
     flexDirection: "row",
@@ -197,6 +202,7 @@ const Devsecops = () => {
             style={buttonStyle}
             onMouseEnter={(e) => (e.target.style.transform = "scale(1.05)")}
             onMouseLeave={(e) => (e.target.style.transform = "scale(1)")}
+            onClick={() => router.push("/contact")}
           >
             Book a Free Consultation
           </a>
@@ -219,6 +225,7 @@ const Devsecops = () => {
       <img src="/img/Project/whyusdevops.png" alt="" style={imageStyle} />
       <ClientSlider />
       <HowWeWork1 />
+      <BookConsulation/>
       <DevopsSlider />
       <Casestudies1 />
     <Footer layout={"default"} />

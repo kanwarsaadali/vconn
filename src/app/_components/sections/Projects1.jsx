@@ -131,14 +131,14 @@ import Image from "next/image";
 
 const Project2 = () => {
   const items = [
-    { icon: "/img/icons/SERVICE 1_1.png", title: "Threat Detection and Response", description: "Real-time threat identification and mitigation." },
-    { icon: "/img/icons/SERVICE 1_2.png", title: "Penetration Testing", description: "Simulated attacks to find vulnerabilities." },
-    { icon: "/img/icons/SERVICE 1_3.png", title: "Advanced Malware Protection", description: "Protection against sophisticated malware." },
-    { icon: "/img/icons/SERVICE 1_4.png", title: "Data Protection Services", description: "Encryption and secure data handling." },
-    { icon: "/img/icons/SERVICE 1_5.png", title: "SOC as a Service", description: "Security monitoring and incident response." },
-    { icon: "/img/icons/SERVICE 1_6.png", title: "Cybersecurity Implementation", description: "Deploying security measures and tools." },
-    { icon: "/img/icons/SERVICE 1_7.png", title: "Dark Web Monitoring", description: "Scanning for exposed data on the dark web." },
-    { icon: "/img/icons/SERVICE 1_8.png", title: "Red vs Blue Team Exercises", description: "Attack and defense simulation to test security." },
+    { icon: "/img/icons/C1.svg", title: "Threat Detection and Response", description: "Real-time threat identification and mitigation." },
+    { icon: "/img/icons/C2.svg", title: "Penetration Testing", description: "Simulated attacks to find vulnerabilities." },
+    { icon: "/img/icons/C3.svg", title: "Malware Protection", description: "Protection against sophisticated malware." },
+    { icon: "/img/icons/C4.svg", title: "Data Protection Services", description: "Encryption and secure data handling." },
+    { icon: "/img/icons/C5.svg", title: "SOC as a Service", description: "Security monitoring and incident response." },
+    { icon: "/img/icons/C6.svg", title: "Cybersecurity Implementation", description: "Deploying security measures and tools." },
+    { icon: "/img/icons/C7.svg", title: "Dark Web Monitoring", description: "Scanning for exposed data on the dark web." },
+    { icon: "/img/icons/C8.svg", title: "Red vs Blue Team Exercises", description: "Attack and defense simulation to test security." },
   ];
 
   const containerStyle = {

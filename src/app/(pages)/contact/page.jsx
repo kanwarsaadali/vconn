@@ -309,8 +309,7 @@ const Contact = () => {
         {/* Text Section */}
         <div style={textStyle}>
           <h1 style={{ fontSize: "48px", marginBottom: "20px", color: "white", fontFamily: "'Lato', sans-serif" }}>
-          CRAFTING THE FUTURE OF
-          INNOVATION
+          Let's Scale Your Business To The Next Level
           </h1>
        
         </div>

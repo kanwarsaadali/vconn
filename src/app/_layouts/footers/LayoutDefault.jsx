@@ -1438,6 +1438,103 @@
 // export default LayoutDefault;
 
 
+// "use client";
+
+// import Link from "next/link";
+
+// const LayoutDefault = () => {
+//   return (
+//     <footer
+//       style={{
+//         backgroundColor: "rgb(12, 20, 31)",
+//         color: "#fff",
+//         padding: "40px 0",
+//         textAlign: "center",
+//         fontFamily: "'Lato', sans-serif",
+//       }}
+//     >
+//       <div style={{ width: "90%", maxWidth: "1200px", margin: "0 auto" }}>
+//         <div
+//           style={{
+//             display: "grid",
+//             gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
+//             gap: "30px",
+//             textAlign: "left",
+//           }}
+//         >
+//           {/* Footer Sections */}
+//           {[
+//             { title: "Contact With Us", links: ["Suite# 403, Beaumont Plaza, Beaumont Road, Near PIDC/PC Hotel, Karachi-75530","+92 33 427 22796", "sales@vconn.biz", "Suite# 403, Beaumont Plaza, Beaumont Road, Near PIDC/PC Hotel, Karachi-75530"] },
+
+//             { title: "About", links: ["Our company", "Our Team", "Careers", "Locations", "Privacy Policy", "Security Policy", "Contact Us"] },
+//             {
+//               title: "Services",
+//               links: [
+//                 "Data Center Services",
+//                 "Managed Services",
+//                 "Cybersecurity Solutions",
+//                 "DevOps & DevSecOps",
+//                 "Cloud Security ",
+//                 "GRC & Risk Management",
+//                 "Digital Transformation",
+//                 "Research & Innovation",
+//               ],
+//             },
+//             {
+//               title: "Industries",
+//               links: [
+//                 "FMCG (Fast-Moving Consumer Goods)",
+//                 "Data Centers & Cloud Providers",
+//                 "SaaS & Software",
+//                 "Fintech",
+//                 "Healthcare",
+//               ],
+//             },
+            
+//             { title: "Resources", links: ["Blog", "Case Studies", "Security & Compliance Guides", "FAQs"] },
+//           ].map((section, index) => (
+//             <div key={index}>
+//               <h4
+//                 style={{ fontSize: "1.1rem", fontWeight: "bold", marginBottom: "15px", color: "white" }}
+//               >
+//                 {section.title}
+//               </h4>
+//               <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+//                 {section.links.map((link, idx) => (
+//                   <li key={idx}>
+//                     <Link
+//                       href="#"
+//                       style={{ color: "#ddd", textDecoration: "none", display: "block", padding: "5px 0" }}
+//                     >
+//                       {link}
+//                     </Link>
+//                   </li>
+//                 ))}
+//               </ul>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//       {/* Copyright Section */}
+//       <div
+//         style={{
+//           marginTop: "40px",
+//           paddingTop: "20px",
+//           borderTop: "1px solid rgba(255, 255, 255, 0.2)",
+//           textAlign: "center",
+//         }}
+//       >
+//         <p style={{ color: "#ddd", fontSize: "0.9rem" }}>
+//           Copyright &copy; 2025<span style={{ color: "#3ea6ff" }}> Vconn</span>. All rights reserved.
+//         </p>
+//       </div>
+//     </footer>
+//   );
+// };
+
+// export default LayoutDefault;
+
+
 "use client";
 
 import Link from "next/link";
@@ -1464,38 +1561,73 @@ const LayoutDefault = () => {
         >
           {/* Footer Sections */}
           {[
-            { title: "Contact With Us", links: ["+92 33 427 22796", "sales@vconn.biz", "Suite# 403, Beaumont Plaza, Beaumont Road, Near PIDC/PC Hotel, Karachi-75530"] },
-
-            { title: "About", links: ["Our company", "Our Team", "Locations", "Privacy Policy", "Security Policy", "Contact Us"] },
+            {
+              title: (
+                <img
+                  src="/img/logo/logo.png"
+                  alt="Logo"
+                  style={{ height: "40px" }}
+                />
+              ),
+              links: [
+                "Suite# 403, Beaumont Plaza, Beaumont Road, Near PIDC/PC Hotel, Karachi-75530",
+                "+92 33 427 22796",
+                "sales@vconn.biz",
+              ],
+            }, // ← **This comma was missing!**
+            {
+              title: "About",
+              links: [
+                "Our company",
+                "Our Team",
+                "Careers",
+                "Locations",
+                "Privacy Policy",
+                "Security Policy",
+                "Contact Us",
+              ],
+            },
             {
               title: "Services",
               links: [
+                "Data Center Services",
                 "Managed Services",
-                "DevOps",
-                "Cybersecurity",
-                "Information Security",
-                "Mobile App Dev",
-                "Research & Innovation",
+                "Cybersecurity Solutions",
+                "DevOps & DevSecOps",
+                "Cloud Security",
+                "GRC & Risk Management",
                 "Digital Transformation",
+                "Research & Innovation",
               ],
             },
             {
               title: "Industries",
               links: [
-                "Ecommerce",
-                "SaaS",
+                "FMCG (Fast-Moving Consumer Goods)",
+                "Data Centers & Cloud Providers",
+                "SaaS & Software",
                 "Fintech",
                 "Healthcare",
-                "Media & Entertainment",
-                "Education",
               ],
             },
-            
-            { title: "Resources", links: ["Blog", "Case Studies", "Guides", "Ebooks"] },
+            {
+              title: "Resources",
+              links: [
+                "Blog",
+                "Case Studies",
+                "Security & Compliance Guides",
+                "FAQs",
+              ],
+            },
           ].map((section, index) => (
             <div key={index}>
               <h4
-                style={{ fontSize: "1.1rem", fontWeight: "bold", marginBottom: "15px", color: "white" }}
+                style={{
+                  fontSize: "1.1rem",
+                  fontWeight: "bold",
+                  marginBottom: "15px",
+                  color: "white",
+                }}
               >
                 {section.title}
               </h4>
@@ -1504,7 +1636,12 @@ const LayoutDefault = () => {
                   <li key={idx}>
                     <Link
                       href="#"
-                      style={{ color: "#ddd", textDecoration: "none", display: "block", padding: "5px 0" }}
+                      style={{
+                        color: "#ddd",
+                        textDecoration: "none",
+                        display: "block",
+                        padding: "5px 0",
+                      }}
                     >
                       {link}
                     </Link>
@@ -1525,7 +1662,8 @@ const LayoutDefault = () => {
         }}
       >
         <p style={{ color: "#ddd", fontSize: "0.9rem" }}>
-          Copyright &copy; 2025<span style={{ color: "#3ea6ff" }}> Vconn</span>. All rights reserved.
+          Copyright &copy; 2025<span style={{ color: "#3ea6ff" }}> Vconn</span>.
+          All rights reserved.
         </p>
       </div>
     </footer>
