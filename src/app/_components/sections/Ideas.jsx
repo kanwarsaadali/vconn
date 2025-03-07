@@ -1879,29 +1879,216 @@
 // export default IdeasSection;
 
 
+// "use client";
+
+// import { useState, useEffect } from "react";
+
+// const IdeasSection = () => {
+//   const [currentSlide, setCurrentSlide] = useState(0);
+//   const [fadeIn, setFadeIn] = useState(true);
+
+//   const testimonials = [
+//     {
+//       text: '"Consulting services for all things related to DevOps provided insight into automation and streamlining processes."',
+//       name: "Mark Wilson",
+//       title: "CEO, Shell",
+//       logos: ["/img/ideas/3.png"],
+//     },
+//     {
+//       text: '"Great support and consultancy from the team helped us achieve our automation goals efficiently and on time."',
+//       name: "Jane Smith",
+//       title: "CTO, Unilever",
+//       logos: ["/img/ideas/1.png"],
+//     },
+//     {
+//       text: '"Their approach to improving our hospital operations was revolutionary and efficient."',
+//       name: "Dr. Ahmed Khan",
+//       title: "Director, Indus Hospital",
+//       logos: ["/img/ideas/2.png"],
+//     },
+//   ];
+
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setFadeIn(false);
+//       setTimeout(() => {
+//         setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+//         setFadeIn(true);
+//       }, 500);
+//     }, 5000);
+
+//     return () => clearInterval(interval);
+//   }, [testimonials.length]);
+
+//   return (
+//     <div className="ideas-section">
+//       <h3 className="section-title">What Our Customers Say</h3>
+
+//       <div className="testimonial-container">
+//         {testimonials.map((testimonial, index) => (
+//           <div
+//             key={index}
+//             className={`testimonial-slide ${index === currentSlide ? "active" : ""}`}
+//           >
+//             <p className="testimonial-text">{testimonial.text}</p>
+
+//             <div className="testimonial-info">
+//               <h4 className="testimonial-name">{testimonial.name}</h4>
+//               <span className="testimonial-title">{testimonial.title}</span>
+//             </div>
+
+//             <div className="testimonial-logos">
+//               {testimonial.logos.map((logo, i) => (
+//                 <img key={i} src={logo} alt="Logo" className="testimonial-logo" />
+//               ))}
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+
+//       {/* Responsive Styles */}
+//       <style>
+//         {`
+//           .ideas-section {
+//             text-align: center;
+//             padding: 50px 20px;
+//             background-color: rgb(12, 20, 31);
+//             position: relative;
+//             font-family: "Lato", sans-serif;
+//           }
+
+//           .section-title {
+//             font-size: 40px;
+//             font-weight: 700;
+//             color: rgb(188, 255, 0);
+//             margin-bottom: 30px;
+//             text-transform: uppercase;
+//           }
+
+//           .testimonial-container {
+//             position: relative;
+//             width: 100%;
+//             padding-bottom: 50px;
+//             height: auto;
+//           }
+
+//           .testimonial-slide {
+//             opacity: 0;
+//             transition: opacity 0.5s ease-in-out;
+//             position: absolute;
+//             width: 100%;
+//             text-align: center;
+//             padding: 20px;
+//             height: 100%;
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//             flex-direction: column;
+//             visibility: hidden;
+//           }
+
+//           .testimonial-slide.active {
+//             opacity: 1;
+//             position: relative;
+//             visibility: visible;
+//           }
+
+//           .testimonial-text {
+//             font-size: 1.8rem;
+//             color: white;
+//             text-align: center;
+//             font-style: italic;
+//             padding: 10px;
+//           }
+
+//           .testimonial-info {
+//             text-align: center;
+//             margin-top: 20px;
+//           }
+
+//           .testimonial-name {
+//             font-size: 1.5rem;
+//             font-weight: bold;
+//             color: white;
+//             margin-bottom: 5px;
+//           }
+
+//           .testimonial-title {
+//             font-size: 1.2rem;
+//             color: white;
+//             display: block;
+//           }
+
+//           .testimonial-logos {
+//             display: flex;
+//             justify-content: center;
+//             gap: 15px;
+//             padding: 4px;
+//             margin-top: 20px;
+//             flex-wrap: wrap;
+//           }
+
+//           .testimonial-logo {
+//             width: 200px;
+//             height: auto;
+//             border-radius: 4px;
+//           }
+
+//           /* Responsive Design */
+//           @media (max-width: 768px) {
+//             .section-title {
+//               font-size: 30px;
+//             }
+
+//             .testimonial-text {
+//               font-size: 16px;
+//               padding: 10px;
+//             }
+
+//             .testimonial-name {
+//               font-size: 18px;
+//             }
+
+//             .testimonial-title {
+//               font-size: 14px;
+//             }
+
+//             .testimonial-logo {
+//               width: 150px;
+//             }
+//           }
+//         `}
+//       </style>
+//     </div>
+//   );
+// };
+
+// export default IdeasSection;
+
+
 "use client";
 
 import { useState, useEffect } from "react";
 
 const IdeasSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [fadeIn, setFadeIn] = useState(true);
+  const [animateText, setAnimateText] = useState(true);
 
   const testimonials = [
     {
-      text: '"Consulting services for all things related to DevOps provided insight into automation and streamlining processes."',
+      text: '"Consulting services for DevOps provided insight into automation & streamlining processes."',
       name: "Mark Wilson",
       title: "CEO, Shell",
       logos: ["/img/ideas/3.png"],
     },
     {
-      text: '"Great support and consultancy from the team helped us achieve our automation goals efficiently and on time."',
+      text: '"Great support & consultancy helped us achieve automation goals efficiently & on time."',
       name: "Jane Smith",
       title: "CTO, Unilever",
       logos: ["/img/ideas/1.png"],
     },
     {
-      text: '"Their approach to improving our hospital operations was revolutionary and efficient."',
+      text: '"Their approach to improving our hospital operations was revolutionary & efficient."',
       name: "Dr. Ahmed Khan",
       title: "Director, Indus Hospital",
       logos: ["/img/ideas/2.png"],
@@ -1910,10 +2097,10 @@ const IdeasSection = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setFadeIn(false);
+      setAnimateText(false);
       setTimeout(() => {
         setCurrentSlide((prev) => (prev + 1) % testimonials.length);
-        setFadeIn(true);
+        setAnimateText(true);
       }, 500);
     }, 5000);
 
@@ -1925,35 +2112,30 @@ const IdeasSection = () => {
       <h3 className="section-title">What Our Customers Say</h3>
 
       <div className="testimonial-container">
-        {testimonials.map((testimonial, index) => (
-          <div
-            key={index}
-            className={`testimonial-slide ${index === currentSlide ? "active" : ""}`}
-          >
-            <p className="testimonial-text">{testimonial.text}</p>
+        <div className="testimonial-content">
+          <p className={`testimonial-text ${animateText ? "slide-in" : "slide-out"}`}>
+            {testimonials[currentSlide].text}
+          </p>
 
-            <div className="testimonial-info">
-              <h4 className="testimonial-name">{testimonial.name}</h4>
-              <span className="testimonial-title">{testimonial.title}</span>
-            </div>
-
-            <div className="testimonial-logos">
-              {testimonial.logos.map((logo, i) => (
-                <img key={i} src={logo} alt="Logo" className="testimonial-logo" />
-              ))}
-            </div>
+          <div className="testimonial-info">
+            <h4 className="testimonial-name">{testimonials[currentSlide].name}</h4>
+            <span className="testimonial-title">{testimonials[currentSlide].title}</span>
           </div>
-        ))}
+
+          <div className="testimonial-logos">
+            {testimonials[currentSlide].logos.map((logo, i) => (
+              <img key={i} src={logo} alt="Logo" className="testimonial-logo" />
+            ))}
+          </div>
+        </div>
       </div>
 
-      {/* Responsive Styles */}
       <style>
         {`
           .ideas-section {
             text-align: center;
             padding: 50px 20px;
             background-color: rgb(12, 20, 31);
-            position: relative;
             font-family: "Lato", sans-serif;
           }
 
@@ -1968,37 +2150,38 @@ const IdeasSection = () => {
           .testimonial-container {
             position: relative;
             width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
             padding-bottom: 50px;
-            height: auto;
+            overflow: hidden;
           }
 
-          .testimonial-slide {
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-            position: absolute;
-            width: 100%;
-            text-align: center;
-            padding: 20px;
-            height: 100%;
+          .testimonial-content {
             display: flex;
-            align-items: center;
-            justify-content: center;
             flex-direction: column;
-            visibility: hidden;
-          }
-
-          .testimonial-slide.active {
-            opacity: 1;
-            position: relative;
-            visibility: visible;
+            align-items: center;
           }
 
           .testimonial-text {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             color: white;
             text-align: center;
             font-style: italic;
             padding: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+          }
+
+          .testimonial-text.slide-in {
+            transform: translateY(0);
+            opacity: 1;
+          }
+
+          .testimonial-text.slide-out {
+            transform: translateY(20px);
+            opacity: 0;
           }
 
           .testimonial-info {
@@ -2034,14 +2217,13 @@ const IdeasSection = () => {
             border-radius: 4px;
           }
 
-          /* Responsive Design */
           @media (max-width: 768px) {
             .section-title {
               font-size: 30px;
             }
 
             .testimonial-text {
-              font-size: 16px;
+              font-size: 14px;
               padding: 10px;
             }
 
