@@ -145,6 +145,155 @@
 
 
 
+// "use client"; // Mark this component as a client component
+
+// import React from "react";
+// import { useRouter } from "next/navigation"; // Import useRouter
+
+// const services = [
+//   {
+//     title: "Real-Time Threat Detection",
+//     description:
+//       "Implemented threat detection to identify and mitigate APTs, safeguarding critical systems.",
+//     image: "/img/covers/Cybersecurity.png",
+//     path: "/services/cybersecurity",
+//   },
+//   {
+//     title: "Rapid Incident Response",
+//     description:
+//       "Contained a security breach quickly, preventing data loss and conducting post-incident analysis.",
+//     image: "/img/covers/Cybersecurity.png",
+//     path: "/services/devsecops",
+//   },
+//   {
+//     title: "Vulnerability Management",
+//     description:
+//       "Conducted vulnerability scanning and patching, reducing risk by 40% over six months.",
+//     image: "/img/covers/Cybersecurity.png",
+//     path: "/services/managed-services",
+//   },
+//   {
+//     title: "Endpoint Protection",
+//     description:
+//       "Deployed endpoint security to prevent malware infections and ensure regulatory compliance.",
+//     image: "/img/covers/Cybersecurity.png",
+//     path: "/services/information-security",
+//   },
+// ];
+
+// const Casestudies = () => {
+//   const router = useRouter(); // Initialize the router
+
+//   const handleButtonClick = (path) => {
+//     try {
+//       console.log("Navigating to:", path);
+//       router.push(path);
+//     } catch (error) {
+//       console.error("Navigation error:", error);
+//     }
+//   };
+
+//   return (
+//     <section
+//       style={{
+//         backgroundColor: "rgb(12, 20, 31)",
+//         padding: "50px 20px",
+//         textAlign: "center",
+//         fontFamily: "'Lato', sans-serif", // Apply Lato font globally
+//       }}
+//     >
+//       {/* Section Title */}
+//       <h2
+//         style={{
+//           color: "rgb(188, 255, 0)",
+//           fontSize: "40px",
+//           fontWeight:"700",
+//           marginBottom: "40px",
+//           fontFamily: "'Lato', sans-serif",
+//         }}
+//       >
+//         CASE STUDIES
+//       </h2>
+
+//       {/* Cards Grid */}
+//       <div
+//         style={{
+//           display: "grid",
+//           gridTemplateColumns: "repeat(2, 1fr)",
+//           gap: "48px",
+//           maxWidth: "1000px",
+//           margin: "0 auto",
+//         }}
+//       >
+//         {services.map((service, index) => (
+//           <div
+//             key={index}
+//             style={{
+//               backgroundImage: `url(${service.image})`,
+//               backgroundSize: "cover",
+//               backgroundPosition: "center",
+//               borderRadius: "10px",
+//               overflow: "hidden",
+//               boxShadow: "0 4px 6px rgba(0, 0, 0, 0.3)",
+//               height: "550px",
+//               display: "flex",
+//               flexDirection: "column",
+//               justifyContent: "flex-end",
+//               transition: "transform 0.3s ease, box-shadow 0.3s ease",
+//               color: "#fff",
+//               fontFamily: "'Lato', sans-serif",
+//             }}
+//             onMouseEnter={(e) => {
+//               e.currentTarget.style.transform = "scale(1.05)";
+//               e.currentTarget.style.boxShadow = "0 6px 10px rgba(0, 0, 0, 0.4)";
+//             }}
+//             onMouseLeave={(e) => {
+//               e.currentTarget.style.transform = "scale(1)";
+//               e.currentTarget.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.3)";
+//             }}
+//           >
+//             {/* Service Content */}
+//             <div
+//               style={{
+//                 padding: "20px",
+//                 textAlign: "left",
+//                 background: "rgba(0, 0, 0, 0.6)",
+//                 borderRadius: "0 0 10px 10px",
+//                 fontFamily: "'Lato', sans-serif",
+//               }}
+//             >
+//               <h3
+//                 style={{
+//                   fontSize: "1.25rem",
+//                   marginBottom: "10px",
+//                   color: "white",
+//                   fontFamily: "'Lato', sans-serif",
+//                 }}
+//               >
+//                 {service.title}
+//               </h3>
+//               <p
+//                 style={{
+//                   fontSize: "0.9rem",
+//                   marginBottom: "20px",
+//                   overflow: "hidden",
+//                   textOverflow: "ellipsis",
+//                   fontFamily: "'Lato', sans-serif",
+//                 }}
+//               >
+//                 {service.description}
+//               </p>
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Casestudies;
+
+
 "use client"; // Mark this component as a client component
 
 import React from "react";
@@ -184,22 +333,13 @@ const services = [
 const Casestudies = () => {
   const router = useRouter(); // Initialize the router
 
-  const handleButtonClick = (path) => {
-    try {
-      console.log("Navigating to:", path);
-      router.push(path);
-    } catch (error) {
-      console.error("Navigation error:", error);
-    }
-  };
-
   return (
     <section
       style={{
         backgroundColor: "rgb(12, 20, 31)",
         padding: "50px 20px",
         textAlign: "center",
-        fontFamily: "'Lato', sans-serif", // Apply Lato font globally
+        fontFamily: "'Lato', sans-serif",
       }}
     >
       {/* Section Title */}
@@ -207,9 +347,8 @@ const Casestudies = () => {
         style={{
           color: "rgb(188, 255, 0)",
           fontSize: "40px",
-          fontWeight:"700",
+          fontWeight: "700",
           marginBottom: "40px",
-          fontFamily: "'Lato', sans-serif",
         }}
       >
         CASE STUDIES
@@ -220,7 +359,7 @@ const Casestudies = () => {
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(2, 1fr)",
-          gap: "48px",
+          gap: "24px",
           maxWidth: "1000px",
           margin: "0 auto",
         }}
@@ -241,7 +380,6 @@ const Casestudies = () => {
               justifyContent: "flex-end",
               transition: "transform 0.3s ease, box-shadow 0.3s ease",
               color: "#fff",
-              fontFamily: "'Lato', sans-serif",
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = "scale(1.05)";
@@ -259,28 +397,12 @@ const Casestudies = () => {
                 textAlign: "left",
                 background: "rgba(0, 0, 0, 0.6)",
                 borderRadius: "0 0 10px 10px",
-                fontFamily: "'Lato', sans-serif",
               }}
             >
-              <h3
-                style={{
-                  fontSize: "1.25rem",
-                  marginBottom: "10px",
-                  color: "white",
-                  fontFamily: "'Lato', sans-serif",
-                }}
-              >
+              <h3 style={{ fontSize: "1.25rem", marginBottom: "10px", color: "white" }}>
                 {service.title}
               </h3>
-              <p
-                style={{
-                  fontSize: "0.9rem",
-                  marginBottom: "20px",
-                  overflow: "hidden",
-                  textOverflow: "ellipsis",
-                  fontFamily: "'Lato', sans-serif",
-                }}
-              >
+              <p style={{ fontSize: "0.9rem", marginBottom: "20px", overflow: "hidden", textOverflow: "ellipsis" }}>
                 {service.description}
               </p>
             </div>

@@ -1550,8 +1550,8 @@ const HeroOne = () => {
                 width: "85%",
                 maxWidth: "1200px",
             }}>
-                <span style={{ color: "white" }}>Improve & Automate Your Business</span> Operations, {" "}
-                <span style={{ color: "white" }}>The Affordable Way</span>
+                <span style={{ color: "rgb(188, 255, 0)" }}>Improve</span> <span style={{ color: "white" }} > & </span> <span  style={{ color: "rgb(188, 255, 0)" }}>  Automate </span> <span style={{ color: "white" }}> Your Business Operations, </span> {" "}
+                <span style={{ color: "white" }}> The </span> <span style={{ color: "rgb(188, 255, 0)" }}>Affordable </span> <span style={{ color: "white" }}>  Way </span>
             </div>
             <div style={{
                 position: "absolute",
