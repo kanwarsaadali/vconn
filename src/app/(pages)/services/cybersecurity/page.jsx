@@ -183,7 +183,7 @@ const Cybersecurity = () => {
         {/* Text Section */}
         <div style={textStyle}>
           <h1 style={{ fontSize: "48px", marginBottom: "20px", color: "white", fontFamily: "'Lato', sans-serif" }}>
-            Protect Your Data. Secure Your Systems. Stay Ahead of Cyber Threats
+          Protect Your Data & Systems from Cyber Threats
           </h1>
           <p style={{ fontSize: "18px", lineHeight: "1.6", marginBottom: "40px" }}>
             With agile Vulnerability Analysis and Penetration Testing (NAPT) and Security Operations Center (SOC), mitigate risks and ensure protection of your digital systems, networks, and data.

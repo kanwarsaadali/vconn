@@ -1,6 +1,154 @@
+// "use client"; // Mark this component as a client component
+
+// import React from "react";
+// import { useRouter } from "next/navigation"; // Import useRouter
+
+// const services = [
+//   {
+//     title: "Risk Assessment and Mitigation",
+//     description:
+//       "Conducted risk assessment and reduced threats to critical assets by 35%.",
+//     image: "/img/covers/Manage.png", // Replace with the actual path
+//     path: "/services/cybersecurity", // Add the path for the detailed page
+//   },
+//   {
+//     title: "GRC Framework",
+//     description:
+//       "Established a GRC framework to ensure compliance and reduce operational risks..",
+//     image: "/img/covers/Manage.png", // Replace with the actual path
+//     path: "/services/devsecops", // Add the path for the detailed page
+//   },
+//   {
+//     title: "Data Loss Prevention",
+//     description:
+//       "Implemented DLP solutions to protect sensitive client data from unauthorized access.",
+//     image: "/img/covers/Manage.png", // Replace with the actual path
+//     path: "/services/managed-services", // Add the path for the detailed page
+//   },
+//   {
+//     title: "Employee Security Training Program",
+//     description:
+//       "Launched training that reduced phishing attacks by 40%.",
+//     image: "/img/covers/Manage.png", // Replace with the actual path
+//     path: "/services/information-security", // Add the path for the detailed page
+//   },
+// ];
+
+// const Casestudies3 = () => {
+//   const router = useRouter(); // Initialize the router
+
+//   const handleButtonClick = (path) => {
+//     try {
+//       console.log("Navigating to:", path); // Debugging log
+//       router.push(path); // Navigate to the detailed page
+//     } catch (error) {
+//       console.error("Navigation error:", error); // Handle navigation error
+//     }
+//   };
+
+//   return (
+//     <section
+//       style={{
+//         backgroundColor: "rgb(12, 20, 31)",
+//         padding: "50px 20px",
+//         textAlign: "center",
+//         fontFamily: "'Lato', sans-serif", // Apply Lato font globally
+//       }}
+//     >
+//       {/* Section Title */}
+//       <h2 style={{ color: "rgb(188, 255, 0)", fontSize: "40px", marginBottom: "40px", fontFamily:"'Lato', sans-serif", fontWeight:"700"}}>
+//         CASE STUDIES
+//       </h2>
+
+//       {/* Cards Grid */}
+//       <div
+//         style={{
+//           display: "grid",
+//           gridTemplateColumns: "repeat(2, 1fr)", // Two cards per row
+//           gap: "48px",
+//           maxWidth: "1000px",
+//           margin: "0 auto",
+//         }}
+//       >
+//         {services.map((service, index) => (
+//           <div
+//             key={index}
+//             style={{
+//               backgroundImage: `url(${service.image})`,
+//               backgroundSize: "cover",
+//               backgroundPosition: "center",
+//               borderRadius: "10px",
+//               overflow: "hidden",
+//               boxShadow: "0 4px 6px rgba(0, 0, 0, 0.3)",
+//               height: "550px",
+//               display: "flex",
+//               flexDirection: "column",
+//               justifyContent: "flex-end",
+//               transition: "transform 0.3s ease, box-shadow 0.3s ease",
+//               color: "#fff",
+//             }}
+//             onMouseEnter={(e) => {
+//               e.currentTarget.style.transform = "scale(1.05)";
+//               e.currentTarget.style.boxShadow = "0 6px 10px rgba(0, 0, 0, 0.4)";
+//             }}
+//             onMouseLeave={(e) => {
+//               e.currentTarget.style.transform = "scale(1)";
+//               e.currentTarget.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.3)";
+//             }}
+//           >
+//             {/* Service Content */}
+//             <div
+//               style={{
+//                 padding: "20px",
+//                 textAlign: "left",
+//                 background: "rgba(0, 0, 0, 0.6)",
+//                 borderRadius: "0 0 10px 10px",
+//                 fontFamily: "'Lato', sans-serif", // Apply Lato font to text inside the card
+//               }}
+//             >
+//               <h3 style={{ fontSize: "1.25rem", marginBottom: "10px", color: "white" }}>
+//                 {service.title}
+//               </h3>
+//               <p
+//                 style={{
+//                   fontSize: "0.9rem",
+//                   marginBottom: "20px",
+//                   overflow: "hidden",
+//                   textOverflow: "ellipsis",
+//                 }}
+//               >
+//                 {service.description}
+//               </p>
+//               {/* <button
+//                 onClick={() => handleButtonClick(service.path)} // Navigate on button click
+//                 style={{
+//                   backgroundColor: "rgb(188, 255, 0)",
+//                   padding: "10px 15px",
+//                   textDecoration: "none",
+//                   fontWeight: "bold",
+//                   borderRadius: "5px",
+//                   border: "none",
+//                   color: "rgb(23, 40, 62)",
+//                   cursor: "pointer",
+//                   fontFamily: "'Lato', sans-serif", // Apply Lato font to button text
+//                 }}
+//               >
+//                 EXPLORE MORE
+//               </button> */}
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Casestudies3;
+
+
 "use client"; // Mark this component as a client component
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation"; // Import useRouter
 
 const services = [
@@ -8,43 +156,45 @@ const services = [
     title: "Risk Assessment and Mitigation",
     description:
       "Conducted risk assessment and reduced threats to critical assets by 35%.",
-    image: "/img/covers/Manage.png", // Replace with the actual path
-    path: "/services/cybersecurity", // Add the path for the detailed page
+    image: "/img/covers/Manage.png",
+    path: "/services/cybersecurity",
   },
   {
     title: "GRC Framework",
     description:
-      "Established a GRC framework to ensure compliance and reduce operational risks..",
-    image: "/img/covers/Manage.png", // Replace with the actual path
-    path: "/services/devsecops", // Add the path for the detailed page
+      "Established a GRC framework to ensure compliance and reduce operational risks.",
+    image: "/img/covers/Manage.png",
+    path: "/services/devsecops",
   },
   {
     title: "Data Loss Prevention",
     description:
       "Implemented DLP solutions to protect sensitive client data from unauthorized access.",
-    image: "/img/covers/Manage.png", // Replace with the actual path
-    path: "/services/managed-services", // Add the path for the detailed page
+    image: "/img/covers/Manage.png",
+    path: "/services/managed-services",
   },
   {
     title: "Employee Security Training Program",
-    description:
-      "Launched training that reduced phishing attacks by 40%.",
-    image: "/img/covers/Manage.png", // Replace with the actual path
-    path: "/services/information-security", // Add the path for the detailed page
+    description: "Launched training that reduced phishing attacks by 40%.",
+    image: "/img/covers/Manage.png",
+    path: "/services/information-security",
   },
 ];
 
 const Casestudies3 = () => {
   const router = useRouter(); // Initialize the router
+  const [columns, setColumns] = useState(2); // Default: 2 columns
 
-  const handleButtonClick = (path) => {
-    try {
-      console.log("Navigating to:", path); // Debugging log
-      router.push(path); // Navigate to the detailed page
-    } catch (error) {
-      console.error("Navigation error:", error); // Handle navigation error
-    }
-  };
+  useEffect(() => {
+    const handleResize = () => {
+      setColumns(window.innerWidth <= 768 ? 1 : 2);
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <section
@@ -52,11 +202,18 @@ const Casestudies3 = () => {
         backgroundColor: "rgb(12, 20, 31)",
         padding: "50px 20px",
         textAlign: "center",
-        fontFamily: "'Lato', sans-serif", // Apply Lato font globally
+        fontFamily: "'Lato', sans-serif",
       }}
     >
       {/* Section Title */}
-      <h2 style={{ color: "rgb(188, 255, 0)", fontSize: "40px", marginBottom: "40px", fontFamily:"'Lato', sans-serif", fontWeight:"700"}}>
+      <h2
+        style={{
+          color: "rgb(188, 255, 0)",
+          fontSize: "40px",
+          fontWeight: "700",
+          marginBottom: "40px",
+        }}
+      >
         CASE STUDIES
       </h2>
 
@@ -64,8 +221,8 @@ const Casestudies3 = () => {
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(2, 1fr)", // Two cards per row
-          gap: "48px",
+          gridTemplateColumns: `repeat(${columns}, 1fr)`, // Dynamic columns
+          gap: "24px",
           maxWidth: "1000px",
           margin: "0 auto",
         }}
@@ -86,6 +243,7 @@ const Casestudies3 = () => {
               justifyContent: "flex-end",
               transition: "transform 0.3s ease, box-shadow 0.3s ease",
               color: "#fff",
+              cursor: "pointer",
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = "scale(1.05)";
@@ -95,6 +253,7 @@ const Casestudies3 = () => {
               e.currentTarget.style.transform = "scale(1)";
               e.currentTarget.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.3)";
             }}
+            onClick={() => router.push(service.path)} // Navigate on click
           >
             {/* Service Content */}
             <div
@@ -103,38 +262,14 @@ const Casestudies3 = () => {
                 textAlign: "left",
                 background: "rgba(0, 0, 0, 0.6)",
                 borderRadius: "0 0 10px 10px",
-                fontFamily: "'Lato', sans-serif", // Apply Lato font to text inside the card
               }}
             >
               <h3 style={{ fontSize: "1.25rem", marginBottom: "10px", color: "white" }}>
                 {service.title}
               </h3>
-              <p
-                style={{
-                  fontSize: "0.9rem",
-                  marginBottom: "20px",
-                  overflow: "hidden",
-                  textOverflow: "ellipsis",
-                }}
-              >
+              <p style={{ fontSize: "0.9rem", marginBottom: "20px", overflow: "hidden", textOverflow: "ellipsis" }}>
                 {service.description}
               </p>
-              {/* <button
-                onClick={() => handleButtonClick(service.path)} // Navigate on button click
-                style={{
-                  backgroundColor: "rgb(188, 255, 0)",
-                  padding: "10px 15px",
-                  textDecoration: "none",
-                  fontWeight: "bold",
-                  borderRadius: "5px",
-                  border: "none",
-                  color: "rgb(23, 40, 62)",
-                  cursor: "pointer",
-                  fontFamily: "'Lato', sans-serif", // Apply Lato font to button text
-                }}
-              >
-                EXPLORE MORE
-              </button> */}
             </div>
           </div>
         ))}

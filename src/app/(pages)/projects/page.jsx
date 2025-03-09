@@ -104,8 +104,7 @@ async function Projects() {
         {/* Text Section */}
         <div style={textStyle}>
           <h1 style={{ fontSize: "48px", marginBottom: "20px", color: "white", fontFamily: "'Lato', sans-serif" }}>
-          CRAFTING THE FUTURE OF
-          INNOVATION
+          Discover our projects to maximize your business growth
           </h1>
        
         </div>

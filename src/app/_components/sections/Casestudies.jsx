@@ -294,10 +294,132 @@
 // export default Casestudies;
 
 
+// "use client"; // Mark this component as a client component
+
+// import React from "react";
+// import { useRouter } from "next/navigation"; // Import useRouter
+
+// const services = [
+//   {
+//     title: "Real-Time Threat Detection",
+//     description:
+//       "Implemented threat detection to identify and mitigate APTs, safeguarding critical systems.",
+//     image: "/img/covers/Cybersecurity.png",
+//     path: "/services/cybersecurity",
+//   },
+//   {
+//     title: "Rapid Incident Response",
+//     description:
+//       "Contained a security breach quickly, preventing data loss and conducting post-incident analysis.",
+//     image: "/img/covers/Cybersecurity.png",
+//     path: "/services/devsecops",
+//   },
+//   {
+//     title: "Vulnerability Management",
+//     description:
+//       "Conducted vulnerability scanning and patching, reducing risk by 40% over six months.",
+//     image: "/img/covers/Cybersecurity.png",
+//     path: "/services/managed-services",
+//   },
+//   {
+//     title: "Endpoint Protection",
+//     description:
+//       "Deployed endpoint security to prevent malware infections and ensure regulatory compliance.",
+//     image: "/img/covers/Cybersecurity.png",
+//     path: "/services/information-security",
+//   },
+// ];
+
+// const Casestudies = () => {
+//   const router = useRouter(); // Initialize the router
+
+//   return (
+//     <section
+//       style={{
+//         backgroundColor: "rgb(12, 20, 31)",
+//         padding: "50px 20px",
+//         textAlign: "center",
+//         fontFamily: "'Lato', sans-serif",
+//       }}
+//     >
+//       {/* Section Title */}
+//       <h2
+//         style={{
+//           color: "rgb(188, 255, 0)",
+//           fontSize: "40px",
+//           fontWeight: "700",
+//           marginBottom: "40px",
+//         }}
+//       >
+//         CASE STUDIES
+//       </h2>
+
+//       {/* Cards Grid */}
+//       <div
+//         style={{
+//           display: "grid",
+//           gridTemplateColumns: "repeat(2, 1fr)",
+//           gap: "24px",
+//           maxWidth: "1000px",
+//           margin: "0 auto",
+//         }}
+//       >
+//         {services.map((service, index) => (
+//           <div
+//             key={index}
+//             style={{
+//               backgroundImage: `url(${service.image})`,
+//               backgroundSize: "cover",
+//               backgroundPosition: "center",
+//               borderRadius: "10px",
+//               overflow: "hidden",
+//               boxShadow: "0 4px 6px rgba(0, 0, 0, 0.3)",
+//               height: "550px",
+//               display: "flex",
+//               flexDirection: "column",
+//               justifyContent: "flex-end",
+//               transition: "transform 0.3s ease, box-shadow 0.3s ease",
+//               color: "#fff",
+//             }}
+//             onMouseEnter={(e) => {
+//               e.currentTarget.style.transform = "scale(1.05)";
+//               e.currentTarget.style.boxShadow = "0 6px 10px rgba(0, 0, 0, 0.4)";
+//             }}
+//             onMouseLeave={(e) => {
+//               e.currentTarget.style.transform = "scale(1)";
+//               e.currentTarget.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.3)";
+//             }}
+//           >
+//             {/* Service Content */}
+//             <div
+//               style={{
+//                 padding: "20px",
+//                 textAlign: "left",
+//                 background: "rgba(0, 0, 0, 0.6)",
+//                 borderRadius: "0 0 10px 10px",
+//               }}
+//             >
+//               <h3 style={{ fontSize: "1.25rem", marginBottom: "10px", color: "white" }}>
+//                 {service.title}
+//               </h3>
+//               <p style={{ fontSize: "0.9rem", marginBottom: "20px", overflow: "hidden", textOverflow: "ellipsis" }}>
+//                 {service.description}
+//               </p>
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Casestudies;
+
 "use client"; // Mark this component as a client component
 
 import React from "react";
 import { useRouter } from "next/navigation"; // Import useRouter
+import { useEffect, useState } from "react";
 
 const services = [
   {
@@ -332,6 +454,23 @@ const services = [
 
 const Casestudies = () => {
   const router = useRouter(); // Initialize the router
+  const [columns, setColumns] = useState(2); // Default: 2 columns
+
+  useEffect(() => {
+    // Function to check screen width and set columns
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setColumns(1); // Mobile: 1 column
+      } else {
+        setColumns(2); // Desktop: 2 columns
+      }
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener("resize", handleResize); // Listen for screen resize
+
+    return () => window.removeEventListener("resize", handleResize); // Cleanup
+  }, []);
 
   return (
     <section
@@ -358,7 +497,7 @@ const Casestudies = () => {
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(2, 1fr)",
+          gridTemplateColumns: `repeat(${columns}, 1fr)`, // Dynamic columns
           gap: "24px",
           maxWidth: "1000px",
           margin: "0 auto",

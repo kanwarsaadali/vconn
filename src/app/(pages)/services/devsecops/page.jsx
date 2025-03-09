@@ -192,7 +192,7 @@ const Devsecops = () => {
         {/* Text Section */}
         <div style={textStyle}>
           <h1 style={{ fontSize: "48px", marginBottom: "20px", color: "white", fontFamily: "'Lato', sans-serif" }}>
-            Your Impenetrable DevOps Culture for Secured, Threat-Free Deployments, Frictionless Collaboration
+          Your Impenetrable DevOps Culture for Threat-Free Deployments & Collaboration
           </h1>
           <p style={{ fontSize: "18px", lineHeight: "1.6", marginBottom: "40px", fontFamily: "'Lato', sans-serif" }}>
             With source code, threat modelling, false-positive rates analysis and more, integrate the security checks early in your software’s development pipeline for faster deployments, smooth collaboration.
@@ -200,7 +200,7 @@ const Devsecops = () => {
           <a
             href="#"
             style={buttonStyle}
-            onMouseEnter={(e) => (e.target.style.transform = "scale(1.05)")}
+          onMouseEnter={(e) => (e.target.style.transform = "scale(1.05)")}
             onMouseLeave={(e) => (e.target.style.transform = "scale(1)")}
             onClick={() => router.push("/contact")}
           >
