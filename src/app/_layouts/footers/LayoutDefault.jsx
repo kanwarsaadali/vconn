@@ -1535,6 +1535,690 @@
 // export default LayoutDefault;
 
 
+// "use client";
+
+// import Link from "next/link";
+
+// const LayoutDefault = () => {
+//   return (
+//     <footer
+//       style={{
+//         backgroundColor: "rgb(12, 20, 31)",
+//         color: "#fff",
+//         padding: "40px 0",
+//         textAlign: "center",
+//         fontFamily: "'Lato', sans-serif",
+//       }}
+//     >
+//       <div style={{ width: "90%", maxWidth: "1200px", margin: "0 auto" }}>
+//         <div
+//           style={{
+//             display: "grid",
+//             gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
+//             gap: "30px",
+//             textAlign: "left",
+//           }}
+//         >
+//           {/* Footer Sections */}
+//           {[
+//             {
+//               title: (
+//                 <img
+//                   src="/img/logo/logo.png"
+//                   alt="Logo"
+//                   style={{ height: "40px" }}
+//                 />
+//               ),
+//               links: [
+//                 "International Headquarter:",
+//                 "Unit No: 1748, DMCC Business Centre, Level No 1, Jewellery & Gemplex 3, Dubai, United Arab Emirates",
+//                 "Regional Office:",
+//                 "Suite # 403, 4 Floor, Beaumont Plaza, Beaumont Road Off M.T.Khan Road, Karachi, Pakistan",
+//                 "+92 33 427 22796",
+//                 "sales@vconn.biz",
+//               ],
+//             }, // ← **This comma was missing!**
+//             {
+//               title: "About",
+//               links: [
+//                 "Our company",
+//                 "Our Team",
+//                 "Careers",
+//                 "Locations",
+//                 "Privacy Policy",
+//                 "Security Policy",
+//                 "Contact Us",
+//               ],
+//             },
+//             {
+//               title: "Services",
+//               links: [
+//                 "Data Center Services",
+//                 "Managed Services",
+//                 "Cybersecurity Solutions",
+//                 "DevOps & DevSecOps",
+//                 "Cloud Security",
+//                 "GRC & Risk Management",
+//                 "Digital Transformation",
+//                 "Research & Innovation",
+//               ],
+//             },
+//             {
+//               title: "Industries",
+//               links: [
+//                 "FMCG (Fast-Moving Consumer Goods)",
+//                 "Data Centers & Cloud Providers",
+//                 "SaaS & Software",
+//                 "Fintech",
+//                 "Healthcare",
+//               ],
+//             },
+//             {
+//               title: "Resources",
+//               links: [
+//                 "Blog",
+//                 "Case Studies",
+//                 "Security & Compliance Guides",
+//                 "FAQs",
+//               ],
+//             },
+//           ].map((section, index) => (
+//             <div key={index}>
+//               <h4
+//                 style={{
+//                   fontSize: "1.1rem",
+//                   fontWeight: "bold",
+//                   marginBottom: "15px",
+//                   color: "white",
+//                 }}
+//               >
+//                 {section.title}
+//               </h4>
+//               <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+//                 {section.links.map((link, idx) => (
+//                   <li key={idx}>
+//                     <Link
+//                       href="#"
+//                       style={{
+//                         color: "#ddd",
+//                         textDecoration: "none",
+//                         display: "block",
+//                         padding: "5px 0",
+//                       }}
+//                     >
+//                       {link}
+//                     </Link>
+//                   </li>
+//                 ))}
+//               </ul>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//       {/* Copyright Section */}
+//       <div
+//         style={{
+//           marginTop: "40px",
+//           paddingTop: "20px",
+//           borderTop: "1px solid rgba(255, 255, 255, 0.2)",
+//           textAlign: "center",
+//         }}
+//       >
+//         <p style={{ color: "#ddd", fontSize: "0.9rem" }}>
+//           Copyright &copy; 2025<span style={{ color: "#3ea6ff" }}> Vconn</span>.
+//           All rights reserved.
+//         </p>
+//       </div>
+//     </footer>
+//   );
+// };
+
+// export default LayoutDefault;
+
+
+
+// "use client";
+
+// import Link from "next/link";
+
+// const LayoutDefault = () => {
+//   return (
+//     <footer
+//       style={{
+//         backgroundColor: "rgb(12, 20, 31)",
+//         color: "#fff",
+//         padding: "40px 0",
+//         textAlign: "center",
+//         fontFamily: "'Lato', sans-serif",
+//       }}
+//     >
+//       <div style={{ width: "90%", maxWidth: "1200px", margin: "0 auto" }}>
+//         <div
+//           style={{
+//             display: "grid",
+//             gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
+//             gap: "30px",
+//             textAlign: "left",
+//           }}
+//         >
+//           {/* Footer Sections */}
+//           {[
+//             {
+//               title: (
+//                 <img
+//                   src="/img/logo/logo.png"
+//                   alt="Logo"
+//                   style={{ height: "40px" }}
+//                 />
+//               ),
+//               links: [
+//                 "<strong>International Headquarter:</strong>",
+//                 "Unit No: 1748, DMCC Business Centre, Level No 1, Jewellery & Gemplex 3, Dubai, United Arab Emirates",
+//                 "<strong>Regional Office:</strong>",
+//                 "Suite # 403, 4 Floor, Beaumont Plaza, Beaumont Road Off M.T.Khan Road, Karachi, Pakistan",
+//                 "+92 33 427 22796",
+//                 "sales@vconn.biz",
+//               ],
+//             },
+//             {
+//               title: "About",
+//               links: [
+//                 "Our company",
+//                 "Our Team",
+//                 "Careers",
+//                 "Locations",
+//                 "Privacy Policy",
+//                 "Security Policy",
+//                 "Contact Us",
+//               ],
+//             },
+//             {
+//               title: "Services",
+//               links: [
+//                 "Data Center Services",
+//                 "Managed Services",
+//                 "Cybersecurity Solutions",
+//                 "DevOps & DevSecOps",
+//                 "Cloud Security",
+//                 "GRC & Risk Management",
+//                 "Digital Transformation",
+//                 "Research & Innovation",
+//               ],
+//             },
+//             {
+//               title: "Industries",
+//               links: [
+//                 "FMCG (Fast-Moving Consumer Goods)",
+//                 "Data Centers & Cloud Providers",
+//                 "SaaS & Software",
+//                 "Fintech",
+//                 "Healthcare",
+//               ],
+//             },
+//             {
+//               title: "Resources",
+//               links: [
+//                 "Blog",
+//                 "Case Studies",
+//                 "Security & Compliance Guides",
+//                 "FAQs",
+//               ],
+//             },
+//           ].map((section, index) => (
+//             <div key={index}>
+//               <h4
+//                 style={{
+//                   fontSize: "1.1rem",
+//                   fontWeight: "bold",
+//                   marginBottom: "15px",
+//                   color: "white",
+//                 }}
+//               >
+//                 {section.title}
+//               </h4>
+//               <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+//                 {section.links.map((link, idx) => (
+//                   <li key={idx}>
+//                     <Link
+//                       href="#"
+//                       style={{
+//                         color: "#ddd",
+//                         textDecoration: "none",
+//                         display: "block",
+//                         padding: "5px 0",
+//                       }}
+//                       dangerouslySetInnerHTML={{ __html: link }}
+//                     />
+//                   </li>
+//                 ))}
+//               </ul>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//       {/* Copyright Section */}
+//       <div
+//         style={{
+//           marginTop: "40px",
+//           paddingTop: "20px",
+//           borderTop: "1px solid rgba(255, 255, 255, 0.2)",
+//           textAlign: "center",
+//         }}
+//       >
+//         <p style={{ color: "#ddd", fontSize: "0.9rem" }}>
+//           Copyright &copy; 2025
+//           <span style={{ color: "#3ea6ff" }}> Vconn</span>. All rights
+//           reserved.
+//         </p>
+//       </div>
+//     </footer>
+//   );
+// };
+
+// export default LayoutDefault;
+
+
+
+// "use client";
+
+// import Link from "next/link";
+
+// const LayoutDefault = () => {
+//   return (
+//     <footer
+//       style={{
+//         backgroundColor: "rgb(12, 20, 31)",
+//         color: "#fff",
+//         padding: "40px 0",
+//         textAlign: "center",
+//         fontFamily: "'Lato', sans-serif",
+//       }}
+//     >
+//       <div style={{ width: "90%", maxWidth: "1200px", margin: "0 auto" }}>
+//         <div
+//           style={{
+//             display: "grid",
+//             gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
+//             gap: "30px",
+//             textAlign: "left",
+//           }}
+//         >
+//           {/* Footer Sections */}
+//           {[
+//             {
+//               title: (
+//                 <img
+//                   src="/img/logo/logo.png"
+//                   alt="Logo"
+//                   style={{ height: "40px" }}
+//                 />
+//               ),
+//               links: [
+//                 {
+//                   type: "label",
+//                   content: "International Headquarter:",
+//                 },
+//                 {
+//                   type: "text",
+//                   content:
+//                     "United Arab Emirates"
+//                     "Unit No: 1748, DMCC Business Centre, Level No 1, Jewellery & Gemplex 3, Dubai"
+                    
+                    
+//                 },
+//                 {
+//                   type: "label",
+//                   content: "Regional Office:",
+//                 },
+//                 {
+//                   type: "text",
+//                   content:
+//                     "Pakistan"
+//                     "Suite # 403, 4 Floor, Beaumont Plaza, Beaumont Road Off M.T.Khan Road, Karachi",
+//                 },
+//                 {
+//                   type: "text",
+//                   content: "+92 33 427 22796",
+//                 },
+//                 {
+//                   type: "text",
+//                   content: "sales@vconn.biz",
+//                 },
+//               ],
+//             },
+//             {
+//               title: "About",
+//               links: [
+//                 "Our company",
+//                 "Our Team",
+//                 "Careers",
+//                 "Locations",
+//                 "Privacy Policy",
+//                 "Security Policy",
+//                 "Contact Us",
+//               ],
+//             },
+//             {
+//               title: "Services",
+//               links: [
+//                 "Data Center Services",
+//                 "Managed Services",
+//                 "Cybersecurity Solutions",
+//                 "DevOps & DevSecOps",
+//                 "Cloud Security",
+//                 "GRC & Risk Management",
+//                 "Digital Transformation",
+//                 "Research & Innovation",
+//               ],
+//             },
+//             {
+//               title: "Industries",
+//               links: [
+//                 "FMCG (Fast-Moving Consumer Goods)",
+//                 "Data Centers & Cloud Providers",
+//                 "SaaS & Software",
+//                 "Fintech",
+//                 "Healthcare",
+//               ],
+//             },
+//             {
+//               title: "Resources",
+//               links: [
+//                 "Blog",
+//                 "Case Studies",
+//                 "Security & Compliance Guides",
+//                 "FAQs",
+//               ],
+//             },
+//           ].map((section, index) => (
+//             <div key={index}>
+//               <h4
+//                 style={{
+//                   fontSize: "1.1rem",
+//                   fontWeight: "bold",
+//                   marginBottom: "15px",
+//                   color: "white",
+//                 }}
+//               >
+//                 {section.title}
+//               </h4>
+//               <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+//                 {section.links.map((link, idx) => {
+//                   if (typeof link === "string") {
+//                     return (
+//                       <li key={idx}>
+//                         <Link
+//                           href="#"
+//                           style={{
+//                             color: "#ddd",
+//                             textDecoration: "none",
+//                             display: "block",
+//                             padding: "5px 0",
+//                           }}
+//                         >
+//                           {link}
+//                         </Link>
+//                       </li>
+//                     );
+//                   } else if (link.type === "label") {
+//                     return (
+//                       <li key={idx}>
+//                         <span
+//                           style={{
+//                             display: "block",
+//                             padding: "5px 0",
+//                             fontWeight: "bold",
+//                             color: "white",
+//                             fontSize: "1.1rem",
+//                           }}
+//                         >
+//                           {link.content}
+//                         </span>
+//                       </li>
+//                     );
+//                   } else {
+//                     return (
+//                       <li key={idx}>
+//                         <Link
+//                           href="#"
+//                           style={{
+//                             color: "#ddd",
+//                             textDecoration: "none",
+//                             display: "block",
+//                             padding: "5px 0",
+//                           }}
+//                         >
+//                           {link.content}
+//                         </Link>
+//                       </li>
+//                     );
+//                   }
+//                 })}
+//               </ul>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//       {/* Copyright Section */}
+//       <div
+//         style={{
+//           marginTop: "40px",
+//           paddingTop: "20px",
+//           borderTop: "1px solid rgba(255, 255, 255, 0.2)",
+//           textAlign: "center",
+//         }}
+//       >
+//         <p style={{ color: "#ddd", fontSize: "0.9rem" }}>
+//           Copyright &copy; 2025
+//           <span style={{ color: "#3ea6ff" }}> Vconn</span>. All rights
+//           reserved.
+//         </p>
+//       </div>
+//     </footer>
+//   );
+// };
+
+// export default LayoutDefault;
+
+
+// "use client";
+
+// import Link from "next/link";
+
+// const LayoutDefault = () => {
+//   return (
+//     <footer
+//       style={{
+//         backgroundColor: "rgb(12, 20, 31)",
+//         color: "#fff",
+//         padding: "40px 0",
+//         textAlign: "center",
+//         fontFamily: "'Lato', sans-serif",
+//       }}
+//     >
+//       <div style={{ width: "90%", maxWidth: "1200px", margin: "0 auto" }}>
+//         <div
+//           style={{
+//             display: "grid",
+//             gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
+//             gap: "30px",
+//             textAlign: "left",
+//           }}
+//         >
+//           {/* Footer Sections */}
+//           {[
+//             {
+//               title: (
+//                 <img
+//                   src="/img/logo/logo.png"
+//                   alt="Logo"
+//                   style={{ height: "40px" }}
+//                 />
+//               ),
+//               links: [
+//                 {
+//                   type: "label",
+//                   content: "International Headquarter:",
+//                 },
+//                 {
+//                   type: "text",
+//                   content:
+//                     "United Arab Emirates\nUnit No: 1748, DMCC Business Centre, Level No 1,\nJewellery & Gemplex 3, Dubai",
+//                 },
+//                 {
+//                   type: "label",
+//                   content: "Regional Office:",
+//                 },
+//                 {
+//                   type: "text",
+//                   content:
+//                     "Pakistan\nSuite # 403, 4 Floor, Beaumont Plaza,\nBeaumont Road Off M.T.Khan Road, Karachi",
+//                 },
+//                 {
+//                   type: "text",
+//                   content: "+92 33 427 22796",
+//                 },
+//                 {
+//                   type: "text",
+//                   content: "sales@vconn.biz",
+//                 },
+//               ],
+//             },
+//             {
+//               title: "About",
+//               links: [
+//                 "Our company",
+//                 "Our Team",
+//                 "Careers",
+//                 "Locations",
+//                 "Privacy Policy",
+//                 "Security Policy",
+//                 "Contact Us",
+//               ],
+//             },
+//             {
+//               title: "Services",
+//               links: [
+//                 "Data Center Services",
+//                 "Managed Services",
+//                 "Cybersecurity Solutions",
+//                 "DevOps & DevSecOps",
+//                 "Cloud Security",
+//                 "GRC & Risk Management",
+//                 "Digital Transformation",
+//                 "Research & Innovation",
+//               ],
+//             },
+//             {
+//               title: "Industries",
+//               links: [
+//                 "FMCG (Fast-Moving Consumer Goods)",
+//                 "Data Centers & Cloud Providers",
+//                 "SaaS & Software",
+//                 "Fintech",
+//                 "Healthcare",
+//               ],
+//             },
+//             {
+//               title: "Resources",
+//               links: [
+//                 "Blog",
+//                 "Case Studies",
+//                 "Security & Compliance Guides",
+//                 "FAQs",
+//               ],
+//             },
+//           ].map((section, index) => (
+//             <div key={index}>
+//               <h4
+//                 style={{
+//                   fontSize: "1.1rem",
+//                   fontWeight: "bold",
+//                   marginBottom: "15px",
+//                   color: "white",
+//                 }}
+//               >
+//                 {section.title}
+//               </h4>
+//               <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+//                 {section.links.map((link, idx) => {
+//                   if (typeof link === "string") {
+//                     return (
+//                       <li key={idx}>
+//                         <Link
+//                           href="#"
+//                           style={{
+//                             color: "#ddd",
+//                             textDecoration: "none",
+//                             display: "block",
+//                             padding: "5px 0",
+//                           }}
+//                         >
+//                           {link}
+//                         </Link>
+//                       </li>
+//                     );
+//                   } else if (link.type === "label") {
+//                     return (
+//                       <li key={idx}>
+//                         <span
+//                           style={{
+//                             display: "block",
+//                             padding: "5px 0",
+//                             fontWeight: "bold",
+//                             color: "white",
+//                             fontSize: "1.1rem",
+//                           }}
+//                         >
+//                           {link.content}
+//                         </span>
+//                       </li>
+//                     );
+//                   } else {
+//                     return (
+//                       <li key={idx}>
+//                         <span
+//                           style={{
+//                             color: "#ddd",
+//                             display: "block",
+//                             padding: "5px 0",
+//                             whiteSpace: "pre-line",
+//                           }}
+//                         >
+//                           {link.content}
+//                         </span>
+//                       </li>
+//                     );
+//                   }
+//                 })}
+//               </ul>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//       {/* Copyright Section */}
+//       <div
+//         style={{
+//           marginTop: "40px",
+//           paddingTop: "20px",
+//           borderTop: "1px solid rgba(255, 255, 255, 0.2)",
+//           textAlign: "center",
+//         }}
+//       >
+//         <p style={{ color: "#ddd", fontSize: "0.9rem" }}>
+//           Copyright &copy; 2025
+//           <span style={{ color: "#3ea6ff" }}> Vconn</span>. All rights
+//           reserved.
+//         </p>
+//       </div>
+//     </footer>
+//   );
+// };
+
+// export default LayoutDefault;
+
+
+
 "use client";
 
 import Link from "next/link";
@@ -1570,11 +2254,34 @@ const LayoutDefault = () => {
                 />
               ),
               links: [
-                "Suite# 403, Beaumont Plaza, Beaumont Road, Near PIDC/PC Hotel, Karachi-75530",
-                "+92 33 427 22796",
-                "sales@vconn.biz",
+                {
+                  type: "label",
+                  content: "International Headquarter:",
+                },
+                {
+                  type: "text",
+                  content:
+                    "<strong>United Arab Emirates</strong>\nUnit No: 1748, DMCC Business Centre, Level No 1,\nJewellery & Gemplex 3, Dubai",
+                },
+                {
+                  type: "label",
+                  content: "Regional Office:",
+                },
+                {
+                  type: "text",
+                  content:
+                    "<strong>Pakistan</strong>\nSuite # 403, 4 Floor, Beaumont Plaza,\nBeaumont Road Off M.T.Khan Road, Karachi",
+                },
+                {
+                  type: "text",
+                  content: "+92 33 427 22796",
+                },
+                {
+                  type: "text",
+                  content: "sales@vconn.biz",
+                },
               ],
-            }, // ← **This comma was missing!**
+            },
             {
               title: "About",
               links: [
@@ -1632,21 +2339,55 @@ const LayoutDefault = () => {
                 {section.title}
               </h4>
               <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                {section.links.map((link, idx) => (
-                  <li key={idx}>
-                    <Link
-                      href="#"
-                      style={{
-                        color: "#ddd",
-                        textDecoration: "none",
-                        display: "block",
-                        padding: "5px 0",
-                      }}
-                    >
-                      {link}
-                    </Link>
-                  </li>
-                ))}
+                {section.links.map((link, idx) => {
+                  if (typeof link === "string") {
+                    return (
+                      <li key={idx}>
+                        <Link
+                          href="#"
+                          style={{
+                            color: "#ddd",
+                            textDecoration: "none",
+                            display: "block",
+                            padding: "5px 0",
+                          }}
+                        >
+                          {link}
+                        </Link>
+                      </li>
+                    );
+                  } else if (link.type === "label") {
+                    return (
+                      <li key={idx}>
+                        <span
+                          style={{
+                            display: "block",
+                            padding: "5px 0",
+                            fontWeight: "bold",
+                            color: "white",
+                            fontSize: "1.1rem",
+                          }}
+                        >
+                          {link.content}
+                        </span>
+                      </li>
+                    );
+                  } else {
+                    return (
+                      <li key={idx}>
+                        <span
+                          style={{
+                            color: "#ddd",
+                            display: "block",
+                            padding: "5px 0",
+                            whiteSpace: "pre-line",
+                          }}
+                          dangerouslySetInnerHTML={{ __html: link.content }}
+                        />
+                      </li>
+                    );
+                  }
+                })}
               </ul>
             </div>
           ))}
@@ -1662,8 +2403,9 @@ const LayoutDefault = () => {
         }}
       >
         <p style={{ color: "#ddd", fontSize: "0.9rem" }}>
-          Copyright &copy; 2025<span style={{ color: "#3ea6ff" }}> Vconn</span>.
-          All rights reserved.
+          Copyright &copy; 2025
+          <span style={{ color: "#3ea6ff" }}> Vconn</span>. All rights
+          reserved.
         </p>
       </div>
     </footer>

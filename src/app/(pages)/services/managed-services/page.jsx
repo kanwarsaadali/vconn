@@ -60,7 +60,7 @@ const Devsecops = () => {
   };
 
   const imageStyle = {
-    width: "100%",
+    width: "70%",
     height: "auto",
   };
 
@@ -111,7 +111,24 @@ const Devsecops = () => {
 
       <Project3 />
 
-      <img src="/img/Project/whyusmanage.png" alt="Why Us?" style={imageStyle} />
+      {/* <img src="/img/Project/whyusmanage.png" alt="Why Us?" style={imageStyle} /> */}
+
+      <div style={{ textAlign: "center", padding: "40px 0 20px" }}>
+  <h1
+    style={{
+      color: "#BCFF00",
+      fontSize: "40px",
+      // marginBottom: "10px",
+      fontFamily: "'Lato', sans-serif",
+      fontWeight: "700",
+    }}
+  >
+    WHY US
+  </h1>
+  <div style={{ display: "flex", justifyContent: "center", alignItems: "center", padding: "0" }}>
+    <img src="/img/Project/whyusmanage.svg" alt="Why Us Cyber" style={imageStyle} />
+  </div>
+</div>
 
       <ClientSlider />
       <HowWeWork1 />
