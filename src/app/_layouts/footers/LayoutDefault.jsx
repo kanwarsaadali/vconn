@@ -2253,6 +2253,35 @@ const LayoutDefault = () => {
                   style={{ height: "40px" }}
                 />
               ),
+              // links: [
+              //   {
+              //     type: "label",
+              //     content: "International Headquarter:",
+              //   },
+              //   {
+              //     type: "text",
+              //     content:
+              //       "<strong>United Arab Emirates</strong>\nUnit No: 1748, DMCC Business Centre, Level No 1,\nJewellery & Gemplex 3, Dubai",
+              //   },
+              //   {
+              //     type: "label",
+              //     content: "Regional Office:",
+              //   },
+              //   {
+              //     type: "text",
+              //     content:
+              //       "<strong>Pakistan</strong>\nSuite # 403, 4 Floor, Beaumont Plaza,\nBeaumont Road Off M.T.Khan Road, Karachi",
+              //   },
+              //   {
+              //     type: "text",
+              //     content: "+92 33 427 22796",
+              //   },
+              //   {
+              //     type: "text",
+              //     content: "sales@vconn.biz",
+              //   },
+              // ],
+
               links: [
                 {
                   type: "label",
@@ -2262,6 +2291,10 @@ const LayoutDefault = () => {
                   type: "text",
                   content:
                     "<strong>United Arab Emirates</strong>\nUnit No: 1748, DMCC Business Centre, Level No 1,\nJewellery & Gemplex 3, Dubai",
+                },
+                {
+                  type: "text",
+                  content: "+971 56 193 3066", // <-- New number added here
                 },
                 {
                   type: "label",
@@ -2274,13 +2307,14 @@ const LayoutDefault = () => {
                 },
                 {
                   type: "text",
-                  content: "+92 33 427 22796",
+                  content: "+92 21 3877177"
                 },
                 {
                   type: "text",
                   content: "sales@vconn.biz",
                 },
               ],
+              
             },
             {
               title: "About",
