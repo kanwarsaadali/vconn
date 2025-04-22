@@ -131,14 +131,14 @@ import Image from "next/image";
 
 const Project2 = () => {
   const items = [
-    { icon: "/img/icons/C1.svg", title: "Threat Detection and Response", description: "Real-time threat identification and mitigation." },
-    { icon: "/img/icons/C2.svg", title: "Penetration Testing", description: "Simulated attacks to find vulnerabilities." },
-    { icon: "/img/icons/C3.svg", title: "Malware Protection", description: "Protection against sophisticated malware." },
-    { icon: "/img/icons/C4.svg", title: "Data Protection Services", description: "Encryption and secure data handling." },
-    { icon: "/img/icons/C5.svg", title: "SOC as a Service", description: "Security monitoring and incident response." },
-    { icon: "/img/icons/C6.svg", title: "Cybersecurity Implementation", description: "Deploying security measures and tools." },
-    { icon: "/img/icons/C7.svg", title: "Dark Web Monitoring", description: "Scanning for exposed data on the dark web." },
-    { icon: "/img/icons/C8.svg", title: "Red vs Blue Team Exercises", description: "Attack and defense simulation to test security." },
+    { icon: "/img/icons/C1.svg", title: "Threat Detection", description: "Real-time monitoring to stop threats before damage occurs." },
+    { icon: "/img/icons/C2.svg", title: "Penetration Testing", description: "Simulated attacks to identify and fix vulnerabilities." },
+    { icon: "/img/icons/C3.svg", title: "SOC Service", description: "24/7 support for continuous threat visibility and response." },
+    { icon: "/img/icons/C4.svg", title: "Cloud Security", description: "Safeguard cloud infrastructure with tailored controls and compliance." },
+    { icon: "/img/icons/C5.svg", title: "Malware Protection", description: "Detect and eliminate threats while securing sensitive data." },
+    { icon: "/img/icons/C6.svg", title: "Security Strategy", description: "Comprehensive planning and tools to align security with business goals." },
+    { icon: "/img/icons/C7.svg", title: "Unified Solutions", description: "Deploy robust security frameworks, policies, and technologies." },
+    { icon: "/img/icons/C8.svg", title: "Team Exercises", description: "Adversarial exercises to test and enhance cyber resilience." },
   ];
 
   const containerStyle = {
@@ -174,7 +174,7 @@ const Project2 = () => {
 
   return (
     <div style={containerStyle}>
-      <h1 style={headerStyle}>PROJECT</h1>
+      <h1 style={headerStyle}>SERVICES</h1>
       <div style={gridStyle}>
         {items.map((item, index) => (
           <Card key={index} icon={item.icon} title={item.title} description={item.description} />

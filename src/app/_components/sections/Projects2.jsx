@@ -132,14 +132,14 @@ import Image from "next/image";
 
 const Project2 = () => {
   const items = [
-    { icon: "/img/icons/Service2_1.png", title: "CI/CD Pipeline Security", description: "Embedding security in development." },
-    { icon: "/img/icons/Service2_2.png", title: "Security as Code", description: "Continuous security testing in CI/CD." },
-    { icon: "/img/icons/Service2_3.png", title: "Continuous Compliance Monitoring", description: "Securing infrastructure code." },
-    { icon: "/img/icons/Service2_4.png", title: "Identity & Access Management (IAM)", description: "Protecting deployment pipelines." },
-    { icon: "/img/icons/Service2_5.png", title: "Runtime Application Self-Protection (RASP)", description: "Protecting sensitive credentials." },
-    { icon: "/img/icons/Service2_6.png", title: "Cloud Security & Data Protection", description: "Securing containers and Kubernetes." },
-    { icon: "/img/icons/Service2_7.png", title: "Container Vulnerability Scanning", description: "Automated compliance checks." },
-    { icon: "/img/icons/Service2_8.png", title: "DevSecOps Maturity Assessment", description: "Continuous security monitoring and logging." },
+    { icon: "/img/icons/d1.svg", title: "DevOps Integration", description: "Automating DevOps and security best practices across the SDLC." },
+    { icon: "/img/icons/d2.svg", title: "CI/CD Security", description: "Securing CI/CD pipelines by embedding security into code and infrastructure." },
+    { icon: "/img/icons/d3.svg", title: "Auto Compliance", description: "Ensuring real-time compliance with regulatory standards and identifying risks." },
+    { icon: "/img/icons/d4.svg", title: "IAM Management", description: "Managing access controls and identities to protect systems and data." },
+    { icon: "/img/icons/d5.svg", title: "Data Security", description: "Securing data across multi-cloud and hybrid infrastructures." },
+    { icon: "/img/icons/d6.svg", title: "Secure Scan", description: "Scanning containers and securing applications with RASP and vulnerability protection." },
+    { icon: "/img/icons/d7.svg", title: "DevSecOps Plan", description: "Evaluating security practices and providing a DevSecOps maturity roadmap." },
+    { icon: "/img/icons/d8.svg", title: "Threat Protection", description: "Monitoring and defending applications against real-time threats." },
   ];
 
   const containerStyle = {
@@ -174,7 +174,7 @@ const Project2 = () => {
 
   return (
     <div style={containerStyle}>
-      <h1 style={headerStyle}>PROJECT</h1>
+      <h1 style={headerStyle}>SERVICES</h1>
       <div style={gridStyle}>
         {items.map((item, index) => (
           <Card key={index} icon={item.icon} title={item.title} description={item.description} />

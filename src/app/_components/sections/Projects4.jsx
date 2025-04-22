@@ -5,14 +5,14 @@ import Image from "next/image";
 
 const Projects4 = () => {
   const items = [
-    { icon: "/img/icons/Service3_1.png", title: "Risk Management", description: "Well-informed decisions and reduce data breach risks." },
-    { icon: "/img/icons/Service3_2.png", title: "GRC (Governance, Risk, Compliance)", description: "Improved operational efficiency and regulatory compliance." },
-    { icon: "/img/icons/Service4_3.png", title: "Data Loss Prevention (DLP)", description: "Insider threats detection and mitigation." },
-    { icon: "/img/icons/Service3_4.png", title: "Security Training", description: "Staff empowerment to threat recognition & response." },
-    { icon: "/img/icons/Service3_5.png", title: "Security Architecture", description: "Comprehensive security models for cyber threats prevention." },
-    { icon: "/img/icons/Service3_6.png", title: "Business Continuity & Disaster Recovery", description: "Minimized downtime and financial losses." },
-    { icon: "/img/icons/Service3_7.png", title: "Access Control", description: "Unauthorized access prevention of sensitive data." },
-    { icon: "/img/icons/Service3_8.png", title: "Privacy Protection", description: "Unauthorized access prevention of sensitive data." },
+    { icon: "/img/icons/I_1.svg", title: "GRC Management", description: "Align operations with regulatory standards and manage risks." },
+    { icon: "/img/icons/I_2.svg", title: "Data Prevention", description: "Protect sensitive data from breaches and unauthorized access." },
+    { icon: "/img/icons/I_3.svg", title: "Security Design", description: "Build secure, scalable infrastructure tailored to business needs." },
+    { icon: "/img/icons/I_4.svg", title: "Security Training", description: "Equip employees to identify and respond to cyber threats." },
+    { icon: "/img/icons/I_5.svg", title: "Stay Operational", description: "Ensure resilience with strategic planning and rapid recovery." },
+    { icon: "/img/icons/I_6.svg", title: "IAM Management", description: "Secure access control and identity governance to reduce risks." },
+    { icon: "/img/icons/I_7.svg", title: "SIEM Integration", description: "Gain real-time threat visibility with centralized log management." },
+    { icon: "/img/icons/I_8.svg", title: "Audit Support", description: "Achieve certifications like ISO 27001, SOC 2, and PCI-DSS with expert guidance." },
   ];
 
   const containerStyle = {

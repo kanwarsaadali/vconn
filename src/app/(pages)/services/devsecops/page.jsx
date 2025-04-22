@@ -80,10 +80,10 @@ const Devsecops = () => {
         {/* Text Section */}
         <div style={textStyle}>
           <h1 style={{ fontSize: "48px", marginBottom: "20px", color: "white", fontFamily: "'Lato', sans-serif" }}>
-          Your Impenetrable DevOps Culture for Threat-Free Deployments & Collaboration
+          Secure Your Pipeline for Faster, Safer Deployments
           </h1>
           <p style={{ fontSize: "18px", lineHeight: "1.6", marginBottom: "40px", fontFamily: "'Lato', sans-serif" }}>
-            With source code, threat modelling, false-positive rates analysis and more, integrate the security checks early in your software’s development pipeline for faster deployments, smooth collaboration.
+          Integrate early security checks, code analysis, and threat modeling for faster, more reliable releases.
           </p>
           <a
             href="#"

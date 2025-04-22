@@ -5,14 +5,14 @@ import Image from "next/image";
 
 const Project3 = () => {
   const items = [
-    { icon: "/img/icons/M1.svg", title: "Cloud Management", description: "Embedding security in development." },
-    { icon: "/img/icons/M2.svg", title: "Network Management", description: "Managing governance and compliance." },
-    { icon: "/img/icons/M3.svg", title: "Help Desk & Support", description: "Preventing unauthorized data access." },
-    { icon: "/img/icons/M4.svg", title: "Patch Management", description: "Educating employees on security best practices." },
-    { icon: "/img/icons/M5.svg", title: "IT Asset Management", description: "Designing secure system." },
-    { icon: "/img/icons/M6.svg", title: "Backup & Disaster Recovery", description: "Ensuring business continuity and recovery." },
-    { icon: "/img/icons/M7.svg", title: "Managed Endpoint Security", description: "Managing secure access to data." },
-    { icon: "/img/icons/M8.svg", title: "Application Performance Monitoring (APM)", description: "Ensuring privacy compliance." },
+    { icon: "/img/icons/M1.svg", title: "Cloud Operations", description: "Scalable cloud solutions and secure network infrastructure for efficiency." },
+    { icon: "/img/icons/M2.svg", title: "IT Support", description: "Continuous monitoring and quick resolution to minimize downtime." },
+    { icon: "/img/icons/M3.svg", title: "Stay Operational", description: "Backup and recovery plans to protect data and ensure continuity." },
+    { icon: "/img/icons/M4.svg", title: "Patch Updates", description: "Regular updates and visibility of IT assets to minimize risks." },
+    { icon: "/img/icons/M5.svg", title: "System Check", description: "Real-time monitoring to optimize application performance." },
+    { icon: "/img/icons/M6.svg", title: "Data Center", description: "Reliable hosting and infrastructure for high-performance systems." },
+    { icon: "/img/icons/M7.svg", title: "Digital Evolution", description: "Drive modernization with automation, cloud migration, and technology solutions." },
+    { icon: "/img/icons/M8.svg", title: "SME Expertise", description: "Specialized database administration for optimized performance and data integrity." },
   ];
 
   const containerStyle = {
@@ -47,7 +47,7 @@ const Project3 = () => {
 
   return (
     <div style={containerStyle}>
-      <h1 style={headerStyle}>PROJECT</h1>
+      <h1 style={headerStyle}>SERVICES</h1>
       <div style={gridStyle}>
         {items.map((item, index) => (
           <Card key={index} icon={item.icon} title={item.title} description={item.description} />

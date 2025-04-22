@@ -80,7 +80,7 @@ const InformationSecurity = () => {
         {/* Text Section */}
         <div style={textStyle}>
           <h1 style={{ fontSize: "48px", marginBottom: "20px", color: "white", fontFamily: "'Lato', sans-serif" }}>
-          Outsmart Hackers 24/7 through Adaptive Security Measures
+          Defend Your Business with Adaptive Security Solutions
           </h1>
           <p style={{ fontSize: "18px", lineHeight: "1.6", marginBottom: "40px", fontFamily: "'Lato', sans-serif" }}>
             We proactively monitor your systems, encrypt sensitive data, and ensure its integrity against threats round the clock.
